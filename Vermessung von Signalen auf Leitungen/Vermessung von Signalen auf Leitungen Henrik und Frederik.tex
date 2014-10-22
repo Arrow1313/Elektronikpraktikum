@@ -170,7 +170,7 @@ Bei der Signalübertragung mit zwei Bananenkabeln wurde der Aufbau von Abbildung
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep1\_14.pdf Seite 8 am 19.10.2014}
 
 
-Für die Signalübertragung über ein twisted-pair Kabel wurde der Aufbau aus Abbildung \ref{fig:2.2} verwendet.
+Für die Signalübertragung über ein twisted-pair Kabel wurden die Bananenkabel aus Abbildung \ref{fig:2.2} verdrillt.
 
 \begin{figure}[H] 
   \centering
@@ -180,7 +180,7 @@ Für die Signalübertragung über ein twisted-pair Kabel wurde der Aufbau aus Ab
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep1\_14.pdf Seite 9 am 19.10.2014}
 
-Da die Signalquelle nicht Potentialfrei ist verwendet man als Signalquelle in Mikrofon. Das Signal wir über einen Operationsverstärker, siehe Abbildung \ref{fig:2.33} verstärkt, um das Signal auf dem Oszilloskop sichtbar zu machen.
+Als alternative zu dem geerdetem Funktionsgenerator wird ein Mikrofon als Signalquelle verwendet. Das Signal wir über einen Operationsverstärker, siehe Abbildung \ref{fig:2.33} verstärkt, um das Signal auf dem Oszilloskop sichtbar zu machen.
 
 \begin{figure}[H] 
   \centering
@@ -191,6 +191,7 @@ Da die Signalquelle nicht Potentialfrei ist verwendet man als Signalquelle in Mi
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep1\_14.pdf Seite 11 am 19.10.2014}
 
 Der Operationsverstärker und das Mikrofon werden dann nach Schaltbild \ref{fig:2.4} zusammen geschaltet.
+Dabei wurde für die Widerstände die Werte R$_1$=R$_3$= 1k$\Omega$ und R$_2$=R$_4$=100k$\Omega$ gewählt, dadurch ergibt sich eine Verstärkung um den Faktor 100.
 
 \begin{figure}[H] 
   \centering
@@ -214,10 +215,15 @@ Zum Vergleich wird dann Widerstand 3 noch an die Massen angelegt, Aufbau nach Ab
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-\subsection{Verwendete Formeln}
+In der ersten zwei Aufbauten wurden eine Sinus- und eine Rechteckspannung angelegt und der Frequenzbereich von \unit[100]{Hz} bis \unit[10]{MHz} ausgemessen und überprüft, ab wann das Signal verzerrt wird. Dabei wurden dann bei Festen Frequenzen der Verlauf der Kurve aufgenommen.
+
+Im dritten und viertem Teil wurde in das Mikrofon hinein geblasen und die Darstellung auf dem Oszilloskop Angehalten und aufgenommen, danach wurde das Mikrofon auf den Funktionsgenerator gelegt und die Störsignale aufgenommen.
+
+%\subsection{Verwendete Formeln}
 %eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
 %mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen.
-\subsection{Messergebnisse}
+
+%\subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
 %zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
@@ -230,6 +236,84 @@ Zum Vergleich wird dann Widerstand 3 noch an die Massen angelegt, Aufbau nach Ab
 %bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abgehandeln
+Bei der ersten Messung mit nur einem Bananenkabel ergaben sich die folgenden Ergebnisse.
+Bei der Übertragung des Sinussignals war kein qualitativer Unterschied fest zu stellen, wie man an Abbildung \ref{fig:2_1_sin_100hz} und Abbildung \ref{fig:2_1_sin_10mhz} erkennen kann.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4, angle = -90]{2_1_sin_100hz.pdf}
+  	\caption[Aufnahme der Sinuswelle mit einer Frequenz von 100Hz]{Aufnahme der Sinuswelle mit einer Frequenz von 100Hz}
+  \label{fig:2_1_sin_100hz}
+\end{figure}
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4, angle = -90]{2_1_sin_10mhz.pdf}
+  	\caption[Aufnahme der Sinuswelle mit einer Frequenz von 10MHz]{Aufnahme der Sinuswelle mit einer Frequenz von 10MHz}
+  \label{fig:2_1_sin_10mhz}
+\end{figure}
+
+Beim Messen des Signals der Rechteckspannung war bei 100Hz noch keine Verzerrung zu sehen, siehe Abbildung \ref{fig:2_1_rech_100hz}. Die ersten Verzerrungen wurden bei einer Frequenz von 10kHz gemessen, zu sehen in Abbildung \ref{fig:2_1_rech_10khz}. Bei einer Frequenz von 10MHz ist die Rechteckspannung als solche nicht mehr zu erkennen, Abbildung \ref{fig:2_1_rech_10mhz}. Dies liegt daran, dass das Oszilloskop eine Maximale Anzeigefrequenz von 40MHz hat.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4, angle = -90]{2_1_rech_100hz.pdf}
+  	\caption[Aufnahme des Rechtecksignals mit einer Frequenz von 100Hz]{Aufnahme des Rechteck Signals mit einer Frequenz von 100Hz}
+  \label{fig:2_1_rech_100hz}
+\end{figure}
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4, angle = -90]{2_1_rech_10khz.pdf}
+  	\caption[Aufnahme des Rechtecksignals mit einer Frequenz von 10kHz]{Aufnahme des Rechteck Signals mit einer Frequenz von 10kHz}
+  \label{fig:2_1_rech_10khz}
+\end{figure}
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4, angle = -90]{2_1_rech_10mhz.pdf}
+  	\caption[Aufnahme des Rechtecksignals mit einer Frequenz von 10MHz]{Aufnahme des Rechteck Signals mit einer Frequenz von 10MHz}
+  \label{fig:2_1_rech_10mhz}
+\end{figure}
+
+Bei der Messung mit zwei Bananenkabeln war bei der Messung des Sinussignals kein Unterschied zu erkennen wie in Abbildung \ref{fig:2_2_sin_100hz} zu sehen ist.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4]{2_2_sin_100hz.pdf}
+  	\caption[Aufnahme des Sinussignals mit einer Frequenz von 100Hz]{Aufnahme des Sinussignals mit einer Frequenz von 100Hz}
+  \label{fig:2_2_sin_100hz}
+\end{figure}
+
+Bei der Messung der Rechtecksignals war bei niedrigen Frequenzen noch keine Verzerrung zu erkennen, wie in Abbildung \ref{fig:2_2_rech_100hz} zu sehen ist.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4]{2_2_rech_100hz.pdf}
+  	\caption[Aufnahme des Rechtecksignals mit einer Frequenz von 100Hz]{Aufnahme des Rechtecksignals mit einer Frequenz von 100Hz}
+  \label{fig:2_2_rech_100hz}
+\end{figure}
+
+Die ersten Verzerrungen waren auch wieder bei einer Frequenz von 10kHz zu erkennen, dies fällt jedoch viel geringer als beim Aufbau zuvor aus, wie in Abbildung \ref{fig:2_2_rech_10khz} zu erkennen ist.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4]{2_2_rech_10khz.pdf}
+  	\caption[Aufnahme des Rechtecksignals mit einer Frequenz von 10kHz]{Aufnahme des Rechtecksignals mit einer Frequenz von 10kHz}
+  \label{fig:2_2_rech_10khz}
+\end{figure}
+
+Bei einer Frequenz von 10MHz ist das vorherige Rechtecksignal als solches wieder nicht mehr zu erkennen. Jedoch ist das Signal deutlich besser erhalten, als bei der einkanaligen Verbindung, wie in Abbildung \ref{fig:2_2_rech_10mhz} zu erkennen ist.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4]{2_2_rech_10mhz.pdf}
+  	\caption[Aufnahme des Rechtecksignals mit einer Frequenz von 10MHz]{Aufnahme des Rechtecksignals mit einer Frequenz von 10MHz}
+  \label{fig:2_2_rech_10mhz}
+\end{figure}
+
+
+
 \subsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?

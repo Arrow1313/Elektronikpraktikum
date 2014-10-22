@@ -12,7 +12,5 @@
 \contentsline {section}{\numberline {5}Versuchsteil 2}{5}
 \contentsline {subsection}{\numberline {5.1}Versuchsaufbau}{5}
 \contentsline {subsection}{\numberline {5.2}Versuchsdurchf\IeC {\"u}hrung}{7}
-\contentsline {subsection}{\numberline {5.3}Verwendete Formeln}{7}
-\contentsline {subsection}{\numberline {5.4}Messergebnisse}{7}
-\contentsline {subsection}{\numberline {5.5}Auswertung}{7}
-\contentsline {subsection}{\numberline {5.6}Diskussion}{7}
+\contentsline {subsection}{\numberline {5.3}Auswertung}{7}
+\contentsline {subsection}{\numberline {5.4}Diskussion}{12}
