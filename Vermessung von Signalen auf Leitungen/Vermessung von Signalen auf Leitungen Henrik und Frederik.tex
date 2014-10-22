@@ -213,9 +213,15 @@ Zum Vergleich wird dann Widerstand 3 noch an die Massen angelegt, Aufbau nach Ab
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep1\_14.pdf Seite 11 am 19.10.2014}
 
 
-\subsection{Versuchsdurchführung}
+\subsection{Signal ausbreitung über einfache Kabel}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+\subsubsection{Veruschsteil 2.1}
+
+\subsubsection{Veruschsteil 2.2}
+
+\subsubsection{Veruschsteil 2.3}
+
 In der ersten zwei Aufbauten wurden eine Sinus- und eine Rechteckspannung angelegt und der Frequenzbereich von \unit[100]{Hz} bis \unit[10]{MHz} ausgemessen und überprüft, ab wann das Signal verzerrt wird. Dabei wurden dann bei Festen Frequenzen der Verlauf der Kurve aufgenommen.
 
 Im dritten und viertem Teil wurde in das Mikrofon hinein geblasen und die Darstellung auf dem Oszilloskop Angehalten und aufgenommen, danach wurde das Mikrofon auf den Funktionsgenerator gelegt und die Störsignale aufgenommen.
@@ -295,7 +301,7 @@ Bei der Messung der Rechtecksignals war bei niedrigen Frequenzen noch keine Verz
   \label{fig:2_2_rech_100hz}
 \end{figure}
 
-Die ersten Verzerrungen waren auch wieder bei einer Frequenz von 10kHz zu erkennen, dies fällt jedoch viel geringer als beim Aufbau zuvor aus, wie in Abbildung \ref{fig:2_2_rech_10khz} zu erkennen ist.
+Die ersten Verzerrungen waren auch wieder bei einer Frequenz von 10kHz zu erkennen, diese fällt jedoch geringer als beim Aufbau zuvor aus, wie in Abbildung \ref{fig:2_2_rech_10khz} zu erkennen ist, was wie zuvor am Anzeigebereich des Oszilloskops liegt.
 
 \begin{figure}[H] 
   \centering
@@ -313,7 +319,54 @@ Bei einer Frequenz von 10MHz ist das vorherige Rechtecksignal als solches wieder
   \label{fig:2_2_rech_10mhz}
 \end{figure}
 
+Betrachtet man die Signalübertragung einer Rechteckspannung mit einem twisted-pair Kabel, Abbildung \ref{fig:2_3_vgl_1} und zwei nicht verdrillten Bananenkabeln, Abbildung \ref{fig:2_3_vgl_2} so lässt sich kaum eine Verbesserung feststellen, da die Signalquelle nicht potentialfrei ist.
 
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4]{2_3_vgl_2.pdf}
+  	\caption[Aufnahme des Rechtecksignals, übertragen mit zwei Bananenkabel und einer Frequenz von 100kHz]{Aufnahme des Rechtecksignals, übertragen mit zwei Bananenkabel und einer Frequenz von 100kHz}
+  \label{fig:2_3_vgl_2}
+\end{figure}
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4]{2_3_vgl_1.pdf}
+  	\caption[Aufnahme des Rechtecksignals, übertragen mit zwei verdrillten Bananenkabel und einer Frequenz von 100kHz]{Aufnahme des Rechtecksignals, übertragen mit zwei verdrillten Bananenkabel und einer Frequenz von 100kHz}
+  \label{fig:2_3_vgl_1}
+\end{figure}
+
+Bei der Messung mit dem Mikrofon ergab sich beim Aufbau nach Abbildung \ref{fig:2.4} die in Abbildung \ref{fig:2_3_r3np_sig} dargestellte Kurve. Für den Aufbau nach Abbildung \ref{fig:2.5} ergab sich die Kurve in Abbildung \ref{fig:2_3_r3p_sig}. Dabei ist zu erkennen, dass die Verschmierung des Signals an den Extrema in Abbildung \ref{fig:2_3_r3p_sig} größer ist als in Abbildung \ref{fig:2_3_r3np_sig}. Dies liegt daran, dass R$_3$ and die Masse angeschlossen ist.
+Wenn davon gesprochen wird, dass R$_3$ parallel zu R$_4$ liegt, ist immer auch gemeint, dass R$_3$ an der Masse anliegt.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4]{2_3_r3np_sig.pdf}
+  	\caption[Aufnahme des mit dem Mikrofon aufgenommenen Signals, ohne das R$_3$ parallel zu R$_4$ geschaltet ist]{Aufnahme des mit dem Mikrofon aufgenommenen Signals, ohne das R$_3$ parallel zu R$_4$ geschaltet ist}
+  \label{fig:2_3_r3np_sig}
+\end{figure}
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4]{2_3_r3p_sig.pdf}
+  	\caption[Aufnahme des mit dem Mikrofon aufgenommenen Signals, mit R$_3$ parallel zu R$_4$ geschaltet]{Aufnahme des mit dem Mikrofon aufgenommenen Signals, mit R$_3$ parallel zu R$_4$ geschaltet}
+  \label{fig:2_3_r3p_sig}
+\end{figure}
+
+Betrachtet man die Störung, die dadurch verursacht wird, dass man das Mikrofon auf den Funktionsgenerator legt, so erhält man für R$_3$ nicht parallel zu R$_4$ die Kurve in Abbildung \ref{fig:2_3_r3np_sig}. Für den Aufbau mit R$_3$ parallel zu R$_4$ ergibt sich die Kurve aus Abbildung \ref{fig:2_3_r3p_sig}. Wieder ist zu erkennen, dass die Verschmierung der Kurve aus Abbildung \ref{fig:2_3_r3p_st} größer ist als in Abbildung \ref{fig:2_3_r3np_st}.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4]{2_3_r3np_st.pdf}
+  	\caption[Aufnahme der mit dem Mikrofon aufgenommenen Störung, ohne das R$_3$ parallel zu R$_4$ geschaltet ist]{Aufnahme der mit dem Mikrofon aufgenommenen Störung, ohne das R$_3$ parallel zu R$_4$ geschaltet ist}
+  \label{fig:2_3_r3np_st}
+\end{figure}
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.4]{2_3_r3p_st.pdf}
+  	\caption[Aufnahme der mit dem Mikrofon aufgenommenen Störung, mit R$_3$ parallel zu R$_4$ geschaltet]{Aufnahme der mit dem Mikrofon aufgenommenen Störung, mit R$_3$ parallel zu R$_4$ geschaltet}
+  \label{fig:2_3_r3p_st}
+\end{figure}
 
 \subsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
