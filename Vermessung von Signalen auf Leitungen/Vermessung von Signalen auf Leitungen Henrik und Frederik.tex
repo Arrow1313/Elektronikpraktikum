@@ -39,14 +39,41 @@
 %hinter der einleitung kann der allgemeine theoretische hintergrund in einer zusätzlichen section erklärt werden
 Dieser Versuch beschäftigt sich mit den Übertragungseigenschaften verschiedener Kabel. Untersucht werden Bananenkabel, BNC-Kabel und Patchkabel.\newline
 In den Aufbauten wird die Signalqualität der Kabel abhängig von der Einstellung des Funktionsgenerators (Sinus oder Rechteck), der Kabellänge und der Schaltung miteinder verglichen.\newline
-Der sogenannte 'Kapazitätsbelag' (Kapazität zwischen Signal und Masseleitung) des BNC- und Patchkabels, welcher neben drei weiteren Kabelkonstanten (Selbstinduktivität der Leitung, Widerstand der Signalleitung, Leitwert der Isolation) bei der Beschreibung der Kabeleigenschaften eine wichtige Rolle spielt wird ebenfalls bestimmt.
+Der sogenannte 'Kapazitätsbelag' (Kapazität zwischen Signal und Masseleitung) des BNC- und Patchkabels, welcher neben drei weiteren Kabelkonstanten (Selbstinduktivität der Leitung, Widerstand der Signalleitung, Leitwert der Isolation) bei der Beschreibung der Kabeleigenschaften eine wichtige Rolle spielt wird ebenfalls bestimmt. 
+
 
 \section{Verwendete Materialien}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!
 %-------------------------------------------------------------------------------------------
 %ab hier für jeden versuchsteil einzeln, falls noch materialien hinzugenommen wurden immer im versuchsaufbau erwähnen!
+Verwendet wurden: 
 
+\begin{itemize}
+\item	Funktionsgenerator zum erzeugen der Signale
+
+\item	Oszilloskop zur graphischen Darstellung der Signale
+
+\item	Bananenkabel zur Signalübertragung
+
+\item	Koaxialkabel zur Signalübertragung
+
+\item	Patchkabel zur Signalübertragung
+
+\item	Mikrofon zum Signalerzeugen
+
+\item	Operationsverstärker zum verstärken des Mikrofonsignals
+
+\item	T-Verbindungsstück zum anschließen zusätzlicher Kabel
+
+\item	BNC-Bananenkabel Adapter
+
+\item 	Verschiedene Widerstände/Potentiometer
+
+\end{itemize}
+
+\section{Versuchsteil 1}
+Der erste Versuchsteil war nicht mit Messungen versehen, wodurch die Nummerierung bei Versuchsteil zwei anfängt.
 
 \section{Signalausbreitung über einfache Kabel}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
@@ -359,9 +386,13 @@ Da dies auch für die zwei verdrillten Bananenkabel gilt konnte kaum Verbesserun
 \section{Signalübertragung über Koaxialkabel}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsabschnitt werden die Signalübertragungseigenschaften von Koaxialkabeln untersucht.
+
 \subsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
+In diesem Abschnitt werden die 5 Versuchsaufbauten skizziert.
 
 \subsubsection{Kurzes Koaxialkabel ohne Abschlußwiderstand}
 
@@ -432,14 +463,7 @@ In Aufgabe 3.3 wird ein \unit[50]{$\Omega$} Widerstand an das lange Koaxialkabel
 In Aufgabe 3.4 soll das Koaxialkabel kurzgeschlossen werden. Da durch den Kurzschluss ein Knotenpunkt der Spannung erzeugt wird, wird das Signal mit umgekehrtem Vorzeichen reflektiert. Das Ergebnis kann mit den beiden Aufgabenteilen davor verglichen werden.
 In Aufgabe 3.5 wird nochmal ein Potentiometer von 0 bis \unit[1]{k$\Omega$} an das Koaxialkabel angeschlossen, um den Wellenwiderstand des Kabels, bei dem kein Signal zurückgeworfen wird von Hand zu bestimmen. Die Reflektion kann bei eingestelltem Rechtecksignal am Oszilloskop beobachtet werden.
 
-\subsection{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen.
-\subsection{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
 \subsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -448,6 +472,8 @@ In Aufgabe 3.5 wird nochmal ein Potentiometer von 0 bis \unit[1]{k$\Omega$} an d
 %bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abgehandeln
+
+In der Auswertung wird das Signal in Abhängigkeit des Abschlusses untersucht.
 
 \subsubsection{Kurzes Koaxialkabel ohne Abschlußwiderstand}
 Im ersten Versuchsteil sollte überprüft werden wie gut Rechtecksignale mit kleinen Amplituden von Koaxialkabeln übertragen werden. Dabei ergeben sich die Kurven in Abbildung \ref{fig:3_1_vergleich}. Es ist deutlich zu sehen, dass das Rechtecksignal bei 10MHz besser übertragen wird als bei Bananenkabeln, vgl. Abbildung \ref{fig:2_2_rech_10mhz}.
@@ -545,6 +571,9 @@ Die besseren Übertragungseigenschaften eines Koaxialkabels ließen sich durch d
 \section{Verdrillte Leitungen (Twisted Pair)}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsabschnitt werden die Reflexionseigenschaften eines Patchkabels untersucht.
+
 \subsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 Es werden zwei verschieden Aufbauten verwendet, wobei sich dies nur darin unterscheiden ob das Patchkabel am Ende offen oder mit einem Potentiometer abgeschlossen ist.
@@ -585,12 +614,9 @@ In Aufgabe 4.2 wird wieder ein Potentiometer zur Bestimmung des Wellenwiderstand
 Als Vergleichswert für die Durchlaufzeit $t$ ergibt sich unter der Annahme $v_{ph} = \frac{2}{3}C_0 = \sqrt{\frac{1}{\mu\epsilon}}$:
 \begin{align}
 t=\frac{2 L}{\frac{2}{3}C_0} \Rightarrow \frac{\unit[60]{m}}{\frac{2}{3}C_0} \cong \unit[300,21\cdot10^{-9}]{s}
+\label{eqn:4}
 \end{align}
-\subsection{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
 \subsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -600,9 +626,11 @@ t=\frac{2 L}{\frac{2}{3}C_0} \Rightarrow \frac{\unit[60]{m}}{\frac{2}{3}C_0} \co
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abgehandeln
 
+In der Auswertung wird das Signal bei offenem und mit einem Potentiometer abgeschlossenem Ende untersucht.
+
 \subsubsection{Aufbau mit offenem Ende}
 
-Auf der Aufnahme der Signalkurve des Oszilloskops, Abbildung \ref{fig:4_o} ist deutlich der Bereich zu sehen in dem das Signal noch durch das Patchkabel läuft.
+Auf der Aufnahme der Signalkurve des Oszilloskops, Abbildung \ref{fig:4_o} ist deutlich der Bereich zu sehen in dem das Signal noch durch das Patchkabel läuft. Dabei wurde eine Durchlaufzeit von \unit[296]{ns} gemessen. Nach Gleichung \ref{eqn:4} ergibt sich ein Theoriewert von 300ns.
 
 \begin{figure}[H] 
   \centering
@@ -633,12 +661,15 @@ Im zweitem Versuchsteil war das Potentiometer so einzustellen, dass die Reflexio
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 
 
-Im ersten Versuchsteil ist die Reflexion des Signals am offenen Ende des Kabels deutlich zu sehen. Im zweitem Versuchsteil wurde ein Wellenwiderstand von 120$\Omega$ angegeben, der gemessene Wert liegt bei 118,4$\Omega$, was ein guter Wert ist.
+Im ersten Versuchsteil ist die Reflexion des Signals am offenen Ende des Kabels mit \unit[296]{ns} sehr nah am Theoriewert von \unit[300]{ns}. Im zweitem Versuchsteil wurde ein Wellenwiderstand von 120$\Omega$ angegeben, der gemessene Wert liegt bei 118,4$\Omega$, was ein guter Wert ist.
 
 
 \section{Kabeleigenschaften}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsabschnitt werde die Kabeleigenschaft des Kapazitätsbelags untersucht.
+
 \subsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
@@ -661,13 +692,9 @@ In der 5. Aufgabe soll der sogenannte Kapazitätsbelag des Koaxialkabels bestimm
 Aus der Dgl. für die Kondensatorauflade- bzw. Kondensatorentladezeit ergibt sich der Zusammenhang für den Kapazitätsbelag $\kappa$:
 \begin{align}
  \kappa = \frac{\tau}{L \ln(2) R}
+ \label{eqn:5}
 \end{align}
 $\tau$ die Halbwertszeit, L die Länge des Kabels und R der Vorwiderstand. Es wird wie üblich Gaußsche Fehlerfortpflanzung verwendet.
-\subsection{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
 \subsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -676,6 +703,28 @@ $\tau$ die Halbwertszeit, L die Länge des Kabels und R der Vorwiderstand. Es wi
 %bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abgehandeln
+
+Im letztem Versuchsteil sollte der Kapazitätsbelag eines Koaxialkabels und eines Patchkabels bestimmt werden.
+Dazu wurden die Auf- und Entladezeiten gemessen und daraus nach Gleichung \ref{eqn:5} die Kapazität bestimmt.
+Der Widerstand betrug in beiden Aufbauten 10k$\Omega$ mit einem Fehler von 1\%, das Koaxialkabel war \unit[(11,5 $\pm 0,5$)]{m} lang und das Patchkabel \unit[30]{m}. Für das Patchkabel wurde eine Halbwertszeit von \unit[(10,4 $\pm 0,1$)]{ms} beim Aufladen und \unit[(11,5 $\pm 0,1$)]{ms} beim entladen gemessen, gemittelt ergibt sich ein Wert von \unit[(10,95 $\pm 0,1$)]{ms}, Abbildung \ref{fig:5_1}. Beim Koaxialkabel wurde eine Halbwertszeit von \unit[(9,2 $\pm 0,1$)]{ms} beim aufladen und \unit[(8,8 $\pm 0,1$)]{ms} beim entladen gemessen, es ergibt sich ein Mittelwert von \unit[(9 $\pm 0,1$)]{ms}, Abbildung \ref{fig:5_2}.
+Für das Koaxialkabel ergibt sich ein Wert von \unit[(1,37 $\pm 0,01$) $10^{-7}$]{$\frac{\text{F}}{\text{m}}$}, für das Patchkabel ergibt sich ein Wert von \unit[(4,3 $\pm 0,1$) $10^{-8}$]{$\frac{\text{F}}{\text{m}}$}.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.5]{5_1.pdf}
+  	\caption[Aufnahme des Signals für das Koaxialkabel]{Aufnahme des Signals für das Koaxialkabel}
+  \label{fig:5_1}
+\end{figure}
+
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.5]{5_2.pdf}
+  	\caption[Aufnahme des Signals für das Patchkabel]{Aufnahme des Signals für das Patchkabel}
+  \label{fig:5_2}
+\end{figure}
+
+
 \subsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -686,9 +735,7 @@ $\tau$ die Halbwertszeit, L die Länge des Kabels und R der Vorwiderstand. Es wi
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 
-
-
-
+Wie erwartet war der bestimmte Kapazitätsbelag für das Patchkabel geringer als für das Koaxialkabel.
 
 
 \section{Fazit}
