@@ -14,6 +14,9 @@
 \usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \usepackage{graphicx}
+
+\usepackage{caption}
+\usepackage{subcaption}
  
 \title{Versuch EP1}
 \author{Frederik Strothmann, Henrik Jürgens}
@@ -150,7 +153,12 @@ Der sogenannte 'Kapazitätsbelag' (Kapazität zwischen Signal und Masseleitung) 
 Im zweitem Versuchsteil sollte die Störanfälligkeit von Signalen bei Übertragung mit Bananenkabeln überprüft werden. Dabei wurden drei verschiedene Übertragungsmöglichkeiten verwendet, Übertragung mit nur einem Bananenkabel, mit zwei Bananenkabeln und mit einem twisted-pair Kabel aus zwei Bananenkabeln.
 \subsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
-Für die Signalübertragung mit nur einem Bananenkabel wurde der Aufbau aus Abbildung \ref{fig:2.0} verwendet.
+
+Der Versuchsaufbau teilt sich in drei Teile auf.
+
+\subsubsection{Versuchsteil 2.1}
+
+Für die Signalübertragung mit nur einem Bananenkabel wurde der Aufbau aus Abbildung \ref{fig:2.1} verwendet.
 
 \begin{figure}[H] 
   \centering
@@ -159,6 +167,8 @@ Für die Signalübertragung mit nur einem Bananenkabel wurde der Aufbau aus Abbi
   \label{fig:2.1}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep1\_14.pdf Seite 8 am 19.10.2014}
+
+\subsubsection{Versuchsteil 2.2}
 
 Bei der Signalübertragung mit zwei Bananenkabeln wurde der Aufbau von Abbildung \ref{fig:2.1} verwendet.
 
@@ -170,6 +180,7 @@ Bei der Signalübertragung mit zwei Bananenkabeln wurde der Aufbau von Abbildung
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep1\_14.pdf Seite 8 am 19.10.2014}
 
+\subsubsection{Versuchteil 2.3}
 
 Für die Signalübertragung über ein twisted-pair Kabel wurden die Bananenkabel aus Abbildung \ref{fig:2.2} verdrillt.
 
@@ -240,130 +251,198 @@ Da die Erdung des Funktionsgenerators und des Oszilloskops nur einen kleinen Geg
 %bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abgehandeln
+
+In der Auswertung wird die Qualität der übertragenen Signale bei unterschiedlichen Frequenzen überprüft.
+
+\subsubsection{Versuchsteil 2.1}
+
 Bei der ersten Messung mit nur einem Bananenkabel ergaben sich die folgenden Ergebnisse.
 Bei der Übertragung des Sinussignals war kein qualitativer Unterschied fest zu stellen, wie man an Abbildung \ref{fig:2_1_sin_100hz} und Abbildung \ref{fig:2_1_sin_10mhz} erkennen kann.
 
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4, angle = -90]{2_1_sin_100hz.pdf}
-  	\caption[Aufnahme der Sinuswelle mit einer Frequenz von 100Hz]{Aufnahme der Sinuswelle mit einer Frequenz von 100Hz}
-  \label{fig:2_1_sin_100hz}
+
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4, angle = -90]{2_1_sin_10mhz.pdf}
+                \caption[Aufnahme der Sinuswelle mit einer Frequenz von 100Hz]{Aufnahme der Sinuswelle mit einer Frequenz von 100Hz}
+ 				 \label{fig:2_1_sin_100hz}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4, angle = -90]{2_1_sin_10mhz.pdf}
+                \caption[Aufnahme der Sinuswelle mit einer Frequenz von 10MHz]{Aufnahme der Sinuswelle mit einer Frequenz von 10MHz}
+  				\label{fig:2_1_sin_10mhz}
+        \end{subfigure}
+        \caption{Kurve der übertragenen Sinussignale für 100Hz und 10MHz}
+        \label{fig:2_1_sin_vergleich}
 \end{figure}
 
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4, angle = -90]{2_1_sin_10mhz.pdf}
-  	\caption[Aufnahme der Sinuswelle mit einer Frequenz von 10MHz]{Aufnahme der Sinuswelle mit einer Frequenz von 10MHz}
-  \label{fig:2_1_sin_10mhz}
-\end{figure}
 
 Beim Messen des Signals der Rechteckspannung war bei 100Hz noch keine Verzerrung zu sehen, siehe Abbildung \ref{fig:2_1_rech_100hz}. Die ersten Verzerrungen wurden bei einer Frequenz von 10kHz gemessen, zu sehen in Abbildung \ref{fig:2_1_rech_10khz}. Bei einer Frequenz von 10MHz ist die Rechteckspannung als solche nicht mehr zu erkennen, Abbildung \ref{fig:2_1_rech_10mhz}. Dies liegt daran, dass das Oszilloskop eine Maximale Anzeigefrequenz von 40MHz hat.
 
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4, angle = -90]{2_1_rech_100hz.pdf}
-  	\caption[Aufnahme des Rechtecksignals mit einer Frequenz von 100Hz]{Aufnahme des Rechteck Signals mit einer Frequenz von 100Hz}
-  \label{fig:2_1_rech_100hz}
+
+
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4, angle = -90]{2_1_rech_100hz.pdf}
+                \caption[Aufnahme des Rechtecksignals mit einer Frequenz von 100Hz]{Aufnahme des Rechteck Signals mit einer Frequenz von 100Hz}
+                \label{fig:2_1_rech_100hz}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4, angle = -90]{2_1_rech_10khz.pdf}
+                \caption[Aufnahme des Rechtecksignals mit einer Frequenz von 10kHz]{Aufnahme des Rechteck Signals mit einer Frequenz von 10kHz}
+                \label{fig:2_1_rech_10khz}
+        \end{subfigure}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4, angle = -90]{2_1_rech_10mhz.pdf}
+                \caption[Aufnahme des Rechtecksignals mit einer Frequenz von 10MHz]{Aufnahme des Rechteck Signals mit einer Frequenz von 10MHz}
+  				\label{fig:2_1_rech_10mhz}
+        \end{subfigure}
+        \caption{Kurve der übertragenen Rechtecksignale für 100Hz,10kHz und 10MHz}
+        \label{fig:2_1_rech_vergleich}
 \end{figure}
 
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4, angle = -90]{2_1_rech_10khz.pdf}
-  	\caption[Aufnahme des Rechtecksignals mit einer Frequenz von 10kHz]{Aufnahme des Rechteck Signals mit einer Frequenz von 10kHz}
-  \label{fig:2_1_rech_10khz}
+
+
+\subsubsection{Versuchsteil 2.2}
+
+
+Bei der Messung mit zwei Bananenkabeln war die Qualität des Sinussignals bei unterschiedlichen Frequenzen unverändert, was in Abbildung \ref{fig:2_2_sin_vergleich} zu sehen ist.
+
+
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_2_sin_100hz.pdf}
+                \caption[Aufnahme der Sinuswelle mit einer Frequenz von 100Hz]{Aufnahme der Sinuswelle mit einer Frequenz von 100Hz}
+ 				 \label{fig:2_2_sin_100hz}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_2_sin_1mhz.pdf}
+                \caption[Aufnahme der Sinuswelle mit einer Frequenz von 1MHz]{Aufnahme der Sinuswelle mit einer Frequenz von 1MHz}
+  				\label{fig:2_2_sin_1mhz}
+        \end{subfigure}
+        \caption{Kurve der übertragenen Sinussignale für 100Hz und 1MHz}
+        \label{fig:2_2_sin_vergleich}
 \end{figure}
 
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4, angle = -90]{2_1_rech_10mhz.pdf}
-  	\caption[Aufnahme des Rechtecksignals mit einer Frequenz von 10MHz]{Aufnahme des Rechteck Signals mit einer Frequenz von 10MHz}
-  \label{fig:2_1_rech_10mhz}
-\end{figure}
-
-Bei der Messung mit zwei Bananenkabeln war bei der Messung des Sinussignals kein Unterschied zu erkennen wie in Abbildung \ref{fig:2_2_sin_100hz} zu sehen ist.
-
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4]{2_2_sin_100hz.pdf}
-  	\caption[Aufnahme des Sinussignals mit einer Frequenz von 100Hz]{Aufnahme des Sinussignals mit einer Frequenz von 100Hz}
-  \label{fig:2_2_sin_100hz}
-\end{figure}
-
-Bei der Messung der Rechtecksignals war bei niedrigen Frequenzen noch keine Verzerrung zu erkennen, wie in Abbildung \ref{fig:2_2_rech_100hz} zu sehen ist.
-
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4]{2_2_rech_100hz.pdf}
-  	\caption[Aufnahme des Rechtecksignals mit einer Frequenz von 100Hz]{Aufnahme des Rechtecksignals mit einer Frequenz von 100Hz}
-  \label{fig:2_2_rech_100hz}
-\end{figure}
-
+Bei niedriger Frequenz ist das Signal sehr gut zu erkennen, Abbildung \ref{fig:2_2_rech_100hz}.
 Die ersten Verzerrungen waren auch wieder bei einer Frequenz von 10kHz zu erkennen, diese fällt jedoch geringer als beim Aufbau zuvor aus, wie in Abbildung \ref{fig:2_2_rech_10khz} zu erkennen ist, was wie zuvor am Anzeigebereich des Oszilloskops liegt.
-
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4]{2_2_rech_10khz.pdf}
-  	\caption[Aufnahme des Rechtecksignals mit einer Frequenz von 10kHz]{Aufnahme des Rechtecksignals mit einer Frequenz von 10kHz}
-  \label{fig:2_2_rech_10khz}
-\end{figure}
-
 Bei einer Frequenz von 10MHz ist das vorherige Rechtecksignal als solches wieder nicht mehr zu erkennen. Jedoch ist das Signal deutlich besser erhalten, als bei der einkanaligen Verbindung, wie in Abbildung \ref{fig:2_2_rech_10mhz} zu erkennen ist.
 
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4]{2_2_rech_10mhz.pdf}
-  	\caption[Aufnahme des Rechtecksignals mit einer Frequenz von 10MHz]{Aufnahme des Rechtecksignals mit einer Frequenz von 10MHz}
-  \label{fig:2_2_rech_10mhz}
+
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_2_rech_100hz.pdf}
+                \caption[Aufnahme des Rechtecksignals mit einer Frequenz von 100Hz]{Aufnahme des Rechteck Signals mit einer Frequenz von 100Hz}
+                \label{fig:2_2_rech_100hz}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_2_rech_10khz.pdf}
+                \caption[Aufnahme des Rechtecksignals mit einer Frequenz von 10kHz]{Aufnahme des Rechteck Signals mit einer Frequenz von 10kHz}
+                \label{fig:2_2_rech_10khz}
+        \end{subfigure}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 1]{2_2_rech_10mhz.pdf}
+                \caption[Aufnahme des Rechtecksignals mit einer Frequenz von 10MHz]{Aufnahme des Rechteck Signals mit einer Frequenz von 10MHz}
+  				\label{fig:2_2_rech_10mhz}
+        \end{subfigure}
+        \caption{Kurve der übertragenen Rechtecksignale für 100Hz,10kHz und 10MHz}
+        \label{fig:2_2_rech_vergleich}
 \end{figure}
 
-Betrachtet man die Signalübertragung einer Rechteckspannung mit einem twisted-pair Kabel, Abbildung \ref{fig:2_3_vgl_1} und zwei nicht verdrillten Bananenkabeln, Abbildung \ref{fig:2_3_vgl_2} so lässt sich kaum eine Verbesserung feststellen, da die Signalquelle nicht potentialfrei ist.
 
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4]{2_3_vgl_2.pdf}
-  	\caption[Aufnahme des Rechtecksignals, übertragen mit zwei Bananenkabel und einer Frequenz von 100kHz]{Aufnahme des Rechtecksignals, übertragen mit zwei Bananenkabel und einer Frequenz von 100kHz}
-  \label{fig:2_3_vgl_2}
+\subsubsection{Versuchsteil 2.3}
+
+Betrachtet man die Signalübertragung einer Rechteckspannung mit einem twisted-pair Kabel, Abbildung \ref{fig:2_3_vgl_2} und zwei nicht verdrillten Bananenkabeln, Abbildung \ref{fig:2_3_vgl_1} so lässt sich kaum eine Verbesserung feststellen, da die Signalquelle nicht potentialfrei ist.
+
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_3_vgl_2.pdf}
+				\caption[Aufnahme des Rechtecksignals, übertragen mit zwei Bananenkabel und einer Frequenz von 100kHz]{Aufnahme des Rechtecksignals, übertragen mit zwei Bananenkabel und einer Frequenz von 100kHz}
+ 				\label{fig:2_3_vgl_2}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_3_vgl_1.pdf}
+                \caption[Aufnahme des Rechtecksignals, übertragen mit zwei verdrillten Bananenkabel und einer Frequenz von 100kHz]{Aufnahme des Rechtecksignals, übertragen mit zwei verdrillten Bananenkabel und einer Frequenz von 100kHz}
+ 				\label{fig:2_3_vgl_1}
+        \end{subfigure}
+        \caption{Kurve der übertragenen Sinussignale für 100Hz und 1MHz}
+        \label{fig:2_3_rech_vergleich_ohne_mikro}
 \end{figure}
 
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4]{2_3_vgl_1.pdf}
-  	\caption[Aufnahme des Rechtecksignals, übertragen mit zwei verdrillten Bananenkabel und einer Frequenz von 100kHz]{Aufnahme des Rechtecksignals, übertragen mit zwei verdrillten Bananenkabel und einer Frequenz von 100kHz}
-  \label{fig:2_3_vgl_1}
-\end{figure}
 
 Bei der Messung mit dem Mikrofon ergab sich beim Aufbau nach Abbildung \ref{fig:2.4} die in Abbildung \ref{fig:2_3_r3np_sig} dargestellte Kurve. Für den Aufbau nach Abbildung \ref{fig:2.5} ergab sich die Kurve in Abbildung \ref{fig:2_3_r3p_sig}. Dabei ist zu erkennen, dass die Verschmierung des Signals an den Extrema in Abbildung \ref{fig:2_3_r3p_sig} größer ist als in Abbildung \ref{fig:2_3_r3np_sig}. Dies liegt daran, dass R$_3$ and die Masse angeschlossen ist.
 Wenn davon gesprochen wird, dass R$_3$ parallel zu R$_4$ liegt, ist immer auch gemeint, dass R$_3$ an der Masse anliegt.
 
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4]{2_3_r3np_sig.pdf}
-  	\caption[Aufnahme des mit dem Mikrofon aufgenommenen Signals, ohne das R$_3$ parallel zu R$_4$ geschaltet ist]{Aufnahme des mit dem Mikrofon aufgenommenen Signals, ohne das R$_3$ parallel zu R$_4$ geschaltet ist}
-  \label{fig:2_3_r3np_sig}
+
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_3_r3np_sig.pdf}
+				\caption[Aufnahme des mit dem Mikrofon aufgenommenen Signals, ohne das R$_3$ parallel zu R$_4$ geschaltet ist]{Aufnahme des mit dem Mikrofon aufgenommenen Signals, ohne das R$_3$ parallel zu R$_4$ geschaltet ist}
+  				\label{fig:2_3_r3np_sig}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_3_r3p_sig.pdf}
+                \caption[Aufnahme des mit dem Mikrofon aufgenommenen Signals, mit R$_3$ parallel zu R$_4$ geschaltet]{Aufnahme des mit dem Mikrofon aufgenommenen Signals, mit R$_3$ parallel zu R$_4$ geschaltet}
+  				\label{fig:2_3_r3p_sig}
+        \end{subfigure}
+        \caption{Kurven der durch Pfeifen erzeugten Signale}
+        \label{fig:2_3_sin_vergleich}
 \end{figure}
 
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4]{2_3_r3p_sig.pdf}
-  	\caption[Aufnahme des mit dem Mikrofon aufgenommenen Signals, mit R$_3$ parallel zu R$_4$ geschaltet]{Aufnahme des mit dem Mikrofon aufgenommenen Signals, mit R$_3$ parallel zu R$_4$ geschaltet}
-  \label{fig:2_3_r3p_sig}
-\end{figure}
+
 
 Betrachtet man die Störung, die dadurch verursacht wird, dass man das Mikrofon auf den Funktionsgenerator legt, so erhält man für R$_3$ nicht parallel zu R$_4$ die Kurve in Abbildung \ref{fig:2_3_r3np_sig}. Für den Aufbau mit R$_3$ parallel zu R$_4$ ergibt sich die Kurve aus Abbildung \ref{fig:2_3_r3p_sig}. Wieder ist zu erkennen, dass die Verschmierung der Kurve aus Abbildung \ref{fig:2_3_r3p_st} größer ist als in Abbildung \ref{fig:2_3_r3np_st}.
 
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4]{2_3_r3np_st.pdf}
-  	\caption[Aufnahme der mit dem Mikrofon aufgenommenen Störung, ohne das R$_3$ parallel zu R$_4$ geschaltet ist]{Aufnahme der mit dem Mikrofon aufgenommenen Störung, ohne das R$_3$ parallel zu R$_4$ geschaltet ist}
-  \label{fig:2_3_r3np_st}
+
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_3_r3np_st.pdf}
+				\caption[Aufnahme der mit dem Mikrofon aufgenommenen Störung, ohne das R$_3$ parallel zu R$_4$ geschaltet ist]{Aufnahme der mit dem Mikrofon aufgenommenen Störung, ohne das R$_3$ parallel zu R$_4$ geschaltet ist}
+ 	 			\label{fig:2_3_r3np_st}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_3_r3p_st.pdf}
+                \caption[Aufnahme der mit dem Mikrofon aufgenommenen Störung, mit R$_3$ parallel zu R$_4$ geschaltet]{Aufnahme der mit dem Mikrofon aufgenommenen Störung, mit R$_3$ parallel zu R$_4$ geschaltet}
+  				\label{fig:2_3_r3p_st}
+        \end{subfigure}
+        \caption{Kurve der Störung durch den Funktionsgenerator}
+        \label{fig:2_2_stoer_vergleich}
 \end{figure}
 
-\begin{figure}[H] 
-  \centering
-    \includegraphics[scale = 0.4]{2_3_r3p_st.pdf}
-  	\caption[Aufnahme der mit dem Mikrofon aufgenommenen Störung, mit R$_3$ parallel zu R$_4$ geschaltet]{Aufnahme der mit dem Mikrofon aufgenommenen Störung, mit R$_3$ parallel zu R$_4$ geschaltet}
-  \label{fig:2_3_r3p_st}
-\end{figure}
+
 
 \subsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
@@ -375,10 +454,14 @@ Betrachtet man die Störung, die dadurch verursacht wird, dass man das Mikrofon 
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 
+Wie erwartet ergab sich bei der Verwendung von zwei Bananenkabeln im Gegensatz zu einem Bananenkabel nur eine leichte Verbesserung, da die Erdung von Funktionsgenerator und Oszilloskop jeweils nur einen geringen Gegenstrom zuließen (vgl Abbildung \ref{fig:2_1_rech_vergleich} und Abbildung \ref{fig:2_2_rech_vergleich}).
+Da dies auch für die zwei verdrillten Bananenkabel gilt ließen sich bei der Verwendung auch keine Verbesserung beobachten, Abbildung \ref{fig:2_3_rech_vergleich_ohne_mikro}. Beim Verwenden des Mikrofons als Signalquelle lies sich eine leichte Verbesserung feststellen, wenn R$_3$ nicht parallel zu R$_4$ geschaltet war, Abbildung \ref{fig:2_3_sin_vergleich} und Abbildung \ref{fig:2_2_stoer_vergleich}.
 
 
-\end{document}
 
 \section{Fazit}
 %im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
 %gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
+
+\end{document}
+
