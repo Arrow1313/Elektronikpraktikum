@@ -36,22 +36,7 @@
 
 
 
-\begin{figure}[H] 
-  \centering
-    \includegraphics[trim = 10mm 60mm 10mm 200mm, clip, scale = 1]{3_4-4.pdf}
-  	\caption[Schaltskizze einer Verbindung zwischen Funktionsgenerator und Oszilloskop, mit Patch- und Koaxialkabel]{Schaltskizze einer Verbindung zwischen Funktionsgenerator und Oszilloskop, mit Patch- und Koaxialkabel\footnotemark}
-  \label{fig:4.1}
-\end{figure}
-\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep1\_14.pdf Seite 14 am 19.10.2014}
 
-
-\begin{figure}[H] 
-  \centering
-    \includegraphics[trim = 10mm 210mm 10mm 40mm, clip, scale = 1]{4-5.pdf}
-  	\caption[Schaltskizze einer Verbindung zwischen Funktionsgenerator und Oszilloskop, mit Patch- und Koaxialkabel (geschlossen mit Potentiometer)]{Schaltskizze einer Verbindung zwischen Funktionsgenerator und Oszilloskop, mit Patch- und Koaxialkabel (geschlossen mit Potentiometer)\footnotemark}
-  \label{fig:4.2}
-\end{figure}
-\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep1\_14.pdf Seite 14 am 19.10.2014}
 
 
 \begin{figure}[H] 
@@ -474,6 +459,85 @@ Der Funktonsgenerator und das Oszilloskop werden mit einem Kurzen Koaxialkabel v
 %bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abgehandeln
+
+\subsubsection{Kurzes Koaxialkabel ohne Abschlußwiderstand}
+Im ersten Versuchsteil sollte überprüft werden wie gut Rechtecksignale mit kleinen Amplituden von Koaxialkabeln übertragen werden. Dabei ergeben sich die Kurven in Abbildung \ref{fig:3_1_vergleich}. Es ist deutlich zu sehen, dass das Rechtecksignal bei 10MHz besser übertragen wird als bei Bananenkabeln, vgl. Abbildung \ref{fig:2_2_rech_10mhz}.
+
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{3_1_100hz.pdf}
+				\caption[Aufnahme des Rechtecksignals für 100hz]{Aufnahme des Rechtecksignals für 100hz}
+ 	 			\label{fig:3_1_100hz}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{3_1_10mhz.pdf}
+                \caption[Aufnahme des Rechtecksignals für 10Mhz]{Aufnahme des Rechtecksignals für 10Mhz}
+  				\label{fig:3_1_mhz}
+        \end{subfigure}
+        \caption{Kurve des Rechtecksignals bei Übertragung mit einem Rechtecksignal bei kleinen Amplituden}
+        \label{fig:3_1_vergleich}
+\end{figure}
+
+
+
+\subsubsection{Langes Koaxialkabel ohne Abschlußwiderstand}
+
+Im zweitem Versuchsteil sollte aus der Länge des Kabels und der Durchlaufzeit des Signals durch das offene Koaxialkabel die Signalgeschwindigkeit bestimmt werden. Die Länge des Kabels wurde mit \unit[11,5 $\pm 0,5$]{m} bestimmt. Die Durchlaufzeit wurde aus der auf dem Oszilloskop angezeigten Kurve aus der Rechteckflanke bestimmt, Abbildung \ref{fig:3_2}. Es wurde ein Wert von \unit[120 $\pm10$]{ns} gemessen, daraus ergibt sich eine Signalgeschwindigkeit von \unit[(1,916 $\pm 0,02$ ) $\cdot 10^9$]{$\frac{\text{m}}{\text{s}}$}. Die Signalgeschwindigkeit wurde dabei mit 
+
+\begin{align}
+\text{v}_\text{Signal} = \frac{2 \cdot \text{l}_\text{Kabel}}{\text{t}_\text{Durchlaufzeit}}
+\end{align}
+
+bestimmt und der Fehler durch Fehlerfortpflanzung
+
+\begin{align}
+\Delta \text{v}_\text{Signal} = \sqrt{\left( \frac{2 \Delta \text{l}}{\text{t}} \right)^2 + \left( \frac{2 \text{l} \Delta \text{t}}{\text{t}^2} \right)^2}
+\end{align}
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.5]{3_2.pdf}
+  	\caption[Aufnahme des Signals bei 2MHz]{Aufnahme des Signals bei 2MHz}
+  \label{fig:3_2}
+\end{figure}
+
+\subsubsection{Langes Koaxialkabel mit Abschlußwiderstand}
+
+Im dritten Versuchsteil sollte das Koaxialkabel mit einem 51$\Omega$ Widerstand abgeschlossen werden. Es sollte beobachtet werden wie sich das Übertragene Signal ändert. In Abbildung \ref{fig:3_3} ist deutlich zu sehen, dass das Rechtecksignal viel besser Übertragen wird, als in der Messung zuvor (Abbildung \ref{fig:3_2}). Dies liegt daran, dass der Abschlusswiderstand den selben Wert wie der Wellenwiderstand hat.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.5]{3_3.pdf}
+  	\caption[Aufnahme des Signals bei 1MHz, mit einem Abschlusswiderstand von 51$\Omega$]{Aufnahme des Signals bei 1MHz, mit einem Abschlusswiderstand von 51$\Omega$}
+  \label{fig:3_3}
+\end{figure}
+
+\subsubsection{Langes Koaxialkabel mit Kurzschluß am Ende}
+
+Im vierten Versuchsteil sollte das Koaxialkabel mit einem Kurzschluss abgeschlossen werden. Dabei ergab sich auf dem Oszilloskop die Kurve in Abbildung \ref{fig:3_4}. Es fällt auf, dass das Signal stark verzerrt wurde, da das Signal mit umgekehrtem Vorzeichen reflektiert wurde.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.5]{3_4.pdf}
+  	\caption[Aufnahme des Signals bei 1MHz, mit einem Kurzschluss am Ende]{Aufnahme des Signals bei 1MHz, mit einem Kurzschluss am Ende}
+  \label{fig:3_4}
+\end{figure}
+
+\subsubsection{Langes Koaxialkabel mit variablem Abschlußwiderstand}
+
+Im letztem Aufgabenteil sollte am Ende des Koaxialkabels ein Potentiometer angeschlossen werden und der Widerstand so eingestellt werden, dass das Rechtecksignal möglichst gut übertragen wird. Dabei wurde ein Wiederstandwert von 51,4$\Omega$ gemessen. Dabei ergab sich die Kurve in Abbildung \ref{fig:3_5}.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.5]{3_5.pdf}
+  	\caption[Aufnahme des Signals bei 1MHz, mit Potentiometer am Ende]{Aufnahme des Signals bei 1MHz, mit Potentiometer am Ende}
+  \label{fig:3_5}
+\end{figure}
+
 \subsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -484,7 +548,7 @@ Der Funktonsgenerator und das Oszilloskop werden mit einem Kurzen Koaxialkabel v
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 
-
+Die besseren Übertragungseigenschaften eines Koaxialkabels ließen sich durch die Messungen bestätigen. So wie die Reflexionseigenschaften eines Koaxialkabels. Die Bestimmte Signalgeschwindigkeit wurde mit \unit[(1,916 $\pm 0,02$ ) $\cdot 10^9$]{$\frac{\text{m}}{\text{s}}$} bestimmt, als Richtwert wurden \unit[2 $\cdot 10^9$]{$\frac{\text{m}}{\text{s}}$} angegeben. Der gemessene Wellenwiderstand wurde mit 51,4$\Omega$ gemessen erwartet wurde ein Wert von 51$\Omega$.
 
 
 
@@ -494,6 +558,32 @@ Der Funktonsgenerator und das Oszilloskop werden mit einem Kurzen Koaxialkabel v
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 \subsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+Es werden zwei verschieden Aufbauten verwendet, wobei sich dies nur darin unterscheiden ob das Patchkabel am Ende offen oder mit einem Potentiometer abgeschlossen ist.
+
+\subsubsection{Aufbau mit offenem Ende}
+
+Im ersten Aufbau wird das Ende des Patchkabels offengelassen.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 10mm 60mm 10mm 200mm, clip, scale = 1]{3_4-4.pdf}
+  	\caption[Schaltskizze einer Verbindung zwischen Funktionsgenerator und Oszilloskop, mit Patchkabel]{Schaltskizze einer Verbindung zwischen Funktionsgenerator und Oszilloskop, mit Patchkabel\footnotemark}
+  \label{fig:4.1}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep1\_14.pdf Seite 14 am 19.10.2014}
+
+\subsubsection{Aufbau mit Potentiometer am Ende}
+
+Im zweitem Aufbau wird das Ende des Patchkabels mit einem 1k$\Omega$Potentiometer abgeschlossen.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 10mm 210mm 10mm 40mm, clip, scale = 1]{4-5.pdf}
+  	\caption[Schaltskizze einer Verbindung zwischen Funktionsgenerator und Oszilloskop, mit Patchkabel (geschlossen mit Potentiometer)]{Schaltskizze einer Verbindung zwischen Funktionsgenerator und Oszilloskop, mit Patchkabel (geschlossen mit Potentiometer)\footnotemark}
+  \label{fig:4.2}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep1\_14.pdf Seite 14 am 19.10.2014}
+
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -513,6 +603,29 @@ Der Funktonsgenerator und das Oszilloskop werden mit einem Kurzen Koaxialkabel v
 %bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abgehandeln
+
+\subsubsection{Aufbau mit offenem Ende}
+
+Auf der Aufnahme der Signalkurve des Oszilloskops, Abbildung \ref{fig:4_o} ist deutlich der Bereich zu sehen in dem das Signal noch durch das Patchkabel läuft.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.5]{4_o.pdf}
+  	\caption[Aufnahme des Signals, mit offenem Ende]{Aufnahme des Signals, mit offenem Ende}
+  \label{fig:4_o}
+\end{figure}
+
+\subsubsection{Aufbau mit Potentiometer am Ende}
+
+Im zweitem Versuchsteil war das Potentiometer so einzustellen, dass die Reflexion unterdrückt wird, dabei wurde das Potentiometer auf 118,7$\Omega$ eingestellt und es ergab sich auf dem Oszilloskop die Kurve aus Abbildung \ref{fig:4_a}.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[scale = 0.5]{4_a.pdf}
+  	\caption[Aufnahme des Signals, mit offenem Ende]{Aufnahme des Signals, mit offenem Ende}
+  \label{fig:4_a}
+\end{figure}
+
 \subsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -524,7 +637,7 @@ Der Funktonsgenerator und das Oszilloskop werden mit einem Kurzen Koaxialkabel v
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 
 
-
+Im ersten Versuchsteil ist die Reflexion des Signals am offenen Ende des Kabels deutlich zu sehen. Im zweitem Versuchsteil wurde ein Wellenwiderstand von 120$\Omega$ angegeben, der gemessene Wert liegt bei 118,4$\Omega$, was ein guter Wert ist.
 
 
 \section{Kabeleigenschaften}
