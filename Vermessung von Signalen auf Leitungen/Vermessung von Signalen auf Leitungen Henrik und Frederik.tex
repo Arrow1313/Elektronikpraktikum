@@ -71,7 +71,7 @@ Für die Signalübertragung mit nur einem Bananenkabel wurde der Aufbau aus Abbi
 
 \subsubsection{2.2 Zwei Bananenkabel}
 
-Bei der Signalübertragung mit zwei Bananenkabeln wurde der Aufbau von Abbildung \ref{fig:2.1} verwendet.
+Bei der Signalübertragung mit zwei Bananenkabeln wurde der Aufbau aus Abbildung \ref{fig:2.2} verwendet.
 
 \begin{figure}[H] 
   \centering
@@ -83,7 +83,7 @@ Bei der Signalübertragung mit zwei Bananenkabeln wurde der Aufbau von Abbildung
 
 \subsubsection{2.3 Zwei verdrillte Bananenkabel}
 
-Für die Signalübertragung über ein twisted-pair Kabel wurden die Bananenkabel aus Abbildung \ref{fig:2.2} verdrillt.
+Für die Signalübertragung über ein twisted-pair Kabel wurden die Bananenkabel aus Abbildung \ref{fig:2.2} miteinander verdrillt.
 
 \begin{figure}[H] 
   \centering
@@ -103,8 +103,8 @@ Als alternative zu dem geerdetem Funktionsgenerator wird ein Mikrofon als Signal
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep1\_14.pdf Seite 11 am 19.10.2014}
 
-Der Operationsverstärker und das Mikrofon werden dann nach Schaltbild \ref{fig:2.4} zusammen geschaltet.
-Dabei wurde für die Widerstände die Werte R$_1$=R$_3$= 1k$\Omega$ und R$_2$=R$_4$=100k$\Omega$ gewählt, dadurch ergibt sich eine Verstärkung um den Faktor 100.
+Der Operationsverstärker und das Mikrofon werden dann nach Schaltbild \ref{fig:2.4} geschaltet.
+Dabei wurde für die Widerstände die Werte R$_1$=R$_3$= 1k$\Omega$ und R$_2$=R$_4$=100k$\Omega$ gewählt. Dadurch ergibt sich eine Verstärkung um den Faktor 100 \footnote{siehe Formel aus der Versuchsbeschreibung http://www.atlas.uni-wuppertal.de/$\sim$kind/ep1\_14.pdf Seite 10 am 23.10.2014}.
 
 \begin{figure}[H] 
   \centering
@@ -114,7 +114,7 @@ Dabei wurde für die Widerstände die Werte R$_1$=R$_3$= 1k$\Omega$ und R$_2$=R$
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep1\_14.pdf Seite 11 am 19.10.2014}
 
-Zum Vergleich wird dann Widerstand 3 noch an die Massen angelegt, Aufbau nach Abbildung \ref{fig:2.5}.
+Zum Vergleich wird Widerstand 3 mit der Erde verbunden, Aufbau nach Abbildung \ref{fig:2.5}.
 
 \begin{figure}[H] 
   \centering
@@ -132,7 +132,7 @@ Zum Vergleich wird dann Widerstand 3 noch an die Massen angelegt, Aufbau nach Ab
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 An die Aufbauten in Versuchsteil 2.1 und 2.2 wurden jeweils eine Sinus- und eine Rechteckspannung angelegt und der Frequenzbereich von \unit[100]{Hz} bis \unit[10]{MHz} mit dem Oszilloskop ausgemessen. Die Verzerrungen des Signals werden anhand der Graphiken (bei gleichen Spannungsamplituden) miteinander verglichen.
 
-Im dritten Teil werden die Bananenkabel aus dem zweiten Teil miteinander verdrillt und die Verbesserung der Signalübertragung bei kleinen Spannungsamplituden gegenüber dem Aufbau aus dem zweiten Teil verglichen.\newline
+Im dritten Teil werden die Bananenkabel aus dem zweiten Teil miteinander verdrillt und die Verbesserung der Signalübertragung bei kleinen Spannungsamplituden mit dem Aufbau aus dem zweiten Teil verglichen.\newline
 Da die Erdung des Funktionsgenerators und des Oszilloskops nur einen kleinen Gegenstrom durch das zweite Kabel zulässt, welcher eigentlich die Störung des zweiten Kabels aufheben soll, wird anschließend das Mikrofon als Signalquelle verwendet und über einen Operationsverstärker an das Oszilloskop angeschlossen, sodass durch das zweite Kabel der entgegengesetzte Strom fließen kann. Um die Verbesserung der Signalübertragung bei diesem Microphon (dynamisches Mikrophon) gegenüber dem geerdeten Fall abzuschätzen, wird parallel zu Widerstand R3 die Erde angeschlossen, sodass das zweite Kabel wie bei dem Aufbau mit dem Funktionsgenerator direkt mit der Erde verbunden ist. Für die Signalerzeugung wurde einerseits in das Mikrophon gepfiffen und andererseits das Mikrofon auf den Funktionsgenerator gelegt um die dadurch erzeugten Störsignale aufzunehmen. Die Darstellung wurde dann jeweils auf dem Oszilloskop angehalten.
 
 %\subsection{Verwendete Formeln}
@@ -157,8 +157,8 @@ In der Auswertung wird die Qualität der übertragenen Signale bei unterschiedli
 
 \subsubsection{2.1 Ein Bananenkabel und gemeinsame Masse}
 
-Bei der ersten Messung mit nur einem Bananenkabel ergaben sich die folgenden Ergebnisse.
-Bei der Übertragung des Sinussignals war kein qualitativer Unterschied fest zu stellen, wie man an Abbildung \ref{fig:2_1_sin_100hz} und Abbildung \ref{fig:2_1_sin_10mhz} erkennen kann.
+Ersten Messung mit nur einem Bananenkabel:
+Bei der Übertragung des Sinussignals war kein qualitativer Unterschied festzustellen, wie man an Abbildung \ref{fig:2_1_sin_100hz} und Abbildung \ref{fig:2_1_sin_10mhz} erkennen kann.
 
 
 \begin{figure}[H]
@@ -179,11 +179,8 @@ Bei der Übertragung des Sinussignals war kein qualitativer Unterschied fest zu 
         \caption{Kurve der übertragenen Sinussignale für 100Hz und 10MHz}
         \label{fig:2_1_sin_vergleich}
 \end{figure}
-
-
-Beim Messen des Signals der Rechteckspannung war bei 100Hz noch keine Verzerrung zu sehen, siehe Abbildung \ref{fig:2_1_rech_100hz}. Die ersten Verzerrungen wurden bei einer Frequenz von 10kHz gemessen, zu sehen in Abbildung \ref{fig:2_1_rech_10khz}. Bei einer Frequenz von 10MHz ist die Rechteckspannung als solche nicht mehr zu erkennen, Abbildung \ref{fig:2_1_rech_10mhz}. Dies liegt daran, dass das Oszilloskop eine Maximale Anzeigefrequenz von 40MHz hat.
-
-
+\newpage 
+Bei der Übertragung der Rechteckspannung war bei 100Hz noch keine Verzerrung zu sehen, siehe Abbildung \ref{fig:2_1_rech_100hz}. Die ersten Verzerrungen wurden bei einer Frequenz von 10kHz gemessen, zu sehen in Abbildung \ref{fig:2_1_rech_10khz}. Bei einer Frequenz von 10MHz ist die Rechteckspannung als solche nicht mehr zu erkennen, Abbildung \ref{fig:2_1_rech_10mhz}. Dies liegt daran, dass das Oszilloskop eine Maximale Anzeigefrequenz von 40MHz hat.
 
 \begin{figure}[H]
         \centering
@@ -192,7 +189,7 @@ Beim Messen des Signals der Rechteckspannung war bei 100Hz noch keine Verzerrung
                 \caption[Aufnahme des Rechtecksignals mit einer Frequenz von 100Hz]{Aufnahme des Rechteck Signals mit einer Frequenz von 100Hz}
                 \label{fig:2_1_rech_100hz}
         \end{subfigure}%
-        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+       % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
         \hfill
         \begin{subfigure}[b]{0.28\textwidth}
@@ -200,7 +197,7 @@ Beim Messen des Signals der Rechteckspannung war bei 100Hz noch keine Verzerrung
                 \caption[Aufnahme des Rechtecksignals mit einer Frequenz von 10kHz]{Aufnahme des Rechteck Signals mit einer Frequenz von 10kHz}
                 \label{fig:2_1_rech_10khz}
         \end{subfigure}
-        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+       % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
         \hfill
         \begin{subfigure}[b]{0.28\textwidth}
@@ -227,7 +224,7 @@ Bei der Messung mit zwei Bananenkabeln war die Qualität des Sinussignals bei un
                 \caption[Aufnahme der Sinuswelle mit einer Frequenz von 100Hz]{Aufnahme der Sinuswelle mit einer Frequenz von 100Hz}
  				 \label{fig:2_2_sin_100hz}
         \end{subfigure}%
-        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+        %~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
         \hfill
         \begin{subfigure}[b]{0.48\textwidth}
@@ -241,7 +238,7 @@ Bei der Messung mit zwei Bananenkabeln war die Qualität des Sinussignals bei un
 
 Bei niedriger Frequenz ist das Signal sehr gut zu erkennen, Abbildung \ref{fig:2_2_rech_100hz}.
 Die ersten Verzerrungen waren auch wieder bei einer Frequenz von 10kHz zu erkennen, diese fällt jedoch geringer als beim Aufbau zuvor aus, wie in Abbildung \ref{fig:2_2_rech_10khz} zu erkennen ist, was wie zuvor am Anzeigebereich des Oszilloskops liegt.
-Bei einer Frequenz von 10MHz ist das vorherige Rechtecksignal als solches wieder nicht mehr zu erkennen. Jedoch ist das Signal deutlich besser erhalten, als bei der einkanaligen Verbindung, wie in Abbildung \ref{fig:2_2_rech_10mhz} zu erkennen ist.
+Bei einer Frequenz von 10MHz ist das vorherige Rechtecksignal als solches nicht mehr zu erkennen. Jedoch ist das Signal deutlich besser erhalten, als bei der einkanaligen Verbindung, wie in Abbildung \ref{fig:2_2_rech_10mhz} zu erkennen ist.
 
 
 \begin{figure}[H]
@@ -251,7 +248,7 @@ Bei einer Frequenz von 10MHz ist das vorherige Rechtecksignal als solches wieder
                 \caption[Aufnahme des Rechtecksignals mit einer Frequenz von 100Hz]{Aufnahme des Rechteck Signals mit einer Frequenz von 100Hz}
                 \label{fig:2_2_rech_100hz}
         \end{subfigure}%
-        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+        %~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
         \hfill
         \begin{subfigure}[b]{0.28\textwidth}
@@ -259,7 +256,7 @@ Bei einer Frequenz von 10MHz ist das vorherige Rechtecksignal als solches wieder
                 \caption[Aufnahme des Rechtecksignals mit einer Frequenz von 10kHz]{Aufnahme des Rechteck Signals mit einer Frequenz von 10kHz}
                 \label{fig:2_2_rech_10khz}
         \end{subfigure}
-        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+        %~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
         \hfill
         \begin{subfigure}[b]{0.28\textwidth}
@@ -270,48 +267,49 @@ Bei einer Frequenz von 10MHz ist das vorherige Rechtecksignal als solches wieder
         \caption{Kurve der übertragenen Rechtecksignale für 100Hz,10kHz und 10MHz}
         \label{fig:2_2_rech_vergleich}
 \end{figure}
-
+\newpage
 \subsubsection{2.3 Zwei verdrillte Bananenkabel}
 
 Betrachtet man die Signalübertragung einer Rechteckspannung mit einem twisted-pair Kabel, Abbildung \ref{fig:2_3_vgl_2} und zwei nicht verdrillten Bananenkabeln, Abbildung \ref{fig:2_3_vgl_1} so lässt sich kaum eine Verbesserung feststellen, da die Signalquelle nicht potentialfrei ist.
 
 \begin{figure}[H]
         \centering
-        \begin{subfigure}[b]{0.48\textwidth}
+        \begin{subfigure}[tb]{0.48\textwidth}
                 \includegraphics[width=\textwidth , scale = 0.4]{2_3_vgl_2.pdf}
 				\caption[Aufnahme des Rechtecksignals, übertragen mit zwei Bananenkabel und einer Frequenz von 100kHz]{Aufnahme des Rechtecksignals, übertragen mit zwei Bananenkabel und einer Frequenz von 100kHz}
  				\label{fig:2_3_vgl_2}
         \end{subfigure}%
-        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+       % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
         \hfill
-        \begin{subfigure}[b]{0.48\textwidth}
-                \includegraphics[width=\textwidth , scale = 0.4]{2_3_vgl_1.pdf}
-                \caption[Aufnahme des Rechtecksignals, übertragen mit zwei verdrillten Bananenkabel und einer Frequenz von 100kHz]{Aufnahme des Rechtecksignals, übertragen mit zwei verdrillten Bananenkabel und einer Frequenz von 100kHz}
+        \begin{subfigure}[tb]{0.48\textwidth}
+                \includegraphics[trim = 0mm 0mm
+                0mm 5mm ,width=\textwidth , scale = 0.4]{2_3_vgl_1.pdf}
+                \caption[Aufnahme des Rechtecksignals, übertragen mit zwei verdrillten Bananenkabeln und einer Frequenz von 100kHz]{Aufnahme des Rechtecksignals, übertragen mit zwei verdrillten Bananenkabeln und einer Frequenz von 100kHz}
  				\label{fig:2_3_vgl_1}
         \end{subfigure}
         \caption{Kurve der übertragenen Sinussignale für 100Hz und 1MHz}
         \label{fig:2_3_rech_vergleich_ohne_mikro}
 \end{figure}
+\newpage
 
-
-Bei der Messung mit dem Mikrofon ergab sich beim Aufbau nach Abbildung \ref{fig:2.4} die in Abbildung \ref{fig:2_3_r3np_sig} dargestellte Kurve. Für den Aufbau nach Abbildung \ref{fig:2.5} ergab sich die Kurve in Abbildung \ref{fig:2_3_r3p_sig}. Dabei ist zu erkennen, dass die Verschmierung des Signals an den Extrema in Abbildung \ref{fig:2_3_r3p_sig} größer ist als in Abbildung \ref{fig:2_3_r3np_sig}. Dies liegt daran, dass R$_3$ and die Masse angeschlossen ist.
-Wenn davon gesprochen wird, dass R$_3$ parallel zu R$_4$ liegt, ist immer auch gemeint, dass R$_3$ an der Masse anliegt.
+Bei der Messung mit dem Mikrofon ergab sich beim Aufbau nach Abbildung \ref{fig:2.4} die in Abbildung \ref{fig:2_3_r3np_sig} dargestellte Kurve. Für den Aufbau nach Abbildung \ref{fig:2.5} ergab sich die Kurve in Abbildung \ref{fig:2_3_r3p_sig}. Dabei ist zu erkennen, dass die Verzerrung des Signals an den Extrema in Abbildung \ref{fig:2_3_r3p_sig} größer ist als in Abbildung \ref{fig:2_3_r3np_sig}. Dies liegt daran, dass R$_3$ an die Masse angeschlossen ist.
+Falls erwähnt wird, dass R$_3$ parallel zu R$_4$ liegt, ist impliziert, dass R$_3$ auch an die Masse angeschlossen ist.
 
 
 \begin{figure}[H]
         \centering
-        \begin{subfigure}[b]{0.48\textwidth}
+        \begin{subfigure}[tb]{0.48\textwidth}
                 \includegraphics[width=\textwidth , scale = 0.4]{2_3_r3np_sig.pdf}
-				\caption[Aufnahme des mit dem Mikrofon aufgenommenen Signals, ohne das R$_3$ parallel zu R$_4$ geschaltet ist]{Aufnahme des mit dem Mikrofon aufgenommenen Signals, ohne das R$_3$ parallel zu R$_4$ geschaltet ist}
+				\caption[Aufnahme des mit dem Mikrofon aufgenommenen Signals. R$_3$ ist nicht mit der Masse verbunden.]{Aufnahme des mit dem Mikrofon aufgenommenen Signals.R$_3$ ist nicht mit der Masse verbunden.}
   				\label{fig:2_3_r3np_sig}
-        \end{subfigure}%
-        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+        \end{subfigure}
+       % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
         \hfill
-        \begin{subfigure}[b]{0.48\textwidth}
-                \includegraphics[width=\textwidth , scale = 0.4]{2_3_r3p_sig.pdf}
-                \caption[Aufnahme des mit dem Mikrofon aufgenommenen Signals, mit R$_3$ parallel zu R$_4$ geschaltet]{Aufnahme des mit dem Mikrofon aufgenommenen Signals, mit R$_3$ parallel zu R$_4$ geschaltet}
+        \begin{subfigure}[tb]{0.48\textwidth}
+                \includegraphics[trim = 0cm 0cm 0cm 3cm , clip , width=\textwidth , scale = 0.4]{2_3_r3p_sig.pdf}
+                \caption[Abbildung des mit dem Mikrofon aufgenommenen Signals am Oszilloskop, R$_3$ parallel zu R$_4$ geschaltet]{Abbildung des mit dem Mikrofon aufgenommenen Signals, R$_3$ parallel zu R$_4$ geschaltet}
   				\label{fig:2_3_r3p_sig}
         \end{subfigure}
         \caption{Kurven der durch Pfeifen erzeugten Signale}
@@ -320,22 +318,22 @@ Wenn davon gesprochen wird, dass R$_3$ parallel zu R$_4$ liegt, ist immer auch g
 
 
 
-Betrachtet man die Störung, die dadurch verursacht wird, dass man das Mikrofon auf den Funktionsgenerator legt, so erhält man für R$_3$ nicht parallel zu R$_4$ die Kurve in Abbildung \ref{fig:2_3_r3np_sig}. Für den Aufbau mit R$_3$ parallel zu R$_4$ ergibt sich die Kurve aus Abbildung \ref{fig:2_3_r3p_sig}. Wieder ist zu erkennen, dass die Verschmierung der Kurve aus Abbildung \ref{fig:2_3_r3p_st} größer ist als in Abbildung \ref{fig:2_3_r3np_st}.
+Betrachtet man die Störung, die dadurch verursacht wird, dass man das Mikrofon auf den Funktionsgenerator legt, so erhält man für R$_3$ nicht parallel zu R$_4$ die Kurve in Abbildung \ref{fig:2_3_r3np_sig}. Für den Aufbau mit R$_3$ parallel zu R$_4$ ergibt sich die Kurve aus Abbildung \ref{fig:2_3_r3p_sig}. Wieder ist zu erkennen, dass die Verzerrung der Kurve aus Abbildung \ref{fig:2_3_r3p_st} größer ist als in Abbildung \ref{fig:2_3_r3np_st}.
 
 
 \begin{figure}[H]
         \centering
-        \begin{subfigure}[b]{0.48\textwidth}
+        \begin{subfigure}[tb]{0.48\textwidth}
                 \includegraphics[width=\textwidth , scale = 0.4]{2_3_r3np_st.pdf}
-				\caption[Aufnahme der mit dem Mikrofon aufgenommenen Störung, ohne das R$_3$ parallel zu R$_4$ geschaltet ist]{Aufnahme der mit dem Mikrofon aufgenommenen Störung, ohne das R$_3$ parallel zu R$_4$ geschaltet ist}
+				\caption[Aufnahme der mit dem Mikrofon aufgenommenen Störung.R$_3$ ist nicht mit der Masse verbunden.]{Aufnahme der mit dem Mikrofon aufgenommenen Störung.R$_3$ ist nicht mit der Masse verbunden.}
  	 			\label{fig:2_3_r3np_st}
         \end{subfigure}%
-        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+       % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
         \hfill
-        \begin{subfigure}[b]{0.48\textwidth}
+        \begin{subfigure}[tb]{0.48\textwidth}
                 \includegraphics[width=\textwidth , scale = 0.4]{2_3_r3p_st.pdf}
-                \caption[Aufnahme der mit dem Mikrofon aufgenommenen Störung, mit R$_3$ parallel zu R$_4$ geschaltet]{Aufnahme der mit dem Mikrofon aufgenommenen Störung, mit R$_3$ parallel zu R$_4$ geschaltet}
+                \caption[Aufnahme der mit dem Mikrofon aufgenommenen Störung, R$_3$ parallel zu R$_4$ geschaltet]{Aufnahme der mit dem Mikrofon aufgenommenen Störung, R$_3$ parallel zu R$_4$ geschaltet}
   				\label{fig:2_3_r3p_st}
         \end{subfigure}
         \caption{Kurve der Störung durch den Funktionsgenerator}
@@ -355,7 +353,7 @@ Betrachtet man die Störung, die dadurch verursacht wird, dass man das Mikrofon 
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 
 Wie erwartet ergab sich bei der Verwendung von zwei Bananenkabeln im Gegensatz zu einem Bananenkabel nur eine leichte Verbesserung, da die Erdung von Funktionsgenerator und Oszilloskop jeweils nur einen geringen Gegenstrom zuließen (vgl Abbildung \ref{fig:2_1_rech_vergleich} und Abbildung \ref{fig:2_2_rech_vergleich}).
-Da dies auch für die zwei verdrillten Bananenkabel gilt ließen sich bei der Verwendung auch keine Verbesserung beobachten, Abbildung \ref{fig:2_3_rech_vergleich_ohne_mikro}. Beim Verwenden des Mikrofons als Signalquelle lies sich eine leichte Verbesserung feststellen, wenn R$_3$ nicht parallel zu R$_4$ geschaltet war, Abbildung \ref{fig:2_3_sin_vergleich} und Abbildung \ref{fig:2_2_stoer_vergleich}.
+Da dies auch für die zwei verdrillten Bananenkabel gilt konnte kaum Verbesserung beobachtet werden, Abbildung \ref{fig:2_3_rech_vergleich_ohne_mikro}. Beim Verwenden des Mikrofons als Signalquelle ließ sich eine leichte Verbesserung feststellen, wenn R$_3$ nicht mit der Masse verbunden war, Abbildung \ref{fig:2_3_sin_vergleich} und Abbildung \ref{fig:2_2_stoer_vergleich}.
 
 
 \section{Signalübertragung über Koaxialkabel}
@@ -379,7 +377,7 @@ Der Funktionsgenerator und das Oszilloskop werden mit einem Kurzem Koaxialkabel 
 
 \subsubsection{Langes Koaxialkabel ohne Abschlußwiderstand}
 
-Der Funktonsgenerator und das Oszilloskop werden mit einem Kurzen Koaxialkabel verbunden, wobei noch ein langen Koaxialkabel mit offenem Ende über ein T-Verbindungsstück angeschlossen wird.
+Der Funktonsgenerator und das Oszilloskop werden mit einem kurzen Koaxialkabel verbunden, wobei ein langes Koaxialkabel mit offenem Ende über ein T-Verbindungsstück angeschlossen wird.
 
 \begin{figure}[H] 
   \centering
@@ -391,7 +389,7 @@ Der Funktonsgenerator und das Oszilloskop werden mit einem Kurzen Koaxialkabel v
 
 \subsubsection{Langes Koaxialkabel mit Abschlußwiderstand}
 
-Der Funktonsgenerator und das Oszilloskop werden mit einem Kurzen Koaxialkabel verbunden, wobei noch ein langen Koaxialkabel mit Abschlusswiderstand am Ende über ein T-Verbindungsstück angeschlossen wird.
+Der Funktonsgenerator und das Oszilloskop werden mit einem kurzen Koaxialkabel verbunden, wobei ein langes Koaxialkabel mit Abschlusswiderstand am Ende über ein T-Verbindungsstück angeschlossen wird.
 
 \begin{figure}[H] 
   \centering
@@ -403,7 +401,7 @@ Der Funktonsgenerator und das Oszilloskop werden mit einem Kurzen Koaxialkabel v
 
 \subsubsection{Langes Koaxialkabel mit Kurzschluß am Ende}
 
-er Funktonsgenerator und das Oszilloskop werden mit einem Kurzen Koaxialkabel verbunden, wobei noch ein langen Koaxialkabel mit Kurzschluss am Ende über ein T-Verbindungsstück angeschlossen wird.
+Der Funktonsgenerator und das Oszilloskop werden mit einem kurzen Koaxialkabel verbunden, wobei ein langes Koaxialkabel mit Kurzschluss am Ende über ein T-Verbindungsstück angeschlossen wird.
 
 \begin{figure}[H] 
   \centering
@@ -415,7 +413,7 @@ er Funktonsgenerator und das Oszilloskop werden mit einem Kurzen Koaxialkabel ve
 
 \subsubsection{Langes Koaxialkabel mit variablem Abschlußwiderstand}
 
-Der Funktonsgenerator und das Oszilloskop werden mit einem Kurzen Koaxialkabel verbunden, wobei noch ein langen Koaxialkabel mit einem variablem Abschlusswiderstand am Ende über ein T-Verbindungsstück angeschlossen wird.
+Der Funktonsgenerator und das Oszilloskop werden mit einem kurzen Koaxialkabel verbunden, wobei ein langes Koaxialkabel mit einem variablem Abschlusswiderstand am Ende über ein T-Verbindungsstück angeschlossen wird.
 
 \begin{figure}[H] 
   \centering
@@ -428,6 +426,12 @@ Der Funktonsgenerator und das Oszilloskop werden mit einem Kurzen Koaxialkabel v
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+In Aufgabe 3.1 wurde der Funktionsgenerator über ein 2m langes Koaxialkabel mit dem Oszilloskop verbunden. Der Unterschied der Qualität der Signalübertragung zwischen Koaxialkabel und Bananenkabel wird bei kleinen Amplituden und verschiedenen Frequenzen untersucht.
+In Aufgabe 3.2 wird über ein T-Stück ein langes Koaxialkabel an das Oszilloskop angeschlossen. Die Länge des Kabels bestimmt man über den Durchmesser und die Anzahl der Wicklungen, um nicht das gesamte Kabel abrollen zu müssen. Das am Oszilloskop angezeigte Rechtecksignal wird von dem am offenen Ende des Kabels reflektierten Signal nach zweimaligem Durchlaufen überlagert, sodass ein Teil der rechten Flancke des reflektierten Signals sich mit dem nachfolgenden Signal weghebt. Die Breite dieser Flancke entspricht dann der Laufzeit des Signals durch das Koaxialkabel (als Vergleichswert wurde eine Phasengeschwindigkeit von $\frac{2}{3}C_0$ angenommen).
+In Aufgabe 3.3 wird ein \unit[50]{$\Omega$} Widerstand an das lange Koaxialkabel angeschlossen und der Effekt auf die Reflektion des Signals mit dem Ergebnis aus dem zweiten Teil verglichen.
+In Aufgabe 3.4 soll das Koaxialkabel kurzgeschlossen werden. Da durch den Kurzschluss ein Knotenpunkt der Spannung erzeugt wird, wird das Signal mit umgekehrtem Vorzeichen reflektiert. Das Ergebnis kann mit den beiden Aufgabenteilen davor verglichen werden.
+In Aufgabe 3.5 wird nochmal ein Potentiometer von 0 bis \unit[1]{k$\Omega$} an das Koaxialkabel angeschlossen, um den Wellenwiderstand des Kabels, bei dem kein Signal zurückgeworfen wird von Hand zu bestimmen. Die Reflektion kann bei eingestelltem Rechtecksignal am Oszilloskop beobachtet werden.
+
 \subsection{Verwendete Formeln}
 %eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
 %mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen.
@@ -450,7 +454,7 @@ Im ersten Versuchsteil sollte überprüft werden wie gut Rechtecksignale mit kle
 
 \begin{figure}[H]
         \centering
-        \begin{subfigure}[b]{0.48\textwidth}
+        \begin{subfigure}[tb]{0.48\textwidth}
                 \includegraphics[width=\textwidth , scale = 0.4]{3_1_100hz.pdf}
 				\caption[Aufnahme des Rechtecksignals für 100hz]{Aufnahme des Rechtecksignals für 100hz}
  	 			\label{fig:3_1_100hz}
@@ -458,7 +462,7 @@ Im ersten Versuchsteil sollte überprüft werden wie gut Rechtecksignale mit kle
         ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
         \hfill
-        \begin{subfigure}[b]{0.48\textwidth}
+        \begin{subfigure}[tb]{0.48\textwidth}
                 \includegraphics[width=\textwidth , scale = 0.4]{3_1_10mhz.pdf}
                 \caption[Aufnahme des Rechtecksignals für 10Mhz]{Aufnahme des Rechtecksignals für 10Mhz}
   				\label{fig:3_1_mhz}
@@ -471,7 +475,7 @@ Im ersten Versuchsteil sollte überprüft werden wie gut Rechtecksignale mit kle
 
 \subsubsection{Langes Koaxialkabel ohne Abschlußwiderstand}
 
-Im zweitem Versuchsteil sollte aus der Länge des Kabels und der Durchlaufzeit des Signals durch das offene Koaxialkabel die Signalgeschwindigkeit bestimmt werden. Die Länge des Kabels wurde mit \unit[11,5 $\pm 0,5$]{m} bestimmt. Die Durchlaufzeit wurde aus der auf dem Oszilloskop angezeigten Kurve aus der Rechteckflanke bestimmt, Abbildung \ref{fig:3_2}. Es wurde ein Wert von \unit[120 $\pm10$]{ns} gemessen, daraus ergibt sich eine Signalgeschwindigkeit von \unit[(1,916 $\pm 0,02$ ) $\cdot 10^9$]{$\frac{\text{m}}{\text{s}}$}. Die Signalgeschwindigkeit wurde dabei mit 
+Im zweitem Versuchsteil sollte aus der Länge des Kabels und der Durchlaufzeit des Signals durch das offene Koaxialkabel die Signalgeschwindigkeit bestimmt werden. Die Länge des Kabels wurde über den Durchmesser und die Windungszahl mit \unit[11,5 $\pm 0,5$]{m} bestimmt. Die Durchlaufzeit wurde aus der auf dem Oszilloskop angezeigten Kurve aus der Rechteckflanke bestimmt, Abbildung \ref{fig:3_2}. Es wurde ein Wert von \unit[120 $\pm10$]{ns} gemessen, daraus ergibt sich eine Signalgeschwindigkeit von \unit[(1,916 $\pm 0,02$ ) $\cdot 10^9$]{$\frac{\text{m}}{\text{s}}$}. Die Signalgeschwindigkeit wurde dabei mit 
 
 \begin{align}
 \text{v}_\text{Signal} = \frac{2 \cdot \text{l}_\text{Kabel}}{\text{t}_\text{Durchlaufzeit}}
@@ -572,9 +576,16 @@ Im zweitem Aufbau wird das Ende des Patchkabels mit einem 1k$\Omega$Potentiomete
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+In Aufgabe 4.1 wird analog zu Aufgabe 3.2 ein 30m langes Patchkabel über ein T-Stück angeschlossen (Länge vorgegeben). Die Laufzeit des am offenen Ende reflektierten Signals kann wieder über die Breite der Überlagerten rechten Flancke bestimmt werden (als Vergleichswert wurde eine Phasengeschwindigkeit von $\frac{2}{3}C_0$ angenommen).
+In Aufgabe 4.2 wird wieder ein Potentiometer zur Bestimmung des Wellenwiderstandes angeschlossen.
+
 \subsection{Verwendete Formeln}
 %eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
 %mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen.
+Als Vergleichswert für die Durchlaufzeit $t$ ergibt sich unter der Annahme $v_{ph} = \frac{2}{3}C_0 = \sqrt{\frac{1}{\mu\epsilon}}$:
+\begin{align}
+t=\frac{2 L}{\frac{2}{3}C_0} \Rightarrow \frac{\unit[60]{m}}{\frac{2}{3}C_0} \cong \unit[300,21\cdot10^{-9}]{s}
+\end{align}
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -643,9 +654,15 @@ Im ersten Versuchsteil ist die Reflexion des Signals am offenen Ende des Kabels 
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+In der 5. Aufgabe soll der sogenannte Kapazitätsbelag des Koaxialkabels bestimmt werden. Damit die Aufladezeiten nicht zu kurz werden, wird ein \unit[10]{k$\Omega$} Widerstand davorgeschaltet. Aus der Halbwertszeit des Auf- bzw. Entladevorgangs oder besser aus dem Mittelwert kann dann die Kapazität des Kabels und damit auch der Kapazitätsbelag bestimmt werden.
 \subsection{Verwendete Formeln}
 %eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
 %mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen.
+Aus der Dgl. für die Kondensatorauflade- bzw. Kondensatorentladezeit ergibt sich der Zusammenhang für den Kapazitätsbelag $\kappa$:
+\begin{align}
+ \kappa = \frac{\tau}{L \ln(2) R}
+\end{align}
+$\tau$ die Halbwertszeit, L die Länge des Kabels und R der Vorwiderstand. Es wird wie üblich Gaußsche Fehlerfortpflanzung verwendet.
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
