@@ -28,8 +28,9 @@
 \section{Einleitung}
 %einleitung zu dem experiment.
 %auf die einstellungen, die vor dem versuch gemacht werden, eingehen oder auf eine anleitung dazu verweisen.
-%---------------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------------- 
 %hinter der einleitung kann der allgemeine theoretische hintergrund in einer zusätzlichen section erklärt werden
+In diesem Versuch geht es um die Eigenschaften von Dioden. Dazu werden im ersten Teil die Kennlinien zwei verschiedener Dioden aufgenommen. Danach werden praktische Anwendungen von Dioden untersucht, dazu gehören das Gleichrichten und Glätten von Wechselspannung, sowie das Stabilisieren einer Spannung.
 \section{Eigenschaften verschiedener Dioden}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -38,6 +39,17 @@
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!
 \subsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+Im ersten Versuchsteil soll die Kennlinie einer 1N4007 Diode und einer Zenerdiode aufgenommen werden dafür wird die Schaltung aus Abbildung \ref{fig:1} verwendet. Dabei ist P$_1$ ein 10-Gang-Potentiometer, welches in 10 Schritten Widerstände von 0 bis 1k$\Omega$ annehmen kann. R$_1$ hat einen Wert von 100$\Omega$. U$_\pm$ wird mit 10V eingestellt. I$_0$ und U$_0$ sind die Strom- bzw. Spannungsmessgeräte. D bezeichnet die verwendete Diode.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 10mm 100mm 10mm 155mm, clip, scale = 1]{ep2_14[Page6].pdf}
+  	\caption[Schaltskizze für die Messung der Kennlinie der Dioden]{Schaltskizze für die Messung der Kennlinie der Dioden\footnotemark}
+  \label{fig:1}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 6 am 28.10.2014}
+
+
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -76,8 +88,18 @@
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben oder besser noch das ganze in einem Fließtext gut umschreiben
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!
 \subsection{Einweggleichrichtung (Sinusgenerator)}
+In diesem Versuchsteil soll das Gleichrichten einer Sinusspannung mittels einer Diode untersucht werden.
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+In diesem Aufbau wird die 1N4007 Diode verwendet. R$_\text{L}$ hat einen Widerstand von 10k$\Omega$. Es werden Frequenzen von 50Hz bis 10kHz durchfahren. Der genaue Aufbau ist Abbildung ?? zu entnahmen.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 10mm 80mm 10mm 160mm, clip, scale = 1]{ep2_14[Page7].pdf}
+  	\caption[Schaltskizze für die Messung der Spannung am Lastwiderstand nach vorgeschalteter Diode]{Schaltskizze für die Messung der Spannung am Lastwiderstand nach vorgeschalteter Diode\footnotemark}
+  \label{fig:2_1}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 7 am 28.10.2014}
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -98,6 +120,15 @@
 \subsection{Einweggleichrichtung mit Kondensator}
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+Es wird der selbe Versuchsaufbau wie in Abbildung \ref{fig:2_1} Verwendet, jedoch wird noch ein hinter der Diode liegender Kondensator parallel zu R$_\text{L}$ geschaltet. Für den Kondensator sind Werte von 1$\mu$F bis 100$\mu$F verwendbar.
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 10mm 235mm 10mm 10mm, clip, scale = 1]{ep2_14[Page8].pdf}
+  	\caption[Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Kondensator]{Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Kondensator\footnotemark}
+  \label{fig:2_2}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 8 am 28.10.2014}
+
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -119,6 +150,24 @@
 \subsection{Einweggleichrichtung (Transformator)}
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 10mm 75mm 10mm 145mm, clip, scale = 1]{ep2_14[Page8].pdf}
+  	\caption[Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Transformator]{Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Transformator\footnotemark}
+  \label{fig:2_3}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 8 am 28.10.2014}
+
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 10mm 150mm 10mm 95mm, clip, scale = 1]{ep2_14[Page9].pdf}
+  	\caption[Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Transformator]{Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Transformator\footnotemark}
+  \label{fig:2_4}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 9 am 28.10.2014}
+
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -138,6 +187,15 @@
 \subsection{Einweggleichrichtung mit Kondensator}
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 10mm 150mm 10mm 95mm, clip, scale = 1]{ep2_14[Page9].pdf}
+  	\caption[Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Transformator]{Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Transformator\footnotemark}
+  \label{fig:2_5}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 9 am 28.10.2014}
+
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -158,6 +216,15 @@
 \subsection{Doppelweggleichrichtung mit Kondensator}
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 10mm 200mm 10mm 45mm, clip, scale = 1]{ep2_14[Page10].pdf}
+  	\caption[Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Transformator]{Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Transformator\footnotemark}
+  \label{fig:2_6}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 10 am 28.10.2014}
+
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -178,6 +245,15 @@
 \subsubsection{Verwendete Materialien}
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 10mm 100mm 10mm 150mm, clip, scale = 1]{ep2_14[Page10].pdf}
+  	\caption[Schaltskizze für einen Brückengleichrichter]{Schaltskizze für einen Brückengleichrichter\footnotemark}
+  \label{fig:2_7}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 10 am 28.10.2014}
+
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -215,6 +291,15 @@
 \subsection{Spannugsstabilisierung mit Zenerdiode (Transformatorbetrieb)}
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 10mm 130mm 10mm 120mm, clip, scale = 1]{ep2_14[Page11].pdf}
+  	\caption[Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode]{Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode\footnotemark}
+  \label{fig:2_8}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 10 am 28.10.2014}
+
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -234,6 +319,16 @@
 \subsection{Spannungstabilisierung mit Zenerdiode (variable Eingangsspannung)}
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 10mm 30mm 10mm 213mm, clip, scale = 1]{ep2_14[Page11].pdf}
+  	\caption[Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung]{Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung\footnotemark}
+  \label{fig:2_8}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 10 am 28.10.2014}
+
+
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -254,6 +349,15 @@
 \subsection{Erhöhung des Ausgangsstroms mit Transistor}
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 10mm 160mm 10mm 70mm, clip, scale = 1]{ep2_14[Page12].pdf}
+  	\caption[Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung]{Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung\footnotemark}
+  \label{fig:2_8}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 10 am 28.10.2014}
+
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -274,6 +378,15 @@
 \subsection{Integrierte Spannungsregler}
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 10mm 30mm 10mm 205mm, clip, scale = 1]{ep2_14[Page12].pdf}
+  	\caption[Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung]{Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung\footnotemark}
+  \label{fig:2_8}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 10 am 28.10.2014}
+
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
