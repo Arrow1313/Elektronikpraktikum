@@ -1,41 +1,47 @@
 \select@language {ngerman}
 \contentsline {section}{\numberline {1}Einleitung}{4}
 \contentsline {section}{\numberline {2}Verwendete Materialien}{4}
-\contentsline {section}{\numberline {3}Signalausbreitung \IeC {\"u}ber einfache Kabel}{4}
-\contentsline {subsection}{\numberline {3.1}Versuchsaufbau}{4}
-\contentsline {subsubsection}{\numberline {3.1.1}2.1 Ein Bananenkabel und gemeinsame Masse}{4}
-\contentsline {subsubsection}{\numberline {3.1.2}2.2 Zwei Bananenkabel}{4}
-\contentsline {subsubsection}{\numberline {3.1.3}2.3 Zwei verdrillte Bananenkabel}{5}
-\contentsline {subsection}{\numberline {3.2}Versuchsdurchf\IeC {\"u}hrung}{6}
-\contentsline {subsection}{\numberline {3.3}Auswertung}{7}
-\contentsline {subsubsection}{\numberline {3.3.1}2.1 Ein Bananenkabel und gemeinsame Masse}{7}
-\contentsline {subsubsection}{\numberline {3.3.2}2.2 Zwei Bananenkabel}{8}
-\contentsline {subsubsection}{\numberline {3.3.3}2.3 Zwei verdrillte Bananenkabel}{9}
-\contentsline {subsection}{\numberline {3.4}Diskussion}{12}
-\contentsline {section}{\numberline {4}Signal\IeC {\"u}bertragung \IeC {\"u}ber Koaxialkabel}{13}
-\contentsline {subsection}{\numberline {4.1}Versuchsaufbau}{13}
-\contentsline {subsubsection}{\numberline {4.1.1}Kurzes Koaxialkabel ohne Abschlu\IeC {\ss }widerstand}{13}
-\contentsline {subsubsection}{\numberline {4.1.2}Langes Koaxialkabel ohne Abschlu\IeC {\ss }widerstand}{14}
-\contentsline {subsubsection}{\numberline {4.1.3}Langes Koaxialkabel mit Abschlu\IeC {\ss }widerstand}{15}
-\contentsline {subsubsection}{\numberline {4.1.4}Langes Koaxialkabel mit Kurzschlu\IeC {\ss } am Ende}{15}
-\contentsline {subsubsection}{\numberline {4.1.5}Langes Koaxialkabel mit variablem Abschlu\IeC {\ss }widerstand}{15}
-\contentsline {subsection}{\numberline {4.2}Versuchsdurchf\IeC {\"u}hrung}{15}
-\contentsline {subsection}{\numberline {4.3}Verwendete Formeln}{15}
-\contentsline {subsection}{\numberline {4.4}Messergebnisse}{15}
-\contentsline {subsection}{\numberline {4.5}Auswertung}{15}
-\contentsline {subsection}{\numberline {4.6}Diskussion}{15}
-\contentsline {section}{\numberline {5}Verdrillte Leitungen (Twisted Pair)}{15}
-\contentsline {subsection}{\numberline {5.1}Versuchsaufbau}{15}
+\contentsline {section}{\numberline {3}Versuchsteil 1}{4}
+\contentsline {section}{\numberline {4}Signalausbreitung \IeC {\"u}ber einfache Kabel}{4}
+\contentsline {subsection}{\numberline {4.1}Versuchsaufbau}{4}
+\contentsline {subsubsection}{\numberline {4.1.1}2.1 Ein Bananenkabel und gemeinsame Masse}{5}
+\contentsline {subsubsection}{\numberline {4.1.2}2.2 Zwei Bananenkabel}{5}
+\contentsline {subsubsection}{\numberline {4.1.3}2.3 Zwei verdrillte Bananenkabel}{5}
+\contentsline {subsection}{\numberline {4.2}Versuchsdurchf\IeC {\"u}hrung}{7}
+\contentsline {subsection}{\numberline {4.3}Auswertung}{7}
+\contentsline {subsubsection}{\numberline {4.3.1}2.1 Ein Bananenkabel und gemeinsame Masse}{7}
+\contentsline {subsubsection}{\numberline {4.3.2}2.2 Zwei Bananenkabel}{9}
+\contentsline {subsubsection}{\numberline {4.3.3}2.3 Zwei verdrillte Bananenkabel}{11}
+\contentsline {subsection}{\numberline {4.4}Diskussion}{13}
+\contentsline {section}{\numberline {5}Signal\IeC {\"u}bertragung \IeC {\"u}ber Koaxialkabel}{13}
+\contentsline {subsection}{\numberline {5.1}Versuchsaufbau}{13}
+\contentsline {subsubsection}{\numberline {5.1.1}Kurzes Koaxialkabel ohne Abschlu\IeC {\ss }widerstand}{13}
+\contentsline {subsubsection}{\numberline {5.1.2}Langes Koaxialkabel ohne Abschlu\IeC {\ss }widerstand}{14}
+\contentsline {subsubsection}{\numberline {5.1.3}Langes Koaxialkabel mit Abschlu\IeC {\ss }widerstand}{14}
+\contentsline {subsubsection}{\numberline {5.1.4}Langes Koaxialkabel mit Kurzschlu\IeC {\ss } am Ende}{15}
+\contentsline {subsubsection}{\numberline {5.1.5}Langes Koaxialkabel mit variablem Abschlu\IeC {\ss }widerstand}{15}
 \contentsline {subsection}{\numberline {5.2}Versuchsdurchf\IeC {\"u}hrung}{15}
-\contentsline {subsection}{\numberline {5.3}Verwendete Formeln}{15}
-\contentsline {subsection}{\numberline {5.4}Messergebnisse}{15}
-\contentsline {subsection}{\numberline {5.5}Auswertung}{15}
-\contentsline {subsection}{\numberline {5.6}Diskussion}{15}
-\contentsline {section}{\numberline {6}Kabeleigenschaften}{15}
-\contentsline {subsection}{\numberline {6.1}Versuchsaufbau}{15}
-\contentsline {subsection}{\numberline {6.2}Versuchsdurchf\IeC {\"u}hrung}{15}
-\contentsline {subsection}{\numberline {6.3}Verwendete Formeln}{15}
-\contentsline {subsection}{\numberline {6.4}Messergebnisse}{15}
-\contentsline {subsection}{\numberline {6.5}Auswertung}{15}
-\contentsline {subsection}{\numberline {6.6}Diskussion}{15}
-\contentsline {section}{\numberline {7}Fazit}{15}
+\contentsline {subsection}{\numberline {5.3}Auswertung}{16}
+\contentsline {subsubsection}{\numberline {5.3.1}Kurzes Koaxialkabel ohne Abschlu\IeC {\ss }widerstand}{16}
+\contentsline {subsubsection}{\numberline {5.3.2}Langes Koaxialkabel ohne Abschlu\IeC {\ss }widerstand}{16}
+\contentsline {subsubsection}{\numberline {5.3.3}Langes Koaxialkabel mit Abschlu\IeC {\ss }widerstand}{17}
+\contentsline {subsubsection}{\numberline {5.3.4}Langes Koaxialkabel mit Kurzschlu\IeC {\ss } am Ende}{18}
+\contentsline {subsubsection}{\numberline {5.3.5}Langes Koaxialkabel mit variablem Abschlu\IeC {\ss }widerstand}{19}
+\contentsline {subsection}{\numberline {5.4}Diskussion}{20}
+\contentsline {section}{\numberline {6}Verdrillte Leitungen (Twisted Pair)}{20}
+\contentsline {subsection}{\numberline {6.1}Versuchsaufbau}{20}
+\contentsline {subsubsection}{\numberline {6.1.1}Aufbau mit offenem Ende}{20}
+\contentsline {subsubsection}{\numberline {6.1.2}Aufbau mit Potentiometer am Ende}{20}
+\contentsline {subsection}{\numberline {6.2}Versuchsdurchf\IeC {\"u}hrung}{21}
+\contentsline {subsection}{\numberline {6.3}Verwendete Formeln}{21}
+\contentsline {subsection}{\numberline {6.4}Auswertung}{21}
+\contentsline {subsubsection}{\numberline {6.4.1}Aufbau mit offenem Ende}{21}
+\contentsline {subsubsection}{\numberline {6.4.2}Aufbau mit Potentiometer am Ende}{22}
+\contentsline {subsection}{\numberline {6.5}Diskussion}{23}
+\contentsline {section}{\numberline {7}Kabeleigenschaften}{23}
+\contentsline {subsection}{\numberline {7.1}Versuchsaufbau}{24}
+\contentsline {subsection}{\numberline {7.2}Versuchsdurchf\IeC {\"u}hrung}{24}
+\contentsline {subsection}{\numberline {7.3}Verwendete Formeln}{24}
+\contentsline {subsection}{\numberline {7.4}Auswertung}{24}
+\contentsline {subsection}{\numberline {7.5}Diskussion}{26}
+\contentsline {section}{\numberline {8}Fazit}{26}
