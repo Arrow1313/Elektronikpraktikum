@@ -1,0 +1,63 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{3}
+\contentsline {section}{\numberline {2}Eigenschaften verschiedener Dioden}{3}
+\contentsline {subsection}{\numberline {2.1}Verwendete Materialien}{3}
+\contentsline {subsection}{\numberline {2.2}Versuchsaufbau}{3}
+\contentsline {subsection}{\numberline {2.3}Versuchsdurchf\IeC {\"u}hrung}{3}
+\contentsline {subsection}{\numberline {2.4}Verwendete Formeln}{3}
+\contentsline {subsection}{\numberline {2.5}Messergebnisse}{3}
+\contentsline {subsection}{\numberline {2.6}Auswertung}{8}
+\contentsline {subsection}{\numberline {2.7}Diskussion}{8}
+\contentsline {section}{\numberline {3}Gleichrichterschaltungen}{9}
+\contentsline {subsection}{\numberline {3.1}Verwendete Formeln}{9}
+\contentsline {subsection}{\numberline {3.2}Verwendete Materialien}{9}
+\contentsline {subsection}{\numberline {3.3}Einweggleichrichtung (Sinusgenerator)}{9}
+\contentsline {subsubsection}{\numberline {3.3.1}Versuchsaufbau}{9}
+\contentsline {subsubsection}{\numberline {3.3.2}Versuchsdurchf\IeC {\"u}hrung}{9}
+\contentsline {subsubsection}{\numberline {3.3.3}Auswertung}{9}
+\contentsline {subsection}{\numberline {3.4}Einweggleichrichtung mit Kondensator}{10}
+\contentsline {subsubsection}{\numberline {3.4.1}Versuchsaufbau}{10}
+\contentsline {subsubsection}{\numberline {3.4.2}Versuchsdurchf\IeC {\"u}hrung}{10}
+\contentsline {subsubsection}{\numberline {3.4.3}Auswertung}{10}
+\contentsline {subsection}{\numberline {3.5}Einweggleichrichtung (Transformator)}{12}
+\contentsline {subsubsection}{\numberline {3.5.1}Versuchsaufbau}{12}
+\contentsline {subsubsection}{\numberline {3.5.2}Versuchsdurchf\IeC {\"u}hrung}{12}
+\contentsline {subsubsection}{\numberline {3.5.3}Auswertung}{12}
+\contentsline {subsection}{\numberline {3.6}Einweggleichrichtung mit Kondensator}{13}
+\contentsline {subsubsection}{\numberline {3.6.1}Versuchsaufbau}{13}
+\contentsline {subsubsection}{\numberline {3.6.2}Versuchsdurchf\IeC {\"u}hrung}{13}
+\contentsline {subsubsection}{\numberline {3.6.3}Auswertung}{13}
+\contentsline {subsection}{\numberline {3.7}Doppelweggleichrichtung mit Kondensator}{15}
+\contentsline {subsubsection}{\numberline {3.7.1}Versuchsaufbau}{15}
+\contentsline {subsubsection}{\numberline {3.7.2}Versuchsdurchf\IeC {\"u}hrung}{15}
+\contentsline {subsubsection}{\numberline {3.7.3}Auswertung}{15}
+\contentsline {subsection}{\numberline {3.8}Br\IeC {\"u}ckengleichrichter}{17}
+\contentsline {subsubsection}{\numberline {3.8.1}Verwendete Materialien}{17}
+\contentsline {subsubsection}{\numberline {3.8.2}Versuchsaufbau}{17}
+\contentsline {subsubsection}{\numberline {3.8.3}Versuchsdurchf\IeC {\"u}hrung}{18}
+\contentsline {subsubsection}{\numberline {3.8.4}Auswertung}{18}
+\contentsline {subsection}{\numberline {3.9}Diskussion}{19}
+\contentsline {section}{\numberline {4}Spannungsstabilisierung}{19}
+\contentsline {subsection}{\numberline {4.1}Verwendete Formeln}{19}
+\contentsline {subsection}{\numberline {4.2}Spannugsstabilisierung mit Zenerdiode (Transformatorbetrieb)}{19}
+\contentsline {subsubsection}{\numberline {4.2.1}Versuchsaufbau}{19}
+\contentsline {subsubsection}{\numberline {4.2.2}Versuchsdurchf\IeC {\"u}hrung}{20}
+\contentsline {subsubsection}{\numberline {4.2.3}Messergebnisse}{20}
+\contentsline {subsubsection}{\numberline {4.2.4}Auswertung}{20}
+\contentsline {subsection}{\numberline {4.3}Spannungstabilisierung mit Zenerdiode (variable Eingangsspannung)}{20}
+\contentsline {subsubsection}{\numberline {4.3.1}Versuchsaufbau}{20}
+\contentsline {subsubsection}{\numberline {4.3.2}Versuchsdurchf\IeC {\"u}hrung}{21}
+\contentsline {subsubsection}{\numberline {4.3.3}Messergebnisse}{21}
+\contentsline {subsubsection}{\numberline {4.3.4}Auswertung}{21}
+\contentsline {subsection}{\numberline {4.4}Erh\IeC {\"o}hung des Ausgangsstroms mit Transistor}{21}
+\contentsline {subsubsection}{\numberline {4.4.1}Versuchsaufbau}{21}
+\contentsline {subsubsection}{\numberline {4.4.2}Versuchsdurchf\IeC {\"u}hrung}{22}
+\contentsline {subsubsection}{\numberline {4.4.3}Messergebnisse}{22}
+\contentsline {subsubsection}{\numberline {4.4.4}Auswertung}{22}
+\contentsline {subsection}{\numberline {4.5}Integrierte Spannungsregler}{22}
+\contentsline {subsubsection}{\numberline {4.5.1}Versuchsaufbau}{22}
+\contentsline {subsubsection}{\numberline {4.5.2}Versuchsdurchf\IeC {\"u}hrung}{22}
+\contentsline {subsubsection}{\numberline {4.5.3}Messergebnisse}{22}
+\contentsline {subsubsection}{\numberline {4.5.4}Auswertung}{22}
+\contentsline {subsection}{\numberline {4.6}Diskussion}{22}
+\contentsline {section}{\numberline {5}Fazit}{22}
