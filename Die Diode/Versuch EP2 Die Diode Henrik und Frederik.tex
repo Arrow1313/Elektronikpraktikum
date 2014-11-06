@@ -59,9 +59,29 @@ Im ersten Versuchsteil soll die Kennlinie einer 1N4007 Diode und einer Zenerdiod
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+In diesem Versuchsteil soll die Kennlinie einer Diode Aufgenommen werden (Diodentyp 1N4007, Zenerdiode ZPY51). Die Dioden werden in Durchlassrichtung sowie in Sperrichtung betrieben und die Spannung wird gegen den Strom aufgetragen. Davor muss die Schaltung gemäß Abb. \ref{fig:1} aus dem Versuchsaufbau geschaltet werden. Die Spannung wird mithilfe eines 10 Gang Potentiometers (0-1 k$\Omega)$ als Spannungsteiler reguliert. Nun wird eine Gleichspannung von 10V angelegt (Funktionsgenerator). Der Widerstand R$_1$ begrenzt den Strom durch die Diode, sodass diese nicht überlastet wird. Bei sehr kleinen Strömen muss der Strom, der über den Innenwiderstand des DMM abfällt, von dem gemessenenen Strom nach Formel \ref{eqn:Diodenstrom} abgezogen werden. Die Zenerdiode ist darauf ausgelegt in Sperrichtung betrieben zu werden, weshalb hier auch der Tunneldurchbruch ausgemessen wird. Ohne den Vorwiderstand würde die Diode ebenfalls überlastet werden. In Durchlassrichtung wird eine exponentielle Zunahme des Stromes erwartet. (Formel \ref{eqn:exp_Stromzunahme})
 \subsection{Verwendete Formeln}
 %eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
 %mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen.
+Für den Betrieb der Diode in Durchlassrichtung wird ein exponentieller Zusammenhang gemäß der Formel
+\begin{align}
+I = I_0(\exp(\frac{eU}{kT})-1)
+\label{eqn:exp_Stromzunahme}
+\end{align}
+erwartet.
+Der genaue Diodenstrom $I_D$ ergibt sich aus der Knotenregel:
+\begin{align}
+I_D = I_{DMM_1}-\frac{U_{DMM_2}}{R_i}
+\label{eqn:Diodenstrom}
+\end{align}
+Der Diodenstrom ist gleich dem Strom durch das erste Multimeter(Strommessung) minus dem Strom durch das zweite Multimeter(Spannungsmessung).
+Im Fall sehr kleiner Ströme wird die Strommessung mit der Voltanzeige des ersten DMM durchgeführt.
+Der Strom $I_{DMM_1}$ ergibt sich dann aus der Formel:
+\begin{align}
+I_{DMM_1} = \frac{U_{DMM_1}}{R_i}
+\end{align}
+Also Spannung geteilt durch den Innenwiderstand nach dem Ohmschen Gesetz.
+Der Innenwiderstand beträgt bei beiden Multimetern \unit[10]{M$\Omega$}.
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -307,9 +327,7 @@ In Abbildung \ref{fig:a1_1} und Abbildung \ref{fig:a2_1} lässt sich gut der exp
 \section{Gleichrichterschaltungen}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
-\subsection{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen.
+Im zweiten Versuch sollen Schaltungen zur Gleichrichtung des Stromes untersucht werden und miteinander verglichen werden.
 \subsection{Verwendete Materialien}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben oder besser noch das ganze in einem Fließtext gut umschreiben
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!
@@ -329,7 +347,7 @@ In diesem Aufbau wird die 1N4007 Diode verwendet. R$_\text{L}$ hat einen Widerst
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
+In diesem Versuchsteil wird eine einfache Diode zum Gleichrichten der Sinusspannung, welche mit dem Funktionsgenerator erzeugt wird, verwendet. Dazu wird Schaltung \ref{fig:2_1} aus dem Versuchsaufbau aufgebaut. Über das Oszilloskop kann die Ausgangsspannung (am Widerstand) mit der Eingangsspannung verglichen werden, wobei ebenso der Wechel- und Gleichspannungsanteil untersucht wird. Die Messung wird dann bei Frequenzen von \unit[50]{Hz}, \unit[1]{kHz} und \unit[10]{kHz} durchgeführt.
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -383,7 +401,7 @@ Es wird der selbe Versuchsaufbau wie in Abbildung \ref{fig:2_1} Verwendet, jedoc
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-
+In diesem Versuchsteil wird parallel zum Lastwiderstand ein Kondensator geschaltet, der den Spannungsabfall bei negativen Spannungen (durch die Diode fließt kein Strom) verhindern soll \footnote{Versuchsaufbau: Abb. \ref{fig:2_2}}. Für eine Kapazität von \unit[10]{$\mu$F} werden Frequenzen von 20-300\unit{Hz} und für eine Kapazität von \unit[1]{$\mu$F} werden Frequenzen von 20-500\unit{Hz} mit dem Oszilloskop aufgenommen. \footnote{Wechsel- und Gleichspannungsanteil kann abgelesen werden}
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -462,6 +480,7 @@ In dem Aufbau wird für R$_\text{L}$ ein 470$\Omega$ Potentiometer mit einem 47$
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+In diesem Versuchsteil wird ein Trafo als Wechselspannungsquelle verwendet \footnote{für Vergleiche mit den nachfolgenden Versuchsteilen wird nur die Hälfte des Trafos als Spannungsquelle benutzt}. Ähnlich wie im ersten Teil wird ausschließlich eine Diode zum Gleichrichten eingesetzt. Als Last wird ein \unit[470]{$\Omega$}Potentiometer mit eingebautem \unit[47]{$\Omega$} Vorwiderstand sowie eine Lampe geschaltet \footnote{Versuchsaufbau: Abb. \ref{fig:2_4}}. Bei maximalem und minimalem Potentiometerwiderstand (47 bzw. \unit[517]{$\Omega$}) wird die Ausgangsspannung auf Wechsel- und Gleichspannungsanteil untersucht.
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -509,7 +528,7 @@ Es wird der selbe Versuchsaufbau wie in Abbildung \ref{fig:2_4} verwendet, mit e
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
+Vergleichbar mit dem zweiten Teil werden nun Kondensatoren (1000 und \unit[100]{$\mu$F}) parallel zur Last geschaltet, um den starken Spannungsabfall entgegen der Durchlassrichtung zu verhindern \footnote{Versuchsaufbau: Abb. \ref{fig:2_5}}. Am Oszilloskop wird Wechsel- und Gleichspannungsanteil angezeigt, wobei der Potentiometerwiderstand zum Einen maximal (\unit[517]{$\Omega$} und zum Anderen minimal gewählt wird.
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -577,6 +596,7 @@ Es werden Elektrolytkondensatoren mit 100$\mu$F oder 1000$\mu$F verwendet. R$_\t
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+Nun wird am unteren Ende des Trafos eine Diode dazugeschaltet \footnote{Versuchsaufbau: Abb. \ref{fig:2_6}}, welche mit einer um \unit[180]{Grad} verschobenen Spannung betrieben wird, sodass sich die von beiden Dioden durchgalassenen Spannungen ergänzen. Bei minimalem und maximalem Potentiometerwiderstand sowie bei Kapazitäten von 1000 und \unit[100]{$\mu$F} werden die Messungen wiederholt und mit den Versuchsteilen davor verglichen.
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -646,7 +666,7 @@ Als Elektrolytkondensator wird wieder einer mit 100$\mu$F oder 1000$\mu$F verwen
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
+Zuletzt werden die zwei Dioden aus dem Versuchsteil davor durch 4 Dioden in einer Brückengleichrichterschaltung ersetzt \footnote{Versuchsaufbau: Abb. \ref{fig:2_7}}. Dies hat den Vorteil einer "gleichmäßigeren" Gleichspannung und den Nachteil einer doppelten Anregespannung für die Dioden. Die Messungen werden Analog zu den Versuchsteilen davor für Kapazitäten von 1000 und \unit[100]{$\mu$F} durchgeführt sowie miteinander verglichen.
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -733,6 +753,7 @@ Wie erwartet wurde die halbe Zeit, in der kein Strom floss mit einem Kondensator
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+Zur Spannungsstabilisierung wird eine Zenerdiode mit Vorwiderstand nach dem Schaltbild aus dem Versuchsaufbau \footnote{Versuchsaufbau: Abb. \ref{fig:2_8}} dazugeschaltet, sodass zu hohe Spannungen gefiltert werden. Der Vorwiderstand dient zum Schutz vor zu hohen Kondensatorspannungen. Bei minimalem und maximalem Potentiometerwiderstand und einer Kapazität von \unit[1000]{$\mu$F} wird der Strom und die Spannung durch bzw. über der Last gemessen, sowie die Ausgangsspannung am Oszilloskop aufgezeichnet. Nachteil bei dieser Schaltung ist die durch die Zenerdiode begrenzte Maximalspannung (\unit[5,1]{V}), wodurch auch die Leistung an der Last beschränkt wird.
 \subsubsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -801,7 +822,7 @@ Es ist zu sehen, dass bei geringerem Widerstand 400mV der Spitze-Spitze-Abstand 
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
+Der Trafo und die Brückengleichrichterschaltung werden nun durch eine variable Eingangsgleichspannung (Funktionsgenerator) ersetzt \footnote{Versuchsaufbau: Abb. \ref{fig:2_9}}. Bei variierender Eingangsspannung wird Strom und Spannung über der Last gemessen (DMM) und geplottet \footnote{Da bei diesem Versuchsteil Gleichspannung herrscht, ist der Kondensator relativ unwichtig. Im folgenden Versuchsteil wird er deshalb einfach weggelassen.}.
 \subsubsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -867,7 +888,7 @@ Wie in Abbildung \ref{fig:3_2} zu sehen ist, wird die Ausgangsspannung bei einem
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
+In diesem Versuchsteil soll der Ausgangsstrom mithilfe eines Transitors erhöht werden\footnote{Versuchsaufbau: Abb. \ref{fig:2_10}}. Damit kann an der Last eine höhere Leistung erzielt werden. Strom und Spannung werden mithilfe zweier DMM aufgenommen und geplottet.
 \subsubsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -935,7 +956,7 @@ Jedoch ist die Leistung höher als im Vorherigem Aufbau. Dies lässt sich aus de
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
+Im letzten Versuchsteil soll ein moderner Spannungsregler untersucht und mit den anderen Schaltungen verglichen werden\footnote{Versuchsaufbau: Abb. \ref{fig:2_11}}. Strom und Spannung werden mithilfe zweier DMM aufgenommen und geplottet.
 \subsubsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
