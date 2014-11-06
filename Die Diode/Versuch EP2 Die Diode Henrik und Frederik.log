@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  6 NOV 2014 14:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  6 NOV 2014 23:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -457,7 +457,11 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen128
 \Gin@req@width=\dimen129
 )
-No file "Versuch EP2 Die Diode Henrik und Frederik".aux.
+(./Versuch EP2 Die Diode Henrik und Frederik.aux
+
+LaTeX Warning: Label `fig:a1' multiply defined.
+
+)
 \openout1 = `"Versuch EP2 Die Diode Henrik und Frederik.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -473,7 +477,7 @@ LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 26.
-(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -600,396 +604,373 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 28.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-No file "Versuch EP2 Die Diode Henrik und Frederik".toc.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Versuch EP2 Die Diode H
+enrik und Frederik.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 4.
+ [2])
 \tf@toc=\write3
 \openout3 = `"Versuch EP2 Die Diode Henrik und Frederik.toc"'.
 
-[2]
 
-LaTeX Warning: Reference `fig:1' on page 3 undefined on input line 48.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 48.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 48.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 48.
-<ep2_14[Page6].pdf, id=12, 614.295pt x 794.97pt>
+[3] <ep2_14[Page6].pdf, id=15, 614.295pt x 794.97pt>
 File: ep2_14[Page6].pdf Graphic file (type pdf)
  <use ep2_14[Page6].pdf>
-Package pdftex.def Info: ep2_14[Page6].pdf used on input line 52.
+Package pdftex.def Info: ep2_14[Page6].pdf used on input line 53.
 (pdftex.def)             Requested size: 557.38815pt x 69.42458pt.
 
-Overfull \hbox (73.69128pt too wide) in paragraph at lines 52--53
+Overfull \hbox (73.69128pt too wide) in paragraph at lines 53--54
  [][] 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 56.
-[3 <./ep2_14[Page6].pdf>] [4] [5] [6]
+(Font)              <5> on input line 57.
+[4 <./ep2_14[Page6].pdf>] [5] [6] [7] [8]
 Overfull \vbox (19.96313pt too high) has occurred while \output is active []
 
 
-[7] <a1_1.pdf, id=82, 361.35pt x 252.945pt>
+[9] <a1_1.pdf, id=91, 361.35pt x 252.945pt>
 File: a1_1.pdf Graphic file (type pdf)
  <use a1_1.pdf>
-Package pdftex.def Info: a1_1.pdf used on input line 257.
+Package pdftex.def Info: a1_1.pdf used on input line 284.
 (pdftex.def)             Requested size: 144.53743pt x 101.17621pt.
 
-<a1_2.pdf, id=83, 361.35pt x 252.945pt>
+<a1_2.pdf, id=92, 361.35pt x 252.945pt>
 File: a1_2.pdf Graphic file (type pdf)
  <use a1_2.pdf>
-Package pdftex.def Info: a1_2.pdf used on input line 265.
+Package pdftex.def Info: a1_2.pdf used on input line 292.
 (pdftex.def)             Requested size: 144.53743pt x 101.17621pt.
 
-<a2_1.pdf, id=84, 361.35pt x 252.945pt>
+<a2_1.pdf, id=93, 361.35pt x 252.945pt>
 File: a2_1.pdf Graphic file (type pdf)
  <use a2_1.pdf>
-Package pdftex.def Info: a2_1.pdf used on input line 278.
+Package pdftex.def Info: a2_1.pdf used on input line 305.
 (pdftex.def)             Requested size: 144.53743pt x 101.17621pt.
 
-<a2_2.pdf, id=85, 361.35pt x 252.945pt>
+<a2_2.pdf, id=94, 361.35pt x 252.945pt>
 File: a2_2.pdf Graphic file (type pdf)
  <use a2_2.pdf>
-Package pdftex.def Info: a2_2.pdf used on input line 286.
+Package pdftex.def Info: a2_2.pdf used on input line 313.
 (pdftex.def)             Requested size: 144.53743pt x 101.17621pt.
-
-
-LaTeX Warning: Reference `fig:a1_1' on page 8 undefined on input line 305.
-
-
-LaTeX Warning: Reference `fig:a2_1' on page 8 undefined on input line 305.
-
-
-LaTeX Warning: Reference `fig:a1_2' on page 8 undefined on input line 305.
-
-
-LaTeX Warning: Reference `fig:a2_2' on page 8 undefined on input line 305.
-
-[8 <./a1_1.pdf> <./a1_2.pdf> <./a2_1.pdf> <./a2_2.pdf>]
-
-LaTeX Warning: Reference `fig:2_1' on page 9 undefined on input line 320.
-
-<ep2_14[Page7].pdf, id=109, 614.295pt x 794.97pt>
+ [10 <./a1_1.pdf> <./a1_2.pdf> <./a2_1.pdf> <./a2_2.pdf>]
+<ep2_14[Page7].pdf, id=118, 614.295pt x 794.97pt>
 File: ep2_14[Page7].pdf Graphic file (type pdf)
  <use ep2_14[Page7].pdf>
-Package pdftex.def Info: ep2_14[Page7].pdf used on input line 324.
+Package pdftex.def Info: ep2_14[Page7].pdf used on input line 352.
 (pdftex.def)             Requested size: 557.38815pt x 112.1036pt.
 
-Overfull \hbox (73.69128pt too wide) in paragraph at lines 324--325
+Overfull \hbox (73.69128pt too wide) in paragraph at lines 352--353
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:2_1_1' on page 9 undefined on input line 341.
-
-
-LaTeX Warning: Reference `fig:2_1_2' on page 9 undefined on input line 341.
-
-
-LaTeX Warning: Reference `fig:2_1_3' on page 9 undefined on input line 341.
-
-<2_1_1.pdf, id=111, 578.16pt x 722.7pt>
+<2_1_1.pdf, id=120, 578.16pt x 722.7pt>
 File: 2_1_1.pdf Graphic file (type pdf)
  <use 2_1_1.pdf>
-Package pdftex.def Info: 2_1_1.pdf used on input line 346.
+Package pdftex.def Info: 2_1_1.pdf used on input line 374.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 
-<2_1_2.pdf, id=112, 578.16pt x 722.7pt>
+<2_1_2.pdf, id=121, 578.16pt x 722.7pt>
 File: 2_1_2.pdf Graphic file (type pdf)
  <use 2_1_2.pdf>
-Package pdftex.def Info: 2_1_2.pdf used on input line 354.
+Package pdftex.def Info: 2_1_2.pdf used on input line 382.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 
-<2_1_3.pdf, id=113, 578.16pt x 722.7pt>
+<2_1_3.pdf, id=122, 578.16pt x 722.7pt>
 File: 2_1_3.pdf Graphic file (type pdf)
  <use 2_1_3.pdf>
-Package pdftex.def Info: 2_1_3.pdf used on input line 362.
+Package pdftex.def Info: 2_1_3.pdf used on input line 390.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- [9 <./ep2_14[Page7].pdf>]
-
-LaTeX Warning: Reference `fig:2_1' on page 10 undefined on input line 373.
-
-<ep2_14[Page8].pdf, id=142, 614.295pt x 794.97pt>
+ [11 <./ep2_14[Page7].pdf>] <ep2_14[Page8].pdf, id=151, 614.295pt x 794.97pt>
 File: ep2_14[Page8].pdf Graphic file (type pdf)
  <use ep2_14[Page8].pdf>
-Package pdftex.def Info: ep2_14[Page8].pdf used on input line 376.
+Package pdftex.def Info: ep2_14[Page8].pdf used on input line 405.
 (pdftex.def)             Requested size: 557.38815pt x 97.87727pt.
 
-Overfull \hbox (73.69128pt too wide) in paragraph at lines 376--377
+Overfull \hbox (73.69128pt too wide) in paragraph at lines 405--406
  [][] 
  []
 
-<2_2_1F_1.pdf, id=144, 578.16pt x 722.7pt>
+<2_2_1F_1.pdf, id=153, 578.16pt x 722.7pt>
 File: 2_2_1F_1.pdf Graphic file (type pdf)
  <use 2_2_1F_1.pdf>
-Package pdftex.def Info: 2_2_1F_1.pdf used on input line 401.
+Package pdftex.def Info: 2_2_1F_1.pdf used on input line 430.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 
-<2_2_1F_2.pdf, id=145, 578.16pt x 722.7pt>
+<2_2_1F_2.pdf, id=154, 578.16pt x 722.7pt>
 File: 2_2_1F_2.pdf Graphic file (type pdf)
  <use 2_2_1F_2.pdf>
-Package pdftex.def Info: 2_2_1F_2.pdf used on input line 409.
+Package pdftex.def Info: 2_2_1F_2.pdf used on input line 438.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- [10 <./ep2_14[Page8].pdf> <./2_1_1.pdf> <./2_1_2.pdf> <./2_1_3.pdf>]
-<2_2_10F_1.pdf, id=194, 578.16pt x 722.7pt>
+ [12 <./ep2_14[Page8].pdf> <./2_1_1.pdf> <./2_1_2.pdf> <./2_1_3.pdf>]
+<2_2_10F_1.pdf, id=202, 578.16pt x 722.7pt>
 File: 2_2_10F_1.pdf Graphic file (type pdf)
  <use 2_2_10F_1.pdf>
-Package pdftex.def Info: 2_2_10F_1.pdf used on input line 422.
+Package pdftex.def Info: 2_2_10F_1.pdf used on input line 451.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 
-<2_2_10F_2.pdf, id=195, 578.16pt x 722.7pt>
+<2_2_10F_2.pdf, id=203, 578.16pt x 722.7pt>
 File: 2_2_10F_2.pdf Graphic file (type pdf)
  <use 2_2_10F_2.pdf>
-Package pdftex.def Info: 2_2_10F_2.pdf used on input line 430.
+Package pdftex.def Info: 2_2_10F_2.pdf used on input line 459.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- [11 <./2_2_1F_1.pdf> <./2_2_1F_2.pdf> <./2_2_10F_1.pdf> <./2_2_10F_2.pdf>]
-<ep2_14[Page9].pdf, id=211, 614.295pt x 794.97pt>
+ [13 <./2_2_1F_1.pdf> <./2_2_1F_2.pdf>] <ep2_14[Page9].pdf, id=214, 614.295pt x
+ 794.97pt>
 File: ep2_14[Page9].pdf Graphic file (type pdf)
- <use ep2_14[Page9].pdf>
-Package pdftex.def Info: ep2_14[Page9].pdf used on input line 456.
+
+<use ep2_14[Page9].pdf>
+Package pdftex.def Info: ep2_14[Page9].pdf used on input line 486.
 (pdftex.def)             Requested size: 557.38815pt x 97.87724pt.
 
-Overfull \hbox (73.69128pt too wide) in paragraph at lines 456--457
+Overfull \hbox (73.69128pt too wide) in paragraph at lines 486--487
  [][] 
  []
 
-<2_3_1.pdf, id=213, 578.16pt x 722.7pt>
+[14 <./ep2_14[Page9].pdf> <./2_2_10F_1.pdf> <./2_2_10F_2.pdf>]
+<2_3_1.pdf, id=256, 578.16pt x 722.7pt>
 File: 2_3_1.pdf Graphic file (type pdf)
  <use 2_3_1.pdf>
-Package pdftex.def Info: 2_3_1.pdf used on input line 479.
+Package pdftex.def Info: 2_3_1.pdf used on input line 510.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 
-<2_3_2.pdf, id=214, 578.16pt x 722.7pt>
+<2_3_2.pdf, id=257, 578.16pt x 722.7pt>
 File: 2_3_2.pdf Graphic file (type pdf)
  <use 2_3_2.pdf>
-Package pdftex.def Info: 2_3_2.pdf used on input line 487.
+Package pdftex.def Info: 2_3_2.pdf used on input line 518.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- [12 <./ep2_14[Page9].pdf>]
-
-LaTeX Warning: Reference `fig:2_4' on page 13 undefined on input line 499.
-
 File: ep2_14[Page9].pdf Graphic file (type pdf)
+
 <use ep2_14[Page9].pdf>
-Package pdftex.def Info: ep2_14[Page9].pdf used on input line 503.
+Package pdftex.def Info: ep2_14[Page9].pdf used on input line 535.
 (pdftex.def)             Requested size: 557.38815pt x 83.65092pt.
 
-Overfull \hbox (73.69128pt too wide) in paragraph at lines 503--504
+Overfull \hbox (73.69128pt too wide) in paragraph at lines 535--536
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:2_4_100F' on page 13 undefined on input line 522.
-
-
-<2_4_100F_1.pdf, id=250, 578.16pt x 722.7pt>
+[15 <./2_3_1.pdf> <./2_3_2.pdf>] <2_4_100F_1.pdf, id=268, 578.16pt x 722.7pt>
 File: 2_4_100F_1.pdf Graphic file (type pdf)
- <use 2_4_100F_1.pdf>
-Package pdftex.def Info: 2_4_100F_1.pdf used on input line 527.
+
+<use 2_4_100F_1.pdf>
+Package pdftex.def Info: 2_4_100F_1.pdf used on input line 559.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 528.
-
-<2_4_100F_2.pdf, id=251, 578.16pt x 722.7pt>
-File: 2_4_100F_2.pdf Graphic file (type pdf)
- <use 2_4_100F_2.pdf>
-Package pdftex.def Info: 2_4_100F_2.pdf used on input line 535.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- [13 <./2_3_1.pdf> <./2_3_2.pdf>]
-
-LaTeX Warning: Reference `fig:2_4_1000F' on page 14 undefined on input line 543
-.
-
-<2_4_1000F_1.pdf, id=263, 578.16pt x 722.7pt>
-File: 2_4_1000F_1.pdf Graphic file (type pdf)
- <use 2_4_1000F_1.pdf>
-Package pdftex.def Info: 2_4_1000F_1.pdf used on input line 548.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+(Font)              <10.95> on input line 560.
+ <2_4_100F_2.pdf, id=269, 578.16pt x 722.7pt>
 File: 2_4_100F_2.pdf Graphic file (type pdf)
 
 <use 2_4_100F_2.pdf>
-Package pdftex.def Info: 2_4_100F_2.pdf used on input line 556.
+Package pdftex.def Info: 2_4_100F_2.pdf used on input line 567.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- [14 <./2_4_100F_1.pdf> <./2_4_100F_2.pdf>]
-<ep2_14[Page10].pdf, id=273, 614.295pt x 794.97pt>
+ <2_4_1000F_1.pdf, id=270, 578.16pt x 722.7pt>
+File: 2_4_1000F_1.pdf Graphic file (type pdf)
+
+<use 2_4_1000F_1.pdf>
+Package pdftex.def Info: 2_4_1000F_1.pdf used on input line 580.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+File: 2_4_100F_2.pdf Graphic file (type pdf)
+ <use 2_4_100F_2.pdf>
+Package pdftex.def Info: 2_4_100F_2.pdf used on input line 588.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+ [16 <./2_4_100F_1.pdf> <./2_4_100F_2.pdf>] <ep2_14[Page10].pdf, id=281, 614.29
+5pt x 794.97pt>
 File: ep2_14[Page10].pdf Graphic file (type pdf)
- <use ep2_14[Page10].pdf>
-Package pdftex.def Info: ep2_14[Page10].pdf used on input line 571.
+
+<use ep2_14[Page10].pdf>
+Package pdftex.def Info: ep2_14[Page10].pdf used on input line 606.
 (pdftex.def)             Requested size: 557.38815pt x 97.87726pt.
 
-Overfull \hbox (73.69128pt too wide) in paragraph at lines 571--572
+Overfull \hbox (73.69128pt too wide) in paragraph at lines 606--607
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:2_5_100F' on page 15 undefined on input line 589.
-
-
-<2_5_100F_1.pdf, id=275, 578.16pt x 722.7pt>
+[17 <./ep2_14[Page10].pdf> <./2_4_1000F_1.pdf>]
+<2_5_100F_1.pdf, id=317, 578.16pt x 722.7pt>
 File: 2_5_100F_1.pdf Graphic file (type pdf)
  <use 2_5_100F_1.pdf>
-Package pdftex.def Info: 2_5_100F_1.pdf used on input line 594.
+Package pdftex.def Info: 2_5_100F_1.pdf used on input line 630.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 
-<2_5_100F_2.pdf, id=276, 578.16pt x 722.7pt>
+<2_5_100F_2.pdf, id=318, 578.16pt x 722.7pt>
 File: 2_5_100F_2.pdf Graphic file (type pdf)
  <use 2_5_100F_2.pdf>
-Package pdftex.def Info: 2_5_100F_2.pdf used on input line 602.
+Package pdftex.def Info: 2_5_100F_2.pdf used on input line 638.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- [15 <./ep2_14[Page10].pdf> <./2_4_1000F_1.pdf>]
 
-LaTeX Warning: Reference `fig:2_5_1000F' on page 16 undefined on input line 610
-.
-
-<2_5_1000F_1.pdf, id=311, 578.16pt x 722.7pt>
+<2_5_1000F_1.pdf, id=319, 578.16pt x 722.7pt>
 File: 2_5_1000F_1.pdf Graphic file (type pdf)
  <use 2_5_1000F_1.pdf>
-Package pdftex.def Info: 2_5_1000F_1.pdf used on input line 615.
+Package pdftex.def Info: 2_5_1000F_1.pdf used on input line 651.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 
-<2_5_1000F_2.pdf, id=312, 578.16pt x 722.7pt>
+<2_5_1000F_2.pdf, id=320, 578.16pt x 722.7pt>
 File: 2_5_1000F_2.pdf Graphic file (type pdf)
  <use 2_5_1000F_2.pdf>
-Package pdftex.def Info: 2_5_1000F_2.pdf used on input line 623.
+Package pdftex.def Info: 2_5_1000F_2.pdf used on input line 659.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- [16 <./2_5_100F_1.pdf> <./2_5_100F_2.pdf>]
+ [18 <./2_5_100F_1.pdf> <./2_5_100F_2.pdf>]
 File: ep2_14[Page10].pdf Graphic file (type pdf)
  <use ep2_14[Page10].pdf>
-Package pdftex.def Info: ep2_14[Page10].pdf used on input line 640.
+Package pdftex.def Info: ep2_14[Page10].pdf used on input line 676.
 (pdftex.def)             Requested size: 557.38815pt x 83.65091pt.
 
-Overfull \hbox (73.69128pt too wide) in paragraph at lines 640--641
+Overfull \hbox (73.69128pt too wide) in paragraph at lines 676--677
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:2_6_100F' on page 17 undefined on input line 658.
-
-
-[17 <./2_5_1000F_1.pdf> <./2_5_1000F_2.pdf>]
-<2_6_100F_1.pdf, id=333, 578.16pt x 722.7pt>
+[19 <./2_5_1000F_1.pdf> <./2_5_1000F_2.pdf>]
+<2_6_100F_1.pdf, id=342, 578.16pt x 722.7pt>
 File: 2_6_100F_1.pdf Graphic file (type pdf)
  <use 2_6_100F_1.pdf>
-Package pdftex.def Info: 2_6_100F_1.pdf used on input line 663.
+Package pdftex.def Info: 2_6_100F_1.pdf used on input line 699.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 
-<2_6_100F_2.pdf, id=334, 578.16pt x 722.7pt>
+<2_6_100F_2.pdf, id=343, 578.16pt x 722.7pt>
 File: 2_6_100F_2.pdf Graphic file (type pdf)
  <use 2_6_100F_2.pdf>
-Package pdftex.def Info: 2_6_100F_2.pdf used on input line 671.
+Package pdftex.def Info: 2_6_100F_2.pdf used on input line 707.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 
-
-LaTeX Warning: Reference `fig:2_6_1000F' on page 18 undefined on input line 679
-.
-
-<2_6_1000F_1.pdf, id=335, 578.16pt x 722.7pt>
+<2_6_1000F_1.pdf, id=344, 578.16pt x 722.7pt>
 File: 2_6_1000F_1.pdf Graphic file (type pdf)
  <use 2_6_1000F_1.pdf>
-Package pdftex.def Info: 2_6_1000F_1.pdf used on input line 684.
+Package pdftex.def Info: 2_6_1000F_1.pdf used on input line 720.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 
-<2_6_1000F_2.pdf, id=336, 578.16pt x 722.7pt>
+<2_6_1000F_2.pdf, id=345, 578.16pt x 722.7pt>
 File: 2_6_1000F_2.pdf Graphic file (type pdf)
  <use 2_6_1000F_2.pdf>
-Package pdftex.def Info: 2_6_1000F_2.pdf used on input line 692.
+Package pdftex.def Info: 2_6_1000F_2.pdf used on input line 728.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- [18 <./2_6_100F_1.pdf> <./2_6_100F_2.pdf>]
-<ep2_14[Page11].pdf, id=346, 614.295pt x 794.97pt>
+ [20 <./2_6_100F_1.pdf> <./2_6_100F_2.pdf>]
+<ep2_14[Page11].pdf, id=355, 614.295pt x 794.97pt>
 File: ep2_14[Page11].pdf Graphic file (type pdf)
  <use ep2_14[Page11].pdf>
-Package pdftex.def Info: ep2_14[Page11].pdf used on input line 725.
+Package pdftex.def Info: ep2_14[Page11].pdf used on input line 770.
 (pdftex.def)             Requested size: 557.38815pt x 83.65094pt.
 
-Overfull \hbox (73.69128pt too wide) in paragraph at lines 725--726
+Overfull \hbox (73.69128pt too wide) in paragraph at lines 770--771
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:3_1' on page 19 undefined on input line 748.
-
-[19 <./ep2_14[Page11].pdf> <./2_6_1000F_1.pdf> <./2_6_1000F_2.pdf>]
-<3_1_1.pdf, id=383, 578.16pt x 722.7pt>
+[21 <./2_6_1000F_1.pdf> <./2_6_1000F_2.pdf>]
+<3_1_1.pdf, id=366, 578.16pt x 722.7pt>
 File: 3_1_1.pdf Graphic file (type pdf)
  <use 3_1_1.pdf>
-Package pdftex.def Info: 3_1_1.pdf used on input line 753.
+Package pdftex.def Info: 3_1_1.pdf used on input line 816.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 
-<3_1_2.pdf, id=384, 578.16pt x 722.7pt>
+<3_1_2.pdf, id=367, 578.16pt x 722.7pt>
 File: 3_1_2.pdf Graphic file (type pdf)
  <use 3_1_2.pdf>
-Package pdftex.def Info: 3_1_2.pdf used on input line 761.
+Package pdftex.def Info: 3_1_2.pdf used on input line 824.
 (pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+ [22 <./ep2_14[Page11].pdf>]
 File: ep2_14[Page11].pdf Graphic file (type pdf)
-
-<use ep2_14[Page11].pdf>
-Package pdftex.def Info: ep2_14[Page11].pdf used on input line 777.
+ <use ep2_14[Page11].pdf>
+Package pdftex.def Info: ep2_14[Page11].pdf used on input line 842.
 (pdftex.def)             Requested size: 557.38815pt x 103.5678pt.
 
-Overfull \hbox (73.69128pt too wide) in paragraph at lines 777--778
+Overfull \hbox (73.69128pt too wide) in paragraph at lines 842--843
  [][] 
  []
 
-[20 <./3_1_1.pdf> <./3_1_2.pdf>]
-<ep2_14[Page12].pdf, id=396, 614.295pt x 794.97pt>
+[23 <./3_1_1.pdf> <./3_1_2.pdf>] <3_2.pdf, id=407, 361.35pt x 252.945pt>
+File: 3_2.pdf Graphic file (type pdf)
+
+<use 3_2.pdf>
+Package pdftex.def Info: 3_2.pdf used on input line 898.
+(pdftex.def)             Requested size: 252.94327pt x 177.06029pt.
+ [24] <ep2_14[Page12].pdf, id=411, 614.295pt x 794.97pt>
 File: ep2_14[Page12].pdf Graphic file (type pdf)
- <use ep2_14[Page12].pdf>
-Package pdftex.def Info: ep2_14[Page12].pdf used on input line 837.
+
+<use ep2_14[Page12].pdf>
+Package pdftex.def Info: ep2_14[Page12].pdf used on input line 912.
 (pdftex.def)             Requested size: 557.38815pt x 140.5563pt.
 
-Overfull \hbox (73.69128pt too wide) in paragraph at lines 837--838
+Overfull \hbox (73.69128pt too wide) in paragraph at lines 912--913
  [][] 
  []
 
+[25 <./ep2_14[Page12].pdf> <./3_2.pdf>]
+<3_3.pdf, id=450, 361.35pt x 252.945pt>
+File: 3_3.pdf Graphic file (type pdf)
+ <use 3_3.pdf>
+Package pdftex.def Info: 3_3.pdf used on input line 967.
+(pdftex.def)             Requested size: 252.94327pt x 177.06029pt.
 File: ep2_14[Page12].pdf Graphic file (type pdf)
-<use ep2_14[Page12].pdf>
-Package pdftex.def Info: ep2_14[Page12].pdf used on input line 866.
+ <use ep2_14[Page12].pdf>
+Package pdftex.def Info: ep2_14[Page12].pdf used on input line 983.
 (pdftex.def)             Requested size: 557.38815pt x 126.32994pt.
 
-Overfull \hbox (73.69128pt too wide) in paragraph at lines 866--867
+Overfull \hbox (73.69128pt too wide) in paragraph at lines 983--984
  [][] 
  []
 
-[21 <./ep2_14[Page12].pdf>] [22]
+[26 <./3_3.pdf>] [27] <3_4_min_v.pdf, id=465, 361.35pt x 252.945pt>
+File: 3_4_min_v.pdf Graphic file (type pdf)
+
+<use 3_4_min_v.pdf>
+Package pdftex.def Info: 3_4_min_v.pdf used on input line 1059.
+(pdftex.def)             Requested size: 252.94327pt x 177.06029pt.
+ <3_4_max_v.pdf, id=466, 361.35pt x 252.945pt>
+File: 3_4_max_v.pdf Graphic file (type pdf)
+
+<use 3_4_max_v.pdf>
+Package pdftex.def Info: 3_4_max_v.pdf used on input line 1067.
+(pdftex.def)             Requested size: 252.94327pt x 177.06029pt.
+ [28 <./3_4_min_v.pdf>]
+<3_4_min_a.pdf, id=475, 361.35pt x 252.945pt>
+File: 3_4_min_a.pdf Graphic file (type pdf)
+ <use 3_4_min_a.pdf>
+Package pdftex.def Info: 3_4_min_a.pdf used on input line 1076.
+(pdftex.def)             Requested size: 252.94327pt x 177.06029pt.
+
+<3_4_max_a.pdf, id=476, 361.35pt x 252.945pt>
+File: 3_4_max_a.pdf Graphic file (type pdf)
+ <use 3_4_max_a.pdf>
+Package pdftex.def Info: 3_4_max_a.pdf used on input line 1084.
+(pdftex.def)             Requested size: 252.94327pt x 177.06029pt.
+ [29 <./3_4_max_v.pdf> <./3_4_min_a.pdf> <./3_4_max_a.pdf>] [30]
 (./Versuch EP2 Die Diode Henrik und Frederik.aux)
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5028 strings out of 493304
- 72596 string characters out of 6139871
- 147649 words of memory out of 5000000
- 8349 multiletter control sequences out of 15000+600000
+ 5081 strings out of 493304
+ 73480 string characters out of 6139871
+ 148582 words of memory out of 5000000
+ 8392 multiletter control sequences out of 15000+600000
  69701 words of font info for 53 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,11n,38p,511b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texlive/texmf-dist/fonts/ty
+ 37i,11n,38p,1142b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
-tmri8a.pfb>
-Output written on "Versuch EP2 Die Diode Henrik und Frederik.pdf" (22 pages, 68
-4556 bytes).
+/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/times/utmri8a.pfb>
+Output written on "Versuch EP2 Die Diode Henrik und Frederik.pdf" (30 pages, 75
+0958 bytes).
 PDF statistics:
- 480 PDF objects out of 1000 (max. 8388607)
- 345 compressed objects within 4 object streams
+ 549 PDF objects out of 1000 (max. 8388607)
+ 392 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 232 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 262 words of extra memory for PDF output out of 10000 (max. 10000000)
 
