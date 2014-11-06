@@ -42,7 +42,8 @@ In diesem Abschnitt wird die Kennlinie einer 1N4007 Gleichrichterdiode und einer
 \subsection{Verwendete Materialien}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben oder besser noch das ganze in einem Fließtext gut umschreiben
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!
-Zur Untersuchung der Ströme und Spannungen werden DMMs oder ein Oszilloskop verwendet. Als Stromquellen werden Funktionsgeneratoren oder Transformatoren verwendet. Als Bauteile werden Dioden, Widerstände, Potentiometer, Elektrolytkondenstoren, Glühlampen, Transistoren und ein Spannungsregler verwendet.
+
+Zur Untersuchung der Ströme und Spannungen werden DMMs verwendet. Als Stromquellen wird ein Funktionsgeneratoren . Als Bauteile werden Dioden und Widerstände verwendet.
 \subsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 Im ersten Versuchsteil soll die Kennlinie einer 1N4007 Diode und einer Zenerdiode aufgenommen werden dafür wird die Schaltung aus Abbildung \ref{fig:1} verwendet. Dabei ist P$_1$ ein 10-Gang-Potentiometer, welches in 10 Schritten Widerstände von 0 bis 1k$\Omega$ annehmen kann. R$_1$ hat einen Wert von 100$\Omega$. U$_\pm$ wird mit 10V eingestellt. I$_0$ und U$_0$ sind die Strom- bzw. Spannungsmessgeräte. D bezeichnet die verwendete Diode.
@@ -269,7 +270,7 @@ Der Fehler der Spannung beträgt 0,06V und der Fehler des Stroms beträgt 0,003m
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abgehandeln
 
-Im ersten Aufgabenteil sollten die Kennlinien einer 1N4007 Diode und einer Zenerdiode aufgenommen werden. Für die 1N4007 Diode ergaben sich die folgenden Graphen.
+Im ersten Aufgabenteil sollten die Kennlinien einer 1N4007 Diode und einer Zenerdiode aufgenommen werden. Für die 1N4007 Diode ergaben sich die folgenden Graphen. Es wurden e-Funktionen angefittet, um den exponentiellen Verlauf zu verdeutlichen.
 
 \begin{figure}[H]
         \centering
@@ -331,6 +332,9 @@ Im zweiten Versuch sollen Schaltungen zur Gleichrichtung des Stromes untersucht 
 \subsection{Verwendete Materialien}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben oder besser noch das ganze in einem Fließtext gut umschreiben
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!
+
+Zur Untersuchung der Ströme und Spannungen werden DMMs und/oder ein Oszilloskop verwendet. Als Stromquellen werden Funktionsgeneratoren oder Transformatoren verwendet. Als Bauteile werden Dioden, Widerstände, Potentiometer, Elektrolytkondenstoren und Glühlampen verwendet.
+
 \subsection{Einweggleichrichtung (Sinusgenerator)}
 In diesem Versuchsteil soll das Gleichrichten einer Sinusspannung mittels einer Diode untersucht werden.
 \subsubsection{Versuchsaufbau}
@@ -386,6 +390,7 @@ Bei 50Hz, Abbildung \ref{fig:2_1_1} ist deutlich zu erkennen, dass keine negativ
 \end{figure}
 
 \subsection{Einweggleichrichtung mit Kondensator}
+Zusätzlich zur Diode wird ein Kondensator parallel zur Last geschaltet, um den Spannungsabfall bei negativer Eingangsspannung, bei der die Diode nicht leitet, auszugleichen.
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 Es wird der selbe Versuchsaufbau wie in Abbildung \ref{fig:2_1} Verwendet, jedoch wird ein hinter der Diode liegender Elektrolytkondensator parallel zu R$_\text{L}$ geschaltet. Die Elektrolytkondensator sind dabei im Bereich von 1$\mu$F bis 100$\mu$F zu wählen.
@@ -456,6 +461,7 @@ Bei dem 10$\mu$F ergaben sich die folgenden Verläufe auf dem Oszilloskop.
 Es ist deutlich zu erkennen, dass bei dem 10$\mu$F Kondensator die Amplitude besser gehalten wird als bei dem 1$\mu$F Kondenstor. Dies liegt and der größeren Halbwertszeit des 10$\mu$F Kondensators.
 
 \subsection{Einweggleichrichtung (Transformator)}
+Die durch den Trafo erzeugte Wechselspannung wird wie im vorletzten Versuchsteil ausschließlich mit einer Diode gleichgerichtet.
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
@@ -472,7 +478,7 @@ In dem Aufbau wird für R$_\text{L}$ ein 470$\Omega$ Potentiometer mit einem 47$
 \begin{figure}[H] 
   \centering
     \includegraphics[trim = 10mm 150mm 10mm 95mm, clip, scale = 1]{ep2_14[Page9].pdf}
-  	\caption[Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Transformator]{Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Transformator\footnotemark}
+  	\caption[Schaltskizze zur Einweggleichrichtung mit Transformator]{Schaltskizze zur Einweggleichrichtung mit Transformator\footnotemark}
   \label{fig:2_4}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 9 am 28.10.2014}
@@ -513,6 +519,7 @@ In diesem Aufgabenteil soll die Ausgangsspannung in Abhängigkeit von RL gemesse
 
 
 \subsection{Einweggleichrichtung mit Kondensator}
+Die durch den Transformator erzeugte Wechselspannung soll wie im vorletzten Versuchsteil gleichgerichtet werden.
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 Es wird der selbe Versuchsaufbau wie in Abbildung \ref{fig:2_4} verwendet, mit einem zwischen Elektrolytkondensator, der Parallel zum Potentiometer und der Glühlampe geschaltet ist. Der Elektrolytkondensator wird hinter der Diode eingebaut. Es wird ein Elektrolytkondensator mit 100$\mu$F oder 1000$\mu$F verwendet.
@@ -520,7 +527,7 @@ Es wird der selbe Versuchsaufbau wie in Abbildung \ref{fig:2_4} verwendet, mit e
 \begin{figure}[H] 
   \centering
     \includegraphics[trim = 10mm 80mm 10mm 170mm, clip, scale = 1]{ep2_14[Page9].pdf}
-  	\caption[Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Transformator]{Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Transformator\footnotemark}
+  	\caption[Schaltskizze der Einweggleichrichtung mit Transformator]{Schaltskizze der Einweggleichrichtung mit Transformator\footnotemark}
   \label{fig:2_5}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 9 am 28.10.2014}
@@ -588,7 +595,7 @@ Es werden Elektrolytkondensatoren mit 100$\mu$F oder 1000$\mu$F verwendet. R$_\t
 \begin{figure}[H] 
   \centering
     \includegraphics[trim = 10mm 200mm 10mm 45mm, clip, scale = 1]{ep2_14[Page10].pdf}
-  	\caption[Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Transformator]{Schaltskizze für die Messung der Eigenschaften einer Einweggleichrichtungsschaltung mit Transformator\footnotemark}
+  	\caption[Schaltskizze der Einweggleichrichtung mit Transformator]{Schaltskizze der Einweggleichrichtung mit Transformator\footnotemark}
   \label{fig:2_6}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 10 am 28.10.2014}
@@ -651,7 +658,7 @@ Für den 1000$\mu$F Kondensator ergaben sich die Verläufe in Abbildung \ref{fig
 Bei hohem Widerstand wird bei dem Kondensator mit größerer Kapazität ein höherer Gleichspannungsanteil erreicht.
 
 \subsection{Brückengleichrichter}
-\subsubsection{Verwendete Materialien}
+Ein aus vier Dioden bestehender Brückengleichrichter wird an den Transformator angeschlossen. Ähnlich wie im Versuchsteil davor ergänzen sich positive und negative Spannung.
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 Als Elektrolytkondensator wird wieder einer mit 100$\mu$F oder 1000$\mu$F verwendet. Bei den Dioden handelt es sich wider um 1N4007 Dioden. RL ist ein 470$\Omega$ Potentiometer und La ist eine Glühlampe.
@@ -729,23 +736,30 @@ Es ist deutlich zu erkennen, das der 1000$\mu$F Kondensator ein besseres Signal 
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 
-Wie erwartet wurde die halbe Zeit, in der kein Strom floss mit einem Kondensator überbrücke werden. Dabei zeigte sich, das bei Kondensatoren mit größerer Kapazität der Spitze-Spitze-Abstand geringer ausfiel, was auch erwartet wurde.
+Wie erwartet wurde die halbe Zeit, in der kein Strom floss mit einem Kondensator überbrückt werden. Dabei zeigte sich, das bei Kondensatoren mit größerer Kapazität der Spitze-Spitze-Abstand geringer ausfiel, was auch erwartet wurde. 
 
 
 \section{Spannungsstabilisierung}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
-\subsection{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen.
+Ziel dieses Versuches ist die Spannung, welche an der Last abfällt, zu stabilisieren. Die Zenerdiode ist ein essentielles Bestandteil der verwendeten Schaltungen.
+
+\subsection{Verwendete Materialien}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben oder besser noch das ganze in einem Fließtext gut umschreiben
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!
+
+Zur Untersuchung der Ströme und Spannungen werden DMMs oder ein Oszilloskop verwendet. Als Stromquellen werden Funktionsgeneratoren oder Transformatoren verwendet. Als Bauteile werden Dioden, Widerstände, Potentiometer, Elektrolytkondenstoren, Glühlampen, ein Transistor und ein Spannungsregler Typ 7805 verwendet.
+
 \subsection{Spannugsstabilisierung mit Zenerdiode (Transformatorbetrieb)}
+Um die Spannung, welche an der Last abfällt, zu stabilisieren wird in den folgenden Versuchsteilen eine Zenerdiode verwendet.
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+Der Kondensator hat eine Kapazität von 100$\mu$F oder 1000$\mu$F, Rv hat einen Widerstand von 200$\Omega$, für RL wird ein 470$\Omega$ Potentiometer verwendet und La ist eine Glühlampe.
 
 \begin{figure}[H] 
   \centering
     \includegraphics[trim = 10mm 130mm 10mm 120mm, clip, scale = 1]{ep2_14[Page11].pdf}
-  	\caption[Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode]{Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode\footnotemark}
+  	\caption[Schaltskizze zur Spannugsstabilisierung mit Zenerdiode]{Schaltskizze zur Spannugsstabilisierung mit Zenerdiode\footnotemark}
   \label{fig:2_8}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 10 am 28.10.2014}
@@ -805,15 +819,17 @@ Es wurde die Ausgangsspannung in Abhängigkeit des Widerstandes des Potentiomete
 \end{figure}
 
 Es ist zu sehen, dass bei geringerem Widerstand 400mV der Spitze-Spitze-Abstand geringer ist als bei dem maximalem Widerstand 600mV ist.
-
 \subsection{Spannungstabilisierung mit Zenerdiode (variable Eingangsspannung)}
+Der Trafo und die Brückengleichrichterschaltung wird nun durch eine variable Gleichspannungsquelle ersetzt, um die Ausgangsspannung abhängig von der Eingangsspannung darzustellen.
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+Die Bauteile haben die selben Werte wie im vorherigem Aufbau jedoch wurde die Brückengleichrichterschaltung entfernt.
 
 \begin{figure}[H] 
   \centering
     \includegraphics[trim = 10mm 30mm 10mm 213mm, clip, scale = 1]{ep2_14[Page11].pdf}
-  	\caption[Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung]{Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung\footnotemark}
+  	\caption[Schaltskizze zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung]{Schaltskizze zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung\footnotemark}
   \label{fig:2_9}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 10 am 28.10.2014}
@@ -822,7 +838,7 @@ Es ist zu sehen, dass bei geringerem Widerstand 400mV der Spitze-Spitze-Abstand 
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-Der Trafo und die Brückengleichrichterschaltung werden nun durch eine variable Eingangsgleichspannung (Funktionsgenerator) ersetzt \footnote{Versuchsaufbau: Abb. \ref{fig:2_9}}. Bei variierender Eingangsspannung wird Strom und Spannung über der Last gemessen (DMM) und geplottet \footnote{Da bei diesem Versuchsteil Gleichspannung herrscht, ist der Kondensator relativ unwichtig. Im folgenden Versuchsteil wird er deshalb einfach weggelassen.}.
+Der Trafo und die Brückengleichrichterschaltung werden durch eine variable Eingangsgleichspannung (Funktionsgenerator) ersetzt \footnote{Versuchsaufbau: Abb. \ref{fig:2_9}}. Bei variierender Eingangsspannung wird Strom und Spannung über der Last gemessen (DMM) und geplottet \footnote{Da bei diesem Versuchsteil Gleichspannung herrscht, ist der Kondensator relativ unwichtig. Im folgenden Versuchsteil wird er deshalb einfach weggelassen.}.
 \subsubsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -874,13 +890,16 @@ Wie in Abbildung \ref{fig:3_2} zu sehen ist, wird die Ausgangsspannung bei einem
 \end{figure}
 
 \subsection{Erhöhung des Ausgangsstroms mit Transistor}
+Ein Transistor, welcher den Ausgangsstrom erhöhen soll wird nun dazu geschaltet. Der Vorteil dieser Schaltung besteht darin, dass eine höhere Leistung an der Last erzielt werden kann. 
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+T1 ist ein Transistor, R1 ein 470 $\Omega$ Widerstand, R2 ein 470$\Omega$ Potentiometer, R3 der eingebaute Vorwiderstand des Potentiometers.
 
 \begin{figure}[H] 
   \centering
     \includegraphics[trim = 10mm 160mm 10mm 70mm, clip, scale = 1]{ep2_14[Page12].pdf}
-  	\caption[Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung]{Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung\footnotemark}
+  	\caption[Schaltskizze zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung]{Schaltskizze zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung\footnotemark}
   \label{fig:2_10}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 10 am 28.10.2014}
@@ -930,7 +949,7 @@ Der Fehler für den Strom und U$_\text{aus}$ wurden mit dem angegebenen Fehler u
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abgehandeln
 
-Wie in Abbildung \ref{fig:3_2} zu sehen ist, wird die Ausgangsspannung bei einem Wert von 5,1V, wie im vorherigem Versuchsteil von der Zenerdiode abgeschnitten.
+Wie in Abbildung \ref{fig:3_2} zu sehen ist, wird die Ausgangsspannung bei einem Wert von 4,3V, wie im vorherigem Versuchsteil von der Zenerdiode abgeschnitten.
 
 \begin{figure}[H] 
   \centering
@@ -942,13 +961,16 @@ Wie in Abbildung \ref{fig:3_2} zu sehen ist, wird die Ausgangsspannung bei einem
 Jedoch ist die Leistung höher als im Vorherigem Aufbau. Dies lässt sich aus den Werten für den Strom in Tabelle \ref{tab:3_2_w} und Tabelle \ref{tab:3_3_w} ablesen.
 
 \subsection{Integrierte Spannungsregler}
+Es wird ein Integrierter Spannungsregler (Typ 7805) verwendet.
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+C1 und C2 sind 10$\mu$F, R1 ist ein 470 Potentiometer und R2 dessen eingebauter Vorwiderstand, IC1 ist ein Regelelement des Typs 7805.
 
 \begin{figure}[H] 
   \centering
     \includegraphics[trim = 10mm 30mm 10mm 205mm, clip, scale = 1]{ep2_14[Page12].pdf}
-  	\caption[Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung]{Schaltskizze für Schaltung zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung\footnotemark}
+  	\caption[Schaltskizze zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung]{Schaltskizze zur Spannugsstabilisierung mit Zenerdiode, bei variabler Eingangsspannung\footnotemark}
   \label{fig:2_11}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep2\_14.pdf Seite 10 am 28.10.2014}
@@ -1063,13 +1085,14 @@ Plottet man den Strom gegen die Eingangsspannung erbeben sich die Verläufe in A
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 
-Alle Messungen sind erfolgreich verlaufen.
+Der Effekt der Spannungsstabilisierung lies sich in allen Versuchsteilen gut beobachten. Mit eingebautem Transistor sowie mit dem modernen Regelgerät konnte die Spannung "gleichmäßiger" stabilisiert werden.
 
 \section{Fazit}
 %im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
 %gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
 
-Ente gut alles gut.
+Der Versuch hat die Eigenschaften von Dioden als Bauelement in Schaltnetzwerken gut verdeutlicht. So wie den Nutzen von Dioden um aus Wechselspannung Gleichspannung zu erzeugen.
+
 
 \end{document}
 
