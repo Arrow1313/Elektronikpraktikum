@@ -11,7 +11,7 @@ set ylabel "Strom/mA"
 
 set key left top
 
-plot "a2_2.dat" with xyerrorbars title "Durchlassrichtung"#, f(x) title "Regressionsgerade"
+plot "a2_2.dat" with xyerrorbars title "Messdaten"#, f(x) title "Regressionsgerade"
 
 set terminal postscript eps enhanced color font 'Helvetica,12'
 set output "a2_2.eps"

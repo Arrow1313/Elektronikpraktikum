@@ -710,6 +710,8 @@ Es ist deutlich zu erkennen, das der 1000$\mu$F Kondensator ein besseres Signal 
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 
 Wie erwartet konnten bei Kondensatoren mit größerer Kapazität bessere Ergebnisse erzielt werden.
+
+
 \section{Spannungsstabilisierung}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -736,6 +738,21 @@ Wie erwartet konnten bei Kondensatoren mit größerer Kapazität bessere Ergebni
 %zu viele kleine tabellen in große tabellen überführen!
 %zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
 %(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+\begin{table}[H]
+\caption{Messdate der Ausgangsspannung in Abhängigkeit des Stroms}
+\begin{center}
+\begin{tabular}{|l|r|r|r|r|}
+\hline
+Widerstand & \multicolumn{1}{l|}{Spannung/V} & \multicolumn{1}{l|}{Fehler/V} & \multicolumn{1}{l|}{Strom/mA} & \multicolumn{1}{l|}{Fehler/A} \\ \hline
+Max & 5,08 & 0,06 & 8,6 & 0,6 \\ \hline
+Min & 3,54 & 0,06 & 31,3 & 0,6 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:3_1}
+\end{table}
+
+
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -745,7 +762,7 @@ Wie erwartet konnten bei Kondensatoren mit größerer Kapazität bessere Ergebni
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abgehandeln
 
-Es wurde die Ausgangsspannung in Abhängigkeit des Widerstandes des Potentiometers bestimmt werden. Es wurde eine Messung bei minimalem und bei maximalem Widerstand durchgeführt, die Messdaten sind in Abbildung \ref{fig:3_1} zu sehen.
+Es wurde die Ausgangsspannung in Abhängigkeit des Widerstandes des Potentiometers bestimmt werden. Es wurde eine Messung bei minimalem und bei maximalem Widerstand durchgeführt, die Messdaten sind in Abbildung \ref{fig:3_1} zu sehen. Jedoch wurde das Signal des Oszilloskops vor dem Vorwiderstand abgegriffen, dadurch liegt der Mittelwert bei 9,71V bzw. 9,74V und nicht bei 5,1V, was erwartet wurde. Jedoch war das DMM richtig angeschlossen und es wurden die erwarteten Werte gemessen, siehe Tabelle \ref{tab:3_1}.
 
 \begin{figure}[H]
         \centering
@@ -793,7 +810,7 @@ Es ist zu sehen, dass bei geringerem Widerstand 400mV der Spitze-Spitze-Abstand 
 
 Der Fehler für den Strom und U$_\text{aus}$ wurden mit dem angegebenen Fehler und der Ableseungenauigkeit bestimmt, sie liegen bei 0,6V und 0,6mA. Der Fehler der Eingangsspannung wurde nur über die Ableseungenauigkeit bestimmt, das kein Fehlerwert angegeben war.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \caption{Messung der Ausgangsspannung und des Stroms in Abhängigkeit der Eingangsspannung}
 \begin{center}
 \begin{tabular}{|r|r|r|}
@@ -826,7 +843,14 @@ Der Fehler für den Strom und U$_\text{aus}$ wurden mit dem angegebenen Fehler u
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abgehandeln
 
+Wie in Abbildung \ref{fig:3_2} zu sehen ist, wird die Ausgangsspannung bei einem Wert von 5,1V von der Zenerdiode abgeschnitten.
 
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.7]{3_2.pdf}
+  	\caption[Ausgangsspannung in Abhängigkeit der Eingangsspannung]{Ausgangsspannung in Abhängigkeit der Eingangsspannung}
+  \label{fig:3_2}
+\end{figure}
 
 \subsection{Erhöhung des Ausgangsstroms mit Transistor}
 \subsubsection{Versuchsaufbau}
@@ -849,6 +873,33 @@ Der Fehler für den Strom und U$_\text{aus}$ wurden mit dem angegebenen Fehler u
 %zu viele kleine tabellen in große tabellen überführen!
 %zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
 %(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+Der Fehler für den Strom und U$_\text{aus}$ wurden mit dem angegebenen Fehler und der Ableseungenauigkeit bestimmt, sie liegen bei 0,6V und 0,6mA. Der Fehler der Eingangsspannung wurde nur über die Ableseungenauigkeit bestimmt, das kein Fehlerwert angegeben war.
+
+\begin{table}[H]
+\caption{Messung der Ausgangsspannung und des Stroms in Abhängigkeit der Eingangsspannung}
+\begin{center}
+\begin{tabular}{|r|r|r|}
+\hline
+\multicolumn{1}{|l|}{U$_\text{ein}$/V} & \multicolumn{1}{l|}{U$_\text{aus}$/V} & \multicolumn{1}{l|}{Strom/A} \\ \hline
+1 & 0,34 & 0,07 \\ \hline
+2 & 1,15 & 0,024 \\ \hline
+3 & 2,02 & 0,042 \\ \hline
+4 & 2,89 & 0,06 \\ \hline
+5 & 3,56 & 0,075 \\ \hline
+6 & 3,97 & 0,083 \\ \hline
+7 & 4,15 & 0,87 \\ \hline
+8 & 4,23 & 0,089 \\ \hline
+9 & 4,28 & 0,09 \\ \hline
+10 & 4,32 & 0,91 \\ \hline
+11 & 4,35 & 0,91 \\ \hline
+12 & 4,37 & 0,092 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:3_3_w}
+\end{table}
+
+
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -857,6 +908,18 @@ Der Fehler für den Strom und U$_\text{aus}$ wurden mit dem angegebenen Fehler u
 %bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abgehandeln
+
+Wie in Abbildung \ref{fig:3_2} zu sehen ist, wird die Ausgangsspannung bei einem Wert von 5,1V, wie im vorherigem Versuchsteil von der Zenerdiode abgeschnitten.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.7]{3_3.pdf}
+  	\caption[Ausgangsspannung in Abhängigkeit der Eingangsspannung]{Ausgangsspannung in Abhängigkeit der Eingangsspannung}
+  \label{fig:3_3}
+\end{figure}
+
+Jedoch ist die Leistung höher als im Vorherigem Aufbau. Dies lässt sich aus den Werten für den Strom in Tabelle \ref{tab:3_2_w} und Tabelle \ref{tab:3_3_w} ablesen.
+
 \subsection{Integrierte Spannungsregler}
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
@@ -878,6 +941,52 @@ Der Fehler für den Strom und U$_\text{aus}$ wurden mit dem angegebenen Fehler u
 %zu viele kleine tabellen in große tabellen überführen!
 %zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
 %(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+Der Fehler für den Strom und die Ausgagnsspannung wurden über die Ableseungenauigkeit und den Angegebenen Fehler bestimmt, dabei ergibt sich ein Wert von 0,06V und 0,06mA. Der Fehler der Eingagansspannung wurde nur über die Ableseungenauigkeit bestimmt, es ergibt sich ein Wert von 0,1V.
+
+\begin{table}[H]
+\caption{Messung der Aus- und Eingagnsspannung, sowie des Stromes, bei minimalem Widerstand}
+\begin{center}
+\begin{tabular}{|r|r|r|}
+\hline
+\multicolumn{1}{|l|}{U$_\text{ein}$/V} & \multicolumn{1}{l|}{U$_\text{aus}$/V} & \multicolumn{1}{l|}{Strom/mA} \\ \hline
+1 & 0 & 0 \\ \hline
+2 & 0 & 0,01 \\ \hline
+3 & 1,81 & 3,28 \\ \hline
+4 & 2,81 & 5,08 \\ \hline
+5 & 3,77 & 6,82 \\ \hline
+6 & 4,72 & 8,53 \\ \hline
+7 & 4,94 & 8,94 \\ \hline
+8 & 4,94 & 8,94 \\ \hline
+9 & 4,94 & 8,94 \\ \hline
+10 & 4,94 & 8,94 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:3_4_min}
+\end{table}
+
+\begin{table}[H]
+\caption{Messung der Aus- und Eingagnsspannung, sowie des Stromes, bei maximalem Widerstand}
+\begin{center}
+\begin{tabular}{|r|r|r|}
+\hline
+\multicolumn{1}{|l|}{U$_\text{ein}$/V} & \multicolumn{1}{l|}{U$_\text{aus}$/V} & \multicolumn{1}{l|}{Strom/mA} \\ \hline
+1 & 0 & 0 \\ \hline
+2 & 0 & 0 \\ \hline
+3 & 1,72 & 35,7 \\ \hline
+4 & 2,68 & 55,6 \\ \hline
+5 & 3,66 & 76,1 \\ \hline
+6 & 4,6 & 95,8 \\ \hline
+7 & 4,93 & 102,6 \\ \hline
+8 & 4,93 & 102,6 \\ \hline
+9 & 4,93 & 102,6 \\ \hline
+10 & 4,93 & 102,6 \\ \hline
+\end{tabular}
+\end{center}
+\label{tab:3_4_max}
+\end{table}
+
+
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -886,6 +995,43 @@ Der Fehler für den Strom und U$_\text{aus}$ wurden mit dem angegebenen Fehler u
 %bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abgehandeln
+
+Wie in Abbildung \ref{fig:3_4_min_v} und \ref{fig:3_4_max_v} zu erkennen ist hängt die Ausgangsspannung von der Eingangsspannung ab. Danach ist die Ausgangsspannung unabhängig von der Eingangsspannung. Die stabilisierung der Spannung fängt ab 6V an.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.7]{3_4_min_v.pdf}
+  	\caption[Ausgangsspannung in Abhängigkeit der Eingangsspannung, bei minimalem Widerstand]{Ausgangsspannung in Abhängigkeit der Eingangsspannung, bei minimalem Widerstand}
+  \label{fig:3_4_min_v}
+\end{figure}
+
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.7]{3_4_max_v.pdf}
+  	\caption[Ausgangsspannung in Abhängigkeit der Eingangsspannung, bei maximalem Widerstand]{Ausgangsspannung in Abhängigkeit der Eingangsspannung, bei maximalem Widerstand}
+  \label{fig:3_4_max_v}
+\end{figure}
+
+Plottet man den Strom gegen die Eingangsspannung erbeben sich die Verläufe in Abbildung \ref{fig:3_4_min_a} und Abbildung \ref{fig:3_4_max_a} für den minimalen und den maximalen Widerstand.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.7]{3_4_min_a.pdf}
+  	\caption[Ausgangsspannung in Abhängigkeit der Eingangsspannung, bei minimalem Widerstand]{Ausgangsspannung in Abhängigkeit der Eingangsspannung, bei minimalem Widerstand}
+  \label{fig:3_4_min_a}
+\end{figure}
+
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.7]{3_4_max_a.pdf}
+  	\caption[Ausgangsspannung in Abhängigkeit der Eingangsspannung, bei maximalem Widerstand]{Ausgangsspannung in Abhängigkeit der Eingangsspannung, bei maximalem Widerstand}
+  \label{fig:3_4_max_a}
+\end{figure}
+
+
+
 \subsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -895,8 +1041,14 @@ Der Fehler für den Strom und U$_\text{aus}$ wurden mit dem angegebenen Fehler u
 %(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+
+Alle Messungen sind erfolgreich verlaufen.
+
 \section{Fazit}
 %im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
 %gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
+
+Ente gut alles gut.
+
 \end{document}
 
