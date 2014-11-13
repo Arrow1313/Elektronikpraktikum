@@ -37,53 +37,11 @@ Dieser Versuch beschäftigt sich mit Transistoren, dem zentralen Verstärkerelem
 %---------------------------------------------------------------------------------------------
 %hinter der einleitung kann der allgemeine theoretische hintergrund in einer zusätzlichen section erklärt werden
 %1-----------------------------------------------1
-\section{Bauelement und Schaltsymbol}
-%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
-%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
-Ziel dieses Versuchsteiles ist es sich mit den Bauformen und verwendeten Schaltsymbolen auseinanderzusetzen.
-\subsection{Verwendete Materialien}
-%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
-%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-\subsection{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
-\subsection{Versuchsaufbau}
-%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
-\subsection{Versuchsdurchführung}
-%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
-%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
-\subsection{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
-\subsection{Auswertung}
-%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
-%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
-%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
-%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
-%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
-%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
-%kurz die aufgabenstellung abgehandeln
-%2-----------------------------------------------2
-\subsection{Diskussion}
-%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
-%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
-%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
-%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
-%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
-%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
-%--------------------------------------------------------------------------------------------
-%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
-%1-----------------------------------------------1
 \section{Eigenschaften von Transistoren}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 Ziel dieses Versuchsteils ist es die Ausgangs und Eingangskennlinie eines Transistors aufzunehmen, sowie die Stromverstärkung zu bestimmen.
-\subsection{Verwendete Materialien}
+\subsection{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 \subsection{Verwendete Formeln}
@@ -115,7 +73,8 @@ Ziel dieses Versuchsteils ist es die Ausgangs und Eingangskennlinie eines Transi
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
+Zuerst soll die Eingangskennlinie  $I_B$ gegen $U_{BE}$ aufgenommen werden. Zu erwarten ist ein diodenähnlicher exponentieller Zusammenhang, wobei die Spannung $U_{CE}$  bei dieser Messung auf \unit[5]{V} gestellt wird ($I_B = f(U_{BE})$). Danach wird die Ausgangskennlinie $I_C$ gegen $U_{CE}$ aufgenommen.
+Anschließend soll die Stromverstärkung $\beta$ zwischen $I_B$ und $I_C$ bestimmt werden ($I_C = f(I_B)$). Es muss dabei beachtet werden, dass die Spannung $U_{BE}$ kleiner als die Spannung $U_{CE}$ bleibt, da $I_C$ nur für relativ kleine Ströme $I_B$ linear von $I_B$ abhängt.
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -144,7 +103,7 @@ Ziel dieses Versuchsteils ist es die Ausgangs und Eingangskennlinie eines Transi
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 Ziel dieses Versuches ist die Verstärkung kleiner Wechselspannungen mithilfe des Transistors.
-\subsection{Verwendete Materialien}
+\subsection{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 \subsection{Verwendete Formeln}
@@ -213,7 +172,7 @@ Ziel dieses Versuches ist die Verstärkung kleiner Wechselspannungen mithilfe de
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
+Mit dem Oszilloskop werden Ausgangs- und Eingangssignal bei der Schaltung für die Spannungsverstärkung aufgenommen, um den Verstärkungsfaktor zwischen Ausgangs und Eingangsspannung zu bestimmen. Im zweiten Teil soll ein Lautsprecher über den Kondensator angeschlossen werden. Da der Strom nur auf wenige Milliampere beschränkt ist, ist zu erwarten, dass die Spannung an dem niederohmigen Lautsprecher zusammenbricht und damit kaum etwas zu hören ist.
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -242,7 +201,7 @@ Ziel dieses Versuches ist die Verstärkung kleiner Wechselspannungen mithilfe de
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 Neben der Spannungsverstärkung kann mit dem Transistor auch der Strom verstärkt werden, um höhere Ausgangsströme zu erreichen.
-\subsection{Verwendete Materialien}
+\subsection{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 \subsection{Verwendete Formeln}
@@ -335,7 +294,7 @@ Neben der Spannungsverstärkung kann mit dem Transistor auch der Strom verstärk
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
+Zur Stromverstärkung wird die Schaltung des sogenannten Emittierfolgers aufgebaut. Es soll $U_a = f(U_e)$ und $I_R = f(I_B)$ bestimmt werden. Als Verstärkungsfaktor wird, da $I_B \ll I_C$ ist, ebenfalls $\beta$ erwartet.
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -364,9 +323,10 @@ Neben der Spannungsverstärkung kann mit dem Transistor auch der Strom verstärk
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 Mit dem Feldeffekttransistor können Ströme und Spannungen fast leistungslos gesteuert werden. (Der Basisstrom beträgt nur wenige Nanoampere)
-\subsection{Verwendete Materialien}
+\subsection{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
 \subsection{Verwendete Formeln}
 %eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
 %mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
@@ -396,7 +356,7 @@ Mit dem Feldeffekttransistor können Ströme und Spannungen fast leistungslos ge
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
+Der Feldeffekttransistor kann über die Gatespannung $U_{GS}$ mit nur wenigen \unit{nA} angesteuert werden, sodass ein Feld entsteht, welches den Stromfluss $I_S$ reguliert. Dafür wird $I_S = f(U_{GS})$ ermittelt.
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -425,7 +385,7 @@ Mit dem Feldeffekttransistor können Ströme und Spannungen fast leistungslos ge
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 Analog zum letzten Versuch kann mit einer Zenerdiode eine konstante Gleichspannung erzeugt werden. Aufgrund des Vorwiderstandes war es aber nicht möglich hohe Ausgangsströme zu erreichen. Führt man die Zehnerspannung über einen Emittierfolger (Stromverstärker), so sind wesentlich höhere Ströme möglich.
-\subsection{Verwendete Materialien}
+\subsection{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 \subsection{Verwendete Formeln}
@@ -458,48 +418,6 @@ Analog zum letzten Versuch kann mit einer Zenerdiode eine konstante Gleichspannu
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep3\_14.pdf Seite 16 am 10.11.2014}
 
-\subsection{Versuchsdurchführung}
-%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
-%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
-\subsection{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
-\subsection{Auswertung}
-%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
-%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
-%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
-%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
-%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
-%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
-%kurz die aufgabenstellung abgehandeln
-%2-----------------------------------------------2
-\subsection{Diskussion}
-%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
-%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
-%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
-%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
-%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
-%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
-%--------------------------------------------------------------------------------------------
-%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
-%1-----------------------------------------------1
-\section{Sensorik}
-%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
-%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
-In diesem Versuchsteil soll der Einsatz von Transistoren in Sensorschaltungen veranschaulicht werden. Die Sensoren befinden sich in Steckelementen.
-\subsection{Verwendete Materialien}
-%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
-%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-\subsection{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
-\subsection{Versuchsaufbau}
-%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
