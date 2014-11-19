@@ -36,6 +36,7 @@
 %---------------------------------------------------------------------------------------------
 %hinter der einleitung kann der allgemeine theoretische hintergrund in einer zusätzlichen section erklärt werden
 %1-----------------------------------------------1
+In diesem Versuch geht es um den Operationsverstärker, einem wichtigen Bauelement der analogen Schaltungselektronik. (Op-Amp oder Operational Amplifier) Mit ihm lassen sich elektrische Verstärkungsschaltungen einfacher und mit besseren elektrischen Eigenschaften aufbauen, als mit einzelnen Transistoren möglich ist. Die Operationsverstärker TL071 und TL081 werden in verschiednen Schaltungen untersucht.
 \section{Impedanzwandler für Gleichspannung}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -65,6 +66,7 @@ R1 ist ein 10M$\Omega$ Widerstand.
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+In diesem Versuchsteil soll eine Spannung mit hohem Innenwiderstand simuliert werden. Über den Impedanzwandler kann daraus eine Spannungsquelle mit \unit[100]{$\Omega$} erzeugt werden. Um diesen Effekt zu messen werden die Spannung U$_1$, U$_0$ und U$_2$ nacheinander mit dem DMM abgegriffen. Zu beachten ist der Innenwiderstand des DMMs von \unit[1]{M$\Omega$}, welcher nur $\frac{1}{10}$ des Vorwiderstandes beträgt. Dadurch entsteht also ein Spannungsteiler von $\frac{1}{11}$, für den Fall das U$_1$ gemessen wird.
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -120,6 +122,7 @@ FG ist der Funktionsgenerator.
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+Das Netzgerät wird durch den Funktionengenerator (Sinussignal) ersetzt, um das Verhalten des Op-Amps bei verschiedenen Frequenzen zu untersuchen. Von \unit[100]{Hz} bis \unit[10]{MHz} wird das Ausgangs und Eingangssignal miteinander verglichen.
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -176,6 +179,7 @@ FG ist der Funktionsgenerator, R1 ist ein 1k$\Omega$ Widerstand und R2 ein 100k$
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+In diesem Versuchsteil wird der Op-Amp für eine Spannungsverstärkerschaltung von Wechselspannungen verwendet. Der Varstärkungsfaktor kann mit dem Verhältnis der Widerstände verglichen werden. Bei den Frequenzen, bei denen der Verstärkungsfaktor bei 1, 10 und 100 liegt, wird die Frequenz hochgedreht, bis der Verstärkungsfaktor auf $\frac{1}{\sqrt{2}}$ abgefallen ist, um das sogenannte 'Verstärkungs-Bandbreite-Produkt' auszurechnen. Dies ist eine wichtige Kenngröße des Op-Amps, welche über das Produkt von der zweiten Frequenz mit dem Verstärkungsfaktor (1,10 und 100) bestimmt werden kann. Nach dem Datenblatt\footnote{ Datenblatt Texas Instruments https://cdn-reichelt.de/documents/datenblatt/A200/TL081\_TL082\_TL084\%23TEX.pdf  } ist ein Wert von etwa \unitfrac[3]{1}{s} zu erwarten.
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -233,6 +237,7 @@ R1 und R2 werden jeweils so gewählt, dass eine Verstärkung von -1, -10 und -10
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+Mit dem Invertierenden Spannungsverstärker für Wechselspannungen kann die Spannung nicht nur verstärkt, sondern auch invertiert werden. Das Verhalten der Schaltung wird bei Verstärkungsfaktoren von -1, -10 und -100 bei Frequenzen von \unit[1]{kHz} bis \unit[1]{MHz} beobachtet.
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -290,6 +295,7 @@ C ist ein 0,1$\mu$F, R ein 10k$\Omega$ Widerstand, der Funktionsgenerator FG wir
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+Diese Schaltung liefert als Ausgangssignal die zeitliche Änderung der Eingangsspannung und wird daher 'Differenzierer' genannt. Bei Sinus-, Dreieck- und Rechteckspannung und bei unterschiedlichen Frequenzen soll die Ausgangsspannung beobachtet werden.(angefangen bei $f$ = \unit[100]{Hz}) 
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -346,6 +352,7 @@ C ist ein 0,1$\mu$F Kondensator, R ein 10k$\Omega$ Widerstand, Fg sollte mit 500
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+Im Gegensatz zum Differenzierer kann die Eingangsspannung mit dieser Schaltung integriert werden, was ihr die Bezeichnung 'Integrierer' begründet. Angefangen bei \unit[500]{Hz} werden bei Sinus-,Dreieck- und Rechteckspannung die Frequenzen durchgefahren. Ein zum Kondensator parallel geschalteter Widerstand soll verhindern, dass der Kondensator durch die Gleichspannungsanteile aufgelanden wird
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
@@ -380,7 +387,7 @@ C ist ein 0,1$\mu$F Kondensator, R ein 10k$\Omega$ Widerstand, Fg sollte mit 500
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden Widerstände, ein Operationsverstärker und ein Funktionsgenerator.
+Es werden Widerstände, ein Operationsverstärker und ein Funktionsgenerator verwendet.
 
 \subsection{Verwendete Formeln}
 %eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
@@ -403,6 +410,7 @@ R ist ein 10k$\Omega$ Widerstand, Rf ein 1M$\Omega$ Widerstand, FG ist der Funkt
 \subsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
 \subsection{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
