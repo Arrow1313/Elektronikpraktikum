@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  6 NOV 2014 23:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  6 NOV 2014 23:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -943,7 +943,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5081 strings out of 493304
  73480 string characters out of 6139871
- 148582 words of memory out of 5000000
+ 148591 words of memory out of 5000000
  8392 multiletter control sequences out of 15000+600000
  69701 words of font info for 53 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -967,7 +967,7 @@ r/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmri8a.pfb>
 Output written on "Versuch EP2 Die Diode Henrik und Frederik.pdf" (30 pages, 75
-0958 bytes).
+0744 bytes).
 PDF statistics:
  549 PDF objects out of 1000 (max. 8388607)
  392 compressed objects within 4 object streams

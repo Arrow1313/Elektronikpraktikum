@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  7 NOV 2014 10:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  13 NOV 2014 19:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"Vermessung von Signalen auf Leitungen Henrik und Frederik.tex"
-(./Vermessung von Signalen auf Leitungen Henrik und Frederik.tex
+**VorlageProtokoll.tex
+(./VorlageProtokoll.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -43,13 +43,36 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseTextstyle=\skip44
 \L@UnitsRaiseScriptstyle=\skip45
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
+\captionmargin=\dimen103
+\captionmargin@=\dimen104
+\captionwidth=\dimen105
+\caption@tempdima=\dimen106
+\caption@indent=\dimen107
+\caption@parindent=\dimen108
+\caption@hangindent=\dimen109
+)
+\c@ContinuedFloat=\count88
+Package caption Info: float package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count89
+\c@subtable=\count90
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
@@ -61,17 +84,17 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count88
-\Gm@cntv=\count89
-\c@Gm@tempcnt=\count90
-\Gm@bindingoffset=\dimen103
-\Gm@wd@mp=\dimen104
-\Gm@odd@mp=\dimen105
-\Gm@even@mp=\dimen106
-\Gm@layoutwidth=\dimen107
-\Gm@layoutheight=\dimen108
-\Gm@layouthoffset=\dimen109
-\Gm@layoutvoffset=\dimen110
+\Gm@cnth=\count91
+\Gm@cntv=\count92
+\c@Gm@tempcnt=\count93
+\Gm@bindingoffset=\dimen110
+\Gm@wd@mp=\dimen111
+\Gm@odd@mp=\dimen112
+\Gm@even@mp=\dimen113
+\Gm@layoutwidth=\dimen114
+\Gm@layoutheight=\dimen115
+\Gm@layouthoffset=\dimen116
+\Gm@layoutvoffset=\dimen117
 \Gm@dimlist=\toks17
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
@@ -341,8 +364,8 @@ Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2013/12/03 3.9h Babel common definitions
-\babel@savecnt=\count91
-\U@D=\dimen111
+\babel@savecnt=\count94
+\U@D=\dimen118
 )
 \l@naustrian = a dialect from \language\l@ngerman 
 \l@nswissgerman = a dialect from \language\l@ngerman 
@@ -359,46 +382,46 @@ Package: amstext 2000/06/29 v2.01
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks20
-\ex@=\dimen112
+\ex@=\dimen119
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen113
+\pmbraise@=\dimen120
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count92
+\inf@bad=\count95
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count93
-\leftroot@=\count94
+\uproot@=\count96
+\leftroot@=\count97
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count95
-\DOTSCASE@=\count96
+\classnum@=\count98
+\DOTSCASE@=\count99
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box28
 \strutbox@=\box29
-\big@size=\dimen114
+\big@size=\dimen121
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count97
-\c@MaxMatrixCols=\count98
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
 \dotsspace@=\muskip10
-\c@parentequation=\count99
-\dspbrk@lvl=\count100
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
 \tag@help=\toks21
-\row@=\count101
-\column@=\count102
-\maxfields@=\count103
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
 \andhelp@=\toks22
-\eqnshift@=\dimen115
-\alignsep@=\dimen116
-\tagshift@=\dimen117
-\tagwidth@=\dimen118
-\totwidth@=\dimen119
-\lineht@=\dimen120
+\eqnshift@=\dimen122
+\alignsep@=\dimen123
+\tagshift@=\dimen124
+\tagwidth@=\dimen125
+\totwidth@=\dimen126
+\lineht@=\dimen127
 \@envbody=\toks23
 \multlinegap=\skip47
 \multlinetaggap=\skip48
@@ -429,53 +452,33 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count104
+\Gread@gobject=\count107
 ))
-\Gin@req@height=\dimen121
-\Gin@req@width=\dimen122
+\Gin@req@height=\dimen128
+\Gin@req@width=\dimen129
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+No file VorlageProtokoll.aux.
+\openout1 = `VorlageProtokoll.aux'.
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen123
-\captionmargin@=\dimen124
-\captionwidth=\dimen125
-\caption@tempdima=\dimen126
-\caption@indent=\dimen127
-\caption@parindent=\dimen128
-\caption@hangindent=\dimen129
-)
-\c@ContinuedFloat=\count105
-Package caption Info: float package is loaded.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count106
-\c@subtable=\count107
-)
-(./Vermessung von Signalen auf Leitungen Henrik und Frederik.aux)
-\openout1 = `"Vermessung von Signalen auf Leitungen Henrik und Frederik.aux"'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 25.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 26.
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -567,416 +570,57 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 27.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 28.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 27.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 28.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 27.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 28.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 27.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 28.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 27.
+(Font)              <14.4> on input line 28.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 27.
+(Font)              <10> on input line 28.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 27.
+(Font)              <7> on input line 28.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./Vermessung von Signalen auf Leitungen Henrik und Frederik.toc
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 6.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 6.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 6.
- [2])
+No file VorlageProtokoll.toc.
 \tf@toc=\write3
-\openout3 = `"Vermessung von Signalen auf Leitungen Henrik und Frederik.toc"'.
+\openout3 = `VorlageProtokoll.toc'.
 
- [3]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 53.
-
-(/usr/share/texmf/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 53.
-
-<2_0-2_2.pdf, id=15, 597.51233pt x 845.0471pt>
-File: 2_0-2_2.pdf Graphic file (type pdf)
- <use 2_0-2_2.pdf>
-Package pdftex.def Info: 2_0-2_2.pdf used on input line 93.
-(pdftex.def)             Requested size: 540.60553pt x 85.35835pt.
-
-Overfull \hbox (56.90866pt too wide) in paragraph at lines 93--94
- [][] 
- []
-
-[4]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 97.
-File: 2_0-2_2.pdf Graphic file (type pdf)
- <use 2_0-2_2.pdf>
-Package pdftex.def Info: 2_0-2_2.pdf used on input line 105.
-(pdftex.def)             Requested size: 540.60553pt x 76.82254pt.
-
-Overfull \hbox (56.90866pt too wide) in paragraph at lines 105--106
- [][] 
- []
-
-<2_3.pdf, id=22, 597.51233pt x 845.0471pt>
-File: 2_3.pdf Graphic file (type pdf)
- <use 2_3.pdf>
-Package pdftex.def Info: 2_3.pdf used on input line 117.
-(pdftex.def)             Requested size: 540.60553pt x 99.58467pt.
-
-Overfull \hbox (56.90866pt too wide) in paragraph at lines 117--118
- [][] 
- []
-
-<Op-Amp.pdf, id=24, 597.51233pt x 845.0471pt>
-File: Op-Amp.pdf Graphic file (type pdf)
- <use Op-Amp.pdf>
-Package pdftex.def Info: Op-Amp.pdf used on input line 127.
-(pdftex.def)             Requested size: 540.60553pt x 119.50157pt.
-
-Overfull \hbox (56.90866pt too wide) in paragraph at lines 127--128
- [][] 
- []
-
-[5 <./2_0-2_2.pdf> <./2_3.pdf>]
-<2_3+Op-Amp.pdf, id=99, 597.51233pt x 845.0471pt>
-File: 2_3+Op-Amp.pdf Graphic file (type pdf)
- <use 2_3+Op-Amp.pdf>
-Package pdftex.def Info: 2_3+Op-Amp.pdf used on input line 138.
-(pdftex.def)             Requested size: 540.60553pt x 133.7279pt.
-
-Overfull \hbox (56.90866pt too wide) in paragraph at lines 138--139
- [][] 
- []
-
-File: 2_3+Op-Amp.pdf Graphic file (type pdf)
-<use 2_3+Op-Amp.pdf>
-Package pdftex.def Info: 2_3+Op-Amp.pdf used on input line 148.
-(pdftex.def)             Requested size: 540.60553pt x 133.7279pt.
-
-Overfull \hbox (56.90866pt too wide) in paragraph at lines 148--149
- [][] 
- []
-
-[6 <./Op-Amp.pdf> <./2_3+Op-Amp.pdf>]
-<2_1_sin_10mhz.pdf, id=165, 578.16pt x 722.7pt>
-File: 2_1_sin_10mhz.pdf Graphic file (type pdf)
- <use 2_1_sin_10mhz.pdf>
-Package pdftex.def Info: 2_1_sin_10mhz.pdf used on input line 194.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
-
-Overfull \hbox (58.0537pt too wide) in paragraph at lines 194--195
-[][] 
- []
-
-File: 2_1_sin_10mhz.pdf Graphic file (type pdf)
-<use 2_1_sin_10mhz.pdf>
-Package pdftex.def Info: 2_1_sin_10mhz.pdf used on input line 202.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
-
-Overfull \hbox (58.0537pt too wide) in paragraph at lines 202--203
-[][] 
- []
-
-[7] [8 <./2_1_sin_10mhz.pdf>] <2_1_rech_100hz.pdf, id=176, 578.16pt x 722.7pt>
-File: 2_1_rech_100hz.pdf Graphic file (type pdf)
-
-<use 2_1_rech_100hz.pdf>
-Package pdftex.def Info: 2_1_rech_100hz.pdf used on input line 215.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
-
-Overfull \hbox (33.86147pt too wide) in paragraph at lines 215--216
-[][] 
- []
-
-<2_1_rech_10khz.pdf, id=177, 578.16pt x 722.7pt>
-File: 2_1_rech_10khz.pdf Graphic file (type pdf)
- <use 2_1_rech_10khz.pdf>
-Package pdftex.def Info: 2_1_rech_10khz.pdf used on input line 223.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
-
-Overfull \hbox (33.86147pt too wide) in paragraph at lines 223--224
-[][] 
- []
-
-<2_1_rech_10mhz.pdf, id=178, 578.16pt x 722.7pt>
-File: 2_1_rech_10mhz.pdf Graphic file (type pdf)
- <use 2_1_rech_10mhz.pdf>
-Package pdftex.def Info: 2_1_rech_10mhz.pdf used on input line 231.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
-
-Overfull \hbox (33.86147pt too wide) in paragraph at lines 231--232
-[][] 
- []
-
-<2_2_sin_100hz.pdf, id=179, 578.16pt x 722.7pt>
-File: 2_2_sin_100hz.pdf Graphic file (type pdf)
- <use 2_2_sin_100hz.pdf>
-Package pdftex.def Info: 2_2_sin_100hz.pdf used on input line 250.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
-
-<2_2_sin_1mhz.pdf, id=180, 578.16pt x 722.7pt>
-File: 2_2_sin_1mhz.pdf Graphic file (type pdf)
- <use 2_2_sin_1mhz.pdf>
-Package pdftex.def Info: 2_2_sin_1mhz.pdf used on input line 258.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- [9 <./2_1_rech_100hz.pdf> <./2_1_rech_10khz.pdf> <./2_1_rech_10mhz.pdf> <./2_2
-_sin_100hz.pdf> <./2_2_sin_1mhz.pdf>] <2_2_rech_100hz.pdf, id=199, 578.16pt x 7
-22.7pt>
-File: 2_2_rech_100hz.pdf Graphic file (type pdf)
-
-<use 2_2_rech_100hz.pdf>
-Package pdftex.def Info: 2_2_rech_100hz.pdf used on input line 274.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- <2_2_rech_10khz.pdf, id=200, 578.16pt x 722.7pt>
-File: 2_2_rech_10khz.pdf Graphic file (type pdf)
-
-<use 2_2_rech_10khz.pdf>
-Package pdftex.def Info: 2_2_rech_10khz.pdf used on input line 282.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- <2_2_rech_10mhz.pdf, id=201, 578.16pt x 722.7pt>
-File: 2_2_rech_10mhz.pdf Graphic file (type pdf)
-
-<use 2_2_rech_10mhz.pdf>
-Package pdftex.def Info: 2_2_rech_10mhz.pdf used on input line 290.
-(pdftex.def)             Requested size: 578.15858pt x 722.69823pt.
- [10 <./2_2_rech_100hz.pdf> <./2_2_rech_10khz.pdf> <./2_2_rech_10mhz.pdf>] <2_3
-_vgl_2.pdf, id=214, 578.16pt x 722.7pt>
-File: 2_3_vgl_2.pdf Graphic file (type pdf)
-
-<use 2_3_vgl_2.pdf>
-Package pdftex.def Info: 2_3_vgl_2.pdf used on input line 305.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- <2_3_vgl_1.pdf, id=215, 578.16pt x 722.7pt>
-File: 2_3_vgl_1.pdf Graphic file (type pdf)
-
-<use 2_3_vgl_1.pdf>
-Package pdftex.def Info: 2_3_vgl_1.pdf used on input line 314.
-(pdftex.def)             Requested size: 231.2599pt x 283.38443pt.
- [11 <./2_3_vgl_2.pdf> <./2_3_vgl_1.pdf>]
-<2_3_r3np_sig.pdf, id=225, 578.16pt x 722.7pt>
-File: 2_3_r3np_sig.pdf Graphic file (type pdf)
- <use 2_3_r3np_sig.pdf>
-Package pdftex.def Info: 2_3_r3np_sig.pdf used on input line 330.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 331.
-
-<2_3_r3p_sig.pdf, id=226, 578.16pt x 722.7pt>
-File: 2_3_r3p_sig.pdf Graphic file (type pdf)
- <use 2_3_r3p_sig.pdf>
-Package pdftex.def Info: 2_3_r3p_sig.pdf used on input line 338.
-(pdftex.def)             Requested size: 231.2599pt x 254.93217pt.
-
-<2_3_r3np_st.pdf, id=228, 578.16pt x 722.7pt>
-File: 2_3_r3np_st.pdf Graphic file (type pdf)
- <use 2_3_r3np_st.pdf>
-Package pdftex.def Info: 2_3_r3np_st.pdf used on input line 354.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
-
-<2_3_r3p_st.pdf, id=229, 578.16pt x 722.7pt>
-File: 2_3_r3p_st.pdf Graphic file (type pdf)
- <use 2_3_r3p_st.pdf>
-Package pdftex.def Info: 2_3_r3p_st.pdf used on input line 362.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- [12 <./2_3_r3p_sig.pdf> <./2_3_r3np_sig.pdf>] <3-3_3.pdf, id=240, 597.51233pt 
-x 845.0471pt>
-File: 3-3_3.pdf Graphic file (type pdf)
-
-<use 3-3_3.pdf>
-Package pdftex.def Info: 3-3_3.pdf used on input line 403.
-(pdftex.def)             Requested size: 540.60553pt x 91.04887pt.
-
-Overfull \hbox (56.90866pt too wide) in paragraph at lines 403--404
- [][] 
- []
-
-[13 <./2_3_r3np_st.pdf> <./2_3_r3p_st.pdf>]
-File: 3-3_3.pdf Graphic file (type pdf)
- <use 3-3_3.pdf>
-Package pdftex.def Info: 3-3_3.pdf used on input line 415.
-(pdftex.def)             Requested size: 540.60553pt x 105.27522pt.
-
-Overfull \hbox (56.90866pt too wide) in paragraph at lines 415--416
- [][] 
- []
-
-File: 3-3_3.pdf Graphic file (type pdf)
-<use 3-3_3.pdf>
-Package pdftex.def Info: 3-3_3.pdf used on input line 427.
-(pdftex.def)             Requested size: 540.60553pt x 105.2752pt.
-
-Overfull \hbox (56.90866pt too wide) in paragraph at lines 427--428
- [][] 
- []
-
-[14 <./3-3_3.pdf>] <3_4-4.pdf, id=277, 597.51233pt x 845.0471pt>
-File: 3_4-4.pdf Graphic file (type pdf)
-
-<use 3_4-4.pdf>
-Package pdftex.def Info: 3_4-4.pdf used on input line 439.
-(pdftex.def)             Requested size: 540.60553pt x 91.04889pt.
-
-Overfull \hbox (56.90866pt too wide) in paragraph at lines 439--440
- [][] 
- []
-
-<3-3_3+1.pdf, id=279, 597.51227pt x 845.0471pt>
-File: 3-3_3+1.pdf Graphic file (type pdf)
- <use 3-3_3+1.pdf>
-Package pdftex.def Info: 3-3_3+1.pdf used on input line 451.
-(pdftex.def)             Requested size: 540.60547pt x 105.2752pt.
-
-Overfull \hbox (56.9086pt too wide) in paragraph at lines 451--452
- [][] 
- []
-
-[15 <./3_4-4.pdf> <./3-3_3+1.pdf>] <3_1_100hz.pdf, id=330, 578.16pt x 722.7pt>
-File: 3_1_100hz.pdf Graphic file (type pdf)
-
-<use 3_1_100hz.pdf>
-Package pdftex.def Info: 3_1_100hz.pdf used on input line 484.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- <3_1_10mhz.pdf, id=331, 578.16pt x 722.7pt>
-File: 3_1_10mhz.pdf Graphic file (type pdf)
-
-<use 3_1_10mhz.pdf>
-Package pdftex.def Info: 3_1_10mhz.pdf used on input line 492.
-(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
- [16 <./3_1_100hz.pdf> <./3_1_10mhz.pdf>]
-<3_2.pdf, id=341, 578.16pt x 722.7pt>
-File: 3_2.pdf Graphic file (type pdf)
- <use 3_2.pdf>
-Package pdftex.def Info: 3_2.pdf used on input line 518.
-(pdftex.def)             Requested size: 289.07928pt x 361.3491pt.
-
-<3_3.pdf, id=342, 578.16pt x 722.7pt>
-File: 3_3.pdf Graphic file (type pdf)
- <use 3_3.pdf>
-Package pdftex.def Info: 3_3.pdf used on input line 529.
-(pdftex.def)             Requested size: 289.07928pt x 361.3491pt.
- [17 <./3_2.pdf>]
-<3_4.pdf, id=357, 578.16pt x 722.7pt>
-File: 3_4.pdf Graphic file (type pdf)
- <use 3_4.pdf>
-Package pdftex.def Info: 3_4.pdf used on input line 540.
-(pdftex.def)             Requested size: 289.07928pt x 275.99106pt.
- [18 <./3_3.pdf>]
-<3_5.pdf, id=365, 578.16pt x 722.7pt>
-File: 3_5.pdf Graphic file (type pdf)
- <use 3_5.pdf>
-Package pdftex.def Info: 3_5.pdf used on input line 551.
-(pdftex.def)             Requested size: 289.07928pt x 275.99106pt.
- [19 <./3_4.pdf> <./3_5.pdf>]
-File: 3_4-4.pdf Graphic file (type pdf)
- <use 3_4-4.pdf>
-Package pdftex.def Info: 3_4-4.pdf used on input line 587.
-(pdftex.def)             Requested size: 540.60553pt x 105.27522pt.
-
-Overfull \hbox (56.90866pt too wide) in paragraph at lines 587--588
- [][] 
- []
-
-<4-5.pdf, id=380, 597.51233pt x 845.0471pt>
-File: 4-5.pdf Graphic file (type pdf)
- <use 4-5.pdf>
-Package pdftex.def Info: 4-5.pdf used on input line 599.
-(pdftex.def)             Requested size: 540.60553pt x 133.72789pt.
-
-Overfull \hbox (56.90866pt too wide) in paragraph at lines 599--600
- [][] 
- []
-
-[20 <./4-5.pdf>] <4_o.pdf, id=405, 578.16pt x 722.7pt>
-File: 4_o.pdf Graphic file (type pdf)
- <use 4_o.pdf>
-Package pdftex.def Info: 4_o.pdf used on input line 637.
-(pdftex.def)             Requested size: 289.07928pt x 361.3491pt.
- [21]
-<4_a.pdf, id=411, 578.16pt x 722.7pt>
-File: 4_a.pdf Graphic file (type pdf)
- <use 4_a.pdf>
-Package pdftex.def Info: 4_a.pdf used on input line 648.
-(pdftex.def)             Requested size: 289.07928pt x 361.3491pt.
- [22 <./4_o.pdf>]
-File: 4-5.pdf Graphic file (type pdf)
-
-<use 4-5.pdf>
-Package pdftex.def Info: 4-5.pdf used on input line 678.
-(pdftex.def)             Requested size: 540.60553pt x 133.7279pt.
-
-Overfull \hbox (56.90866pt too wide) in paragraph at lines 678--679
- [][] 
- []
-
-[23 <./4_a.pdf>] <5_1.pdf, id=432, 578.16pt x 722.7pt>
-File: 5_1.pdf Graphic file (type pdf)
- <use 5_1.pdf>
-Package pdftex.def Info: 5_1.pdf used on input line 714.
-(pdftex.def)             Requested size: 289.07928pt x 361.3491pt.
- [24]
-<5_2.pdf, id=437, 578.16pt x 722.7pt>
-File: 5_2.pdf Graphic file (type pdf)
- <use 5_2.pdf>
-Package pdftex.def Info: 5_2.pdf used on input line 722.
-(pdftex.def)             Requested size: 289.07928pt x 361.3491pt.
- [25 <./5_1.pdf>] [26 <./5_2.pdf>] (./Vermessung von Signalen auf Leitungen Hen
-rik und Frederik.aux) ) 
+[2] [3] (./VorlageProtokoll.aux) ) 
 Here is how much of TeX's memory you used:
- 5033 strings out of 493304
- 73036 string characters out of 6139871
- 146056 words of memory out of 5000000
- 8347 multiletter control sequences out of 15000+600000
- 69701 words of font info for 53 fonts, out of 8000000 for 9000
+ 4728 strings out of 493304
+ 67815 string characters out of 6139871
+ 131640 words of memory out of 5000000
+ 8095 multiletter control sequences out of 15000+600000
+ 33764 words of font info for 32 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,14n,38p,1007b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr
-/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips
-/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/te
-xmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
-7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/times/utmri8a.pfb>
-Output written on "Vermessung von Signalen auf Leitungen Henrik und Frederik.pd
-f" (26 pages, 1221056 bytes).
+ 37i,6n,38p,279b,202s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.en
+c}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb>
+Output written on VorlageProtokoll.pdf (3 pages, 75134 bytes).
 PDF statistics:
- 503 PDF objects out of 1000 (max. 8388607)
- 341 compressed objects within 4 object streams
+ 27 PDF objects out of 1000 (max. 8388607)
+ 18 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 268 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,37 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{3}
+\contentsline {section}{\numberline {2}Eigenschaften von Transistoren}{3}
+\contentsline {subsection}{\numberline {2.1}Verwendete Ger\IeC {\"a}te}{3}
+\contentsline {subsection}{\numberline {2.2}Versuchsaufbau}{3}
+\contentsline {subsection}{\numberline {2.3}Versuchsdurchf\IeC {\"u}hrung}{4}
+\contentsline {subsection}{\numberline {2.4}Messergebnisse}{4}
+\contentsline {subsection}{\numberline {2.5}Auswertung}{5}
+\contentsline {subsection}{\numberline {2.6}Diskussion}{6}
+\contentsline {section}{\numberline {3}Spannungsverst\IeC {\"a}rkung mit Transistoren}{6}
+\contentsline {subsection}{\numberline {3.1}Verwendete Materialien}{7}
+\contentsline {subsection}{\numberline {3.2}Versuchsaufbau}{7}
+\contentsline {subsection}{\numberline {3.3}Versuchsdurchf\IeC {\"u}hrung}{8}
+\contentsline {subsection}{\numberline {3.4}Auswertung}{8}
+\contentsline {subsection}{\numberline {3.5}Diskussion}{10}
+\contentsline {section}{\numberline {4}Stromverst\IeC {\"a}rkung mit Transistoren}{10}
+\contentsline {subsection}{\numberline {4.1}Verwendete Ger\IeC {\"a}te}{11}
+\contentsline {subsection}{\numberline {4.2}Versuchsaufbau}{11}
+\contentsline {subsection}{\numberline {4.3}Versuchsdurchf\IeC {\"u}hrung}{13}
+\contentsline {subsection}{\numberline {4.4}Messergebnisse}{13}
+\contentsline {subsection}{\numberline {4.5}Auswertung}{14}
+\contentsline {subsection}{\numberline {4.6}Diskussion}{17}
+\contentsline {section}{\numberline {5}Feldeffekttransistoren (FET)}{18}
+\contentsline {subsection}{\numberline {5.1}Verwendete Ger\IeC {\"a}te}{18}
+\contentsline {subsection}{\numberline {5.2}Versuchsaufbau}{18}
+\contentsline {subsection}{\numberline {5.3}Versuchsdurchf\IeC {\"u}hrung}{18}
+\contentsline {subsection}{\numberline {5.4}Messergebnisse}{18}
+\contentsline {subsection}{\numberline {5.5}Auswertung}{19}
+\contentsline {subsection}{\numberline {5.6}Diskussion}{19}
+\contentsline {section}{\numberline {6}Spannungsstabilisierung mit Transistoren}{19}
+\contentsline {subsection}{\numberline {6.1}Verwendete Ger\IeC {\"a}te}{20}
+\contentsline {subsection}{\numberline {6.2}Versuchsaufbau}{20}
+\contentsline {subsection}{\numberline {6.3}Versuchsdurchf\IeC {\"u}hrung}{20}
+\contentsline {subsection}{\numberline {6.4}Messergebnisse}{20}
+\contentsline {subsection}{\numberline {6.5}Auswertung}{21}
+\contentsline {subsection}{\numberline {6.6}Diskussion}{22}
+\contentsline {section}{\numberline {7}Fazit}{22}
