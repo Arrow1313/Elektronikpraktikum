@@ -1,0 +1,26 @@
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_5_sin_100.pdf}
+                \caption[Aufnahme des Signals bei 100Hz]{Aufnahme des Signals bei 100Hz}
+                \label{fig:2_5_sin_100}
+        \end{subfigure}%
+       % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_5_sin_1k.pdf}
+                \caption[Aufnahme des Signals bei 1kHz]{Aufnahme des Signals bei 1kHz}
+                \label{fig:2_5_sin_1k}
+        \end{subfigure}
+       % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_5_sin_10k.pdf}
+                \caption[Aufnahme des Signals bei 10kHz]{Aufnahme des Signals bei 10kHz}
+  				\label{fig:2_5_sin_10k}
+        \end{subfigure}
+        \caption{Kurven für 100Hz, 1kHz und 10kHz, bei einer Dreiecksspannung}
+        \label{fig:2_5_recht}
+\end{figure}
