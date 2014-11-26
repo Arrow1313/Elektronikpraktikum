@@ -63,6 +63,7 @@ Die Halbwertszeit $\tau$ ergibt sich aus der Gleichung:
 
 \begin{align}
 \tau = \text{R} \cdot \text{C}
+\label{eqn:tau}
 \end{align}
 
 \subsubsection{Versuchsaufbau}
@@ -82,11 +83,9 @@ R1 ist ein 1k$\Omega$ Widerstand und C1 ein 1$\mu$F Kondensator.
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-\subsubsection{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+Es wird das Fenster des Oszilloskops aufgerufen und die Simulation gestartet. Da die Kurve auf der y-Achse von 0 aus läuft kann mit einem Taster der maximal Wert bestimmt werden und mit dem zweitem Taster die Halbwertszeit.
+
+
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -96,6 +95,16 @@ R1 ist ein 1k$\Omega$ Widerstand und C1 ein 1$\mu$F Kondensator.
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Aus der theoretischen Berechnung ergibt sich eine theoretische Halbwertszeit von 1ms, siehe Gleichung \ref{eqn:tau}. Gemessen wurde eine Halbwertszeit von 0,869ms, wie in Abbildung \ref{fig:2_1} zu sehen ist.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.7]{2_1.PNG}
+  	\caption[Auf- und Entladekurve des RC-Kreises]{Auf- und Entladekurve des RC-Kreises}
+  \label{fig:2_1}
+\end{figure}
+
 \subsubsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -107,10 +116,14 @@ R1 ist ein 1k$\Omega$ Widerstand und C1 ein 1$\mu$F Kondensator.
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
+Bei der Bestimmung der Halbwertszeit mit Multisim ergab sich eine etwas geringere Halbwertszeit als theoretisch vorhergesagt.
 
 \subsection{Resonanzkurve eines RCL-Kreises}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil soll ein RCL-Kreis auf seine Resonanzfrequenz untersucht werden. Für die Untersuchung mit Multisim wir ein Bode-Plot verwendet.
+
 \subsubsection{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
@@ -122,6 +135,14 @@ Es werden ein Funktionsgenerator, ein Widerstand, ein Kondensator und eine Spule
 %mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
 %2-----------------------------------------------2
 %ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+Theoretisch ergibt sich die Resonanzfrequenz eines RCL-Kreises aus der Gleichung:
+
+\begin{align}
+\text{f}_0 = \frac{1}{2 \pi \sqrt{\text{RL}}}
+\label{eqn:f0}
+\end{align}
+
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
@@ -139,11 +160,9 @@ R1 ist ein 2$\Omega$ Widerstand, C1 ein 1$\mu$F Kondensator und L1 eine 1mH Spul
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-\subsubsection{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+Es wird das Fenster des Bodeplotters aufgerufen und der Frequenzbereich so wie der Dezibel-Bereich eingestellt. Dann wird die Simulation gestartet und die Resonanzfrequenz mit dem Taster bestimmt.
+
+
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -153,6 +172,17 @@ R1 ist ein 2$\Omega$ Widerstand, C1 ein 1$\mu$F Kondensator und L1 eine 1mH Spul
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Aus Gleichung \ref{eqn:f0} ergibt sich eine erwartete Resonanzfrequenz von \unit[5,033]{kHz}, gemessen wurde eine Resonanzfrequenz von \unit[5,011]{kHz}, siehe Abbildung \ref{fig:2_2}.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.7]{2_2_resonanz.PNG}
+  	\caption[Bodeplot des RCL-Kreises]{Bodeplot des RCL-Kreises}
+  \label{fig:2_2}
+\end{figure}
+
+
 \subsubsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -164,23 +194,21 @@ R1 ist ein 2$\Omega$ Widerstand, C1 ein 1$\mu$F Kondensator und L1 eine 1mH Spul
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-
+Die mit Multisim bestimmte Resonanzfrequenz liegt sehr nah bei der erwarteten Resonanzfrequenz, was zu erwarten war.
 
 
 \subsection{Rechtecksignal am RCL-Kreises}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil soll der Effekt des Widerstandes R im RCL-Kreis untersucht werden.
+
 \subsubsection{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
 Es werden ein Funktionsgenerator, ein Widerstand, ein Kondensator, eine Spule und ein Oszilloskop verwendet.
 
-\subsubsection{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
@@ -198,11 +226,9 @@ R1 ist ein 50$\Omega$ Widerstand, C1 ein 100nF Kondensator und L1 eine 1,5mH Spu
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-\subsubsection{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+Zu erst sollte der Effekt des Widerstandes auf die Überschwinger der Rechteckspannung untersucht werden, dafür wurde der Widerstand eingestellt, das Fenster des Oszilloskops aufgerufen und die Simulation gestartet. Im zweitem Teil sollte untersucht werden, wie sich R auf die Breite der Resonanzkurve auswirkt. Dafür wurde R eingestellt, das Fenster des Bodeplotters aufgerufen und dann die Simulation gestartet.
+
+
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -212,6 +238,79 @@ R1 ist ein 50$\Omega$ Widerstand, C1 ein 100nF Kondensator und L1 eine 1,5mH Spu
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Bei der Untersuchung der Wirkung von R auf die Überschwinger der Rechteckspannung wurden drei Aufnahmen gemacht, bei \unit[50]{$\Omega$}, \unit[150]{$\Omega$} und \unit[300]{$\Omega$}. Dabei ergaben sich die Kurven in Abbildung \ref{fig:2_3_1}. Es ist deutlich zu sehen, dass ab \unit[150]{$\Omega$} die Überschwinger fast raus geblockt sind.
+
+
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_3_widerstand_50Ohm.PNG}
+                \caption[Aufnahme der Kurve bei 50 $\Omega$]{Aufnahme der Kurve bei 50 $\Omega$}
+                \label{fig:2_3_50}
+        \end{subfigure}%
+       % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_3_widerstand_150Ohm.PNG}
+                \caption[Aufnahme der Kurve bei 150 $\Omega$]{Aufnahme der Kurve bei 150 $\Omega$}
+                \label{fig:23_150}
+        \end{subfigure}
+       % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_3_widerstand_300Ohm.PNG}
+                \caption[Aufnahme der Kurve bei 300 $\Omega$]{Aufnahme der Kurve bei 300 $\Omega$}
+  				\label{fig:2_3_300}
+        \end{subfigure}
+        \caption{Kurven  für 50$\Omega$, 150$\Omega$ und 300$\Omega$}
+        \label{fig:2_3_1}
+\end{figure}
+
+
+Im zweitem Teil sollte die Auswirkung von R auf die Breite der Resonanzkurve untersucht werden. Dabei ergaben sich die Kurven in Abbildung \ref{fig:2_3_2_1} und Abbildung \ref{fig:2_3_2_2}. Es ist deutlich zu sehen, das bei größerem Widerstand R die Resonanzkurve breiter wird.
+
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_3_bode_betrag_25Ohm.PNG}
+                \caption[Messung des Frequenzgangs]{Messung des Frequenzgangs}
+ 				 \label{fig:2_3_25_betrag}
+        \end{subfigure}%
+        %~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_3_bode_phase_25Ohm.PNG}
+                \caption[Messung des Phasengangs]{Messung des Phasengangs}
+  				\label{fig:2_3_25_phase}
+        \end{subfigure}
+        \caption{Messung des Frequenz- und des Phasengangs bei einem Widerstand von 25$\Omega$}
+        \label{fig:2_3_2_1}
+\end{figure}
+
+
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_3_bode_betrag_50Ohm.PNG}
+                \caption[Messung des Frequenzgangs]{Messung des Frequenzgangs}
+ 				 \label{fig:2_3_25_betrag}
+        \end{subfigure}%
+        %~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{2_3_bode_phase_50Ohm.PNG}
+                \caption[Messung des Phasengangs]{Messung des Phasengangs}
+  				\label{fig:2_3_25_phase}
+        \end{subfigure}
+        \caption{Messung des Frequenz- und des Phasengangs bei einem Widerstand von 50$\Omega$}
+        \label{fig:2_3_2_2}
+\end{figure}
+
 \subsubsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -223,6 +322,7 @@ R1 ist ein 50$\Omega$ Widerstand, C1 ein 100nF Kondensator und L1 eine 1,5mH Spu
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
+Wie erwartet, wurden bei einem größerem Widerstand R die Überschwinger des Rechtecksignals verkleinert, jedoch kommt es bei einem zu hohem Widerstand zu einer Dämpfung des Signals. Bei der Resonanzfrequenz für ein größerer Widerstand R zu einen breiteren Resonanzkurve, was erwartet wurde.
 
 \section{Simulation mit diskreten aktiven Bauelementen}
 
