@@ -551,40 +551,31 @@ Die Basis-Emitter-Diodenkennlinie wurde mit dem Oszilloskop bei verschiedenen Ko
 \subsection{Transistorverstärker}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+In diesem Versuchsteil wird der Spannungsverstärker mit dem Transistor in Multisim aufgebaut und mit dem Oszilloskop vermessen.
 \subsubsection{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
 Es werden ein Funktionsgenerator, Widerstände, Kondensatoren, ein Transistor und ein Oszilloskop verwendet.
 
-\subsubsection{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
-R1 ist ein 1k$\Omega$ Widerstand, R2 ist ein 1M$\Omega$ Widerstand und R3 ist ein 10k$\Omega$ Widerstand. C1 ist ein 100nF Kondensator und C2 ein 1$\mu$F Kondensator.
+R1 ist ein 1k$\Omega$ Widerstand, R2 ist ein 1M$\Omega$ Widerstand und R3 ist ein 10k$\Omega$ Widerstand. C1 ist ein 100nF Kondensator und C2 ein 1$\mu$F Kondensator, die Frequenz liegt bei \unit[30] {kHz}.
 
 
 \begin{figure}[H] 
   \centering
     \includegraphics[trim = 10mm 180mm 10mm 40mm, clip, scale = 1]{ep5_14[Page17].pdf}
-  	\caption[Schaltskizze für eine Transistorverstärkung]{Schaltskizze für eine Transistorverstärkung\footnotemark}
-  \label{fig:1}
+  	\caption[Schaltskizze für eine Spannungsverstärkung mit dem Transistor]{Schaltskizze für eine Spannungsverstärkung mit dem Transistor\footnotemark}
+  \label{fig:3.4}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep5\_14.pdf Seite 17 am 22.11.2014}
 
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
-\subsubsection{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+Die Schaltung aus Abb. \ref{fig:3.4} wird in Multisim aufgebaut und mit dem Oszilloskop aufgezeichnet.
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -594,6 +585,13 @@ R1 ist ein 1k$\Omega$ Widerstand, R2 ist ein 1M$\Omega$ Widerstand und R3 ist ei
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 0mm 0mm 0mm 0mm, clip, scale = 1]{ep5_14[Page17].pdf}
+  	\caption[verstärkung]{Schaltskizze für eine Transistorverstärkung}
+  \label{fig:3.4}
+\end{figure}
+
 \subsubsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -604,11 +602,11 @@ R1 ist ein 1k$\Omega$ Widerstand, R2 ist ein 1M$\Omega$ Widerstand und R3 ist ei
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
-
+Gemessen wurde ein Verstärkungsfaktor von 200.
 
 \section{Simulation mit dem Operationsverstärker}
 
-
+In diesem Versuchsteil werden verschiedene Schaltungen mit dem Operationsverstärker simuliert. Dazu gehören die beiden Verstärkerschaltungen sowie der Differenzierer und der Integrierer.
 
 \subsection{Nicht invertierender Verstärker}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
