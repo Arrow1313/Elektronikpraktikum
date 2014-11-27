@@ -1,5 +1,5 @@
 \documentclass[12pt,a4paper]{article}
- 
+ %wtffffffffffffffff
 \usepackage{float}
 %für feststellen der figures und tables [H] dranschreiben
 \usepackage{units}
@@ -36,8 +36,6 @@
 %---------------------------------------------------------------------------------------------
 %hinter der einleitung kann der allgemeine theoretische hintergrund in einer zusätzlichen section erklärt werden
 %1-----------------------------------------------1
-
-In diesem Versuch sollen verschieden Schaltungen aus den Versuchen zuvor mit Multisim simuliert werden.
 
 \section{Simulation mit passiver Bauelementen}
 
@@ -125,7 +123,7 @@ Bei der Bestimmung der Halbwertszeit mit Multisim ergab sich eine etwas geringer
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil soll ein RCL-Kreis auf seine Resonanzfrequenz untersucht werden. Für die Untersuchung mit Multisim wir ein Bode-Plot verwendet.
+In diesem Versuchsteil soll ein RCL-Kreis auf seine Resonanzfrequenz untersucht werden. Für die Untersuchung mit Multisim wird ein Bode-Plot verwendet.
 
 \subsubsection{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -430,14 +428,12 @@ Die Kennlinie wird nach Schaltung Abb. \ref{fig:3.2} mit dem Oszilloskop aufgeno
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 Die Zenerdiodenkennline wurde mit dem Oszilloskop aufgenommen wie man in Abbildung \ref{fig:3.2_Aufnahme_Diodenkennlinie} sieht. Als Spitzenspannung wurde \unit[30]{V} verwendet.
-
 \begin{figure}[H] 
   \centering
     \includegraphics[trim = 0mm 0mm 0mm 0mm, clip, scale = 1]{3_2_kennlinie.PNG}
   	\caption[Aufnahme der Diodenkennlinie (Zenerdiode)]{Aufnahme der Diodenkennlinie (Zenerdiode)}
   \label{fig:3.2_Aufnahme_Diodenkennlinie}
 \end{figure}
-
 Es ist zu beobachten, dass die Spannung über dem Widerstand bei der Durchbruchspannung \unit[5,1]{V} sehr steil abknickt.
 \subsubsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
@@ -520,10 +516,8 @@ Die Eingangskennlinie des Transistors wurde mit dem Oszilloskop aufgenommen.
         \caption{Aufbauten zur Messung der Transistorkennlinie}
         \label{fig:3.31_Auswertung}
 \end{figure}
-
 Beobachtet wurde das typische Verhalten einer Diode, wie man an Abb. \ref{fig:3.311} und \ref{fig:3.312} sieht. Die Kennlinien wurden um \unit[480]{mV} nach links verschoben.\newline
 Bei der Aufnahme der Ausgangskennlinie wurde eine Spitzenspannung von \unit[1]{V} und für V2 wurde 0,7 und \unit[0,8]{V} verwendet. 
-
 \begin{figure}[H]
         \centering
         \begin{subfigure}[t]{0.48\textwidth}
@@ -591,57 +585,11 @@ Die Schaltung aus Abb. \ref{fig:3.4} wird in Multisim aufgebaut und mit dem Oszi
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
-
-In diesem Versuchsteil sollte zu erst die Verstärkung durch den Op-Amp untersucht werden, so wie die Abhängigkeit der Verstärkung von den Widerständen R1 und R2. Für R3 = 10k$\Omega$ und R1 = 1k$\Omega$ ergibt sich ein Verstärkung von 193, siehe Abbildung \ref{fig:3_4_ver_std}. Wird R3 auf 1k$\Omega$ reduziert ergibt sich eine Verstärkung von 65, siehe Abbildung \ref{fig:3_4_ver_r3}.
-
-\begin{figure}[H]
-        \centering
-        \begin{subfigure}[t]{0.48\textwidth}
-               \includegraphics[scale = 0.5]{3_4_verstaerkung.PNG}
-				\caption[Aufnahme der Ein- und Ausgangsspannung bei R3 = 10k$\Omega$]{Aufnahme der Ein- und Ausgangsspannung bei R3 = 10k$\Omega$}
- 				 \label{fig:3_4_ver_std}
-        \end{subfigure}%
-        %~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
-          %(or a blank line to force the subfigure onto a new line)
-        \hfill
-        \begin{subfigure}[t]{0.48\textwidth}
-                \includegraphics[scale = 0.5]{3_4_R3_kleiner.PNG}
-  				\caption[Aufnahme der Ein- und Ausgangsspannung bei R3 = 1k$\Omega$]{Aufnahme der Ein- und Ausgangsspannung bei R3 = 1k$\Omega$}
-  				\label{fig:3_4_ver_r3}
-        \end{subfigure}
-        \caption{Kurven zur Messung der Verstärkung}
-        \label{fig:3_4_ver}
-\end{figure}
-
-Dann wurde untersucht, ab welcher Amplitude sich das Signal verzerrt, dabei wurde die erste Verzerrung bei 50mV aufgenommen, siehe Abbildung \ref{fig:3_4_verzerr}.
-
-
 \begin{figure}[H] 
   \centering
-    \includegraphics[ scale = 0.7]{3_4_verzerrung.PNG}
-  	\caption[Erste Verzerrung des Signals bei 50mV]{Erste Verzerrung des Signals bei 50mV}
-  \label{fig:3_4_verzerr}
-\end{figure}
-
-Zuletzt sollte noch untersucht werden wie sich das Signal bei niedrigen (Abbildung \ref{fig:3_4_frequ_1k}) und bei hohen (Abbildung \ref{fig:3_4_frequ_10M}) Frequenzen verhält. Dabei ist deutlich zu erkennen, das hohe Frequenzen für eine Phasenverschiebung des Signals sorgen.
-
-\begin{figure}[H]
-        \centering
-        \begin{subfigure}[t]{0.48\textwidth}
-               \includegraphics[scale = 0.5]{3_4_frequenz_1k.PNG}
-				\caption[Aufnahme des Ein- und Ausgangssignals bei 1kHz]{Aufnahme des Ein- und Ausgangssignals bei 1kHz}
- 				 \label{fig:3_4_frequ_1k}
-        \end{subfigure}%
-        %~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
-          %(or a blank line to force the subfigure onto a new line)
-        \hfill
-        \begin{subfigure}[t]{0.48\textwidth}
-                \includegraphics[scale = 0.5]{3_4_frequenz_10M.PNG}
-  				\caption[Aufnahme des Ein- und Ausgangssignals bei 10MHz]{Aufnahme des Ein- und Ausgangssignals bei 10MHz}
-  				\label{fig:3_4_frequ_10M}
-        \end{subfigure}
-        \caption{Messung des Signals bei niedrigen und bei hohen Frequenzen}
-        \label{fig:3_4_frequ}
+    \includegraphics[trim = 0mm 0mm 0mm 0mm, clip, scale = 1]{ep5_14[Page17].pdf}
+  	\caption[verstärkung]{Schaltskizze für eine Transistorverstärkung}
+  \label{fig:3.4}
 \end{figure}
 
 \subsubsection{Diskussion}
@@ -654,8 +602,7 @@ Zuletzt sollte noch untersucht werden wie sich das Signal bei niedrigen (Abbildu
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
-
-Es wurde ein viel größerer Verstärkungsfaktor erwartet und bei der Verkleinerung von R3 um den Faktor 10 hätte sich der Verstärkung auch um den Faktor 10 verringern sollen. Wir können uns nicht erklären wo diese Abweichungen herkommen, da wir nicht die interne Berechnung der Werte kennen. Die Phasenverschiebung war auch beim vorherigem Versuch zu sehen.
+Gemessen wurde ein Verstärkungsfaktor von 200.
 
 \section{Simulation mit dem Operationsverstärker}
 
@@ -735,7 +682,7 @@ Es sollte die Verstärkung des Ausgangssignals gemessen werden, dabei wurde eine
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-Wie erwartet ergab die Simulation eine Verstärkung um den Faktor 101.
+Wie erwartet ergab die Simulation eine Verstärkung um den Faktor 101, in Abb. \ref{fig:4_1_101} wird der unterschied zwischen den Kurven noch genauer dargestellt.
 
 
 
@@ -744,16 +691,22 @@ Wie erwartet ergab die Simulation eine Verstärkung um den Faktor 101.
 \subsection{Invertierender Verstärker}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
-
-In diesem Versuchsteil wird die Schaltung eines Integrierers simuliert und ihre Eigenschaften anhand von drei verschiedenen Signalen untersucht.
-
+Der invertierende Verstärker, welcher schon im letzten Versuch untersucht wurde, wird noch einmal aufgebaut.
 \subsubsection{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
 Es werden ein Funktionsgenerator, ein Widerstand, ein Kondensator und ein Op-Amp verwendet.
 
-
+\subsubsection{Verwendete Formeln}
+%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
+%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
+%2-----------------------------------------------2
+%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+Dies ist die Formel für den Invertierer aus dem letzten Versuch:
+\begin{align}
+U_A=-\frac{R1}{R2} U_e
+\end{align}
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
@@ -771,7 +724,7 @@ R1 ist ein 10k$\Omega$ und R2 ein 100$\Omega$ Widerstand. Die Sinusamplitude wur
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wir die Schaltung nach Abbildung \ref{fig:4_a_2} aufgebaut und das Oszilloskop angeschlossen. Dann wird das Fenster des Oszilloskops aufgerufen und die Simulation gestartet. 
+Es wird die Schaltung nach Abbildung \ref{fig:4_a_2} aufgebaut und das Oszilloskop angeschlossen. Dann wird das Fenster des Oszilloskops aufgerufen und die Simulation gestartet. 
 
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -838,7 +791,7 @@ C1 ist ein 100$\mu$F Kondensator, R1 ein 1k$\Omega$ Widerstand und V1 ein Sinusg
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Die Schaltung wird nach Abbildung \ref{fig:4_a_3} aufgebaut, dabei wird noch der Typ der Eingangsfrequenz ausgewählt und das Oszilloskop angeschlossen. Dann wird das Fenster des Oszilloskops geöffnet und die Simulation gestartet. Die Kurve auf dem Oszilloskop aufgenommen.
+Die Schaltung wird nach Abbildung \ref{fig:4_a_3} aufgebaut, dabei wird der Typ der Eingangsfrequenz ausgewählt und das Oszilloskop angeschlossen. Dann wird das Fenster des Oszilloskops geöffnet und die Simulation gestartet. Die Kurve auf dem Oszilloskop aufgenommen.
 
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -890,7 +843,7 @@ In Abbildung \ref{fig:4_3} sind die Eingangs- und Ausgangssignale für Rechteck-
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-Die Simulation des Differenzieres hat wie erwarte funktioniert.
+Die Simulation des Differenzieres hat wie erwartet funktioniert, wobei in Abb. \ref{fig:4_3_drei} und \ref{fig:4_3_recht} leichte überschwinger im Ausgangssignal gemessen wurden. Besonders stark tritt dieser Effekt beim differenzieren der Kanten ('unstetige Sprünge') des Rechtecksignals auf.
 
 \subsection{Integrierer}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
@@ -975,13 +928,13 @@ In Abbildung \ref{fig:4_4} sind die Eingangs- und Ausgangssignale für Rechteck-
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-Die Simulation des Integrierers hat wie erwarte funktioniert.
+Die Simulation des Integrierers hat wie erwartet funktioniert, wobei in Abb.\ref{fig:4_4_drei} und \ref{fig:4_3_sin} ein leichtes Offset zu sehen ist.
 
 \section{Fazit}
 %im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
 %gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
 
-In diesem Versuch wurden verschiedene Schaltungen, welche schon zuvor schon in echt untersucht hatten simuliert. Dabei zeigte sich das Multisim bei allen Schaltungen die zuvor bestimmten Messungen qualitativ reproduzieren konnte. Multisim eignet sich sehr gut, um Schaltungen zu Simulieren und ihr Verhalten zu untersuchen, dabei sollte man jedoch beachten, das Multisim nicht die Zerstörung von Bauteilen mit Simuliert, bei zu hohen Strömen bzw. Spannungen.
+In diesem Versuch wurden verschiedene Schaltungen, welche zuvor real untersucht worden sind, simuliert. Dabei zeigte sich das Multisim bei allen Schaltungen die zuvor bestimmten Messungen qualitativ reproduzieren konnte. Multisim eignet sich sehr gut, um Schaltungen zu simulieren und ihr Verhalten zu untersuchen. Dabei sollte man jedoch beachten, das Multisim die Zerstörung von Bauteilen nicht simuliert, wodurch zu hohe Ströme bzw. Spannungen benutzt werden können.
 
 \end{document}
 
