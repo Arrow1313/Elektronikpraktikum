@@ -19,7 +19,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
  
-\title{Versuch ...\\}
+\title{Versuch Multisim Simulation EP5}
 \author{Frederik Strothmann, Henrik Jürgens}
 \date{\today}
 %niemals zwei überschriften direkt übereinander schreiben, also immer mindestens in einem satz was sinnvolles unter jede überschrift schreiben (bei den versuchen z.B. das versuchsziel) 
@@ -225,21 +225,19 @@ R1 ist ein 50$\Omega$ Widerstand, C1 ein 100nF Kondensator und L1 eine 1,5mH Spu
 
 
 \section{Simulation mit diskreten aktiven Bauelementen}
+In diesem Versuchsteil sollen Simulationen mit Halbleitern durchgeführt werden.
 
 \subsection{Kennlinie einer Siliziumdiode}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+Die Kennlinie einer Siliziumdiode\footnote{Typ 1N4001GP} wird in diesem Versuchsteil ausgemessen.
 \subsubsection{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden ein Funktionsgenerator, ein Widerstand, eine Siliziumdiode und ein Oszilloskop verwendet.
+Es werden ein Funktionsgenerator, ein Widerstand, eine Siliziumdiode und ein Oszilloskop verwendet.(Multisim)
 
-\subsubsection{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
@@ -250,19 +248,14 @@ R1 ist ein 1k$\Omega$ Widerstand und die Siliziumdiode ist eine 1N4001 Diode.
   \centering
     \includegraphics[trim = 10mm 160mm 10mm 75mm, clip, scale = 1]{ep5_14[Page15].pdf}
   	\caption[Schaltskizze zur Aufnahme der Diodenkennlinie (Siliziumdiode)]{Schaltskizze zur Aufnahme der Diodenkennlinie (Siliziumdiode)\footnotemark}
-  \label{fig:1}
+  \label{fig:3.1}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep5\_14.pdf Seite 15 am 22.11.2014}
 
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
-\subsubsection{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+Die Schaltung wird nach dem Schaltplan Abbildung \ref{fig:3.1} in Multisim zusammengebaut. Am Oszilloskop kann die Kennlinie abgelesen werden.
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -272,6 +265,14 @@ R1 ist ein 1k$\Omega$ Widerstand und die Siliziumdiode ist eine 1N4001 Diode.
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+Mit dem Oszilloskop wurde die Diodenkennlinie mit einem Sinussignal durchgefahren.
+Wie man sieht hat die Diode auch geringe Kapazitive Eigenschaften.
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 0mm 0mm 0mm 0mm, clip, scale = 1]{3_1_kennlinie.PNG}
+  	\caption[Diodenkennlinie am Oszilloskop (Siliziumdiode)]{Diodenkennlinie am Oszilloskop (Siliziumdiode)}
+  \label{fig:Diodenkennlinie_Oszilloskop_Siliziumdiode}
+\end{figure}
 \subsubsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -282,24 +283,21 @@ R1 ist ein 1k$\Omega$ Widerstand und die Siliziumdiode ist eine 1N4001 Diode.
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
-
+Der erwartete exponentielle Zusammenhang kann an Abbildung \ref{fig:Diodenkennlinie_Oszilloskop_Siliziumdiode} abgelesen werden.
+Die Diode hat bei Wechselspannung auch Kapazitive Eigenschaften, sodass eine leichte Verschiebung der Kennlinie entsteht.
 
 
 
 \subsection{Kennlinie einer Zenerdiode}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+In diesem Versuchsteil wird die Kennlinie einer Zenerdiode mit dem Oszilloskop aufgenommen.
 \subsubsection{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden ein Funktionsgenerator, ein Widerstand, eine Zenerdiode und ein Oszilloskop verwendet.
+Es werden ein Funktionsgenerator, ein Widerstand, eine Zenerdiode und ein Oszilloskop verwendet.(Multisim)
 
-\subsubsection{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
@@ -310,19 +308,15 @@ R1 ist ein 1k$\Omega$ Widerstand und die Zenerdiode ist eine BZV55-B5V1 Diode.
   \centering
     \includegraphics[trim = 10mm 70mm 10mm 165mm, clip, scale = 1]{ep5_14[Page15].pdf}
   	\caption[Schaltskizze zur Aufnahme der Diodenkennlinie (Zenerdiode)]{Schaltskizze zur Aufnahme der Diodenkennlinie (Zenerdiode)\footnotemark}
-  \label{fig:1}
+  \label{fig:3.2}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep5\_14.pdf Seite 15 am 22.11.2014}
 
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
-\subsubsection{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+Die Zenerdiode Typ BZV55-B5V1 hat entsprechend eine Zenerspannung von \unit[5,1]{V}.
+Die Kennlinie wird nach Schaltung Abb. \ref{fig:3.2} mit dem Oszilloskop aufgenommen. In Multisim wird der Schaltplan gemäß Abb. \ref{fig:3.2} eingezeichnet.
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -332,6 +326,14 @@ R1 ist ein 1k$\Omega$ Widerstand und die Zenerdiode ist eine BZV55-B5V1 Diode.
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+Die Zenerdiodenkennline wurde mit dem Oszilloskop aufgenommen wie man in Abbildung \ref{fig:3.2_Aufnahme_Diodenkennlinie} sieht. Als Spitzenspannung wurde \unit[30]{V} verwendet.
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 0mm 0mm 0mm 0mm, clip, scale = 1]{3_2_kennlinie.PNG}
+  	\caption[Aufnahme der Diodenkennlinie (Zenerdiode)]{Aufnahme der Diodenkennlinie (Zenerdiode)}
+  \label{fig:3.2_Aufnahme_Diodenkennlinie}
+\end{figure}
+Es ist zu beobachten, dass die Spannung über dem Widerstand bei der Durchbruchspannung \unit[5,1]{V} sehr steil abknickt.
 \subsubsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -342,26 +344,18 @@ R1 ist ein 1k$\Omega$ Widerstand und die Zenerdiode ist eine BZV55-B5V1 Diode.
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
-
-
-
-
-
+Es wurde die erwartete Durchbruchspannung bei \unit[5,1]{V} mit dem Oszilloskop aufgenommen. 
 
 \subsection{Kennlinie eines Transistors}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+In diesem Versuchsteil wird die Eingangs- und Ausgangskennlinie des Transistors aufgenommen.
 \subsubsection{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden ein Funktionsgenerator, ein Widerstand, ein Transistor und ein Oszilloskop verwendet.
+Es werden ein Funktionsgenerator, ein Widerstand, ein Transistor und ein Oszilloskop verwendet.(Multisim)
 
-\subsubsection{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
 \subsubsection{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
@@ -370,33 +364,29 @@ Im ersten Aufbau ist R1 ist ein 1k$\Omega$ Widerstand und der Transistor ist ein
 
 \begin{figure}[H]
         \centering
-        \begin{subfigure}[b]{0.48\textwidth}
+        \begin{subfigure}[t]{0.48\textwidth}
                \includegraphics[trim = 30mm 175mm 30mm 40mm, clip, scale = 0.7]{ep5_14[Page16].pdf}
-				\caption[Schaltskizze zur Aufnahme der Kennlinie eines BC550 Transistors]{Schaltskizze zur Aufnahme der Kennlinie eines BC550 Transistors\footnotemark}
- 				 \label{fig:1}
+				\caption[Schaltskizze zur Aufnahme der Eingangskennlinie eines BC550 Transistors]{Schaltskizze zur Aufnahme der Kennlinie eines BC550 Transistors\footnotemark}
+ 				 \label{fig:3.31}
         \end{subfigure}%
         %~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
         \hfill
-        \begin{subfigure}[b]{0.48\textwidth}
+        \begin{subfigure}[t]{0.48\textwidth}
                 \includegraphics[trim = 30mm 75mm 30mm 140mm, clip, scale = 0.7]{ep5_14[Page16].pdf}
-  				\caption[Schaltskizze zur Aufnahme der Kennlinie eines BC550 Transistors]{Schaltskizze zur Aufnahme der Kennlinie eines BC550 Transistors\footnotemark}
-  				\label{fig:1}
+  				\caption[Schaltskizze zur Aufnahme der Augangskennlinie eines BC550 Transistors]{Schaltskizze zur Aufnahme der Kennlinie eines BC550 Transistors\footnotemark}
+  				\label{fig:3.32}
         \end{subfigure}
-        \caption{Aufbeuten zur Messung der Transistorkennlinie}
-        \label{fig:1}
+        \caption{Aufbauten zur Messung der Transistorkennlinie}
+        \label{fig:3.3}
 \end{figure}
 
 
 \subsubsection{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
-\subsubsection{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+Zuerst wird der Schaltplan für die Eingangskennlinie gemäß Abb. \ref{fig:3.31} in Multisim eingezeichnet, welche dann mit dem Oszilloskop aufgenommen werden soll. Es wird ein Transistor vom Typ  BC550 und ein Basiswiderstand von \unit[1]{k$\Omega$} verwendet. Als zweites wird der Schaltplan gemäß Abb. \ref{fig:3.32} in Multisim eingezeichnet und simuliert.(R1 = \unit[100]{k$\Omega$}, R2 = \unit[100]{$\Omega$})
+Die Ausgangskennlinie wird mit dem Oszilloskop aufgenommen.
 \subsubsection{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -406,6 +396,45 @@ Im ersten Aufbau ist R1 ist ein 1k$\Omega$ Widerstand und der Transistor ist ein
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+Die Eingangskennlinie des Transistors wurde mit dem Oszilloskop aufgenommen.
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[t]{0.48\textwidth}
+               \includegraphics[trim = 0mm 0mm 0mm 0mm, clip, scale = 0.5]{3_3_eingangskennlinie_0Volt.PNG}
+				\caption[Aufnahme der Eingangskennlinie eines BC550 Transistors bei einer Kollektorspannung von 0 V]{Aufnahme der Eingangskennlinie eines BC550 Transistors bei einer Kollektorspannung von 0 V}
+ 				 \label{fig:3.311}
+        \end{subfigure}%
+        %~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[t]{0.48\textwidth}
+                \includegraphics[trim = 0mm 0mm 0mm 0mm, clip, scale = 0.5]{3_3_eingangskennlinie_5Volt.PNG}
+  				\caption[Aufnahme der Eingangskennlinie eines BC550 Transistors bei einer Kollektorspannung von 5 V]{Aufnahme der Eingangskennlinie eines BC550 Transistors bei einer Kollektorspannung von 5V}
+  				\label{fig:3.312}
+        \end{subfigure}
+        \caption{Aufbauten zur Messung der Transistorkennlinie}
+        \label{fig:3.31_Auswertung}
+\end{figure}
+Beobachtet wurde das typische Verhalten einer Diode, wie man an Abb. \ref{fig:3.311} und \ref{fig:3.312} sieht. Die Kennlinien wurden um \unit[480]{mV} nach links verschoben.\newline
+Bei der Aufnahme der Ausgangskennlinie wurde eine Spitzenspannung von \unit[1]{V} und für V2 wurde 0,7 und \unit[0,8]{V} verwendet. 
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[t]{0.48\textwidth}
+               \includegraphics[trim = 0mm 0mm 0mm 0mm, clip, scale = 0.5]{3_3_ausgangskennlinie_0,7V.PNG}
+				\caption[Aufnahme der Ausgangskennlinie eines BC550 Transistors bei einer Basisspannung von 0,7 V]{Aufnahme der Ausgangskennlinie eines BC550 Transistors bei einer Basisspannung von 0,7 V}
+ 				 \label{fig:3.321}
+        \end{subfigure}%
+        %~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[t]{0.48\textwidth}
+                \includegraphics[trim = 0mm 0mm 0mm 0mm, clip, scale = 0.5]{3_3_ausgangskennlinie_0,8V.PNG}
+  				\caption[Aufnahme der Ausgangskennlinie eines BC550 Transistors bei einer Basisspannung von 0,8 V]{Aufnahme der Ausgangskennlinie eines BC550 Transistors bei einer Basisspannung von 0,8 V}
+  				\label{fig:3.322}
+        \end{subfigure}
+        \caption{Aufbauten zur Messung der Transistorkennlinie}
+        \label{fig:3.32_Auswertung}
+\end{figure}
 \subsubsection{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -416,11 +445,7 @@ Im ersten Aufbau ist R1 ist ein 1k$\Omega$ Widerstand und der Transistor ist ein
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
-
-
-
-
-
+Die Basis-Emitter-Diodenkennlinie wurde mit dem Oszilloskop bei verschiedenen Kollektorspannungen aufgenommen. Wie erwartet verschiebt sich die Kennlinie bei größerer Kollektorspannung nach rechts, da ein Teil der Elektronen von der Kollektorspannung abgesaugt wird. Die Kennlinien in Abb. \ref{fig:3.31_Auswertung} wurden um \unit[480]{mV} nach links verschoben. Die Ausgangskennlinie wurde mit mit den Eingangsspannungen V2 von 0,7 und \unit[0,8]{V} aufgenommen und ergeben die erwarteten Kurven, wie man in Abb. \ref{fig:3.32_Auswertung} sieht. 
 
 \subsection{Transistorverstärker}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
