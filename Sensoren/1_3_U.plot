@@ -22,11 +22,10 @@ set ylabel "Spannung/V"
 
 #set sample 10000 #bessere auflösung
 
-g(x)=1000*(1+x*3.85*10**(-3))
 
-#f(x) = m*x+b #funktionen definieren
-#fit f(x) "1_3_U.dat" using 1:2:4 via m,b #funktionen fitten
-plot "1_3_U.dat" with xyerrorbars title "Messdaten"#, f(x) title "Regressionsgerade"#, g(x) title "Theoriekurve" #, "2_12.dat" smooth csplines title "Messdaten mit csplines" #plotten von messdaten, regression, und csplines
+#f(x) = d+c*(x*a)**0.5 #funktionen definieren
+#fit f(x) "1_3_A.dat" using 1:2:4 via c #funktionen fitten
+plot "1_3_U.dat" with xyerrorbars title "Messdaten" smooth csplines #, f(x) title "Regression"#, g(x) title "Theoriekurve" #, "2_12.dat" smooth csplines title "Messdaten mit csplines" #plotten von messdaten, regression, und csplines
 
 set terminal postscript eps enhanced color font 'Helvetica,14' #ausgabeformat
 set output "1_3_U.eps" #name des dokuments
