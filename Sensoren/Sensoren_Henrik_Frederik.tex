@@ -1043,18 +1043,18 @@ Die Kalibrationswerte für 0g und 600g wurden mit -0,01 mv/V und 0,85 mV/V besti
 Der lineare Zusammenhang zwischen der Kraft und der Spannung konnte gezeigt werden. Als Kalibrationswerte wurden für 0g -0,0094 mV/V und für 600g 0,8569 mv/V in der Praktikumsanleitung angegeben. Die von uns bestimmten Kalibrationswerte liegen bei -0,01 mV/V für 0g und 0,85 mV/V für 600g, was zeigt, dass die Messung erfolgreich war.
 
 \section{Luftdruckschwankungen/Schall}
-Hochfrequente Änderungen des Luftdrucks können eine Membran zum schwingen brigen. Dies wird in Mikrofonen ausgenutzt um Schall in elektrische Signale umzuwandeln. Dazu bieten sich hauptsächlich zwei Bauformen an. Das Elektret- oder Kondensatormikrophon und das dynamische Mikrophon.
+Hochfrequente Änderungen des Luftdrucks können eine Membran zum schwingen brigen. Dies wird in Mikrofonen ausgenutzt um Schall in elektrische Signale umzuwandeln. Dazu bieten sich hauptsächlich zwei Bauformen an. Das Elektret- oder Kondensatormikrofon und das dynamische Mikrofon.
 \subsection{Dynamische Mikrofone}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
-Dynamische Mikrophone haben an ihrer Membran eine kleine Spule befestigt, welche im Feld eines starken Dauermagneten mit der Memran zusammen schwingt. Durch die Bewegung der Spule im Magnetfeld werden kleine Induktionsspannungen erzeugt.
+Dynamische Mikrofone haben an ihrer Membran eine kleine Spule befestigt, welche im Feld eines starken Dauermagneten mit der Memran zusammen schwingt. Durch die Bewegung der Spule im Magnetfeld werden kleine Induktionsspannungen erzeugt.
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-Verwendet werden im ersten Aufbau Abb. ein Dynamisches Mikrophon, ein \unit[4,7]{k$\Omega$} Widerstand, ein \unit[10]{nF} Kondensator, eine 1,5 V Spannungsquelle und ein Kondensator.
+Verwendet wird ein Oszilloskop, ein dynamisches Mikrofon, welches über einen Adapter im ersten Teil direkt an das Oszilloskop angeschlossen wird. Im zweiten Teil werden zusätzlich ein Op-Amp, Bananenkabel, ein \unit[100]{k$\Omega$} Widerstand, ein \unit[100]{nF} Kondensator und zwei \unit[9]{V} Spannungsquellen (Funktionsgenerator) verwendet.
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
-
+In dieser Schaltung werden die Mikrofonsignale mit dem Op-Amp verstärkt.
 \begin{figure}[H] 
   \centering
     \includegraphics[ scale = 0.7]{Auf_5_1.png}
@@ -1066,12 +1066,8 @@ Verwendet werden im ersten Aufbau Abb. ein Dynamisches Mikrophon, ein \unit[4,7]
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+Im ersten Teil des Versuches wird das dynamische Mikrofon über einen Adapter direkt mit dem Oszilloskop verbunden, und in das Mikrofon hineingepfiffen. Im zweiten Teil des Versuches wird eine Verstärkerschaltung nach Abb. \ref{fig:auf_5_1} aufgebaut um die Mikrophonsignale zu verstärken. Mit einem Lautsprecher wird das Mikrofon angeregt, und untersucht, bis zu welcher Frequenz bzw. ab welcher Frequenz das Mikrofon arbeitet. Es ist darauf zu achten, dass der Lautsprecher nicht zu nah an das Mikrofon gehalten wird, damit keine Induktiven Effekte die Messung beeinflussen.
 
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -1081,6 +1077,35 @@ Verwendet werden im ersten Aufbau Abb. ein Dynamisches Mikrophon, ein \unit[4,7]
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+In Abb. \ref{fig:Oszi_5_1_Pfeif} wurde der Pfeifton einmal ohne Verstärkerschaltung Abb. \ref{fig:Oszi_5_1_1} und einmal mit Verstärkerschaltung Abb. \ref{fig:Oszi_5_1_2} augenommen. Am Oszilloskop wurde das Signal über 128 Werte gemittelt. Man sieht, dass das Signal sich ca. um den Faktor 400 verstärkt hat.
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[ scale = 0.4]{TEK0000.pdf}
+  	\caption[nichtverstärkte Aufnahme mit dem dynamischen Mikrofon]{nichtverstärkte Aufnahme mit dem dynamischen Mikrofon}
+  \label{fig:Oszi_5_1_1}
+        \end{subfigure}%
+        %~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.48\textwidth}
+               \includegraphics[ scale = 0.4]{TEK0005.pdf}
+  	\caption[verstärkte Pfeifaufnahme mit dem dynamischen Mikrofon]{verstärkte Pfeifaufnahme mit dem dynamischen Mikrofon}
+  \label{fig:Oszi_5_1_2}
+        \end{subfigure}
+        \caption{Pfeifaufnahme mit und ohne Verstärkung}
+        \label{fig:Oszi_5_1_Pfeif}
+\end{figure}
+In Abb. \ref{fig:Oszi_5_1_3} wurde ein Lautsprechersignal aufgenommen und über 128 Werte gemittelt.
+Die Spitzenspannung ist kleiner als bei der Pfeifaufnahme, da der Lautsprecher leiser war.
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.7]{TEK0010.pdf}
+  	\caption[verstärkte Lautsprecheraufnahme mit dem dynamischen Mikrofon]{verstärkte Lautsprecheraufnahme mit dem dynamischen Mikrofon}
+  \label{fig:Oszi_5_1_3}
+\end{figure}
+Beim verstellen der Frequenz des Lautsprechers war ab ca. \unit[70]{Hz} ein Signal messbar und ab ca. \unit[3]{kHz} brach das Signal zusammen.
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -1092,25 +1117,20 @@ Verwendet werden im ersten Aufbau Abb. ein Dynamisches Mikrophon, ein \unit[4,7]
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-
+Wie erwartet wurde die Amplitude des Signals mit der Verstärkerschaltung verstärkt und es konnten ohne Probleme auch leisere Signale am Oszilloskop aufgenommen werden. Das dynamische Mikrofon arbeitet ab einer Frequenz von ca. \unit[850]{Hz} und das Signal bricht bei ca. \unit[3]{kHz} zusammen.
 
 \subsection{Kondensator- oder Elektretmikrofone}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+Elektretmikrofone haben eine Membran aus einer dünnen elektrisch leitenden Folie, welche eine der Elektroden eines Kondensators darstellt. Der Abstand der beiden "Platten" ist näherungsweise proportional zur Spannung, sodass durch Schwingung der Folie bei aufgeladenem Kondensator eine Wechselspannung erzeugt werden kann. Der Vorteil dieses Mikrofons ist eine bessere Klangqualität, der Nachteil ist die je nach Schaltung benötigte hohe Vorspannung. Elektretmikrofone werden in ca. 90 \% der modernen Sprachkommunikationsmittel verwendet. \footnote{vgl. http://de.wikipedia.org/wiki/Elektretmikrofon} 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
-
-Lückenfüller
+Verwendet werden im ersten Aufbau \ref{fig:auf_5_2_1} ein Elektretmikrophon, ein \unit[4,7]{k$\Omega$} Widerstand, ein \unit[10]{nF} Kondensator, eine 1,5 V Spannungsquelle und das Oszilloskop. Im zweiten Aufbau wird ein \unit[100]{nF} Kondensator, ein Op-Amp, ein \unit[100]{k$\Omega$} Widerstand, zwei \unit[9]{V} Spannungsquellen und ein Oszilloskop verwendet. 
 
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
-
+Der Widerstand stellt einen Spannungsteiler und der Kondensator einen Hochpass dar.(d.h. Gleichspannungen werden herausgefiltert)
 \begin{figure}[H] 
   \centering
     \includegraphics[ scale = 0.7]{Auf_5_2_1.PNG}
@@ -1118,13 +1138,11 @@ Lückenfüller
   \label{fig:auf_5_2_1}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep6\_14.pdf Seite 11 am 01.12.2014}
-
-Lückenfüller
-
+Die Impedanzwandlerschaltung  Abb. \ref{fig:auf_5_2_2}, welche aus dem Versuch mit dem Op-Amp bekannt ist, soll die Signalqualität verbessern.
 \begin{figure}[H] 
   \centering
     \includegraphics[ scale = 0.7]{Auf_5_2_2.png}
-  	\caption[Schaltskizze für das Elektretmikrofon ]{Schaltskizze für das Elektretmikrofon\footnotemark}
+  	\caption[Verstäkerschaltskizze für das Elektretmikrofon]{Verstärkerschaltskizze für das Elektretmikrofon\footnotemark}
   \label{fig:auf_5_2_2}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep6\_14.pdf Seite 11 am 01.12.2014}
@@ -1132,12 +1150,8 @@ Lückenfüller
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+Im ersten Teil des Versuches wird die Schaltung nach Abb. \ref{fig:auf_5_2_1} aufgebaut und in das Mikrofon gepfiffen.
+Im zweiten Teil des Versuches wird der Impedanzwandler aufgebaut um eine besseres Signal zu erhalten. 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -1147,6 +1161,34 @@ Lückenfüller
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+In Abb. \ref{fig:Oszi_5_2_Pfeif} wurde der Pfeifton einmal ohne Impedanzwandler Abb. \ref{fig:Oszi_5_2_1} und einmal mit Impedanzwandler Abb. \ref{fig:Oszi_5_2_2} augenommen. Am Oszilloskop wurde das Signal über 128 Werte gemittelt.
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[ scale = 0.4]{TEK0002.pdf}
+  	\caption[nichtverstärkte Aufnahme mit dem dynamischen Mikrofon]{nichtverstärkte Aufnahme mit dem dynamischen Mikrofon}
+  \label{fig:Oszi_5_2_1}
+        \end{subfigure}%
+        %~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[b]{0.48\textwidth}
+               \includegraphics[ scale = 0.4]{TEK0006.pdf}
+  	\caption[verstärkte Pfeifaufnahme mit dem Elektret-Mikrofon]{verstärkte Pfeifaufnahme mit dem Elektret-Mikrofon}
+  \label{fig:Oszi_5_2_2}
+        \end{subfigure}
+        \caption{Pfeifaufnahme mit und ohne Verstärkung}
+        \label{fig:Oszi_5_2_Pfeif}
+\end{figure}
+In Abb. \ref{fig:Oszi_5_2_3} wurde ein Lautsprechersignal aufgenommen und über 128 Werte gemittelt.
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.7]{TEK0009.pdf}
+  	\caption[verstärkte Lautsprecheraufnahme mit dem Elektret-Mikrofon]{verstärkte Lautsprecheraufnahme mit dem Elektret-Mikrofon}
+  \label{fig:Oszi_5_2_3}
+\end{figure}
+Beim verstellen der Frequenz des Lautsprechers war ab ca. \unit[70]{Hz} ein Signal messbar und ab ca. \unit[3,5]{kHz} brach das Signal zusammen.
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -1158,6 +1200,7 @@ Lückenfüller
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
+Wie erwartet wurde das Signals mit dem Impedanzwander verbessert. Das Elektret-Mikrofon arbeitet ab einer Frequenz von ca. \unit[70]{Hz} und das Signal bricht bei ca. \unit[3,5]{kHz} zusammen.
 
 
 \section{Feuchte}
