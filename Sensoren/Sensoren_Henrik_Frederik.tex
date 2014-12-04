@@ -1054,6 +1054,15 @@ Dynamische Mikrophone haben an ihrer Membran eine kleine Spule befestigt, welche
 Verwendet werden im ersten Aufbau Abb. ein Dynamisches Mikrophon, ein \unit[4,7]{k$\Omega$} Widerstand, ein \unit[10]{nF} Kondensator, eine 1,5 V Spannungsquelle und ein Kondensator.
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.7]{Auf_5_1.png}
+  	\caption[Schaltskizze für das dynamische Mikrofon]{Schaltskizze für das dynamische Mikrofon\footnotemark}
+  \label{fig:auf_5_1}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep6\_14.pdf Seite 11 am 01.12.2014}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -1114,8 +1123,8 @@ Lückenfüller
 
 \begin{figure}[H] 
   \centering
-    \includegraphics[ scale = 0.7]{Auf_5_2_2.PNG}
-  	\caption[Schaltskizze für das Elektretmikrofon und das dynamische Mikrofon mit Operationsverstärker]{Schaltskizze für das Elektretmikrofon und das dynamische Mikrofon mit Operationsverstärker\footnotemark}
+    \includegraphics[ scale = 0.7]{Auf_5_2_2.png}
+  	\caption[Schaltskizze für das Elektretmikrofon ]{Schaltskizze für das Elektretmikrofon\footnotemark}
   \label{fig:auf_5_2_2}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep6\_14.pdf Seite 11 am 01.12.2014}
@@ -1154,16 +1163,20 @@ Lückenfüller
 \section{Feuchte}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil geht es um die Messung der Luftfeuchtigkeit.
+
 \subsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-\subsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+Es werden eine Spule, ein Luftfeuchtigkeitssensor, ein Funktionsgenerator und eine Oszilloskop verwendet.
+
+
 \subsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+Der Funktionsgenerator, die Spule und der Feuchtigkeitssensor werden in reihe geschaltet. Das Oszilloskop wird parallel zum Feuchtigkeitssensor geschaltet.
 
 \begin{figure}[H] 
   \centering
@@ -1176,11 +1189,8 @@ Lückenfüller
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-\subsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+Es wird die Schaltung in Abbildung \ref{fig:auf_6} aufgebaut.Dann wurde das 
+
 \subsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -1190,6 +1200,21 @@ Lückenfüller
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.5]{6_1.pdf}
+  	\caption[Aufnahme des Oszilloskops bei Raumluftfeuchtigkeit]{Aufnahme des Oszilloskops bei Raumluftfeuchtigkeit}
+  \label{fig:6_1}
+\end{figure}
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.5]{6_2.pdf}
+  	\caption[Aufnahme des Oszilloskops nach längerem Anhauchen des Luftfeuchtigkeitssensors]{Aufnahme des Oszilloskops nach längerem Anhauchen des Luftfeuchtigkeitssensors}
+  \label{fig:6_2}
+\end{figure}
+
 \subsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -1200,6 +1225,7 @@ Lückenfüller
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
 
 
 
