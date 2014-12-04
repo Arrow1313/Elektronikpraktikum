@@ -1,0 +1,20 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{3}
+\contentsline {section}{\numberline {2}Lichtmessung}{3}
+\contentsline {subsection}{\numberline {2.1}Photowiderstand}{3}
+\contentsline {subsection}{\numberline {2.2}Photodiode}{4}
+\contentsline {subsection}{\numberline {2.3}Phototransistor}{7}
+\contentsline {subsection}{\numberline {2.4}Leuchtdiode als Lichtquelle}{10}
+\contentsline {section}{\numberline {3}Temperaturmessung}{14}
+\contentsline {subsection}{\numberline {3.1}PTCs}{15}
+\contentsline {subsection}{\numberline {3.2}NTCs}{16}
+\contentsline {subsection}{\numberline {3.3}Thermoelemente}{17}
+\contentsline {section}{\numberline {4}Induktion}{18}
+\contentsline {section}{\numberline {5}Kraft}{20}
+\contentsline {subsection}{\numberline {5.1}Elementare Dehnungsmessstreifen}{21}
+\contentsline {subsection}{\numberline {5.2}Dehnungsmessstreifen in Wheatstonscher Messbr\IeC {\"u}cke, W\IeC {\"a}gezelle}{22}
+\contentsline {section}{\numberline {6}Luftdruckschwankungen/Schall}{24}
+\contentsline {subsection}{\numberline {6.1}Dynamische Mikrofone}{24}
+\contentsline {subsection}{\numberline {6.2}Kondensator- oder Elektretmikrofone}{27}
+\contentsline {section}{\numberline {7}Feuchte}{29}
+\contentsline {section}{\numberline {8}Fazit}{32}
