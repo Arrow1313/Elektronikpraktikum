@@ -26,7 +26,7 @@
 #fit f(x) "Beispiel.dat" using 1:2:4 via m,b #funktionen fitten
 #plot "Beispiel.dat" with xyerrorbars title "Messdaten", f(x) title "Regressionsgerade", "Beispiel2.dat" smooth csplines title "Messdaten mit csplines" #plotten von messdaten, regression, und csplines
 
-#set terminal postscript eps enhanced color font 'Helvetica,14' #ausgabeformat
+#set terminal postscript eps enhanced color font 'Helvetica,10' #ausgabeformat
 #set output "Beispiel.eps" #name des dokuments
 #replot #dokument plotten
 #!epstopdf Beispiel.eps #eps in pdf umwandeln
