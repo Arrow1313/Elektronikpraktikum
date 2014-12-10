@@ -1,0 +1,355 @@
+\documentclass[12pt,a4paper]{article}
+ 
+\usepackage{float}
+%für feststellen der figures und tables [H] dranschreiben
+\usepackage{units}
+%wird so benutzt: 
+%\unit[value/Zahl]{dimension/Einheit} oder 
+%\unitfrac[value/Zahl]{dimension/Einheit num/Zähler}{dimension/Einheit denum/Nenner} oder
+%\nicefrac[fontcommand/Schriftart]{dimension/Einheit num/Zähler}{dimension/Einheit denum/Nenner}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+ 
+\title{Regelschaltungen}
+\author{Frederik Strothmann, Henrik Jürgens}
+\date{\today}
+%niemals zwei überschriften direkt übereinander schreiben, also immer mindestens in einem satz was sinnvolles unter jede überschrift schreiben (bei den versuchen z.B. das versuchsziel) 
+\begin{document}
+%deckblatt erstellen.
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section{Einleitung}
+%einleitung zu dem experiment.
+%auf die einstellungen, die vor dem versuch gemacht werden, eingehen oder auf eine anleitung dazu verweisen
+%es soll immer erwähnt werden um was es in dem Versuch geht und wie das relisiert werden soll
+%---------------------------------------------------------------------------------------------
+%hinter der einleitung kann der allgemeine theoretische hintergrund in einer zusätzlichen section erklärt werden
+%1-----------------------------------------------1
+
+
+
+
+\section{Eichung des NTC-Sensors}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+Im ersten Versuchsteil soll der NTC-Sensor für die nachfolgenden Messungen geeicht werden. Der NTC-Sensor ist ein Widerstand, der Exponentiell von der Temperatur abhängt.
+
+\subsection{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\.
+
+Es werden ein NTC-Sensor, ein Kühlkörper, ein DMM, ein Heizwiderstand und ein Netzgerät verwendet.
+
+\subsection{Verwendete Formeln}
+%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
+%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
+%2-----------------------------------------------2
+%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+Der Zusammenhang zwischen Widerstand und Temperatur ist durch Gleichung \ref{eqn:ntc} gegeben. R$_{25}$ ist der Widerstand bei 25$^\circ$C
+
+\begin{align}
+\text{R}_\text{NTC}(\text{T}) = \text{R}_{25} \text{exp}\left(-\text{B} \left(\frac{1}{\text{T}_{25}}-\frac{1}{\text{T}}\right)\right)
+\label{eqn:ntc}
+\end{align}
+
+\subsection{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+1 ist der NTC, 2 ist der Kühlkörper und 3 der Heizwiderstand.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.3]{Auf_1.png}
+  	\caption[Aufbau zur Eichung des NTC]{Aufbau zur Eichung des NTC\footnotemark}
+  \label{fig:auf_1}
+\end{figure}
+\footnotetext{Abbildungsteile entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep7\_14.pdf am 06.12.2014}
+
+\subsection{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+\subsection{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+\subsection{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+\subsection{Diskussion}
+%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
+%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
+%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
+%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
+%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
+%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+%--------------------------------------------------------------------------------------------
+%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+%1-----------------------------------------------1
+
+
+
+
+
+
+\section{Regelschaltungen}
+In diesem Versuchsabschnitt werden verschiedene Regelschaltungen untersucht. Es werden Zweiwegregler, Zweiwegregler mit Hysterese, Proportionalregler und Proportionalregler mit Integrator Untersucht.
+
+\subsection{Zweiwegregler}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil wird die Temperaturregulierung mittels eines Zweiwegreglers untersucht. Dieser unterscheidet nur zwischen des Zuständen Temperatur ist größer als der Sollwert oder Temperatur ist kleiner als Sollwert und reagiert dem entsprechend. Der Vorteil eines Zweiwegreglers ist, dass er sehr einfach aufzubauen ist. Nachteilig ist jedoch sein schlechtes Regelverhalten.
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+Es werden ein Netzgerät, Widerstände, Kondensatoren, ein Oszilloskop, ein Op-Amp, ein Transistor, ein Lüfter und eine LED verwendet.
+
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+Die Werte der jeweiligen Bauteile sind im Schaltplan angegeben. 
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.45]{Auf_2_1_1.png}
+  	\caption[Schaltskizze des Zweiwegreglers]{Schaltskizze des Zweiwegreglers\footnotemark}
+  \label{fig:auf_2_1_1}
+\end{figure}
+\footnotetext{Abbildungsteile entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep7\_14.pdf am 06.12.2014}
+
+Der Aufbau lässt sich auch vereinfacht darstellen (Abbildung \ref{fig:auf_2_1_2}). Im fort folgendem werden nur die vereinfachten Schaltskizzen angegeben.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.45]{Auf_2_1_2.png}
+  	\caption[Vereinfachte Schaltskizze des Zweiwegreglers]{Vereinfachte Schaltskizze des Zweiwegreglers\footnotemark}
+  \label{fig:auf_2_1_2}
+\end{figure}
+\footnotetext{Abbildungsteile entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep7\_14.pdf am 06.12.2014}
+
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+\subsubsection*{Diskussion}
+%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
+%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
+%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
+%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
+%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
+%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+%--------------------------------------------------------------------------------------------
+%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+%1-----------------------------------------------1
+
+
+
+
+\subsection{Zweiwegregler mit Hysterese}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil wird die Reglung der Temperatur über eine Zweiwegreglung mit Hysterese untersucht. Der Vorteil dieser Schaltung ist, dass durch die Hysterese die Regelung erst etwas später eintritt.
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+Es werden ein Netzgerät, Widerstände, Kondensatoren, ein Oszilloskop, ein Op-Amp, ein Transistor und ein Lüfter verwendet.
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+Die Hysterese wird dadurch erreicht, dass Eingang und Ausgang mit einem Widerstand verbunden werden. Hier ist Rh der Widerstand und er hat eine Wert von 20k$\Omega$ bis 100k$\Omega$.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.45]{Auf_2_2.png}
+  	\caption[Vereinfachte Schaltskizze des Zweiwegreglers mit Hysterese]{Vereinfachte Schaltskizze des Zweiwegreglers  mit Hysterese\footnotemark}
+  \label{fig:auf_2_2}
+\end{figure}
+\footnotetext{Abbildungsteile entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep7\_14.pdf am 06.12.2014}
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+\subsubsection*{Diskussion}
+%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
+%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
+%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
+%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
+%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
+%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+%--------------------------------------------------------------------------------------------
+%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+%1-----------------------------------------------1
+
+
+
+\subsection{Proportionalregler}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil wird der Proportionalregler untersucht, er ermöglicht eine kontinuierliche Regulierung der Drehzahl des Lüfters.
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+Es werden ein Netzgerät, Widerstände, Kondensatoren, ein Oszilloskop, ein Op-Amp, ein Transistor und ein Lüfter verwendet.
+
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+Um den Proportionalregler zu realisierten, wird der invertierende Eingang über einen Widerstand mit dem Ausgang rückgekoppelt. In dem Aufbau in Abbildung \ref{fig:auf_2_3} wird der Widerstand Rf für die Rückkopplung verwendet, es handelt sich um einen 1M$\Omega$. Ri ist ein 4,7k$\Omega$ Widerstand.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.4]{Auf_2_3.png}
+  	\caption[Vereinfachte Schaltskizze des Proportionalreglers]{Vereinfachte Schaltskizze des Proportionalreglers\footnotemark}
+  \label{fig:auf_2_3}
+\end{figure}
+\footnotetext{Abbildungsteile entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep7\_14.pdf am 06.12.2014}
+
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+\subsubsection*{Diskussion}
+%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
+%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
+%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
+%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
+%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
+%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+%--------------------------------------------------------------------------------------------
+%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+%1-----------------------------------------------1
+
+
+
+\subsection{Proportionalregler mit Integrator}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsaufbau wird ein Proportionalregler mit Integrator untersucht. Durch den Integrator können Schwingungen der Regelung ausgeglichen werden, zudem ist die Regelwirkung bei einem Verzug der Wirkung stärker.
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+Es werden ein Netzgerät, Widerstände, Kondensatoren, ein Oszilloskop, ein Op-Amp, ein Transistor und ein Lüfter verwendet.
+
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+Um dem Proportionalregler noch einen Integrator hinzuzufügen wird noch ein Kondensator in Reihe zu Rf geschaltet. C beträgt dabei 100$\mu$F, damit das Signal nicht wegläuft wird noch ein 100M$\Omega$ Widerstand parallel zu C geschaltet.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.4]{Auf_2_4.png}
+  	\caption[Vereinfachte Schaltskizze des Proportionalreglers mit Integrator]{Vereinfachte Schaltskizze des Proportionalreglers mit Integrator\footnotemark}
+  \label{fig:auf_2_4}
+\end{figure}
+\footnotetext{Abbildungsteile entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep7\_14.pdf am 06.12.2014}
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+\subsubsection*{Diskussion}
+%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
+%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
+%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
+%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
+%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
+%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+%--------------------------------------------------------------------------------------------
+%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+%1-----------------------------------------------1
+
+\section{Fazit}
+%im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
+%gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
+\end{document}
+
