@@ -38,7 +38,7 @@
 %hinter der einleitung kann der allgemeine theoretische hintergrund in einer zusätzlichen section erklärt werden
 %1-----------------------------------------------1
 
-In diesem Versuch werden Regelschaltungen untersucht, dies finden in den meisten heutzutage erhältlichen Geräten Anwendung, z.B Computer und Autos. Es werden vier verschieden Regelschaltungen untersucht, eine Zweiwegregelung, eine Zweiwegregelung mit Hysterese, eine Proportionalregelung und eine Proportionalregelung mit Integrator.
+In diesem Versuch werden Regelschaltungen untersucht, dies finden in den meisten heutzutage erhältlichen Geräten Anwendung, z.B Computer und Autos. Es werden vier verschiedene Regelschaltungen untersucht, eine Zweiwegregelung, eine Zweiwegregelung mit Hysterese, eine Proportionalregelung und eine Proportionalregelung mit Integrator.
 
 
 \section{Eichung des NTC-Sensors}
@@ -90,11 +90,11 @@ Es wurde der Versuchsaufbau wie in Abbildung \ref{fig:auf_1} genommen und die gr
 %zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
 %(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
 
-Der Fehler der Temperatur wurde mit dem Ablesefehler bestimmt, da kein Fehle angeben war, er beträgt 0,1$^\circ$C. Der Fehler des Widerstandes wurde aus dem Ablesefehler und dem angegebenem Fehler bestimmt, er beträgt 0.06$\Omega$ für alle Werte von 21,4$^\circ$C bis 58$^\circ$C und für die Werte von 59$^\circ$C bis 69$^\circ$C beträgt der Fehler 0,006$\Omega$.
+Der Fehler der Temperatur wurde mit dem Ablesefehler bestimmt, er beträgt \unit[0,1]{$^\circ$C}, da kein Fehler angeben war. Der Fehler des Widerstandes wurde aus dem Ablesefehler und dem angegebenen Fehler bestimmt, er beträgt \unit[60]{m$\Omega$} für alle Werte von \unit[21,4]{$^\circ$C} bis \unit[58]{$^\circ$C} und für die Werte von \unit[59]{$^\circ$C} bis \unit[69]{$^\circ$C} beträgt der Fehler \unit[6]{m$\Omega$}.
 
 \begin{table}[htbp]
 \centering
-\begin{tabular}{c|cc|cc|c}
+\begin{tabular}{||c|c||c|c||c|c||}
 
 T/$^\circ$C & Widerstand/$\Omega$ & T/$^\circ$C & Widerstand/$\Omega$ & T/$^\circ$C & Widerstand/$\Omega$ \\ \hline
 21,4 & 11,68 & 38 & 4,83 & 55 & 2,11 \\ 
@@ -133,7 +133,7 @@ T/$^\circ$C & Widerstand/$\Omega$ & T/$^\circ$C & Widerstand/$\Omega$ & T/$^\cir
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-In diesem Versuchsteil sollt der NTC-Sensor geeicht werden, dafür wird der Widerstand in Abhängigkeit der Temperatur gemessen. Die Messdaten werden dann geplottet und gefittet und mit der Theorie verglichen. Die Messdaten befinden sich in Tabelle \ref{tab:1}, die Daten wurden mit Gleichung \ref{eqn:ntc} gefittet. Die Theoriekurve wurde mit einem Wert von 3988$^\circ$K für B geplottet (Angabe aus der Praktikumsanleitung entnommen). Es ergibt sich der Plot in Abbildung \ref{fig:1}. Dabei ergibt sich B aus dem Fit mit 4239.75$\pm$36.02$^\circ$K
+In diesem Versuchsteil sollt der NTC-Sensor geeicht werden. Dafür wird der Widerstand in Abhängigkeit der Temperatur gemessen. Die Messdaten werden dann geplottet und gefittet und mit der Theorie verglichen. Die Messdaten befinden sich in Tabelle \ref{tab:1}, die Daten wurden mit Gleichung \ref{eqn:ntc} gefittet. Die Theoriekurve wurde mit einem Wert von 3988$^\circ$K für B geplottet (Angabe aus der Praktikumsanleitung entnommen). Es ergibt sich der Plot in Abbildung \ref{fig:1}. Dabei ergibt sich B aus dem Fit mit 4239.75$\pm$36.02$^\circ$K
 
 
 \begin{figure}[H] 
@@ -154,10 +154,7 @@ In diesem Versuchsteil sollt der NTC-Sensor geeicht werden, dafür wird der Wide
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-Für B wurde ein Wert von 3988$^\circ$K erwartet mit einem Fehler von $\pm$79,76$^\circ$K, der bestimmte Wert weicht um 251$^\circ$K ab. Dieser große Abweichung vom erwartetem Wert kommt durch das schnelle aufheizten wodurch sich die Wärme in Heizwiderstand nicht schnell genug ausbreiten konnte.
-
-
-
+Für B wurde ein Wert von 3988$^\circ$K erwartet mit einem Fehler von $\pm$79,76$^\circ$K, der bestimmte Wert weicht um 251$^\circ$K ab. Diese große Abweichung vom erwarteten Wert resultiert aus dem schnellen aufheitzen, wodurch sich die Wärme im Heizwiderstand nicht schnell genug ausbreiten konnte.
 
 
 \section{Regelschaltungen}
@@ -167,7 +164,7 @@ In diesem Versuchsabschnitt werden verschiedene Regelschaltungen untersucht. Es 
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil wird die Temperaturregulierung mittels eines Zweiwegreglers untersucht. Dieser unterscheidet nur zwischen des Zuständen Temperatur ist größer als der Sollwert oder Temperatur ist kleiner als Sollwert und reagiert dem entsprechend. Der Vorteil eines Zweiwegreglers ist, dass er sehr einfach aufzubauen ist. Nachteilig ist jedoch sein schlechtes Regelverhalten.
+In diesem Versuchsteil wird die Temperaturregulierung mittels eines Zweiwegreglers untersucht. Dieser unterscheidet nur zwischen den Zuständen "Temperatur ist größer als der Sollwert" und "Temperatur ist kleiner als Sollwert" und reagiert dementsprechend (binäre Regelung). Der Vorteil eines Zweiwegreglers ist, dass er sehr einfach aufzubauen ist. Jedoch sind das ständige an- und ausschalten und die starken Schwankungen der Regelschaltung meistens unerwünscht.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -189,7 +186,7 @@ Die Werte der jeweiligen Bauteile sind im Schaltplan angegeben.
 \end{figure}
 \footnotetext{Abbildungsteile entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep7\_14.pdf am 06.12.2014}
 
-Der Aufbau lässt sich auch vereinfacht darstellen (Abbildung \ref{fig:auf_2_1_2}). Im fort folgendem werden nur die vereinfachten Schaltskizzen angegeben.
+Der Aufbau lässt sich auch vereinfacht darstellen (Abbildung \ref{fig:auf_2_1_2}). Im fortfolgenden werden nur die vereinfachten Schaltskizzen angegeben.
 
 \begin{figure}[H] 
   \centering
@@ -204,7 +201,7 @@ Der Aufbau lässt sich auch vereinfacht darstellen (Abbildung \ref{fig:auf_2_1_2
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wir die Schaltung nach Abbildung \ref{fig:auf_2_1_1} aufgebaut. Dann wird das Netzgerät eingeschaltet und der Hitzewiderstand solange erwärmt, bis eine Temperatur von 50$^\circ$C auf dem Digitalthermometer angezeigt wird, die Solltemperatur wird mit dem 10k$\Omega$ Potentiometer so eingestellt. Wenn das Digitalthermometer 50$^\circ$C anzeigt wird die Spannung zwischen dem Invertierendem Eingang und der Masse gemessen. Dann soll der Temperaturverlauf in Abhängigkeit der Zeit gemessen werden, dafür wird die Heizspannung auf den Maximalwert aufgedreht und das Netzgerät eingeschaltet. Die Zeit wurde dabei mit von einer Person angesagt und die andere hat dann die Temperatur abgelesen. Die Messung beginnt ab dem Einschalten des Netzgerätes. Zum Schluss soll der die Eingangsspannung des Op-Amp untersucht werden. Dafür wird das Netzgerät eingeschaltet und und das Verhalten mit dem Oszilloskop aufgenommen.
+Die Schaltung wird nach Abbildung \ref{fig:auf_2_1_1} aufgebaut. Dann wird das Netzgerät eingeschaltet und der Hitzewiderstand solange erwärmt, bis eine Temperatur von 50$^\circ$C auf dem Digitalthermometer angezeigt wird. Die Solltemperatur wird mit dem 10k$\Omega$ Potentiometer so eingestellt. Wenn das Digitalthermometer 50$^\circ$C anzeigt, wird die Spannung zwischen dem Invertierendem Eingang und der Masse gemessen. Der Temperaturverlauf soll dann in Abhängigkeit der Zeit gemessen werden. Dafür wird die Heizspannung auf den Maximalwert aufgedreht und das Netzgerät eingeschaltet. Alle \unit[5]{s} wurde die Temperatur abgelesen. Die Messung beginnt ab dem Einschalten des Netzgerätes. Zum Schluss soll die Eingangsspannung des Op-Amp untersucht werden. Dafür wird das Netzgerät eingeschaltet und das Verhalten mit dem Oszilloskop aufgenommen.
 
 \subsubsection*{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
@@ -212,11 +209,11 @@ Es wir die Schaltung nach Abbildung \ref{fig:auf_2_1_1} aufgebaut. Dann wird das
 %zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
 %(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
 
-Der Fehler der Zeit wurde mit 0,5s angenommen, da eine Person sagen musste wann der Wert aufgenommen werden sollte und die andere Person dann die Temperatur ablesen musste. Der Fehler der Temperatur wurde mit der Ableseungenauigkeit bestimmt und beträgt 0,1C.
+Der Fehler der Zeit wurde mit \unit[0,5]{s} angenommen, da die Zeit von einer Person abgelesen wurde, während die andere Person die Temperatur abgelesen und Protokolliert hat. Der Fehler der Temperatur wurde mit der Ableseungenauigkeit bestimmt und beträgt \unit[0,1]{$^\circ$C}.
 
 \begin{table}[htbp]
 \centering
-\begin{tabular}{r|rr|r}
+\begin{tabular}{||r|r||r|r||}
 
 t/s & T/$^\circ$C & t/s & T/$^\circ$C \\ \hline
 0 & 50,7 & 45 & 48,6 \\ 
@@ -275,7 +272,7 @@ Im dritten Versuchsteil soll das Verhalten der Eingangsspannung untersucht werde
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
-Die Spannung am invertiertem Eingang bei 50$^\circ$C wurde mit 3,88$\pm$0,06V gemessen, erwartet wurde eine Wert von 3,93V. Der erwartete Wert liegt innerhalb des ersten Fehlerintervalls des gemessenen Wertes. Die Regelkurve zeigt, wie sich die Temperatur der Solltemperatur annähert und dann schwach um den Sollwert schwingt. Das Verhalten der Eingangsspannung verhält sich wie erwartet, sobald die Solltemperatur überschritten wird steigt die Eingasspannung und wenn die Solltemperatur unterschritten wird, fällt die Spannung ab.
+Die Spannung am invertiertem Eingang bei 50$^\circ$C wurde mit 3,88$\pm$0,06V gemessen, erwartet wurde eine Wert von 3,93V. Der erwartete Wert liegt innerhalb des ersten Fehlerintervalls des gemessenen Wertes. Die Regelkurve zeigt, wie sich die Temperatur der Solltemperatur annähert und dann schwach um den Sollwert schwingt. Das Verhalten der Eingangsspannung war wie erwartet, sobald die Solltemperatur überschritten wird steigt die Eingangsspannung und wenn die Solltemperatur unterschritten wird, fällt sie.
 
 
 
@@ -294,7 +291,7 @@ Es werden ein Netzgerät, Widerstände, Kondensatoren, ein Oszilloskop, ein Op-A
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
-Die Hysterese wird dadurch erreicht, dass Eingang und Ausgang mit einem Widerstand verbunden werden. Hier ist Rh der Widerstand und er hat eine Wert von 20k$\Omega$ bis 100k$\Omega$.
+Die Hysterese wird dadurch erreicht, dass Eingang und Ausgang mit einem Widerstand verbunden werden. Hier ist Rh der Widerstand und er hat eine Wert von \unit[20k]{$\Omega$} bis \unit[100]{k$\Omega$}.
 
 \begin{figure}[H] 
   \centering
@@ -321,7 +318,7 @@ Zu erst wurde die Schaltung nach Abbildung \ref{fig:auf_2_2} aufgebaut. Dann sol
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Die veränderten Umschaltpunkt kommen dadurch zustande, dass durch die Rückkopplung auch nach erreichen des Sollwertes noch ein Eingangssignal vorhanden ist. Das Verhalten der Eingangsspannung ist in Abbildung \ref{fig:2_2} zu sehen. Die Hysterese ist deutlich an den Stellen mit der starke Steigung bzw. mit dem starken Abfall zu sehen.
+Die veränderten Umschaltpunkte kommen dadurch zustande, dass durch die Rückkopplung auch nach erreichen des Sollwertes noch ein Eingangssignal vorhanden ist. Das Verhalten der Eingangsspannung ist in Abbildung \ref{fig:2_2} zu sehen. Die Hysterese ist deutlich an Stellen mit starker Steigung zu sehen.
 
 \begin{figure}[H] 
   \centering
@@ -380,11 +377,11 @@ Die Schaltung vom Zweiwegregler wird zum P-Regler umgebaut, indem ein Rückkoppl
 %zu viele kleine tabellen in große tabellen überführen!
 %zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
 %(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
-Der Fehler der Temperatur wurde mit dem Ablesefehler bestimmt, da kein Fehle angeben war, er beträgt 0,1$^\circ$C. Der Fehler des Widerstandes wurde aus dem Ablesefehler und dem angegebenem Fehler bestimmt, er beträgt 0.06$\Omega$ für alle Werte von 21,4$^\circ$C bis 58$^\circ$C und für die Werte von 59$^\circ$C bis 69$^\circ$C beträgt der Fehler 0,006$\Omega$.
+Der Fehler der Temperatur wurde mit dem Ablesefehler bestimmt, er beträgt \unit[0,1]{$^\circ$C}, da kein Fehler angeben war. Der Fehler des Widerstandes wurde aus dem Ablesefehler und dem angegebenen Fehler bestimmt, er beträgt \unit[60]{m$\Omega$} für alle Werte von \unit[21,4]{$^\circ$C} bis \unit[58]{$^\circ$C} und für die Werte von \unit[59]{$^\circ$C} bis \unit[69]{$^\circ$C} beträgt der Fehler \unit[6]{m$\Omega$}.
 
 \begin{table}[htbp]
 \centering
-\begin{tabular}{r|rr|r}
+\begin{tabular}{||r|r||r|r||}
 
 t/s & T/$^\circ$C & t/s & T/$^\circ$C \\ \hline
 0 & 71,1 & 90 & 42,4 \\ 
@@ -412,7 +409,7 @@ t/s & T/$^\circ$C & t/s & T/$^\circ$C \\ \hline
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 Nach der Formel für die Temperaturabhängigkeit des Widerstandes des NTC (Formel \ref{eqn:ntc}) wird der Widerstand für 51, 50 und 49 \unit[]{$^{\circ}$C} errechnet und die Abfallende Spannung über den Spannungsteiler bestimmt. Daraus kann die Spannungsdifferenz $\Delta U$ von 50 nach 49 bzw. nach 51$^{\circ}$C errechnet werden. Dies ergibt den Verstärkungsfaktor k, da $\Delta$T = \unit[1]{$^\circ$C} und $\Delta U = k \Delta T$. Für k wurde \unitfrac[0,11]{V}{K} errechnet.
-Für den Plot der Temperatur als Funktion der Zeit nach Tabelle \ref{tab:3_3} ergibt sich.
+Für den Plot der Temperatur als Funktion der Zeit nach Tabelle \ref{tab:3_3} ergibt sich:
 \begin{figure}[H]
   \centering
     \includegraphics[scale = 1]{3_3.pdf}
@@ -477,7 +474,7 @@ Es werden ein Netzgerät, Widerstände, Kondensatoren, ein Oszilloskop, ein Op-A
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
-Um dem Proportionalregler noch einen Integrator hinzuzufügen wird noch ein Kondensator in Reihe zu Rf geschaltet. C beträgt dabei 100$\mu$F, damit das Signal nicht wegläuft wird noch ein 100M$\Omega$ Widerstand parallel zu C geschaltet.
+Um dem Proportionalregler einen Integrator hinzuzufügen wird ein Kondensator in Reihe zu Rf geschaltet, C beträgt dabei 100$\mu$F. damit das Signal nicht wegläuft wird ein 100M$\Omega$ Widerstand parallel zu C geschaltet.
 
 \begin{figure}[H] 
   \centering
@@ -491,13 +488,13 @@ Um dem Proportionalregler noch einen Integrator hinzuzufügen wird noch ein Kond
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird die Schaltung nach Abbildung \ref{fig:auf_2_4} aufgebaut. Zu erst sollte wieder die Regelkurve aufgenommen werden, dafür wurde der Lüfter von der Schaltung abgekoppelt (der Stromkreis blieb über Kurzschlussbrücken geschlossen) und das Netzgerät eingeschaltet. Als sich der Heizwiderstand auf etwa 70$^\circ$C eingestellt hatte, wurde der Lüfter wieder angeschlossen und die Temperaturkurve aufgenommen.
+Es wird die Schaltung nach Abbildung \ref{fig:auf_2_4} aufgebaut. Zuerst soll die Regelkurve aufgenommen werden. Dafür wird der Lüfter von der Schaltung abgekoppelt (der Stromkreis blieb über Kurzschlussbrücken geschlossen) und das Netzgerät eingeschaltet. Sobald sich der Heizwiderstand auf etwa 70$^\circ$C eingestellt hat, wird der Lüfter wieder angeschlossen und die Temperaturkurve aufgenommen.
 
-Danach sollte die Ausgangsspannung mit dem Oszilloskop beobachtet werden. Dafür wurde nichts an dem vorherigen Zustand der Schaltung geändert, es wurde lediglich die Kurve auf dem Oszilloskop aufgenommen.
+Danach soll die Ausgangsspannung mit dem Oszilloskop beobachtet werden. Dafür wird nichts an dem vorherigen Zustand der Schaltung geändert, es wird lediglich die Kurve auf dem Oszilloskop aufgenommen.
 
-Dann sollte die Solltemperatur und die Heitzleistung geändert werden, um zu sehen, dass die Regelschaltung schnell auf die geänderten Werte reagiert. Dafür wurde das 10k$\Omega$ Potentiometer auf einen neuen Wert eingestellt (ändern der Solltemperatur) und die Betriebsspannung am Netzgerät wurde herunter gesenkt. Die Ausgangsspannung wurde dann mit dem Oszilloskop aufgenommen.
+Dann wird die Solltemperatur und die Heitzleistung geändert, um zu sehen, ob die Regelschaltung schnell auf die geänderten Werte reagiert. Dafür soll das \unit[10]{k$\Omega$} Potentiometer auf einen neuen Wert eingestellt (ändern der Solltemperatur) und die Betriebsspannung am Netzgerät gesenkt werden. Die Ausgangsspannung wird dann mit dem Oszilloskop aufgenommen.
 
-Im letztem Abschnitt sollten Bauteile des Aufbaus variiert werden und die Ausgangsspannung auf dem Oszilloskop beobachtet werden. Zuerst wird die Spannung am Netzgerät wieder auf den Maximalwert eingestellt. Rf wurde durch einen 470k$\Omega$ Widerstand ersetzt, Netzgerät eingeschaltet und gewartet, bis die Solltemperatur erreicht wurde, dann wird die Ausgangsspannung mit dem Oszilloskop aufgenommen. Dann wurde Rf durch einen 470k$\Omega$ Widerstand und Ri durch einen 10k$\Omega$ Widerstand ersetzt, das Netzgerät eingeschaltet und gewartet, bis die Solltemperatur erreicht wurde und die Ausgangsspannung mit dem Oszilloskop aufgenommen.
+Im letztem Abschnitt sollen Bauteile des Aufbaus variiert werden und die Ausgangsspannung auf dem Oszilloskop beobachtet werden. Zuerst wird die Spannung am Netzgerät wieder auf den Maximalwert eingestellt. Rf wird durch einen \unit[470]{k$\Omega$} Widerstand ersetzt und das Netzgerät wird angeschaltet. Sobald die Solltemperatur erreicht wird, wird die Ausgangsspannung mit dem Oszilloskop aufgenommen. Dann wird Rf durch einen \unit[470]{k$\Omega$} Widerstand und Ri durch einen \unit[10]{k$\Omega$} Widerstand ersetzt und das Netzgerät eingeschaltet. Sobald die Solltemperatur erreicht wird, wird die Ausgangsspannung mit dem Oszilloskop aufgenommen.
 
 \subsubsection*{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
@@ -505,11 +502,11 @@ Im letztem Abschnitt sollten Bauteile des Aufbaus variiert werden und die Ausgan
 %zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
 %(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
 
-Der Fehler der Zeit wurde mit 0,5s angenommen, da eine Person sagen musste wann der Wert aufgenommen werden sollte und die andere Person dann die Temperatur ablesen musste. Der Fehler der Temperatur wurde mit der Ableseungenauigkeit bestimmt und beträgt 0,1C.
+Der Fehler der Zeit wurde mit \unit[0,5]{s} angenommen, da die Zeit von einer Person abgelesen wurde, während die andere Person die Temperatur ablesen musste. Der Fehler der Temperatur wurde mit der Ableseungenauigkeit bestimmt und beträgt \unit[0,1]{$^{\circ}$C}.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
-\begin{tabular}{r|rr|r}
+\begin{tabular}{||r|r||r|r||}
 
 t/s & T/$^\circ$C & t/s & T/$^\circ$C \\ \hline
 0 & 70,9 & 75 & 43,0 \\ 
@@ -546,7 +543,7 @@ t/s & T/$^\circ$C & t/s & T/$^\circ$C \\ \hline
 
 
 
-Im ersten Teil sollte die Regelkurve aufgenommen werden, bei der Messung ergaben sich die Werte in Tabelle \ref{tab:3_4}, der Plot der Messdaten ist in Abbildung \ref{fig:3_4} zu sehen.
+Im ersten Teil sollte die Regelkurve aufgenommen werden. Bei der Messung ergaben sich die Werte in Tabelle \ref{tab:3_4}, der Plot der Messdaten ist in Abbildung \ref{fig:3_4} zu sehen.
 
 \begin{figure}[H] 
   \centering
@@ -555,7 +552,7 @@ Im ersten Teil sollte die Regelkurve aufgenommen werden, bei der Messung ergaben
   \label{fig:3_4}
 \end{figure}
 
-Dann sollte die Ausgangsspannung mit dem Oszilloskop beobachtet werden, dabei ergab sich der Verlauf in Abbildung \ref{fig:aus_3_4_1}.
+Dann sollte die Ausgangsspannung mit dem Oszilloskop beobachtet werden. Dabei ergab sich der Verlauf in Abbildung \ref{fig:aus_3_4_1}.
 
 
 \begin{figure}[H] 
@@ -565,7 +562,7 @@ Dann sollte die Ausgangsspannung mit dem Oszilloskop beobachtet werden, dabei er
   \label{fig:aus_3_4_1}
 \end{figure}
 
-Im Versuchsteil danach sollt die Solltemperatur und die Heizleistung geändert werden. Der Verlauf der Ausgangsspannung ist in Abbildung \ref{fig:aus_3_4_2} zu sehen.
+Im Versuchsteil danach sollte die Solltemperatur und die Heizleistung geändert werden. Der Verlauf der Ausgangsspannung ist in Abbildung \ref{fig:aus_3_4_2} zu sehen.
 
 \begin{figure}[H] 
   \centering
@@ -574,7 +571,7 @@ Im Versuchsteil danach sollt die Solltemperatur und die Heizleistung geändert w
   \label{fig:aus_3_4_2}
 \end{figure}
 
-Im letztem Versuchsteil sollten Bauelemente der Schaltung variiert werden, dabfür wurde einmal Rf durch einen 470k$\Omega$ Widerstand ersetzt, die Ausgangsspannung ist in Abbildung \ref{fig:aus_3_4_3} zu sehen.
+Im letztem Versuchsteil sollten Bauelemente der Schaltung variiert werden, dafür wurde einmal Rf durch einen 470k$\Omega$ Widerstand ersetzt, die Ausgangsspannung ist in Abbildung \ref{fig:aus_3_4_3} zu sehen.
 
 \begin{figure}[H] 
   \centering
@@ -583,7 +580,7 @@ Im letztem Versuchsteil sollten Bauelemente der Schaltung variiert werden, dabf�
   \label{fig:aus_3_4_3}
 \end{figure}
 
-Dann wurde Rf durch einen 470k$\Omega$ Widerstand und Ri durch einen 10k$\Omega$ Widerstand ersetzt. Der Verlauf der Ausgangsspannung ist in Abbildung \ref{fig:aus_3_4_4} zu sehen.
+Dann wurde Rf durch einen \unit[470]{k$\Omega$} Widerstand und Ri durch einen \unit[10]{k$\Omega$} Widerstand ersetzt. Der Verlauf der Ausgangsspannung ist in Abbildung \ref{fig:aus_3_4_4} zu sehen.
 
 \begin{figure}[H] 
   \centering
@@ -602,13 +599,13 @@ Dann wurde Rf durch einen 470k$\Omega$ Widerstand und Ri durch einen 10k$\Omega$
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-Anhand der Regelkurve ist deutlich zu sehen, das die Schaltung sobald sie die Solltempatur erreicht hat diese gut hält und keine Schwingung ausführt. Da die Werte für Rf und Ri nicht geändert wurden ist auch hier bei der Aufnahme des Ausgangssignals keine Verbesserung zu erkennen. Beim ändern der Solltemperatur und der Heizleistung ist deutlich zu sehen, wie der Lüfter zu erst mit voller Leistung läuft und sich dann einschwingt. Bei den variierten Bauteilen lässt sich eine deutlich flachere Kurve sehe, die liegt an den niedrigeren Widerständen, die verwendet wurde. 
+Anhand der Regelkurve ist deutlich zu sehen, dass die Schaltung die Solltempatur, sobald sie erreicht wurde, gut hält und keine Schwingung ausführt. Da die Werte für Rf und Ri nicht geändert wurden ist auch hier bei der Aufnahme des Ausgangssignals keine Verbesserung zu erkennen. Beim ändern der Solltemperatur und der Heizleistung ist deutlich zu sehen, wie der Lüfter zu erst mit voller Leistung läuft und sich dann einschwingt. Bei den variierten Bauteilen lässt sich eine deutlich flachere Kurve sehen, dies liegt an den niedrigeren Widerständen, die verwendet wurden. 
 
 \section{Fazit}
 %im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
 %gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
 
-Bei dem Versuch zeigten alle Schaltungen die erwünschten Regeleigenschaften. Bei der Eichung des NTC hätte ein besseres Ergebnis erzielt werden könne, wenn der Aufheizvorgang langsamer durchgeführt worden wäre. Dennoch ist der erwartete exponentielle Verlauf deutlich zu erkennen.
+Bei dem Versuch zeigten alle Schaltungen die erwünschten Regeleigenschaften. Bei der Eichung des NTC hätte ein besseres Ergebnis erzielt werden können, wenn der Aufheizvorgang langsamer durchgeführt worden wäre. Dennoch ist der erwartete exponentielle Verlauf deutlich zu erkennen.
 
 \end{document}
 
