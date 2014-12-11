@@ -18,6 +18,7 @@
 \usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{framed} 	%Verwenden um Text einzurahmen
  
 \title{Regelschaltungen}
 \author{Frederik Strothmann, Henrik Jürgens}
@@ -92,64 +93,34 @@ Es wurde der Versuchsaufbau wie in Abbildung \ref{fig:auf_1} genommen und die gr
 Der Fehler der Temperatur wurde mit dem Ablesefehler bestimmt, da kein Fehle angeben war, er beträgt 0,1$^\circ$C. Der Fehler des Widerstandes wurde aus dem Ablesefehler und dem angegebenem Fehler bestimmt, er beträgt 0.06$\Omega$ für alle Werte von 21,4$^\circ$C bis 58$^\circ$C und für die Werte von 59$^\circ$C bis 69$^\circ$C beträgt der Fehler 0,006$\Omega$.
 
 \begin{table}[htbp]
-\begin{center}
-\begin{tabular}{|r|r|}
-\hline
-T/$^\circ$C & Widerstand/$\Omega$ \\ \hline
-21,4 & 11,68 \\ \hline
-22 & 11,34 \\ \hline
-23 & 10,64 \\ \hline
-24 & 10,02 \\ \hline
-25 & 9,47 \\ \hline
-26 & 9,00 \\ \hline
-27 & 8,57 \\ \hline
-28 & 8,09 \\ \hline
-29 & 7,70 \\ \hline
-30 & 7,32 \\ \hline
-31 & 6,94 \\ \hline
-32 & 6,59 \\ \hline
-33 & 6,33 \\ \hline
-34 & 5,95 \\ \hline
-35 & 5,57 \\ \hline
-36 & 5,31 \\ \hline
-37 & 5,04 \\ \hline
-38 & 4,83 \\ \hline
-39 & 4,58 \\ \hline
-40 & 4,40 \\ \hline
-41 & 4,20 \\ \hline
-42 & 4,02 \\ \hline
-43 & 3,85 \\ \hline
-44 & 3,64 \\ \hline
-45 & 3,45 \\ \hline
-46 & 3,28 \\ \hline
-47 & 3,14 \\ \hline
-48 & 3,01 \\ \hline
-49 & 2,85 \\ \hline
-50 & 2,72 \\ \hline
-51 & 2,62 \\ \hline
-52 & 2,51 \\ \hline
-53 & 2,38 \\ \hline
-54 & 2,23 \\ \hline
-55 & 2,11 \\ \hline
-56 & 2,04 \\ \hline
-57 & 1,96 \\ \hline
-58 & 1,88 \\ \hline
-59 & 1,821 \\ \hline
-60 & 1,734 \\ \hline
-61 & 1,699 \\ \hline
-62 & 1,602 \\ \hline
-63 & 1,568 \\ \hline
-64 & 1,476 \\ \hline
-65 & 1,421 \\ \hline
-66 & 1,388 \\ \hline
-67 & 1,347 \\ \hline
-68 & 1,280 \\ \hline
-69 & 1,263 \\ \hline
+\centering
+\begin{tabular}{c|cc|cc|c}
+
+T/$^\circ$C & Widerstand/$\Omega$ & T/$^\circ$C & Widerstand/$\Omega$ & T/$^\circ$C & Widerstand/$\Omega$ \\ \hline
+21,4 & 11,68 & 38 & 4,83 & 55 & 2,11 \\ 
+22 & 11,34 & 39 & 4,58 & 56 & 2,04 \\ 
+23 & 10,64 & 40 & 4,40 & 57 & 1,96 \\ 
+24 & 10,02 & 41 & 4,20 & 58 & 1,88 \\ 
+25 & 9,47 & 42 & 4,02 & 59 & 1,821 \\ 
+26 & 9,00 & 43 & 3,85 & 60 & 1,734 \\ 
+27 & 8,57 & 44 & 3,64 & 61 & 1,699 \\ 
+28 & 8,09 & 45 & 3,45 & 62 & 1,602 \\ 
+29 & 7,70 & 46 & 3,28 & 63 & 1,568 \\ 
+30 & 7,32 & 47 & 3,14 & 64 & 1,476 \\ 
+31 & 6,94 & 48 & 3,01 & 65 & 1,421 \\ 
+32 & 6,59 & 49 & 2,85 & 66 & 1,388 \\ 
+33 & 6,33 & 50 & 2,72 & 67 & 1,347 \\ 
+34 & 5,95 & 51 & 2,62 & 68 & 1,280 \\ 
+35 & 5,57 & 52 & 2,51 & 69 & 1,263 \\ 
+36 & 5,31 & 53 & 2,38 & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\ 
+37 & 5,04 & 54 & 2,23 & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\ 
 \end{tabular}
-\end{center}
 \caption{Messdaten des Widerstandes in Abhängigkeit der Temperatur}
 \label{tab:1}
 \end{table}
+
+
+
 
 
 \subsection{Auswertung}
@@ -244,33 +215,24 @@ Es wir die Schaltung nach Abbildung \ref{fig:auf_2_1_1} aufgebaut. Dann wird das
 Der Fehler der Zeit wurde mit 0,5s angenommen, da eine Person sagen musste wann der Wert aufgenommen werden sollte und die andere Person dann die Temperatur ablesen musste. Der Fehler der Temperatur wurde mit der Ableseungenauigkeit bestimmt und beträgt 0,1C.
 
 \begin{table}[htbp]
-\begin{center}
-\begin{tabular}{|r|r|}
-\hline
-t/s & T/$^\circ$C \\ \hline
-0 & 50,7 \\ \hline
-5 & 50,6 \\ \hline
-10 & 50 \\ \hline
-15 & 49,5 \\ \hline
-20 & 49,2 \\ \hline
-25 & 48,9 \\ \hline
-30 & 48,7 \\ \hline
-35 & 48,7 \\ \hline
-40 & 48,5 \\ \hline
-45 & 48,6 \\ \hline
-50 & 48,5 \\ \hline
-55 & 48,4 \\ \hline
-60 & 48,4 \\ \hline
-65 & 48,4 \\ \hline
-70 & 48,4 \\ \hline
-75 & 48,3 \\ \hline
-80 & 48,4 \\ \hline
-85 & 48,3 \\ \hline
+\centering
+\begin{tabular}{r|rr|r}
+
+t/s & T/$^\circ$C & t/s & T/$^\circ$C \\ \hline
+0 & 50,7 & 45 & 48,6 \\ 
+5 & 50,6 & 50 & 48,5 \\ 
+10 & 50,0 & 55 & 48,4 \\ 
+15 & 49,5 & 60 & 48,4 \\ 
+20 & 49,2 & 65 & 48,4 \\ 
+25 & 48,9 & 70 & 48,4 \\ 
+30 & 48,7 & 75 & 48,3 \\ 
+35 & 48,7 & 80 & 48,4 \\ 
+40 & 48,5 & 85 & 48,3 \\ 
 \end{tabular}
-\end{center}
 \caption{Messdaten der Temperatur in Abhängigkeit der Zeit für den Zweiwegregler}
 \label{tab:2_1}
 \end{table}
+
 
 
 \subsubsection*{Auswertung}
@@ -298,7 +260,7 @@ Im dritten Versuchsteil soll das Verhalten der Eingangsspannung untersucht werde
 
 \begin{figure}[H] 
   \centering
-    \includegraphics[ scale = 0.6]{2_1_2.pdf}
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.6]{2_1_2.pdf}
   	\caption[Eingasspannung]{Eingasspannung}
   \label{fig:2_1}
 \end{figure}
@@ -363,7 +325,7 @@ Die veränderten Umschaltpunkt kommen dadurch zustande, dass durch die Rückkopp
 
 \begin{figure}[H] 
   \centering
-    \includegraphics[ scale = 0.6]{2_2.pdf}
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.6]{2_2.pdf}
   	\caption[Graphische Auswertung der Regelkurve für den Zweiwegregler]{Graphische Auswertung der Regelkurve für den Zweiwegregler}
   \label{fig:2_2}
 \end{figure}
@@ -411,11 +373,35 @@ Um den Proportionalregler zu realisierten, wird der invertierende Eingang über 
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+Die Schaltung vom Zweiwegregler wird zum P-Regler umgebaut, indem ein Rückkopplungswiderstand Rf von \unit[1]{M$\Omega$} und ein Eingangswiderstand Ri von \unit[4,7]{k$\Omega$} eingefügt wird.
+
 \subsubsection*{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
 %zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
 %(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+Der Fehler der Temperatur wurde mit dem Ablesefehler bestimmt, da kein Fehle angeben war, er beträgt 0,1$^\circ$C. Der Fehler des Widerstandes wurde aus dem Ablesefehler und dem angegebenem Fehler bestimmt, er beträgt 0.06$\Omega$ für alle Werte von 21,4$^\circ$C bis 58$^\circ$C und für die Werte von 59$^\circ$C bis 69$^\circ$C beträgt der Fehler 0,006$\Omega$.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{r|rr|r}
+
+t/s & T/$^\circ$C & t/s & T/$^\circ$C \\ \hline
+0 & 71,1 & 90 & 42,4 \\ 
+10 & 69,0 & 100 & 42,0 \\ 
+20 & 64,4 & 110 & 41,7 \\ 
+30 & 59,5 & 120 & 41,5 \\ 
+40 & 55,1 & 130 & 41,5 \\ 
+50 & 51,2 & 140 & 41,4 \\ 
+60 & 47,9 & 150 & 41,4 \\ 
+70 & 45,3 & 160 & 41,4 \\ 
+80 & 43,3 & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\ 
+\end{tabular}
+\caption{Messdaten der Regelkurve, für den P-Regler}
+\label{tab:3_3}
+\end{table}
+
+
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -425,6 +411,34 @@ Um den Proportionalregler zu realisierten, wird der invertierende Eingang über 
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+Nach der Formel für die Temperaturabhängigkeit des Widerstandes des NTC (Formel \ref{eqn:ntc}) wird der Widerstand für 51, 50 und 49 \unit[]{$^{\circ}$C} errechnet und die Abfallende Spannung über den Spannungsteiler bestimmt. Daraus kann die Spannungsdifferenz $\Delta U$ von 50 nach 49 bzw. nach 51$^{\circ}$C errechnet werden. Dies ergibt den Verstärkungsfaktor k, da $\Delta$T = \unit[1]{$^\circ$C} und $\Delta U = k \Delta T$. Für k wurde \unitfrac[0,11]{V}{K} errechnet.
+Für den Plot der Temperatur als Funktion der Zeit nach Tabelle \ref{tab:3_3} ergibt sich.
+\begin{figure}[H]
+  \centering
+    \includegraphics[scale = 1]{3_3.pdf}
+  	\caption[Temperatur als Funktion der Zeit beim P-Regler]{Temperatur als Funktion der Zeit beim P-Regler}
+  \label{fig:P-Regler_Plot_3_3}
+\end{figure}
+Nach dem erreichen der Solltemperatur schwankt diese nur minimal.
+
+Mit dem Oszilloskop wird die Änderung der Ausgangsspannung als Funktion der Regelung (V gegen t) aufgezeichnet.
+\begin{figure}[H]
+  \centering
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.6]{TEK0004.pdf}
+  	\caption[Spannugsverlauf beim P-Regler]{Spannugsverlauf beim P-Regler}
+  \label{fig:P-Regler_Oszi_3_3_1}
+\end{figure}
+Da ein Widerstand von \unit[1]{M$\Omega$} verwendet wurde, ist kaum eine Verbesserung aufgrund der Verstärkung zu sehen.
+
+Durch die Änderung der Solltemperatur am Potentiometer setzt die Regelschaltung ein.
+\begin{figure}[H]
+  \centering
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.6]{TEK0006.pdf}
+  	\caption[Änderung der Solltemperatur P-Regler]{Änderung der Solltemperatur P-Regler}
+  \label{fig:P-Regler_Oszi_3_3_2}
+\end{figure}
+Es ist zu erkennen, dass die Schaltung die Solltemperatur nach kurzer Zeit einstellt, wobei die Schwankung um den Sollwert deutlich zu erkennen ist.
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -436,6 +450,7 @@ Um den Proportionalregler zu realisierten, wird der invertierende Eingang über 
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
+Die Eigenschaften der Proportionalreglerschaltung konnten in diesem Versuchsteil bestätigt werden, wobei die kontinuierliche Regelung des Ausgangssignals vermutlich mit einem niedrigeren Rückkopplungswiderstand besser gelungen wäre.(kleinerer Verstärkungsfaktor)
 
 
 \subsection{Proportionalregler mit Integrator}
@@ -443,6 +458,14 @@ Um den Proportionalregler zu realisierten, wird der invertierende Eingang über 
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
 In diesem Versuchsaufbau wird ein Proportionalregler mit Integrator untersucht. Durch den Integrator können Schwingungen der Regelung ausgeglichen werden, zudem ist die Regelwirkung bei einem Verzug der Wirkung stärker.
+
+
+\begin{framed}
+\noindent
+Anmerkung: \newline
+Der zweite und der dritte Versuchsteil wurden in diesem Versuchsabschnitt vertauscht, da sich dadurch eine bessere Übersicht ergibt.
+\end{framed}
+
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -467,11 +490,50 @@ Um dem Proportionalregler noch einen Integrator hinzuzufügen wird noch ein Kond
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+Es wird die Schaltung nach Abbildung \ref{fig:auf_2_4} aufgebaut. Zu erst sollte wieder die Regelkurve aufgenommen werden, dafür wurde der Lüfter von der Schaltung abgekoppelt (der Stromkreis blieb über Kurzschlussbrücken geschlossen) und das Netzgerät eingeschaltet. Als sich der Heizwiderstand auf etwa 70$^\circ$C eingestellt hatte, wurde der Lüfter wieder angeschlossen und die Temperaturkurve aufgenommen.
+
+Danach sollte die Ausgangsspannung mit dem Oszilloskop beobachtet werden. Dafür wurde nichts an dem vorherigen Zustand der Schaltung geändert, es wurde lediglich die Kurve auf dem Oszilloskop aufgenommen.
+
+Dann sollte die Solltemperatur und die Heitzleistung geändert werden, um zu sehen, dass die Regelschaltung schnell auf die geänderten Werte reagiert. Dafür wurde das 10k$\Omega$ Potentiometer auf einen neuen Wert eingestellt (ändern der Solltemperatur) und die Betriebsspannung am Netzgerät wurde herunter gesenkt. Die Ausgangsspannung wurde dann mit dem Oszilloskop aufgenommen.
+
+Im letztem Abschnitt sollten Bauteile des Aufbaus variiert werden und die Ausgangsspannung auf dem Oszilloskop beobachtet werden. Zuerst wird die Spannung am Netzgerät wieder auf den Maximalwert eingestellt. Rf wurde durch einen 470k$\Omega$ Widerstand ersetzt, Netzgerät eingeschaltet und gewartet, bis die Solltemperatur erreicht wurde, dann wird die Ausgangsspannung mit dem Oszilloskop aufgenommen. Dann wurde Rf durch einen 470k$\Omega$ Widerstand und Ri durch einen 10k$\Omega$ Widerstand ersetzt, das Netzgerät eingeschaltet und gewartet, bis die Solltemperatur erreicht wurde und die Ausgangsspannung mit dem Oszilloskop aufgenommen.
+
 \subsubsection*{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
 %zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
 %(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+Der Fehler der Zeit wurde mit 0,5s angenommen, da eine Person sagen musste wann der Wert aufgenommen werden sollte und die andere Person dann die Temperatur ablesen musste. Der Fehler der Temperatur wurde mit der Ableseungenauigkeit bestimmt und beträgt 0,1C.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{r|rr|r}
+
+t/s & T/$^\circ$C & t/s & T/$^\circ$C \\ \hline
+0 & 70,9 & 75 & 43,0 \\ 
+5 & 70,5 & 80 & 42,2 \\ 
+10 & 69,0 & 85 & 41,0 \\ 
+15 & 66,6 & 90 & 40,5 \\ 
+20 & 64,1 & 95 & 40,0 \\ 
+25 & 61,3 & 100 & 39,7 \\ 
+30 & 59,1 & 105 & 39,6 \\ 
+35 & 56,7 & 110 & 39,4 \\ 
+40 & 54,3 & 115 & 39,3 \\ 
+45 & 52,3 & 120 & 39,2 \\ 
+50 & 50,3 & 125 & 39,1 \\ 
+55 & 48,4 & 130 & 39,1 \\ 
+60 & 47,0 & 135 & 39,1 \\ 
+65 & 45,6 & 140 & 39,1 \\ 
+70 & 44,4 & 145 & 39,1 \\ 
+\end{tabular}
+\caption{Messdaten der Regelkurve für die PI-Regler}
+\label{tab:3_4}
+\end{table}
+
+
+
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -481,6 +543,54 @@ Um dem Proportionalregler noch einen Integrator hinzuzufügen wird noch ein Kond
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+
+
+Im ersten Teil sollte die Regelkurve aufgenommen werden, bei der Messung ergaben sich die Werte in Tabelle \ref{tab:3_4}, der Plot der Messdaten ist in Abbildung \ref{fig:3_4} zu sehen.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 1.5]{3_4.pdf}
+  	\caption[Graphische Auswertung der Regelkurve für den PI-Regler]{Graphische Auswertung der Regelkurve für den PI-Regler}
+  \label{fig:3_4}
+\end{figure}
+
+Dann sollte die Ausgangsspannung mit dem Oszilloskop beobachtet werden, dabei ergab sich der Verlauf in Abbildung \ref{fig:aus_3_4_1}.
+
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.6]{TEK0007.pdf}
+  	\caption[Ausgangsspannung in Abhängigkeit der Regelung]{Ausgangsspannung in Abhängigkeit der Regelung}
+  \label{fig:aus_3_4_1}
+\end{figure}
+
+Im Versuchsteil danach sollt die Solltemperatur und die Heizleistung geändert werden. Der Verlauf der Ausgangsspannung ist in Abbildung \ref{fig:aus_3_4_2} zu sehen.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.6]{TEK0008.pdf}
+  	\caption[Ausgangsspannung in Abhängigkeit der Regelung]{Ausgangsspannung in Abhängigkeit der Regelung}
+  \label{fig:aus_3_4_2}
+\end{figure}
+
+Im letztem Versuchsteil sollten Bauelemente der Schaltung variiert werden, dabfür wurde einmal Rf durch einen 470k$\Omega$ Widerstand ersetzt, die Ausgangsspannung ist in Abbildung \ref{fig:aus_3_4_3} zu sehen.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.6]{TEK0009.pdf}
+  	\caption[Ausgangsspannung in Abhängigkeit der Regelung]{Ausgangsspannung in Abhängigkeit der Regelung}
+  \label{fig:aus_3_4_3}
+\end{figure}
+
+Dann wurde Rf durch einen 470k$\Omega$ Widerstand und Ri durch einen 10k$\Omega$ Widerstand ersetzt. Der Verlauf der Ausgangsspannung ist in Abbildung \ref{fig:aus_3_4_4} zu sehen.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.6]{TEK0010.pdf}
+  	\caption[Ausgangsspannung in Abhängigkeit der Regelung]{Ausgangsspannung in Abhängigkeit der Regelung}
+  \label{fig:aus_3_4_4}
+\end{figure}
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -492,8 +602,13 @@ Um dem Proportionalregler noch einen Integrator hinzuzufügen wird noch ein Kond
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
+Anhand der Regelkurve ist deutlich zu sehen, das die Schaltung sobald sie die Solltempatur erreicht hat diese gut hält und keine Schwingung ausführt. Da die Werte für Rf und Ri nicht geändert wurden ist auch hier bei der Aufnahme des Ausgangssignals keine Verbesserung zu erkennen. Beim ändern der Solltemperatur und der Heizleistung ist deutlich zu sehen, wie der Lüfter zu erst mit voller Leistung läuft und sich dann einschwingt. Bei den variierten Bauteilen lässt sich eine deutlich flachere Kurve sehe, die liegt an den niedrigeren Widerständen, die verwendet wurde. 
+
 \section{Fazit}
 %im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
 %gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
+
+Bei dem Versuch zeigten alle Schaltungen die erwünschten Regeleigenschaften. Bei der Eichung des NTC hätte ein besseres Ergebnis erzielt werden könne, wenn der Aufheizvorgang langsamer durchgeführt worden wäre. Dennoch ist der erwartete exponentielle Verlauf deutlich zu erkennen.
+
 \end{document}
 
