@@ -19,13 +19,55 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
  
-\title{Versuch ...\\}
-\author{Frederik Strothmann, Henrik Jürgens}
-\date{\today}
 %niemals zwei überschriften direkt übereinander schreiben, also immer mindestens in einem satz was sinnvolles unter jede überschrift schreiben (bei den versuchen z.B. das versuchsziel) 
 \begin{document}
 %deckblatt erstellen.
-\maketitle
+
+
+\begin{titlepage}
+
+\begin{center}
+% Oberer Teil der Titelseite:
+\includegraphics[width=0.75\textwidth]{logo.pdf}\\[1cm]    	%Logo 
+
+\textsc{\LARGE Bergische Universität Wuppertal}\\[1.5cm]	%Institution
+
+\textsc{\Large Elektronik Praktikum}\\[0.5cm]				%Projekt
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\HRule \\[0.4cm]
+{ \huge \bfseries Regelschaltungen}\\[0.4cm]				%Titel
+
+\HRule \\[1.5cm]
+
+% Author und Tutor
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Authore:}\\
+Henrik \textsc{Jürgens} \\
+Frederik \textsc{Strothmann}
+\end{flushleft}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Tutoren:} \\
+Hans-Peter \textsc{Kind} \\
+Peter \textsc{Knieling} \\
+Marius \textsc{Wensing}
+\end{flushright}
+\end{minipage}
+
+\vfill
+
+% Unterer Teil der Seite/Datum
+{\large \today}
+
+\end{center}
+
+\end{titlepage}
+
 \newpage
 \tableofcontents
 \newpage
