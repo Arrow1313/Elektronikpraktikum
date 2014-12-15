@@ -25,8 +25,53 @@
 \date{\today}
 %niemals zwei überschriften direkt übereinander schreiben, also immer mindestens in einem satz was sinnvolles unter jede überschrift schreiben (bei den versuchen z.B. das versuchsziel) 
 \begin{document}
-%deckblatt erstellen.
-\maketitle
+
+
+\begin{titlepage}
+
+\begin{center}
+% Oberer Teil der Titelseite:
+\includegraphics[width=0.75\textwidth]{logo.pdf}\\[1cm]    	%Logo 
+
+\textsc{\LARGE Bergische Universität Wuppertal}\\[1.5cm]	%Institution
+
+\textsc{\Large Elektronik Praktikum}\\[0.5cm]				%Projekt
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\HRule \\[0.4cm]
+{ \huge \bfseries Regelschaltungen}\\[0.4cm]				%Titel
+
+\HRule \\[1.5cm]
+
+% Author und Tutor
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Authore:}\\
+Henrik \textsc{Jürgens} \\
+Frederik \textsc{Strothmann}
+\end{flushleft}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Tutoren:} \\
+Hans-Peter \textsc{Kind} \\
+Peter \textsc{Knieling} \\
+Marius \textsc{Wensing}
+\end{flushright}
+\end{minipage}
+
+\vfill
+
+% Unterer Teil der Seite/Datum
+{\large \today}
+
+\end{center}
+
+\end{titlepage}
+
+
 \newpage
 \tableofcontents
 \newpage
@@ -59,7 +104,7 @@ Es werden ein NTC-Sensor, ein Kühlkörper, ein DMM, ein Heizwiderstand und ein 
 %ab hier kann nochmal in einzelne versuchsteile unterteilt werden
 
 Der Zusammenhang zwischen Widerstand und Temperatur ist durch Gleichung \ref{eqn:ntc} gegeben. R$_{25}$ ist der Widerstand bei 25$^\circ$C
-
+c
 \begin{align}
 \text{R}_\text{NTC}(\text{T}) = \text{R}_{25} \text{exp}\left(-\text{B} \left(\frac{1}{\text{T}_{25}}-\frac{1}{\text{T}}\right)\right)
 \label{eqn:ntc}
@@ -71,7 +116,7 @@ Der Zusammenhang zwischen Widerstand und Temperatur ist durch Gleichung \ref{eqn
 1 ist der NTC, 2 ist der Kühlkörper und 3 der Heizwiderstand.
 
 \begin{figure}[H] 
-  \centering
+  \centering 	
     \includegraphics[ scale = 0.3]{Auf_1.png}
   	\caption[Aufbau zur Eichung des NTC]{Aufbau zur Eichung des NTC\footnotemark}
   \label{fig:auf_1}
@@ -91,6 +136,7 @@ Es wurde der Versuchsaufbau wie in Abbildung \ref{fig:auf_1} genommen und die gr
 %(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
 
 Der Fehler der Temperatur wurde mit dem Ablesefehler bestimmt, er beträgt \unit[0,1]{$^\circ$C}, da kein Fehler angeben war. Der Fehler des Widerstandes wurde aus dem Ablesefehler und dem angegebenen Fehler bestimmt, er beträgt \unit[60]{m$\Omega$} für alle Werte von \unit[21,4]{$^\circ$C} bis \unit[58]{$^\circ$C} und für die Werte von \unit[59]{$^\circ$C} bis \unit[69]{$^\circ$C} beträgt der Fehler \unit[6]{m$\Omega$}.
+
 
 \begin{table}[htbp]
 \centering
