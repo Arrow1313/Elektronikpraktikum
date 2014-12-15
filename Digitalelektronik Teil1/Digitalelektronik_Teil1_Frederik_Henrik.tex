@@ -118,7 +118,7 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 \begin{center}
 \begin{tabular}{r|r|r|l}
 
-\multicolumn{1}{l}{E1} & \multicolumn{1}{l}{E2} & \multicolumn{1}{l}{E3} & A \\ \hline
+\multicolumn{1}{l|}{E1} & \multicolumn{1}{l|}{E2} & \multicolumn{1}{l|}{E3} & A \\ \hline \hline
 0 & 0 & 0 & --- \\ 
 0 & 0 & 1 & --- \\ 
 0 & 1 & 0 & --- \\ 
@@ -179,7 +179,7 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 \begin{center}
 \begin{tabular}{r|r|r|l}
 
-\multicolumn{1}{l}{E1} & \multicolumn{1}{l}{E2} & \multicolumn{1}{l}{E3} & A \\ \hline
+\multicolumn{1}{l|}{E1} & \multicolumn{1}{l|}{E2} & \multicolumn{1}{l|}{E3} & A \\ \hline \hline
 0 & 0 & 0 & --- \\ 
 0 & 0 & 1 & --- \\ 
 0 & 1 & 0 & --- \\ 
@@ -235,6 +235,21 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{r|l}
+
+\multicolumn{1}{l|}{E1} & A \\ \hline \hline
+0 & --- \\ 
+1 & --- \\ 
+\end{tabular}
+\end{center}
+\caption{Logiktabelle für die NICHT-Verknüpfung}
+\label{tab:1_3}
+\end{table}
+
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -245,9 +260,13 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
+
+
 \section{Elementare Logikverknüpfungen ICs und Breadboard}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
 \subsection{NICHT-UND-Verknüpfung (NAND)}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -278,6 +297,23 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{r|r|l}
+
+\multicolumn{1}{l|}{E1} & \multicolumn{1}{l|}{E2} & A \\ \hline \hline
+0 & 0 & --- \\ 
+0 & 1 & --- \\ 
+1 & 0 & --- \\ 
+1 & 1 & --- \\ 
+\end{tabular}
+\end{center}
+\caption{Logiktabelle für die NAND-Verknüpfung}
+\label{tab:2_1}
+\end{table}
+
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -288,6 +324,7 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
 \subsection{UND-Verknüpfung (AND)}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -318,6 +355,23 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{r|r|l}
+
+\multicolumn{1}{l|}{E1} & \multicolumn{1}{l|}{E2} & A \\ \hline \hline
+0 & 0 & --- \\ 
+0 & 1 & --- \\ 
+1 & 0 & --- \\ 
+1 & 1 & --- \\ 
+\end{tabular}
+\end{center}
+\caption{Logiktabelle für die AND-Verknüpfung}
+\label{tab:2_2}
+\end{table}
+
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -328,6 +382,7 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
 \subsection{ODER-Verknüpfung (OR)}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -358,6 +413,23 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{r|r|r|r|l}
+
+\multicolumn{1}{l|}{E1} & \multicolumn{1}{l|}{E2} & \multicolumn{1}{l|}{E3} & \multicolumn{1}{l|}{E4} & A \\ \hline \hline
+0 & 0 & 1 & 1 & --- \\ 
+0 & 1 & 1 & 0 & --- \\ 
+1 & 0 & 0 & 1 & --- \\ 
+1 & 1 & 0 & 0 & --- \\ 
+\end{tabular}
+\end{center}
+\caption{Logiktabelle für die ODER-Verknüpfung}
+\label{tab:2_3}
+\end{table}
+
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -411,6 +483,26 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 \subsection{Speicherbausteine: Das RS-Flipflop}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{r|r|l|l}
+
+\multicolumn{1}{l|}{$\bar{R}$} & \multicolumn{1}{l|}{$\bar{S}$} & Q & $\bar{Q}$ \\ \hline \hline
+1 & 1 & \multicolumn{1}{r|}{0} & \multicolumn{1}{r}{1} \\ 
+1 & 0 & --- & --- \\ 
+1 & 1 & --- & --- \\ 
+0 & 1 & --- & --- \\ 
+1 & 1 & --- & --- \\ 
+1 & 0 & --- & --- \\ 
+1 & 1 & --- & --- \\ 
+\end{tabular}
+\end{center}
+\caption{Logiktabelle für das RS-Flipflop}
+\label{tab:2_5}
+\end{table}
+
+
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
