@@ -182,6 +182,8 @@ Es sollte die Ausgangsspannung gemessen werden und nach Tabelle \ref{tab:ttl} au
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
+\label{sec:or}
+
 In diesem Versuchsteil wird die ODER-Verknüpfung untersucht, sie gibt eine 1 wenn mindestens einer der Eingänge auf 1 gestellt ist, sonst wird 0 ausgegeben.
 
 \subsubsection*{Verwendete Geräte}
@@ -406,16 +408,20 @@ Es sollte die NAND-Verknüpfung des ICs untersucht werden, es ergaben sich dabei
 \subsection{UND-Verknüpfung (AND)}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil wird die AND-Verknüpfung über zwei NAND-Verknüpfungen realisiert. Das Verhalten der AND-Verknüpfung ist in Abschnitt \ref{sec:UND} erklärt.
+
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+Es werden ein Netzgerät, ein IC, Widerstände, ein Diode und Schalter verwendet.
+
+
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+R1 und R2 sind die beiden Pulldown-Widerstände mit jeweils 10k$\Omega$. R3 ist ein 1k$\Omega$ Widerstand.
 
 \begin{figure}[H] 
   \centering 	
@@ -428,11 +434,9 @@ Es sollte die NAND-Verknüpfung des ICs untersucht werden, es ergaben sich dabei
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+Die Schaltung wird nach Abbildung \ref{fig:auf_2_2} aufgebaut. Dann werden die Schalter nach Tabelle \ref{tab:2_2} eingestellt und das Verhalten der LED beobachtet.
+
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -442,6 +446,8 @@ Es sollte die NAND-Verknüpfung des ICs untersucht werden, es ergaben sich dabei
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Es soll das Verhalten der UND-Verknüpfung aus zwei hintereinander geschalteten NAND-Verknüpfungen untersucht werden, dabei ergeben sich für die LED die Werte in Tabelle \ref{tab:2_2}.
 
 \begin{table}[H]
 \begin{center}
@@ -473,16 +479,20 @@ Es sollte die NAND-Verknüpfung des ICs untersucht werden, es ergaben sich dabei
 \subsection{ODER-Verknüpfung (OR)}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil soll die OR-Verknüpfung bestehend aus 3 NAND-Verknüpfungen untersucht werden. Die Funktionsweise einer OR-Verknüpfung wird in Abschnitt \ref{sec:or} erklärt.
+
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+Es werden ein Netzgerät, ein IC, Widerstände, ein Diode und Schalter verwendet.
+
+
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+R1 und R2 sind die beiden Pulldown-Widerstände mit jeweils 10k$\Omega$. R3 ist ein 1k$\Omega$ Widerstand.
 
 \begin{figure}[H] 
   \centering 	
@@ -495,11 +505,9 @@ Es sollte die NAND-Verknüpfung des ICs untersucht werden, es ergaben sich dabei
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+Die Schaltung wird nach Abbildung \ref{fig:auf_2_3} aufgebaut. Die Schalter werden dann nach Tabelle \ref{tab:2_3} eingestellt und das Verhalten der LED beobachtet.
+
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -509,6 +517,8 @@ Es sollte die NAND-Verknüpfung des ICs untersucht werden, es ergaben sich dabei
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Es soll das Verhalten der OR-Verknüpfung untersucht werden. Dabei ergaben sich die Werte in Tabelle \ref{fig:auf_2_3}.
 
 \begin{table}[H]
 \begin{center}
@@ -536,19 +546,28 @@ Es sollte die NAND-Verknüpfung des ICs untersucht werden, es ergaben sich dabei
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
+
+
+
+
 \subsection{Inverter und Schmitt-Trigger}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil werden der Inverter und der Schmitt-Trigger untersucht bzw. die Verwendung der beiden als Rechteckgenerator. Mit dem Schmitt-Trigger lassen sich Störungen des Eingangssignals abschneiden.
+
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+Es werden ein Netzgerät, ein Kondensator, Widerstände, ein DMM, ein IC und eine LED verwendet.
+
+
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+R ist ein 1k$\Omega$ Widerstand, R1 ist ein 10k$\Omega$ Widerstand.
 
 \begin{figure}[H] 
   \centering 	
@@ -558,6 +577,7 @@ Es sollte die NAND-Verknüpfung des ICs untersucht werden, es ergaben sich dabei
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep8\_14.pdf am 13.12.2014}
 
+R ist ein 1k$\Omega$ Widerstand, R1 ist ein 100k$\Omega$ Widerstand und C ein 10$\mu$F Kondensator.
 
 \begin{figure}[H] 
   \centering 	
@@ -571,11 +591,11 @@ Es sollte die NAND-Verknüpfung des ICs untersucht werden, es ergaben sich dabei
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+Die Schaltung wird nach Abbildung \ref{fig:auf_2_4_1} aufgebaut. Dann wird eine Eingangsspannung von 0V angelegt, diese wird langsam erhöht, bis die LED leuchtet und dann die Spannung gemessen. Dann wird die Spannung solange abgesenkt, bis die LED ausgeht, dann wird wieder die Spannung gemessen.
+
+Dann wird die Schaltung aus Abbildung \ref{fig:auf_2_4_2} aufgebaut. Dann soll der 2000$\Omega$ Lautsprecher angeschlossen werden um das Signal zu untersuchen. Es soll untersucht werden bis zu welcher Frequenz die Schaltung zuverlässig funktioniert, dies geschieht durch variierten von R1 und C.
+
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -595,37 +615,19 @@ Es sollte die NAND-Verknüpfung des ICs untersucht werden, es ergaben sich dabei
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
+
+
 \subsection{Speicherbausteine: Das RS-Flipflop}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{r|r|l|l}
-
-\multicolumn{1}{l|}{$\bar{R}$} & \multicolumn{1}{l|}{$\bar{S}$} & Q & $\bar{Q}$ \\ \hline \hline
-1 & 1 & \multicolumn{1}{r|}{0} & \multicolumn{1}{r}{1} \\ 
-1 & 0 & --- & --- \\ 
-1 & 1 & --- & --- \\ 
-0 & 1 & --- & --- \\ 
-1 & 1 & --- & --- \\ 
-1 & 0 & --- & --- \\ 
-1 & 1 & --- & --- \\ 
-\end{tabular}
-\end{center}
-\caption{Logiktabelle für das RS-Flipflop}
-\label{tab:2_5}
-\end{table}
-
+In diesem Versuchsteil wird das RS-Flipflop untersucht. Das RS-Flipflop ist ein 
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
@@ -654,6 +656,26 @@ Es sollte die NAND-Verknüpfung des ICs untersucht werden, es ergaben sich dabei
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{r|r|l|l}
+
+\multicolumn{1}{l|}{$\bar{R}$} & \multicolumn{1}{l|}{$\bar{S}$} & Q & $\bar{Q}$ \\ \hline \hline
+1 & 1 & \multicolumn{1}{r|}{0} & \multicolumn{1}{r}{1} \\ 
+1 & 0 & --- & --- \\ 
+1 & 1 & --- & --- \\ 
+0 & 1 & --- & --- \\ 
+1 & 1 & --- & --- \\ 
+1 & 0 & --- & --- \\ 
+1 & 1 & --- & --- \\ 
+\end{tabular}
+\end{center}
+\caption{Logiktabelle für das RS-Flipflop}
+\label{tab:2_5}
+\end{table}
+
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
