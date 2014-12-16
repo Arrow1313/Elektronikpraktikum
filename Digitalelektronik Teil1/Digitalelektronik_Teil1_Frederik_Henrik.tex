@@ -78,32 +78,62 @@ Marius \textsc{Wensing}
 %---------------------------------------------------------------------------------------------
 %hinter der einleitung kann der allgemeine theoretische hintergrund in einer zusätzlichen section erklärt werden
 %1-----------------------------------------------1
-Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wird in drei Versuche eingeteilt. Dieser Versuch beschäftigt sich mit den Grundschaltungen und einfachen Logikbausteinen. Sie findet Anwendungen in einfachen Steuerschaltungen, der Computertechnik und der heutigen Analogtechnik. Es wird zunächst das Leybold Stecksystem -- später ein Breadboard -- verwendet.
+Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wird in drei Versuche eingeteilt. Dieser Versuch beschäftigt sich mit den Grundschaltungen und einfachen Logikbausteinen. Sie findet Anwendungen in einfachen Steuerschaltungen, der Computertechnik und der heutigen Analogtechnik. Es wird zunächst das Leybold Stecksystem -- später ein Breadboard -- verwendet. 
+
+In den einzelnen Versuchsteilen sollen die Ausgangsspannungen nach der TTL-Logik ausgewertet werden, dies geschieht nach Tabelle \ref{tab:ttl}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+Spannungsbereicht & Logikzustand \\ \hline
+2,0 V bis 5 V & \multicolumn{1}{r|}{1} \\ \hline
+0 V bis 0,8 V & \multicolumn{1}{r|}{0} \\ \hline
+0,8 V bis 2 V & undefiniert \\ \hline
+\end{tabular}
+\caption{TTL-Logik}
+\label{tab:ttl}
+\end{table}
+
 
 \section{Elementare Logikverknüpfungen Leybold-Stecksystem}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsabschnitt, werden drei grundlegende logische Schaltungen mit Hilfe des Leybold-Stecksystems untersucht. Es werden die UND-, ODER- und die NICHT-Verknüpfung untersucht.
+
 \subsection{UND-Verknüpfung}
+\label{sec:UND}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil wird die UND-Verknüpfung untersucht. Die UND-Verknüpfung liefert eine 1, wenn alle eingaben 1 sind, sonst 0.
+
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+Es werden Widerstände, Schalter, ein Netzgerät, Dioden und ein DMM verwendet.
+
+
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+Die Werte der jeweiligen Bauteile sind der Skizze zu entnehmen.
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_1_1.png}
+  	\caption[Schaltskizze für die UND-Verknüpfung]{Schaltskizze für die UND-Verknüpfung\footnotemark}
+  \label{fig:auf_1_1}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep8\_14.pdf am 13.12.2014}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+Die Schaltung wird nach Abbildung \ref{fig:auf_1_1} aufgebaut. Dann werden mit den Schaltern E1, E2 und E3 die Zustände in Tabelle \ref{tab:1_1} eingestellt und die Ausgangsspannung gemessen.
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -114,7 +144,9 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-\begin{table}[htbp]
+Es sollte die Ausgangsspannung gemessen werden und nach Tabelle \ref{tab:ttl} ausgewertet werde, für die verschieden Kombinationen ergab sich die Werte in Tabelle \ref{tab:1_1}.
+
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{r|r|r|l}
 
@@ -144,27 +176,40 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
+
 \subsection{ODER-Verknüpfung}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil wird die ODER-Verknüpfung untersucht, sie gibt eine 1 wenn mindestens einer der Eingänge auf 1 gestellt ist, sonst wird 0 ausgegeben.
+
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+Es werden Widerstände, Schalter, ein Netzgerät, Dioden und ein DMM verwendet.
+
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+Die Werte der jeweiligen Bauteile sind der Skizze zu entnehmen.
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_1_2.png}
+  	\caption[Schaltskizze für die ODER-Verknüpfung]{Schaltskizze für die ODER-Verknüpfung\footnotemark}
+  \label{fig:auf_1_2}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep8\_14.pdf am 13.12.2014}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+Die Schaltung in Abbildung \ref{fig:auf_1_2} wird aufgebaut. Dann werden an den Schaltern die E1, E2 und E3 die Zustände in Tabelle \ref{tab:1_2} eingestellt und die Spannung gemessen.
+
+
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -175,7 +220,10 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-\begin{table}[htbp]
+
+Es sollte wieder die Ausgangsspannung in Abhängigkeit der Schalterkombination gemessen und nach Tabelle \ref{tab:ttl} ausgewertet werden. Dabei ergaben sich die Werte in Tabelle \ref{tab:1_2}.
+
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{r|r|r|l}
 
@@ -205,27 +253,41 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
+
+
+
 \subsection{NICHT-Verknüpfung}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil werden die NICHT-Verknüpfung untersucht, diese liefert das Gegenteil des Eingangssignals.
+
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+Es werden Widerstände, Schalter, ein Netzgerät, ein Transistor, Dioden und ein DMM verwendet.
+
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+Die Werte bzw. Typen der Bauteile sind der Skizze zu entnehmen.
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_1_3.png}
+  	\caption[Schaltskizze für die NICHT-Verknüpfung]{Schaltskizze für die NICHT-Verknüpfung\footnotemark}
+  \label{fig:auf_1_3}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep8\_14.pdf am 13.12.2014}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+Die Schaltung in Abbildung \ref{fig:auf_1_3} wird aufgebaut und der Schalter nach Tabelle \ref{tab:1_3} eingestellt und die Spannung gemessen.
+
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -236,7 +298,9 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-\begin{table}[htbp]
+In dieser Schaltung macht es Sinn auch die Spannung über dem Schalter und GND zu messen, da über dem dahinter liegendem Transistor 0,6V abfallen, die gemessene Ausgangsspannung als kleiner ist. Es solle die Ausgangsspannung nach Tabelle \ref{tab:ttl} ausgewertet werden, das Ergebnis ist in Tabelle \ref{tab:1_3} angegeben.
+
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{r|l}
 
@@ -267,27 +331,39 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
+In diesem Versuchsabschnitt werde ICs untersucht, da dies 14 bis 16 Pins haben ist der Aufbau für das Leybold-Stecksystem zu groß und es werden Breadboards verwendet. Es werden NAND-, AND- und OR-Verknüpfungen mit dem IC untersucht. Danach werden Inverter, Schmitt-Trigger, das RS-Flipflop, das Zählflipflop und eine Ziffernanzeige mit Siebensegmentdecoder untersucht. Ein IC besteht aus vier NAND-Verknüpfungen (Pin 1-6 und 8-13) und zwei Pins für die Spannungsversorgung (Pin 7 und 14).
+
 \subsection{NICHT-UND-Verknüpfung (NAND)}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil wird die NAND-Verknüpfung untersucht. Die NAND-Verknüpfung entspricht der Negation der AND-Verknüpfung (siehe Abschnitt \ref{sec:UND}).
+
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+Es werden ein Netzgerät, ein IC, Widerstände, ein Diode und Schalter verwendet.
+
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+R1 und R2 sind die beiden Pulldown-Widerstände mit jeweils 10k$\Omega$. R3 ist ein 1k$\Omega$ Widerstand.
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_2_1.png}
+  	\caption[Schaltskizze für die NAND-Verknüpfung]{Schaltskizze für die NAND-Verknüpfung\footnotemark}
+  \label{fig:auf_2_1}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep8\_14.pdf am 13.12.2014}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+Die Schaltung wird nach Abbildung \ref{fig:auf_2_1} aufgebaut. Dann werden an den Schaltern die Kombinationen nach Tabelle \ref{tab:2_1} eingestellt und das Verhalten der LED ausgewertet.
+
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -298,7 +374,9 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-\begin{table}[htbp]
+Es sollte die NAND-Verknüpfung des ICs untersucht werden, es ergaben sich dabei die Werte in Tabelle \ref{tab:2_1}.
+
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{r|r|l}
 
@@ -338,6 +416,15 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %ab hier kann nochmal in einzelne versuchsteile unterteilt werden
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_2_2.png}
+  	\caption[Schaltskizze für die UND-Verknüpfung]{Schaltskizze für die UND-Verknüpfung\footnotemark}
+  \label{fig:auf_2_2}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep8\_14.pdf am 13.12.2014}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -356,7 +443,7 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-\begin{table}[htbp]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{r|r|l}
 
@@ -396,6 +483,15 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %ab hier kann nochmal in einzelne versuchsteile unterteilt werden
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_2_3.png}
+  	\caption[Schaltskizze für die OR-Verknüpfung]{Schaltskizze für die OR-Verknüpfung\footnotemark}
+  \label{fig:auf_2_3}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep8\_14.pdf am 13.12.2014}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -414,7 +510,7 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-\begin{table}[htbp]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{r|r|r|r|l}
 
@@ -453,6 +549,25 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %ab hier kann nochmal in einzelne versuchsteile unterteilt werden
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_2_4_1.png}
+  	\caption[Schaltskizze für den Inverter]{Schaltskizze für den Inverter\footnotemark}
+  \label{fig:auf_2_4_1}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep8\_14.pdf am 13.12.2014}
+
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_2_4_2.png}
+  	\caption[Schaltskizze für den Schmitt-Trigger]{Schaltskizze für den Schmitt-Trigger\footnotemark}
+  \label{fig:auf_2_4_2}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep8\_14.pdf am 13.12.2014}
+
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -484,7 +599,7 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-\begin{table}[htbp]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{r|r|l|l}
 
@@ -513,6 +628,15 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %ab hier kann nochmal in einzelne versuchsteile unterteilt werden
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_2_5.png}
+  	\caption[Schaltskizze für das RS-Flipflop]{Schaltskizze für das RS-Flipflop\footnotemark}
+  \label{fig:auf_2_5}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep8\_14.pdf am 13.12.2014}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -540,6 +664,7 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
 \subsection{Das Zähl-Flipflop}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -553,6 +678,15 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %ab hier kann nochmal in einzelne versuchsteile unterteilt werden
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_2_6.png}
+  	\caption[Schaltskizze für das Zähl-Flipflop]{Schaltskizze für das Zähl-Flipflop\footnotemark}
+  \label{fig:auf_2_6}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep8\_14.pdf am 13.12.2014}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -593,6 +727,15 @@ Die Digitaltechnik ist eine der bedeutendsten Teilgebiete der Elektronik, und wi
 %ab hier kann nochmal in einzelne versuchsteile unterteilt werden
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_2_7.png}
+  	\caption[Schaltskizze für die Siebensegmentanzeige]{Schaltskizze für die Siebensegmentanzeige\footnotemark}
+  \label{fig:auf_2_7}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep8\_14.pdf am 13.12.2014}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
