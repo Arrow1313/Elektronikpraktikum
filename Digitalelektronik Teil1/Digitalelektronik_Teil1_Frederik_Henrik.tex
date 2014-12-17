@@ -456,6 +456,8 @@ Es soll das Verhalten der UND-Verknüpfung aus zwei hintereinander geschalteten 
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
+Es ergaben sich jeweils die erwarteten Werte bei den verschiedenen Kombinationen.
+
 \subsection{ODER-Verknüpfung (OR)}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -634,6 +636,9 @@ Das RS-Flipflop wird nach Abb. \ref{fig:auf_2_5} aufgebaut und die Versorgungssp
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
+Es sollte von dem Grundzustand (erste Zeile in Tabelle \ref{tab:2_5}) aus der Speicherzustand verändert werden und die Zustände der LEDs notiert werden. Die Ergebnisse der Messung sind in Tabelle \ref{tab:2_5} angegeben.
+
+
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{r|r|l|l}
@@ -664,6 +669,8 @@ Das RS-Flipflop wird nach Abb. \ref{fig:auf_2_5} aufgebaut und die Versorgungssp
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
+Die Schaltung verhielt sich wie nach der Theorie erwartet wurde.
+
 \subsection{Das Zähl-Flipflop}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -671,12 +678,9 @@ In diesem Versuchsteil wird das Zählflipflop untersucht, welches aus einzelnen 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-Es werden ein Netzgerät, der IC-Baustein 4040, 9 LEDs, ein Kondensator und 10 Widerstände verwendet.
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+Es werden ein Netzgerät, der IC-Baustein 4040 und 4093, 9 LEDs, ein Kondensator und 10 Widerstände verwendet.
+
+
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
@@ -691,7 +695,7 @@ Die Spannung der Spannungsquelle beträgt \unit[5]{V}, der IC-Baustein 4040 best
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-Es wird die Schaltung nach Abb. \ref{fig:auf_2_6} aufgebaut und der Strom eingeschaltet. Die Dioden sollten nacheinander aufblinken und im Binärsystem hochzählen. Dazu soll beobachtet werden, wie das Frequenzverhältnis bei zwei nebeneinander liegenden Dioden ist.
+Es wird die Schaltung nach Abb. \ref{fig:auf_2_6} aufgebaut und der Strom eingeschaltet. Die Dioden sollten nacheinander aufblinken und im Binärsystem hochzählen. Dazu soll beobachtet werden, wie das Frequenzverhältnis bei zwei nebeneinander liegenden Dioden ist. Dann werden der Kondensator und der Widerstand R1 verändert, um die Frequenz zu verändern. Es wird wieder das Verhalten anhand der LED-Leiste untersucht.
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -701,7 +705,8 @@ Es wird die Schaltung nach Abb. \ref{fig:auf_2_6} aufgebaut und der Strom einges
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
-Es wurde beobachtet, dass die jeweils nächste Sufe immer mit der Hälfte der Frequenz der Stufe davor blinkt. D.h. das Frequenzverhältnis zwischen zwei nebeneinander liegenden Dioden beträgt immer eine Oktave.
+Auf der LED-Leiste wurde die einzelnen LEDs von links nach rechts aufgefüllt, wenn die nächste rechte LED erreicht wurde, wurden die vorherigen abgeschaltet und es fing der nächste zähl Durchlauf bis zur nächsten LED an.
+Es wurde beobachtet, dass die jeweils nächste Stufe immer mit der Hälfte der Frequenz der Stufe davor blinkt. D.h. das Frequenzverhältnis zwischen zwei nebeneinander liegenden Dioden beträgt immer eine Oktave.
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -716,23 +721,35 @@ Es wurde beobachtet, dass die jeweils nächste Sufe immer mit der Hälfte der Fr
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
+In diesem Versuchsteil wird die Siebensegmentanzeige und ein Siebensegmentdecoder untersucht. Mit den Bauteilen aus den vorangegangenen Versuchsteilen wird auf der Siebensegmentanzeige die Zahlen von 0 bis 9 durch gezählt.
+
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+Es werden ein ICs des Typs 4040, 4093 und 4511, Widerstände, eine Siebensegmentanzeige, ein Netzgerät, ein Kondensator und Dioden verwendet. 
+
+
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+C ist ein 10$\mu$F Kondensator, R und R2 bis R9 sind 1k$\Omega$ Widerstände. 
 
 \begin{figure}[H] 
   \centering 	
     \includegraphics[ scale = 0.4]{auf_2_7.png}
-  	\caption[Schaltskizze für die Siebensegmentanzeige]{Schaltskizze für die Siebensegmentanzeige\footnotemark}
+  	\caption[Schaltskizze für die Siebensegmentanzeige, ohne Reset beim erreichten von 10]{Schaltskizze für die Siebensegmentanzeige, ohne Reset beim erreichten von 10\footnotemark}
   \label{fig:auf_2_7}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep8\_14.pdf am 13.12.2014}
+
+C ist ein 10$\mu$F Kondensator, R und R2 bis R9 sind 1k$\Omega$ Widerstände.
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_2_7_2.png}
+  	\caption[Schaltskizze für die Siebensegmentanzeige, mit Reset beim erreichten von 10]{Schaltskizze für die Siebensegmentanzeige, mit Reset beim erreichten von 10\footnotemark}
+  \label{fig:auf_2_7_2}
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep8\_14.pdf am 13.12.2014}
 
@@ -740,11 +757,7 @@ Es wurde beobachtet, dass die jeweils nächste Sufe immer mit der Hälfte der Fr
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 Die Schaltung des Siebensegmentdecoders wird nach Abb. \ref{fig:auf_2_7} aufgebaut und die Spannungsversorgung eingeschaltet. Das aufleuchten der LEDs des Siebensegmentdecoders kann dann beobachtet werden. Der Siebensegmentdecoder sollte von 1 bis 9 hochzählen.
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -754,16 +767,10 @@ Die Schaltung des Siebensegmentdecoders wird nach Abb. \ref{fig:auf_2_7} aufgeba
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
-\subsubsection*{Diskussion}
-%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
-%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
-%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
-%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
-%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
-%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
-%--------------------------------------------------------------------------------------------
-%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
-%1-----------------------------------------------1
+
+Im ersten Aufbau (Abbildung \ref{fig:auf_2_7}) konnte wie erwartet das Durchzählen von 0 bis 9 mit kurzer Pause vor dem Neuanfang beobachtet werden. In der Verbesserten Schaltung (Abbildung \ref{fig:auf_2_7_2}) entfiel die Pause nach 9, da durch die Sperrung der Leitungen für 8 und 2 der Resetschalter mit Spannung versorgt wurde. Dieser Vorgang geschieht so schnell, dass er nicht wahrnehmbar ist und es einem so Vorkommt, dass nach 9 sofort bei 0 wieder angefangen wird.
+
+
 \section{Fazit}
 %im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
 %gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
