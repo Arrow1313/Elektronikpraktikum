@@ -548,7 +548,7 @@ Es werden ein Netzgerät, ein Kondensator, Widerstände, ein DMM, ein IC und ein
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
-R ist ein 1k$\Omega$ Widerstand, R1 ist ein 10k$\Omega$ Widerstand.
+R ist ein 1k$\Omega$ Widerstand und R1 ist ein 10k$\Omega$ Widerstand.
 
 \begin{figure}[H] 
   \centering 	
@@ -586,8 +586,8 @@ Dann wird die Schaltung aus Abbildung \ref{fig:auf_2_4_2} aufgebaut. Dann soll d
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
-In der Schaltung in Abb. \ref{fig:auf_2_4_1} geht die Diode ab einer Spannung von \unit[3]{V} aus. Ab einer Spannung von \unit[2,3]{V} geht sie wieder an. Der Hysteresespiel beträgt daher etwa \unit[0,7]{V}.\newline
-Im zweiten Teil soll die Schaltung aus Abb. \ref{fig:auf_2_4_2}, welche einen Rechteckgenerator darstellt aufgebaut werden. Diese Schaltung stellt deshalb einen Rechteckgenerator da, weil der Kondensator, solange der Ausgang des NAND auf 1 steht, aufgeladen wird, bis die beiden Eingänge des NAND\footnote{an denen die gleiche Spannung abfällt wie am Kondensator} aufgrund der Kondensatorspannung auf 1 schalten. Dadurch wird der Kondensator langsam entladen. Sobald die beiden Eingänge des NAND aufgrund der niedrigen Kondensatorspannung auf 0 schalten, ändert sich der Ausgang wieder auf 1 und der Vorgang beginnt von neuem. Deshalb wird Abhängig von der Kapazität und der Größe des Widerstandes eine bestimmte Frequenz erzeugt. Gemessen wurden Frequenzen von ca. \unit[1,8]{Hz} bei \unit[80,6]{k$\Omega$} \footnote{\unit[10]{$\mu$F} Kondensatorkapazität} und ca. \unit[0,18]{Hz} bei \unit[40,2]{k$\Omega$} \footnote{\unit[100]{$\mu$F} Kondensatorkapazität}.
+In der Schaltung in Abb. \ref{fig:auf_2_4_1} geht die Diode ab einer Spannung von \unit[3$\pm0,5$]{V} aus. Ab einer Spannung von \unit[2,3$\pm0,5$]{V} geht sie wieder an. Der Hysteresespiel beträgt daher etwa \unit[0,7]{V}.\newline
+Im zweiten Teil soll die Schaltung aus Abb. \ref{fig:auf_2_4_2}, welche einen Rechteckgenerator darstellt aufgebaut werden. Diese Schaltung stellt deshalb einen Rechteckgenerator dar, weil der Kondensator, solange der Ausgang des NAND auf 1 steht, aufgeladen wird, bis die beiden Eingänge des NAND\footnote{an denen die gleiche Spannung abfällt wie am Kondensator} aufgrund der Kondensatorspannung auf 1 schalten. Dadurch wird der Kondensator langsam entladen. Sobald die beiden Eingänge des NAND aufgrund der niedrigen Kondensatorspannung auf 0 schalten, ändert sich der Ausgang wieder auf 1 und der Vorgang beginnt von neuem. Deshalb wird Abhängig von der Kapazität und der Größe des Widerstandes eine bestimmte Frequenz erzeugt. Aus der Formel für die Entladung eines Kondensators ( $U(t) = U_0e^{-t/RC}$) ergibt sich die Auf- und Entladezeit, die nicht unbedingt gleich sein muss, da die Hysterese nicht symmetrisch um \unit[2,5]{V} stattfindet. Gemessen wurden Frequenzen von ca. \unit[1,8]{Hz} bei \unit[80,6]{k$\Omega$} und \unit[10]{$\mu$F} Kondensatorkapazität und ca. \unit[0,18]{Hz} bei \unit[40,2]{k$\Omega$} und \unit[100]{$\mu$F} Kondensatorkapazität. Erwartet wurde im ersten Fall eine Frequenz von ca. $f= \frac{1}{\ln(\frac{\unit[2,7]{V}\cdot \unit[3]{V}}{\unit[2,3]{V}\cdot \unit[2]{V}})\unit[80,6]{k\Omega}\cdot\unit[10]{\mu F}} = \unit[2,19]{Hz}$ und im zweiten Fall ca. $f= \frac{1}{\ln(\frac{\unit[2,7]{V}\cdot \unit[3]{V}}{\unit[2,3]{V}\cdot \unit[2]{V}})\unit[80,6]{k\Omega}\cdot\unit[100]{\mu F}} = \unit[0,219]{Hz}$. Es wurde dabei angenommen, dass der Kondensator sich nur über den Widerstand R1 auf- und entlädt. Beim Entladevorgang wird also R und die Diode vernachlässigt, wodurch sich die Abweichung des Theoriewertes nach oben, neben der Messungenauigkeit im ersten Teil, erklärt. Es wurden auch andere Widerstände eingesetzt, bei denen aus Zeitgründen keine Frequenzmessung vorgenommen wurde. Solange der Widerstand R1 groß gegen den Widerstand R und den Diodenwiderstand ist, kann ein antiproportionaler Zusammenhang zwischen R1 und f beobachtet werden.  
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -599,7 +599,8 @@ Im zweiten Teil soll die Schaltung aus Abb. \ref{fig:auf_2_4_2}, welche einen Re
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-
+Im ersten Teil konnten die Schaltschwellen des Schmitttriggers bei Spannungen von \unit[2,3]{V} und \unit[3]{V} beobachtet werden.
+Im zweiten Teil wurde aus dem Schmitttrigger ein Rechteckgenerator gebaut. Die gemessenen Frequenzen lagen mit einem \unit[10]{$\mu$F} Kondensator bei etwa \unit[1,8]{Hz} und mit einem \unit[100]{$\mu$F} Kondensator bei etwa \unit[0,18]{Hz} (R1 = \unit[81,6]{k$\Omega$} für beide Messungen). In der Größenordnung sind dies die erwarteten Frequenzen, welche in der Auswertung über die Formel für den Entladevorgang eines Kondensators abgeschätzt wurden. Der Widerstand R1 wurde ebenfalls variiert und es konnte festgestellt werden, dass f größer wird, wenn R1 kleiner gewählt wird. Insgesamt konnte also das erwartete regelmäßige Blinken der Diode abhängig von den Widerständen und der Kapazität des Kondensators beobachtet werden.
 
 \subsection{Speicherbausteine: Das RS-Flipflop}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
@@ -678,7 +679,7 @@ Es sollte von dem Grundzustand (erste Zeile in Tabelle \ref{tab:2_5}) aus der Sp
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-Die Schaltung verhielt sich wie nach der Theorie erwartet wurde.
+Wie erwartet konnte das Verhalten eines RS-Flipflops beobachtet werden.
 
 \subsection{Das Zähl-Flipflop}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
