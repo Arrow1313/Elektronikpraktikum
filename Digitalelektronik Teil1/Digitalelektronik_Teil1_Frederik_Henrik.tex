@@ -313,7 +313,7 @@ Alle drei Logikbausteine haben wie erwartet funktioniert, wobei die Interpretati
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsabschnitt werde ICs untersucht, da dies 14 bis 16 Pins haben ist der Aufbau für das Leybold-Stecksystem zu groß und es werden Breadboards verwendet. Es werden NAND-, AND- und OR-Verknüpfungen mit dem IC untersucht. Danach werden Inverter, Schmitt-Trigger, das RS-Flipflop, das Zählflipflop und eine Ziffernanzeige mit Siebensegmentdecoder untersucht. Ein IC besteht aus vier NAND-Verknüpfungen (Pin 1-6 und 8-13) und zwei Pins für die Spannungsversorgung (Pin 7 und 14). Falls nicht anders angegeben entspricht ein offener Schalter einer 0 und ein geschlossener Schalter einer 1.
+In diesem Versuchsabschnitt werde ICs untersucht, da dies 14 bis 16 Pins haben ist der Aufbau für das Leybold-Stecksystem zu groß und es werden Breadboards verwendet. Es werden NAND-, AND- und OR-Verknüpfungen mit dem IC untersucht. Danach werden Inverter, Schmitt-Trigger, das RS-Flipflop, das Zählflipflop und eine Ziffernanzeige mit Siebensegmentdecoder untersucht. Der in diesem Versuch hauptsächlich verwendet IC besteht aus vier NAND-Verknüpfungen (Pin 1-6 und 8-13) und zwei Pins für die Spannungsversorgung (Pin 7 und 14). Falls nicht anders angegeben entspricht ein offener Schalter einer 0 und ein geschlossener Schalter einer 1.
 
 \subsection{NICHT-UND-Verknüpfung (NAND)}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
@@ -657,6 +657,15 @@ Es sollte von dem Grundzustand (erste Zeile in Tabelle \ref{tab:2_5}) aus der Sp
 \label{tab:2_5}
 \end{table}
 
+Ändert man die Schaltung wie in Abbildung \ref{fig:_2_5_2} um so kann man mit der Schaltung 1-Impuls Änderungen speichern.
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 1]{2_5_2.pdf}
+  	\caption[Schaltskizze zum speichern von 1-Impuls Änderungen]{Schaltskizze zum speichern von 1-Impuls Änderungen\footnotemark}
+  \label{fig:_2_5_2}
+\end{figure}
+
 
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
@@ -717,11 +726,14 @@ Es wurde beobachtet, dass die jeweils nächste Stufe immer mit der Hälfte der F
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
+
+
 \subsection{Ziffernanzeige Siebensegmentdecoder 4511}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil wird die Siebensegmentanzeige und ein Siebensegmentdecoder untersucht. Mit den Bauteilen aus den vorangegangenen Versuchsteilen wird auf der Siebensegmentanzeige die Zahlen von 0 bis 9 durch gezählt.
+In diesem Versuchsteil wird die Siebensegmentanzeige und ein Siebensegmentdecoder untersucht. Mit den Bauteilen aus den vorangegangenen Versuchsteilen wird auf der Siebensegmentanzeige die Zahlen von 0 bis 9 durchgezählt.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
