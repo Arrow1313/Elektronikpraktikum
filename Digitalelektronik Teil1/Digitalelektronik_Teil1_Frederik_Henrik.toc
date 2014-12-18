@@ -1,11 +1,15 @@
 \select@language {ngerman}
 \contentsline {section}{\numberline {1}Einleitung}{2}
-\contentsline {section}{\numberline {2}Versuchsteil...}{2}
-\contentsline {subsection}{\numberline {2.1}Verwendete Ger\IeC {\"a}te}{2}
-\contentsline {subsection}{\numberline {2.2}Verwendete Formeln}{2}
-\contentsline {subsection}{\numberline {2.3}Versuchsaufbau}{2}
-\contentsline {subsection}{\numberline {2.4}Versuchsdurchf\IeC {\"u}hrung}{2}
-\contentsline {subsection}{\numberline {2.5}Messergebnisse}{2}
-\contentsline {subsection}{\numberline {2.6}Auswertung}{2}
-\contentsline {subsection}{\numberline {2.7}Diskussion}{2}
-\contentsline {section}{\numberline {3}Fazit}{2}
+\contentsline {section}{\numberline {2}Elementare Logikverkn\IeC {\"u}pfungen Leybold-Stecksystem}{2}
+\contentsline {subsection}{\numberline {2.1}UND-Verkn\IeC {\"u}pfung}{2}
+\contentsline {subsection}{\numberline {2.2}ODER-Verkn\IeC {\"u}pfung}{3}
+\contentsline {subsection}{\numberline {2.3}NICHT-Verkn\IeC {\"u}pfung}{4}
+\contentsline {section}{\numberline {3}Elementare Logikverkn\IeC {\"u}pfungen ICs und Breadboard}{6}
+\contentsline {subsection}{\numberline {3.1}NICHT-UND-Verkn\IeC {\"u}pfung (NAND)}{6}
+\contentsline {subsection}{\numberline {3.2}UND-Verkn\IeC {\"u}pfung (AND)}{7}
+\contentsline {subsection}{\numberline {3.3}ODER-Verkn\IeC {\"u}pfung (OR)}{8}
+\contentsline {subsection}{\numberline {3.4}Inverter und Schmitt-Trigger}{9}
+\contentsline {subsection}{\numberline {3.5}Speicherbausteine: Das RS-Flipflop}{11}
+\contentsline {subsection}{\numberline {3.6}Das Z\IeC {\"a}hl-Flipflop}{12}
+\contentsline {subsection}{\numberline {3.7}Ziffernanzeige Siebensegmentdecoder 4511}{13}
+\contentsline {section}{\numberline {4}Fazit}{15}
