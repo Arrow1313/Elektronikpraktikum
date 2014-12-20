@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  15 DEC 2014 20:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.19)  15 DEC 2014 20:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -614,8 +614,8 @@ tokoll.toc)
 (./VorlageProtokoll.aux) ) 
 Here is how much of TeX's memory you used:
  4748 strings out of 493304
- 68084 string characters out of 6139871
- 132619 words of memory out of 5000000
+ 68084 string characters out of 6139870
+ 131619 words of memory out of 5000000
  8107 multiletter control sequences out of 15000+600000
  55189 words of font info for 39 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -624,7 +624,7 @@ Here is how much of TeX's memory you used:
 share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmri12.pfb>
-Output written on VorlageProtokoll.pdf (3 pages, 106129 bytes).
+Output written on VorlageProtokoll.pdf (3 pages, 103522 bytes).
 PDF statistics:
  35 PDF objects out of 1000 (max. 8388607)
  23 compressed objects within 1 object stream
