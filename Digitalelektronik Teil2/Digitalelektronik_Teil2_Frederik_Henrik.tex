@@ -79,30 +79,45 @@ Marius \textsc{Wensing}
 %hinter der einleitung kann der allgemeine theoretische hintergrund in einer zusätzlichen section erklärt werden
 %1-----------------------------------------------1
 In diesem Versuch geht es um programmierbare Logikbausteine (CPLD, FPGA). Damit können komplexe Steuerungsaufgaben effektiv gelöst werden, da sie die Funktion einiger Logikbausteine ersetzen können, welche sont in einer eigenen Schaltung realisiert werden müssten. Das Verhalten der Logikbausteine soll und kann auf zwei Verschiedene Arten festgelegt werden. Einfache Aufgaben können mit simplem Einzeichen eines Schaltplans, in dem einfache Gatter und Speicher (Flipflops) miteinander verbunden werden, gelöst werden. Bei den meisten schwierigeren Aufgaben wird dagegen eine Hardware-Beschreibungssprache wie VHDL oder Verilog\footnote{welche an die Programmiersprache C angelehnt ist} verwendet.\footnote{Die Programmdatei für den CPLD wird in beiden Fällen automatisch generiert}
-\section{Versuchsabschnitt...}
+\section{Hardware: Das CPLD-Board und der Programmieradapter}
+Die Hardwarebeschreibung kann aus der Versuchsanleitung entnommen werden.\footnote{Versuchsdurchführung Seite 5 und 6 http://www.atlas.uni-wuppertal.de/$\sim$kind/ep9\_14.pdf}
+
+\section{2. Anleitung CPLD-Programmierung über Schaltpläne mit Xilinx ISE}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
-\subsection{Versuchsteil...}
+Mit dem Programm 'Xilinx ISE 10.1'(kurz ISE) soll Schritt für Schritt eine kleine Schaltung aufgebaut werden. Dazu soll zunächst die Schaltung mt Hilfe von ISE als Schaltplan eingezeichnet werden. Sobald der Schaltplan mit einem Programmieradapter vom PC in den CPLD übertragen wurde, werden einige Messungen vorgenommen. Danach wird der Schaltplan in einer neuen Datei verändert, auf den CPLD übertragen und erneut gemessen. 
+\subsection{Getting started}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+Die Anleitung zum Öffnen der Design Suite und zum Erzeugen eines neuen Projektes kann der Versuchsbeschreibung entnommen werden.\footnote{ http://www.atlas.uni-wuppertal.de/$\sim$kind/ep9\_14.pdf Seite 7 und 8}
+\subsection{Der Schaltplan}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+Anhand eines Beispiels sollen die wichtigsten Funktionen von ISE dargestellt werden.
+
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
 \subsubsection*{Verwendete Formeln}
 %eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
 %mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
 %2-----------------------------------------------2
 %ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
 \subsubsection*{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
 %zu viele kleine tabellen in große tabellen überführen!
 %zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
 %(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -112,6 +127,79 @@ In diesem Versuch geht es um programmierbare Logikbausteine (CPLD, FPGA). Damit 
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+\subsection{Verknüpfung der Marker mit Pins}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+\subsubsection*{Verwendete Formeln}
+%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
+%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
+%2-----------------------------------------------2
+%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+\subsection{Implementierung}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+\subsubsection*{Verwendete Formeln}
+%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
+%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
+%2-----------------------------------------------2
+%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -122,6 +210,343 @@ In diesem Versuch geht es um programmierbare Logikbausteine (CPLD, FPGA). Damit 
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
+
+\section{Messungen am CPLD und Änderungen der Schaltung}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+\subsection{Messungen an der jetzigen Schaltung}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+\subsubsection*{Verwendete Formeln}
+%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
+%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
+%2-----------------------------------------------2
+%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+
+\subsection{Änderungen der Schaltung (1): 16fach-Zähler}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+\subsubsection*{Verwendete Formeln}
+%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
+%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
+%2-----------------------------------------------2
+%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+
+\subsection{Änderungen der Schaltung (2): 3-nach-8-Dekoder}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+\subsubsection*{Verwendete Formeln}
+%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
+%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
+%2-----------------------------------------------2
+%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+
+
+\subsubsection*{Diskussion}
+%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
+%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
+%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
+%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
+%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
+%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+%--------------------------------------------------------------------------------------------
+%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+%1-----------------------------------------------1
+
+
+\section{Programmierung der CPLD mit der Hardware Description Language Verilog}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+Da das Erstellen des Schaltplanes bei komplizierteren Schaltungen sehr mühsam wird, ist es einfacher die Schaltung mit einer HDL (Verilog) zu programmieren. Ziel dieses Versuchsteiles ist es, einen Vorzähler (12 bis 16 Bit) und einen 8-Bit-Zähler zu programmieren, welcher dann auf den 8 LEDs und den beiden Sibensegmentanzeigen angezeigt werden soll. Dafür müssen jeweils 4 Bits des Zählers in einen 8-Bit-Zustand der Siebensegmentanzeige übergeführt werden.
+\subsection{Ein neues Projekt}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+Diesmal soll ein neues Projekt nicht über einen Schaltplan, sondern über eine Verilog Datei definiert werden.
+Die genaue Vorgehensweise kann in der Versuchsbeschreibung nachgelesen werden.\footnote{http://www.atlas.uni-wuppertal.de/$\sim$kind/ep9\_14.pdf Seite 19 und 20}
+\subsection{Ein einfaches Verilog Programm für die 8 LEDs}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+Es wird nun ein Vorgegebenes Programm kompiliert und dessen Funktion untersucht.
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+\subsubsection*{Verwendete Formeln}
+%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
+%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
+%2-----------------------------------------------2
+%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+
+\subsection{Änderung 1:Ausgabe des Zählers an die Siebensegmentanzeigen}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+\subsubsection*{Verwendete Formeln}
+%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
+%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
+%2-----------------------------------------------2
+%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+
+\subsection{Änderung 2:Strichmuster für alle 16 Zustände}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+\subsubsection*{Verwendete Formeln}
+%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
+%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
+%2-----------------------------------------------2
+%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+
+\subsection{Änderung 3: Aus dem Binärzähler wird ein Dezimalzähler}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+\subsubsection*{Verwendete Formeln}
+%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
+%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
+%2-----------------------------------------------2
+%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+
+\subsection{Änderung 4: Ein zweistelliger Zähler}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+\subsubsection*{Verwendete Formeln}
+%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
+%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
+%2-----------------------------------------------2
+%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+
+
+\subsubsection*{Diskussion}
+%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
+%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
+%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
+%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
+%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
+%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+%--------------------------------------------------------------------------------------------
+%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+%1-----------------------------------------------1
+
+
 \section{Fazit}
 %im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
 %gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
