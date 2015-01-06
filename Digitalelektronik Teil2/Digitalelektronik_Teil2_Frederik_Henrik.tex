@@ -82,7 +82,7 @@ In diesem Versuch geht es um programmierbare Logikbausteine (CPLD, FPGA). Damit 
 \section{Hardware: Das CPLD-Board und der Programmieradapter}
 Die Hardwarebeschreibung kann aus der Versuchsanleitung entnommen werden.\footnote{Versuchsdurchführung Seite 5 und 6 http://www.atlas.uni-wuppertal.de/$\sim$kind/ep9\_14.pdf}
 
-\section{2. Anleitung CPLD-Programmierung über Schaltpläne mit Xilinx ISE}
+\section{Anleitung CPLD-Programmierung über Schaltpläne mit Xilinx ISE}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 Mit dem Programm 'Xilinx ISE 10.1'(kurz ISE) soll Schritt für Schritt eine kleine Schaltung aufgebaut werden. Dazu soll zunächst die Schaltung mt Hilfe von ISE als Schaltplan eingezeichnet werden. Sobald der Schaltplan mit einem Programmieradapter vom PC in den CPLD übertragen wurde, werden einige Messungen vorgenommen. Danach wird der Schaltplan in einer neuen Datei verändert, auf den CPLD übertragen und erneut gemessen. 
@@ -95,147 +95,113 @@ Die Anleitung zum Öffnen der Design Suite und zum Erzeugen eines neuen Projekte
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 Anhand eines Beispiels sollen die wichtigsten Funktionen von ISE dargestellt werden.
 
-\subsubsection*{Verwendete Geräte}
-%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
-%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+\subsection*{Versuchsdurchführung}
 
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+Die Schaltung wird nach den Angaben in der Praktikumsanleitung mit ISE aufgebaut.
 
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
-\subsubsection*{Versuchsdurchführung}
-%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
-%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+Der Schaltplan stellt den Grundsätzlichen Aufbau dar, es wurden noch keine Pins belegt.
 
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_1.png}
+  	\caption[Schaltskizze des Clipboards]{Schaltskizze des Clipboards\footnotemark}
+  \label{fig:auf_1}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep9\_14.pdf am 02.01.2015}
 
-\subsubsection*{Auswertung}
-%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
-%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
-%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
-%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
-%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
-%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
-%kurz die aufgabenstellung abhandeln
-%2-----------------------------------------------2
+
 \subsection{Verknüpfung der Marker mit Pins}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-\subsubsection*{Verwendete Geräte}
-%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
-%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+In diesem Versuchsteil werden die Pins Belegt. Die Belegung der Pins erfolgt nach Tabelle \ref{tab:pins}.
 
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+Marker & Pin \\ \hline
+C & P6 \\ \hline
+CE & P2 \\ \hline
+CLR & P9 \\ \hline
+TC & P24 \\ \hline
+CEO & P22 \\ \hline
+Q0 & P12 \\ \hline
+Q1 & P13 \\ \hline
+Q2 & P14 \\ \hline
+Q3 & P18 \\ \hline
+\end{tabular}
+\caption{Belegung der Pins}
+\label{tab:pins}
+\end{table}
 
-\subsubsection*{Versuchsaufbau}
-%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
 
-\subsubsection*{Auswertung}
-%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
-%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
-%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
-%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
-%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
-%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
-%kurz die aufgabenstellung abhandeln
-%2-----------------------------------------------2
+Die Belegung der Pins wird wie in der Versuchsanleitung beschrieben durchgeführt.
+
+
 \subsection{Implementierung}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
+In diesem Versuchsteil soll nun die Programmierung implementiert werden.
+
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+Es wird der der PC, das Programmiergerät, das CPLD-Board und Verbindungskabel verwendet.
 
-\subsubsection*{Versuchsaufbau}
-%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
-
-\subsubsection*{Auswertung}
-%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
-%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
-%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
-%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
-%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
-%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
-%kurz die aufgabenstellung abhandeln
-%2-----------------------------------------------2
-
-\subsubsection*{Diskussion}
-%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
-%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
-%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
-%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
-%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
-%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
-%--------------------------------------------------------------------------------------------
-%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
-%1-----------------------------------------------1
-
+Die Implementierung wird wie in der Versuchsanleitung beschrieben durchgeführt.
 
 \section{Messungen am CPLD und Änderungen der Schaltung}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
+In diesem Versuchsabschnitt werden verschiedenen Messungen vorgenommen.
+
 \subsection{Messungen an der jetzigen Schaltung}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil werden die Frequenzen von Q0 bis Q3 mit dem Oszilloskop gemessen.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-\subsubsection*{Verwendete Formeln}
-%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
-%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
-%2-----------------------------------------------2
-%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+Es werden das CPLD-Board, Verbindungskabel und ein Oszilloskop verwendet.
 
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
+Aufbau der Schaltung, es fehlt noch das Flachbabel von SV2 nach LED.
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_2.png}
+  	\caption[Aufbau der Schaltung]{Aufbau der Schaltung\footnotemark}
+  \label{fig:auf_2}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep9\_14.pdf am 02.01.2015}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+Es wird über die Mitte Pinreihe CLK ein Jumper gesetzt. Dann wird Pinreihen SV1 mit SW über ein Flachbandkabel verbunden so wie SV2 mit LED. Danach wird mit SW1 überprüft, ob die Schaltung funktioniert und mit SW8 der Zählzustand wieder zurückgesetzt und das Flachbandkabel zwischen SV2 und LED wieder entfernt. Und über SV12 das Board an das Oszilloskop angeschlossen. Dann werden mit dem Oszillsokop die Frequenzen von Q0 bis Q3 gemessen.
 
 \subsubsection*{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
@@ -256,6 +222,8 @@ Anhand eines Beispiels sollen die wichtigsten Funktionen von ISE dargestellt wer
 \subsection{Änderungen der Schaltung (1): 16fach-Zähler}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
