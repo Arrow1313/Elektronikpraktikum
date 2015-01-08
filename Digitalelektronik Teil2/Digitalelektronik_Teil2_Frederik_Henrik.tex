@@ -144,7 +144,7 @@ Dabei werden die Aus- und Eingänge nach dem folgende Schema belegt.
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird über die Mitte Pinreihe CLK ein Jumper gesetzt. Dann wird Pinreihen SV1 mit SW über ein Flachbandkabel verbunden so wie SV2 mit LED. Danach wird mit SW1 überprüft, ob die Schaltung funktioniert und mit SW8 der Zählzustand wieder zurückgesetzt und das Flachbandkabel zwischen SV2 und LED wieder entfernt. Und über SV12 das Board an das Oszilloskop angeschlossen. Dann werden mit dem Oszillsokop die Frequenzen von Q0 bis Q3 gemessen.
+Es wird über die Mitte Pinreihe CLK ein Jumper gesetzt. Dann wird Pinreihen SV1 mit SW über ein Flachbandkabel verbunden so wie SV2 mit LED. Danach wird mit SW1 überprüft, ob die Schaltung funktioniert, mit SW8 der Zählzustand wieder zurückgesetzt und das Flachbandkabel zwischen SV2 und LED wieder entfernt. Über SV12 wird das Board an das Oszilloskop angeschlossen. Dann werden mit dem Oszillsokop die Frequenzen von Q0 bis Q3 gemessen.
 
 \subsubsection*{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
@@ -177,7 +177,7 @@ Die Werte wurden direkt vom Oszillskop abelesen.
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Da in dem Aufbau ein CD4CE und kein CB4CE verwendet wrude sind die Messergebnisse nicht wie gewünscht auswertbar. Der CD4CE zählt lediglich bis von 0 bis 9 und nicht wie gewünscht von 0 bis 15. Das ist auch in der Aufnahme (Abbildung \ref{fig:frequ_1}) der Ausgangsfrequenzen zu sehen.
+Da in dem Aufbau ein CD4CE und kein CB4CE verwendet wurde sind die Messergebnisse nicht auswertbar. Der CD4CE zählt lediglich bis von 0 bis 9 und nicht von 0 bis 15. Das ist auch in der Aufnahme (Abbildung \ref{fig:frequ_1}) der Ausgangsfrequenzen zu sehen. Dieser Fehler hat uns einen großen Teil unserer Zeit gekostet, sodass wir den Versuchsteil nicht wiederholt haben. In den weiteren Versuchsteilen wird der richtige Zähler verwendet.
 
 \begin{figure}[H] 
   \centering 	
@@ -186,13 +186,13 @@ Da in dem Aufbau ein CD4CE und kein CB4CE verwendet wrude sind die Messergebniss
   \label{fig:frequ_1}
 \end{figure}
 
-Es wurde erwartet, dass auf immer nur Abfallende Flanke auf einander liegen.
+Es wurde erwartet, dass immer nur Abfallende Flanke übereinander liegen.
 
 \subsection{Änderungen der Schaltung (1): 16fach-Zähler}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil soll die Eingangsfrequenz von 50kHz auf 1Hz herabgeseng werden. Dafür wird die selbe Schaltung wie in dem vorherigen Versuchsteil verwendet, jedoch werden vier anstatt zwei CB4CE hintereinander geschaltet.
+In diesem Versuchsteil soll die Eingangsfrequenz von 50kHz auf 1Hz herabgesenkt werden. Dafür wird die selbe Schaltung wie in dem vorherigen Versuchsteil verwendet, jedoch werden vier anstatt zwei CB4CE hintereinander geschaltet.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -212,7 +212,7 @@ Es wird die Schaltung in Abbildung \ref{fig:auf_1_1} mit ISE aufgebaut und imple
   \label{fig:auf_1_1}
 \end{figure}
 
-Dabei werden die Aus- und Eingänge nach dem folgende Schema belegt.
+Dabei werden die Aus- und Eingänge nach dem folgenden Schema belegt.
 
 \begin{figure}[H]
 \centering
@@ -236,7 +236,7 @@ Dabei werden die Aus- und Eingänge nach dem folgende Schema belegt.
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird Pinreihen SV1 mit SW über ein Flachbandkabel verbunden. Danach wird  über SV12 das Board an das Oszilloskop angeschlossen und mit dem Oszillsokop die Periodendauer von Q0 bis Q3 gemessen. Es wird die Periodendauer gemessen, da das Oszilloklop keine Frequenzen unter 10Hz messen kann.
+Es werden die Pinreihen SV1 mit SW über ein Flachbandkabel verbunden. Danach wird das Board über SV12 an das Oszilloskop angeschlossen und die Periodendauer von Q0 bis Q3 mit den Cursern gemessen, da das Oszilloklop keine Frequenzen unter 10Hz messen kann.
 
 \subsubsection*{Messergebnisse}
 %die messwerte in !übersichtlichen! tabellen angegeben
@@ -244,9 +244,9 @@ Es wird Pinreihen SV1 mit SW über ein Flachbandkabel verbunden. Danach wird  ü
 %zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
 %(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
 
-Die Messwerte wurde direkt vom Oszillsokop abgelesen.
+Die Messwerte wurden direkt vom Oszillsokop abgelesen.
 
-\begin{figure}[H]
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|c|}
 \hline Ausgang & Periodendauer/ms \\ \hline
@@ -255,9 +255,11 @@ Die Messwerte wurde direkt vom Oszillsokop abgelesen.
 \hline Q2 & 222 \\ 
 \hline Q3 & 444 \\ 
 \hline 
+
 \end{tabular}
-\label{tab:periode} 
-\end{figure}
+\caption{Messergebnisse der Periodendauern}
+\label{tab:periode}
+\end{table} 
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -287,13 +289,13 @@ Die Aufnahme auf dem Oszillsokop für Q2 und Q3 ist in Abbildung \ref{fig:period
   \label{fig:periode_2}
 \end{figure}
 
-Es wurde erwartet, dass die sich die Frequenz zum nächsten Ausgang halbiert, dies ist anhand von Tabelle \ref{tab:periode} gut zu sehen. Die Frequenz und die Periodendauer hängen reziprok zusammen, daher entspricht eine verdoppelung der Periodendauer einer halbierung der Frequenz.
+Es wurde erwartet, dass die sich die Frequenz zum nächsten Ausgang halbiert, dies ist anhand von Tabelle \ref{tab:periode} gut zu sehen. Die Frequenz und die Periodendauer hängen reziprok zusammen, daher entspricht eine Verdoppelung der Periodendauer einer Halbierung der Frequenz.
 
 \subsection{Änderungen der Schaltung (2): 3-nach-8-Dekoder}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-Es sollen die hintersten drei Ausgänge so umprogrammiert werden dass nacheinander die acht Leuchtdioden angehen.
+Es sollen die untersten drei Ausgänge so umprogrammiert werden, dass nacheinander die acht Leuchtdioden angehen.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -315,7 +317,7 @@ Es wird die Schaltung in Abbildung \ref{fig:auf_1_1} mit ISE aufgebaut und imple
   \label{fig:auf_1_1}
 \end{figure}
 
-Dabei werden die Aus- und Eingänge nach dem folgende Schema belegt.
+Dabei werden die Aus- und Eingänge nach dem folgenden Schema belegt.
 
 \begin{figure}[H]
 \centering
@@ -338,7 +340,7 @@ Dabei werden die Aus- und Eingänge nach dem folgende Schema belegt.
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird die Schaltung wie in im Abschnitt \ref{subsec:aufbau} aufgebaut und implementiert, dann wird das Verhalten der LEDs beobachtet.
+Es wird die Schaltung wie in Abschnitt \ref{subsec:aufbau} aufgebaut und implementiert, dann wird das Verhalten der LEDs beobachtet.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -350,7 +352,7 @@ Es wird die Schaltung wie in im Abschnitt \ref{subsec:aufbau} aufgebaut und impl
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Es war zu beobachten, dass die Schaltung wie erwartet die LEDs der Reihen nach hochzählte.
+Es war zu beobachten, dass die Schaltung über die LEDs im Binärsystem hochzählte.
 
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
@@ -363,7 +365,7 @@ Es war zu beobachten, dass die Schaltung wie erwartet die LEDs der Reihen nach h
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-Im ersten Versuchsteil konnten leider nicht die gewünschen Ergebnisse erzielt werden da ein falschen Bauteil verwendet wurde. In den anderen beiden Versuchteilen sind gut ergebnisse erzielt worden und es konnte bestätigt werden, was erwartet wurde.
+Im ersten Versuchsteil konnten nicht die gewünschen Ergebnisse erzielt werden da ein falsches Bauteil verwendet wurde. In den anderen beiden Versuchteilen sind gute Ergebnisse erzielt worden, welche den Erwartungen entsprachen.
 
 \section{Programmierung der CPLD mit der Hardware Description Language Verilog}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
