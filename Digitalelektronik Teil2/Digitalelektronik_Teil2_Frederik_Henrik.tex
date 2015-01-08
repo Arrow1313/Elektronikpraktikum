@@ -11,6 +11,8 @@
 \usepackage{caption}
 \usepackage{subcaption}
 
+\usepackage{listings}		% Wird für Quelltext verwendet
+
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -291,7 +293,7 @@ Es wurde erwartet, dass die sich die Frequenz zum nächsten Ausgang halbiert, di
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-Es sollen die hintersten drei Ausgänge so umprogrammiert werden dass nacheinander acht Leuchtdioden angehen.
+Es sollen die hintersten drei Ausgänge so umprogrammiert werden dass nacheinander die acht Leuchtdioden angehen.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -348,7 +350,7 @@ Es wird die Schaltung wie in im Abschnitt \ref{subsec:aufbau} aufgebaut und impl
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Es war zu beobachten, dass die Schaltung wie erwartet die der Reihen nach hochzählte.
+Es war zu beobachten, dass die Schaltung wie erwartet die LEDs der Reihen nach hochzählte.
 
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
@@ -382,7 +384,7 @@ Die genaue Vorgehensweise kann in der Versuchsbeschreibung nachgelesen werden.\f
 Am CPLD wird die Pinreihe SV1 mit der Pinreihe SW verbunden, sowie die Pinreihe SV2 mit der Pinreihe LED. Dazu werden zwei Flachbandkabel verwendet. Es wird nun ein Vorgegebenes Programm kompiliert und dessen Funktion untersucht.
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
-Es wird der Quellcode (!Verweis auf Anhang!) aus der Versuchsanleitung übernommen, kompiliert und dessen Funktion beobachtet.
+Es wird der Quellcode \ref{scr:1} aus der Versuchsanleitung übernommen, kompiliert und dessen Funktion beobachtet.
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -406,7 +408,7 @@ In diesem Versuchsteil soll der Zählerstand auf der Siebensegmentanzeige sichtb
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 Die Pinreihe SV3 wird mit einem weiteren Flachbandkabel mit der Pinreihe DIS1 verbunden.
-Der Quellcode aus der Versuchsanleitung wurde während des Versuches konfiguriert (!Verweis auf den Anhang!).
+Der Quellcode aus der Versuchsanleitung wurde während des Versuches konfiguriert (Code \ref{scr:2}).
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -438,7 +440,7 @@ nachdem der Quellcode konfiguriert und kompiliert wurde, konnte beobachtet werde
 In diesem Versuchsteil soll die Siebensegmentanzeige die Zahlen 0-f des Hexadezimalsystems darstellen.
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
-Der Quellcode aus der Versuchsanleitung wurde während des Versuches konfiguriert (!Verweis auf den Anhang!).
+Der Quellcode aus der Versuchsanleitung wurde während des Versuches konfiguriert (Code \ref{scr:3}).
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -460,7 +462,7 @@ Die Strichmuster konnten erfolgreich konfiguriert werden, der Zähler zählt von
 In diesem Versuchsteil soll die Siebensegmentanzeige nach der Zahl '9' wieder bei '0' anfangen zu zählen.
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
-Der Quellcode aus der Versuchsanleitung wurde während des Versuches konfiguriert (!Verweis auf den Anhang!).
+Der Quellcode aus der Versuchsanleitung wurde während des Versuches konfiguriert (Code \ref{scr:4}).
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -482,7 +484,7 @@ Es soll nun ein zweistelliger Zähler implementiert werden, welcher von '00' bis
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 Die Pinreihe SV4 wird mit einem Flachbandkabel mit der Pinreihe DIS2 verbunden.
-Der Quellcode aus der Versuchsanleitung wurde während des Versuches konfiguriert (!Verweis auf den Anhang!).
+Der Quellcode aus der Versuchsanleitung wurde während des Versuches konfiguriert (Code \ref{scr:5} und Code \ref{scr:6}).
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
@@ -528,4 +530,66 @@ Die einzelnen Konfigurationsschritte konnten alle umgesetzt werden und nach dem 
 Bis auf einen kleinen Fehler am Anfang des Versuches, der uns sehr viel Zeit gekostet hat, ist der Versuch gut verlaufen. Am Ende war leider keine Zeit mehr für die Bearbeitung der Zusatzaufgabe über.
 
 \section{Anhang}
+
+Im Anhang befinden sich die jeweils verwendeten Verilogdateien und die ufc Datei, die die Pinbelegung angibt.
+
+\begin{figure}[H]
+\lstinputlisting[, basicstyle=\tiny]{ufc.ufc}
+\caption*{Datei zur Festlegung der Pinbelegung}
+\label{scr:1}
+\end{figure}
+
+\begin{figure}[H]
+\lstinputlisting[language=Verilog, basicstyle=\tiny]{Verilog_1_iso.v}
+\caption*{Quellcode für die 1. Aufgabe}
+\label{scr:1}
+\end{figure}
+
+
+\newpage
+
+\begin{figure}[H]
+\lstinputlisting[language=Verilog, basicstyle=\tiny]{Verilog_2.v}
+\caption*{Quellcode für die 2. Aufgabe}
+\label{scr:2}
+\end{figure}
+
+
+\newpage
+
+\begin{figure}[H]
+\lstinputlisting[language=Verilog, basicstyle=\tiny]{Verilog_3.v}
+\caption*{Quellcode für die 3. Aufgabe}
+\label{scr:3}
+\end{figure}
+
+
+\newpage
+
+\begin{figure}[H]
+\lstinputlisting[language=Verilog, basicstyle=\tiny]{Verilog_4.v}
+\caption*{Quellcode für die 4. Aufgabe}
+\label{scr:4}
+\end{figure}
+
+
+\newpage
+
+\begin{figure}[H]
+\lstinputlisting[language=Verilog, basicstyle=\tiny]{Verilog_6.v}
+\caption*{Quellcode für die 5. Aufgabe}
+\label{scr:5}
+\end{figure}
+
+\newpage
+
+\begin{figure}[H]
+\lstinputlisting[language=Verilog, basicstyle=\tiny]{Verilog_7.v}
+\caption*{Quellcode für die 5. Aufgabe}
+\label{scr:6}
+\end{figure}
+
+
+
+
 \end{document}
