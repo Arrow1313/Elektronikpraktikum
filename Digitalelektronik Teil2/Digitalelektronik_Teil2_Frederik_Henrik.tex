@@ -420,7 +420,7 @@ Im Quellcode werden die voher auskommentierten Register 'segments1' und 'segment
 \begin{enumerate}
 \item Die Geschwindigkeit, mit der die Zählerzustände durchlaufen werden, ändert sich mit der Größe der Variablen 'prescaler' (momentan 14 Bit). 15 Bit halbiert die Geschwindigkeit, 13 Bit verdoppelt sie.
 \item Der Taster SW8 in der Ecke oben rechts auf dem Board ist CLR und dient zum zurücksetzen des Zählers.
-\item Für CE kann eine zusätzliches If Kommando in das Programm eingefügt werden, welche den Zähler beinhaltet. Diese Funktion wurde jedoch erst im letzten Versuchsteil in den Quellcode einprogrammiert. CE liegt auf dem Taster SW1, und der Zähler kann, wie wir im letzten Versuchsteil sehen werden, mit CLR gestoppt werden, wenn CE auf 1 ist.
+\item Für CE kann eine zusätzliches If Kommando in das Programm eingefügt werden, welche den Zähler beinhaltet. Diese Funktion wurde jedoch erst im letzten Versuchsteil in den Quellcode eingebaut. CE liegt auf dem Taster SW1, und der Zähler kann, wie wir im letzten Versuchsteil sehen werden, mit CLR gestoppt werden, wenn CE auf 1 ist.
 \end{enumerate}
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -464,7 +464,7 @@ Der Quellcode aus der Versuchsanleitung wurde während des Versuches konfigurier
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
+In die always-Schleife wird wie in der Versuchsbeschreibung beschrieben ein If-Befehl, welcher 'counter[3:0]' bei 'counter[3:0] == 10' innerhalb dieser auf 0 setzt, eingefügt, sodass nach der '9' wieder die '0' am Siebensegmentdecoder angezeigt wird.  
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -474,19 +474,30 @@ Der Quellcode aus der Versuchsanleitung wurde während des Versuches konfigurier
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
-
+Der If-Befehl wurde an der passenden Stelle im Quellcode eingefügt und sorgt dafür, dass nur noch von 0 bis 9 hochgezählt wird. Die Funktion des Quellcodes wurde nach dem programmieren des CPLD an Siebensegmentdecoder beobachtet.
 \subsection{Änderung 4: Ein zweistelliger Zähler}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
-
+Es soll nun ein zweistelliger Zähler implementiert werden, welcher von '00' bis '99' hochzählt. Daneben wird auch die Funktion des CE Tasters, welche im zweiten Versuchsteil angesprochen wurde, implementiert.
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
-
+Die Pinreihe SV4 wird mit einem Flachbandkabel mit der Pinreihe DIS2 verbunden.
+Der Quellcode aus der Versuchsanleitung wurde während des Versuches konfiguriert (!Verweis auf den Anhang!).
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-Frage: Wenn Sie den CLR-Taster drücken, springt das Siebensegmentdisplay nicht sofort auf Null. Warum? Wie können Sie das ändern?
-
+Zuerst wird ein zweites 4 Bit Register counter2 hinzugefügt.
+Danach wird die always-Schleife verändert. Falls CLR gedrückt wird, soll ebenfalls counter2 (neben dem Prescaler und counter) auf null gesetzt werden.\\
+\textbf{Frage}:
+\begin{itemize}
+\item Wenn Sie den CLR-Taster drücken, springt das Siebensegmentdisplay nicht sofort auf Null. Warum? Wie können Sie das ändern?
+\end{itemize}
+\begin{enumerate}
+\item
+Damit das Siebensegmentdisplay auf null springt muss dahinter 'segments1' und 'segments2' mit der segment7-Funktion sowie den Registern 'conter[3:0]' für 'segments1' und 'counter2[3:0]' für 'segments2'  das entsprechende 8 Bitmuster zugewiesen werden. Dies wird erst im letzten Teil des Quellcodes eingefügt, sodass CLR davor zum Anhalten des Zählers benutzt werden kann.
+\end{enumerate}
+Nun soll der Zähler nur laufen, falls CE gedrückt gehalten wird. Dafür wird anstatt 'else begin ... end' der Befehle 'else if(CE) begin ... end' implementiert. In dem Befehl 'if(counter[3:0] == 10) begin ... end' muss jetzt zusätzlich 'counter2' um 1 erhöht werden. Damit counter2 nicht von 0 bis f, sondern von 0 bis 9 hochzählt, wird ein weiterer If-Befehl ergänzt, welcher die gleiche Struktur hat, wie der für counter, sodass an der Siebensegmentanzeige nach '99' wieder '00' angezeigt wird. Zum Schluss soll neben 'segments1' auch 'segments2' das richtige 8 Bitmuster zugewiesen werden. Also wird neben 'segments1' auch 'segments2' mit der Funktion segment7 das passende 8 Bitmuster zugewiesen. (In diesem Fall das von counter2)
+Falls es zu Fehlermeldungen wegen den Ressourcen des CPLD kam, wurden die Größen der Register angepasst.
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -496,7 +507,7 @@ Frage: Wenn Sie den CLR-Taster drücken, springt das Siebensegmentdisplay nicht 
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
-
+Der Quellcode konnte nach kurzer Zeit angepasst werden, sodass auf der Siebensegmentanzeige von '00' bis '99' hochgezählt wird. Da zu diesem Zeitpunkt die Anzeige mit CLR lediglich angehalten wurde, sollte der Quellcode danach so verändert werden, dass die Anzeige auf '00' springt, sobald CLR gedrückt wird. Dafür wurde am Ende des if(CLR)-Befehls 'segments1' und 'segments2' das entsprechende 8 Bitmuster zugewiesen.
 
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
@@ -508,11 +519,13 @@ Frage: Wenn Sie den CLR-Taster drücken, springt das Siebensegmentdisplay nicht 
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
-
+Verilog konnte in diesem Versuch ohne große Schwierigkeiten verwendet werden.
+Die einzelnen Konfigurationsschritte konnten alle umgesetzt werden und nach dem programmieren des CPLD an den leuchtenden LEDs der LED-Anzeige und der bzw. den beiden Anzeigen der Siebensegmentdecoder überprüft werden. Es stellte sich je nach Aufgabenteil das erwartete Ergebnis ein.
 
 \section{Fazit}
 %im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
 %gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
-Bis auf einen kleinen Fehler am Anfang des Versuches, der uns sehr viel Zeit gekostet hat, ist der Versuch gut verlaufen. Wir hatten am Ende leider keine Zeit mehr um die Zusatzaufgabe zu bearbeiten.
-\end{document}
+Bis auf einen kleinen Fehler am Anfang des Versuches, der uns sehr viel Zeit gekostet hat, ist der Versuch gut verlaufen. Am Ende war leider keine Zeit mehr für die Bearbeitung der Zusatzaufgabe über.
 
+\section{Anhang}
+\end{document}
