@@ -397,20 +397,21 @@ Nachdem ein neues Projekt erstellt wurde (vgl. Versuchsanleitung S. 19 f.), wird
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
-Das Programm konnte erfolgreich kompiliert werden. Es wurde beobachtet, dass an der 7-Segmentanzeige zuerst die 0, dann die 1 und danach jede einzelne der 8 LEDs aufleuchteten.
+Das Programm konnte erfolgreich kompiliert werden. 
+Es wurde beobachtet, dass die LEDs im Binärsystem Hochzählen.
 \subsection{Änderung 1:Ausgabe des Zählers an die Siebensegmentanzeigen}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
-In diesem Versuchsteil soll die Siebensegmentanzeige von 0 bis 9 hochzählen.
+In diesem Versuchsteil soll der Zählerstand auf der Siebensegmentanzeige sichtbar gemacht werden.
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 Die Pinreihe SV3 wird mit einem weiteren Flachbandkabel mit der Pinreihe DIS1 verbunden.
-Der Quellcode (!Verweis auf den Anhang!) aus der Versuchsanleitung wurde während des Versuches erstellt.
+Der Quellcode aus der Versuchsanleitung wurde während des Versuches konfiguriert (!Verweis auf den Anhang!).
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-Die Zahlen 1-f im Hexadezimalsystem sollen mit den 8 Bits des Siebensegmentdecoders dargestellt werden. Der case-Befehl weist jedem der 16 Zustände von 'decodeinput' (4 Bit) ein 8 Bit Muster, welches die LEDs aufleuchten lässt zu. Nun sollen diese Muster im Quellcode verändert werden, sodass bis f hochgezählt wird. \\
-Fragen:
+Im Quellcode werden die voher auskommentierten Register 'segments1' und 'segments2' aktiviert. Am Ende des always Blocks wird ein vorgegebener Befehl hinzugefügt. Danach wird der Quellcode kompiliert und die Funktion der Siebensegmentanzeige überprüft.
+\textbf{Fragen}:
 \begin{itemize}
 \item Wie kann die Geschwindigkeit erhöht oder erniedrigt werden, mit der die Zählerzustände durchlaufen werden, ohne die Eingangsfrequenz (ca. 50 kHz) zu verändern?
 \item Das Signal CLR dient zum Rücksetzen des Zählers. Welcher Taster erzeugt es?
@@ -419,9 +420,8 @@ Fragen:
 \begin{enumerate}
 \item Die Geschwindigkeit, mit der die Zählerzustände durchlaufen werden, ändert sich mit der Größe der Variablen 'prescaler' (momentan 14 Bit). 15 Bit halbiert die Geschwindigkeit, 13 Bit verdoppelt sie.
 \item Der Taster SW8 in der Ecke oben rechts auf dem Board ist CLR und dient zum zurücksetzen des Zählers.
-\item Für CE kann eine zusätzliches If Kommando in das Programm eingefügt werden, welche den Zähler beinhaltet. Diese Funktion wurde jedoch erst im letzten Teil in den Quellcode einprogrammiert. CE liegt auf dem Taster SW1, und der Zähler kann, wie wir im letzten Versuchsteil sehen werden, mit CLR gestoppt werden, wenn CE auf 1 ist.
+\item Für CE kann eine zusätzliches If Kommando in das Programm eingefügt werden, welche den Zähler beinhaltet. Diese Funktion wurde jedoch erst im letzten Versuchsteil in den Quellcode einprogrammiert. CE liegt auf dem Taster SW1, und der Zähler kann, wie wir im letzten Versuchsteil sehen werden, mit CLR gestoppt werden, wenn CE auf 1 ist.
 \end{enumerate}
-
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -431,19 +431,18 @@ Fragen:
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
-Die Strichmuster konnten erfolgreich konfiguriert werden, wobei der If Befehl für CE noch nicht einprogrammiert wurde.
-Der Zähler zählt von 0 bis f.
+nachdem der Quellcode konfiguriert und kompiliert wurde, konnte beobachtet werden, dass an der 7-Segmentanzeige zuerst die 0, dann die 1 und danach jede einzelne der 8 LEDs aufleuchteten. Der If-Befehl für CE wurde erst im letzten Versuchsteil eingebaut.
 \subsection{Änderung 2:Strichmuster für alle 16 Zustände}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
-
-
+In diesem Versuchsteil soll die Siebensegmentanzeige die Zahlen 0-f des Hexadezimalsystems darstellen.
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
-
+Der Quellcode aus der Versuchsanleitung wurde während des Versuches konfiguriert (!Verweis auf den Anhang!).
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+Die Zahlen 1-f im Hexadezimalsystem sollen mit den 8 Bits des Siebensegmentdecoders dargestellt werden. Der case-Befehl weist jedem der 16 Zustände von 'decodeinput' (4 Bit) ein 8 Bit Muster, welches die LEDs am Siebensegmentdecoder aufleuchten lässt, zu. Nun sollen diese Muster im Quellcode verändert werden, sodass von 0 bis f hochgezählt wird.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -454,14 +453,14 @@ Der Zähler zählt von 0 bis f.
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
-
+Die Strichmuster konnten erfolgreich konfiguriert werden, der Zähler zählt von 0 bis f.
 \subsection{Änderung 3: Aus dem Binärzähler wird ein Dezimalzähler}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
-
+In diesem Versuchsteil soll die Siebensegmentanzeige nach der Zahl '9' wieder bei '0' anfangen zu zählen.
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
-
+Der Quellcode aus der Versuchsanleitung wurde während des Versuches konfiguriert (!Verweis auf den Anhang!).
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
