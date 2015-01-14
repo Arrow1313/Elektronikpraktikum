@@ -5,11 +5,11 @@ void taster_2(){
 	TRISA = 0b111111;
 	
 	while(1){
-		if(PORTA == 0b00000001){
+		if(PORTA == 0b000001){
 			if(LATB == 0b00000001)
-				LATB == 0b00000000;
+				LATB = 0b00000000;
 			else
-				LATB == 0b00000001;
+				LATB = 0b00000001;
 		}
 		delay_ms(25);
 	}//end of while(1)
@@ -18,14 +18,14 @@ void taster_2(){
 void taster_3(){
 	byte i;
 	TRISB = 0b00000000;
-	TRISA = 0b11111111;
+	TRISA = 0b111111;
 	
 	while(1){
 		if(PORTAbits.RA1 == 0b1){
 			if(LATB == 0b00000001)
-				LATB == 0b00000000;
+				LATB = 0b00000000;
 			else
-				LATB == 0b00000001;
+				LATB = 0b00000001;
 		}
 		delay_ms(25);
 	}//end of while(1)

@@ -14,6 +14,8 @@ void ProcessIO(void){
 	if((usb_device_state < CONFIGURED_STATE)||(UCONbits.SUSPND==1)) return;
 	// Fügen Sie hier Ihren Code ein ######################################
 
+	test_speed_1();
+
 	// handleCommands();	// Wertet Kommandozeichen aus,
 							// die über USB geschickt wurden
 							// kann erstmal auskommentiert bleiben!

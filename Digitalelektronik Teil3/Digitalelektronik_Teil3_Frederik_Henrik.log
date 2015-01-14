@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  12 JAN 2015 15:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  14 JAN 2015 22:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -70,6 +70,50 @@ Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count89
 \c@subtable=\count90
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count91
+\lst@gtempboxa=\box28
+\lst@token=\toks17
+\lst@length=\count92
+\lst@currlwidth=\dimen110
+\lst@column=\count93
+\lst@pos=\count94
+\lst@lostspace=\dimen111
+\lst@width=\dimen112
+\lst@newlines=\count95
+\lst@lineno=\count96
+\lst@maxwidth=\dimen113
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count97
+\lst@skipnumbers=\count98
+\lst@framebox=\box29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count99
+))
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -84,23 +128,23 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count91
-\Gm@cntv=\count92
-\c@Gm@tempcnt=\count93
-\Gm@bindingoffset=\dimen110
-\Gm@wd@mp=\dimen111
-\Gm@odd@mp=\dimen112
-\Gm@even@mp=\dimen113
-\Gm@layoutwidth=\dimen114
-\Gm@layoutheight=\dimen115
-\Gm@layouthoffset=\dimen116
-\Gm@layoutvoffset=\dimen117
-\Gm@dimlist=\toks17
+\Gm@cnth=\count100
+\Gm@cntv=\count101
+\c@Gm@tempcnt=\count102
+\Gm@bindingoffset=\dimen114
+\Gm@wd@mp=\dimen115
+\Gm@odd@mp=\dimen116
+\Gm@even@mp=\dimen117
+\Gm@layoutwidth=\dimen118
+\Gm@layoutheight=\dimen119
+\Gm@layouthoffset=\dimen120
+\Gm@layoutvoffset=\dimen121
+\Gm@dimlist=\toks18
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks18
-\inpenc@posthook=\toks19
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -364,8 +408,8 @@ Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2013/12/03 3.9h Babel common definitions
-\babel@savecnt=\count94
-\U@D=\dimen118
+\babel@savecnt=\count103
+\U@D=\dimen122
 )
 \l@naustrian = a dialect from \language\l@ngerman 
 \l@nswissgerman = a dialect from \language\l@ngerman 
@@ -381,51 +425,51 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks20
-\ex@=\dimen119
+\@emptytoks=\toks21
+\ex@=\dimen123
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen120
+\pmbraise@=\dimen124
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count95
+\inf@bad=\count104
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count96
-\leftroot@=\count97
+\uproot@=\count105
+\leftroot@=\count106
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count98
-\DOTSCASE@=\count99
+\classnum@=\count107
+\DOTSCASE@=\count108
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
-\big@size=\dimen121
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen125
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count100
-\c@MaxMatrixCols=\count101
+\macc@depth=\count109
+\c@MaxMatrixCols=\count110
 \dotsspace@=\muskip10
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
-\tag@help=\toks21
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
-\andhelp@=\toks22
-\eqnshift@=\dimen122
-\alignsep@=\dimen123
-\tagshift@=\dimen124
-\tagwidth@=\dimen125
-\totwidth@=\dimen126
-\lineht@=\dimen127
-\@envbody=\toks23
+\c@parentequation=\count111
+\dspbrk@lvl=\count112
+\tag@help=\toks22
+\row@=\count113
+\column@=\count114
+\maxfields@=\count115
+\andhelp@=\toks23
+\eqnshift@=\dimen126
+\alignsep@=\dimen127
+\tagshift@=\dimen128
+\tagwidth@=\dimen129
+\totwidth@=\dimen130
+\lineht@=\dimen131
+\@envbody=\toks24
 \multlinegap=\skip47
 \multlinetaggap=\skip48
-\mathdisplay@stack=\toks24
+\mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
@@ -442,44 +486,67 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen132
+\Gin@req@width=\dimen133
+)
+(./Digitalelektronik_Teil3_Frederik_Henrik.aux
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+LaTeX Warning: Label `fig:g_3' multiply defined.
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+
+LaTeX Warning: Label `sub@fig:g_3' multiply defined.
+
+
+LaTeX Warning: Label `fig:g_4' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:g_4' multiply defined.
+
+
+LaTeX Warning: Label `fig:g_3' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:g_3' multiply defined.
+
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count107
-))
-\Gin@req@height=\dimen128
-\Gin@req@width=\dimen129
-)
-(./Digitalelektronik_Teil3_Frederik_Henrik.aux)
 \openout1 = `Digitalelektronik_Teil3_Frederik_Henrik.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 23.
-
-(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 26.
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count116
 
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count117
+\scratchdimen=\dimen134
+\scratchbox=\box32
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen135
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks27
+)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -514,20 +581,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen130
-\scratchbox=\box30
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen131
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks26
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
@@ -574,36 +628,36 @@ e
 <logo.pdf, id=1, 130.4875pt x 41.15375pt>
 File: logo.pdf Graphic file (type pdf)
  <use logo.pdf>
-Package pdftex.def Info: logo.pdf used on input line 31.
+Package pdftex.def Info: logo.pdf used on input line 34.
 (pdftex.def)             Requested size: 362.77264pt x 114.42905pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 52.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 55.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 52.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 55.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 52.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 55.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 52.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 55.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 52.
+(Font)              <12> on input line 55.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 52.
+(Font)              <8> on input line 55.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 52.
+(Font)              <6> on input line 55.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.pdf>] (./Digitalele
@@ -614,41 +668,144 @@ ktronik_Teil3_Frederik_Henrik.toc)
 [1] <board.png, id=17, 1146.2825pt x 645.41125pt>
 File: board.png Graphic file (type png)
  <use board.png>
-Package pdftex.def Info: board.png used on input line 88.
+Package pdftex.def Info: board.png used on input line 91.
 (pdftex.def)             Requested size: 458.50488pt x 258.15993pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 92.
+(Font)              <10> on input line 95.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 92.
+(Font)              <7> on input line 95.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 92.
+(Font)              <5> on input line 95.
 File: board.png Graphic file (type png)
 
 <use board.png>
-Package pdftex.def Info: board.png used on input line 119.
+Package pdftex.def Info: board.png used on input line 122.
 (pdftex.def)             Requested size: 458.50488pt x 258.15993pt.
- [2 <./board.png>] [3] [4] [5] [6] [7] [8]
-(./Digitalelektronik_Teil3_Frederik_Henrik.aux) ) 
+ [2 <./board.png>]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+)
+<TEK0000.pdf, id=25, 578.16pt x 722.7pt>
+File: TEK0000.pdf Graphic file (type pdf)
+ <use TEK0000.pdf>
+Package pdftex.def Info: TEK0000.pdf used on input line 166.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+ [3] [4 <./TEK0000.pdf>] <TEK0001.pdf, id=40, 578.16pt x 722.7pt>
+File: TEK0001.pdf Graphic file (type pdf)
+ <use TEK0001.pdf>
+Package pdftex.def Info: TEK0001.pdf used on input line 233.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 243.
+
+
+(/usr/share/texmf/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 243.
+ [5 <./TEK0001.pdf>]
+<TEK0002.pdf, id=49, 578.16pt x 722.7pt>
+File: TEK0002.pdf Graphic file (type pdf)
+ <use TEK0002.pdf>
+Package pdftex.def Info: TEK0002.pdf used on input line 307.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+Overfull \hbox (13.5978pt too wide) in paragraph at lines 307--308
+[][] 
+ []
+
+<TEK0004.pdf, id=51, 578.16pt x 722.7pt>
+File: TEK0004.pdf Graphic file (type pdf)
+ <use TEK0004.pdf>
+Package pdftex.def Info: TEK0004.pdf used on input line 313.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+Overfull \hbox (13.5978pt too wide) in paragraph at lines 313--314
+[][] 
+ []
+
+[6 <./TEK0002.pdf> <./TEK0004.pdf>] [7]
+<TEK0008.pdf, id=69, 578.16pt x 722.7pt>
+File: TEK0008.pdf Graphic file (type pdf)
+ <use TEK0008.pdf>
+Package pdftex.def Info: TEK0008.pdf used on input line 419.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+<TEK0009.pdf, id=71, 578.16pt x 722.7pt>
+File: TEK0009.pdf Graphic file (type pdf)
+ <use TEK0009.pdf>
+Package pdftex.def Info: TEK0009.pdf used on input line 425.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+<TEK0010.pdf, id=73, 578.16pt x 722.7pt>
+File: TEK0010.pdf Graphic file (type pdf)
+ <use TEK0010.pdf>
+Package pdftex.def Info: TEK0010.pdf used on input line 431.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+<TEK0011.pdf, id=75, 578.16pt x 722.7pt>
+File: TEK0011.pdf Graphic file (type pdf)
+ <use TEK0011.pdf>
+Package pdftex.def Info: TEK0011.pdf used on input line 443.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+<TEK0012.pdf, id=77, 578.16pt x 722.7pt>
+File: TEK0012.pdf Graphic file (type pdf)
+ <use TEK0012.pdf>
+Package pdftex.def Info: TEK0012.pdf used on input line 449.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+<TEK0013.pdf, id=79, 578.16pt x 722.7pt>
+File: TEK0013.pdf Graphic file (type pdf)
+ <use TEK0013.pdf>
+Package pdftex.def Info: TEK0013.pdf used on input line 455.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+ [8 <./TEK0008.pdf> <./TEK0009.pdf> <./TEK0010.pdf> <./TEK0011.pdf> <./TEK0012.
+pdf> <./TEK0013.pdf>] [9] [10] [11] [12] <TEK0014.pdf, id=121, 578.16pt x 722.7
+pt>
+File: TEK0014.pdf Graphic file (type pdf)
+
+<use TEK0014.pdf>
+Package pdftex.def Info: TEK0014.pdf used on input line 848.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+ [13 <./TEK0014.pdf>]
+<TEK0015.pdf, id=130, 578.16pt x 722.7pt>
+File: TEK0015.pdf Graphic file (type pdf)
+ <use TEK0015.pdf>
+Package pdftex.def Info: TEK0015.pdf used on input line 908.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+ [14 <./TEK0015.pdf>] [15] [16] [17] [18] (./Digitalelektronik_Teil3_Frederik_H
+enrik.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4788 strings out of 493304
- 68785 string characters out of 6139871
- 134635 words of memory out of 5000000
- 8134 multiletter control sequences out of 15000+600000
- 74949 words of font info for 51 fonts, out of 8000000 for 9000
+ 6836 strings out of 493304
+ 95837 string characters out of 6139871
+ 190580 words of memory out of 5000000
+ 10142 multiletter control sequences out of 15000+600000
+ 88186 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,8n,38p,334b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share
-/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Digitalelektronik_Teil3_Frederik_Henrik.pdf (9 pages, 1265406
- bytes).
+ 37i,10n,49p,641b,1615s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/s
+hare/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmbx6.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri7.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmsy10.pfb>
+Output written on Digitalelektronik_Teil3_Frederik_Henrik.pdf (19 pages, 141538
+7 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 195 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

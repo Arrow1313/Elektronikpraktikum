@@ -20,8 +20,11 @@ void test_speed_delay_1(){
 		LATBbits.LATB6 = 1;
 		Delay10KTCYx(255);
 		LATBbits.LATB7 = 1;
+		Delay10KTCYx(255);
+		LATB = 0b00000000;
+		
 	}//end of while(1)
-}//end of function test_speed_for()
+}//end of function test_speed_delay_1()
 
 void ProcessIO(void){
 	BlinkUSBStatus();

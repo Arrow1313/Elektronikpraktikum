@@ -4,13 +4,13 @@ void test_speed_for(){
 	TRISB = 0b00000000;
 	
 	while(1){
-		for(i=0, i<10, i++){
+		for(i=0; i<10; i++){
 			Nop();
 		}
 	
 		LATB = 0b1111111;
 		
-		for(i=0, i<10, i++){
+		for(i=0; i<10; i++){
 			Nop();
 		}
 		

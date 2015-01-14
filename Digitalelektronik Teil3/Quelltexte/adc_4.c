@@ -1,35 +1,38 @@
 void adc_4(){
-	TRISC = b011111111;
-	TRISB = 0b00000000;
-	TRISAbits.TRISA0 = 1;
-	byte flag = 0;
+	byte val;
 	
-	//setting up the adc
+	TRISB = 0b00000000;
+	TRISAbits.TRISA0 = 0b1;
+	
 	setup_adc_ports(AN0_TO_AN1);
 	setup_adc(ADC_CLOCK_DIV_32);
 	set_adc_channel(0);
 	read_adc(ADC_START_ONLY);
 	
-	//starting the main routine
 	while(1){
-		if(PORTCbits.RC0 == 0b1){
-			if(flag == 0)
-				flag = 1;
-			else
-				flag = 0;
-			}//end of if(PORTCbits.RC0 == 0b1)
-		if(flag == 0){
-			set_adc_channel(0);
-			read_adc(ADC_START_ONLY);
-		} else {
-			set_adc_channel(1);
-			read_adc(ADC_START_ONLY);			
-		}
 		delay_ms(10);
-		
-		LATB = read_adc(ADC_READ)<<2;
+		val = (read_adc(ADC_READ)>>7);
+
+		if(val == 0b00000000)
+			LATB = 0b00000000;		
+		if(val == 0b00000001)
+			LATB = 0b00000001;
+		if(val == 0b00000010)
+			LATB = 0b00000011;
+		if(val == 0b00000011)
+			LATB = 0b00000111;		
+		if(val == 0b00000111)
+			LATB = 0b00001111;
+		if(val == 0b00000100)
+			LATB = 0b00011111;
+		if(val == 0b00000101)
+			LATB = 0b00111111;
+		if(val == 0b00000110)
+			LATB = 0b01111111;		
+		if(val == 0b00000111)
+			LATB = 0b11111111;					
 	}//end of while(1)
-}//end of function taster_3()
+}//end of function adc_4()
 
 void ProcessIO(void){
 	BlinkUSBStatus();

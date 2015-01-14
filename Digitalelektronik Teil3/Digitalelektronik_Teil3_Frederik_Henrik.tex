@@ -11,6 +11,9 @@
 \usepackage{caption}
 \usepackage{subcaption}
 
+\usepackage{listings}
+ \usepackage{color}
+
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -122,17 +125,30 @@ In allen Versuchsteilen wird das Board in Abbilung \ref{fig:board_2} verwendet. 
 \end{figure}
 \footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep10\_14.pdf am 10.01.2015}
 
+\subsubsection*{Quellcode}
+
+Der Quellcode der zum einfachen testen der Geschwindigkeit des Boards.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {Einfacher Geschwindigkeitstest} \label{lst:g_1},captionpos=b]
+    // Implementierung der eigenen Funktion
+    void test_speed_1(){
+    	TRISB = 0b00000000;
+    	
+    	while(1){
+    		LATB = 0b1111111;
+    		LATB = 0b0000000;
+    	}//end of while(1)
+    }//end of function test_speed_1()
+\end{lstlisting}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird der Code ?? auf den Mikrokontroller geladen. Dann wird das Board an ein Oszilloskop angeschlossen und die Ausgangsfrequenz an den Pins gemessen.
+Es wird der Code \ref{lst:g_1} auf den Mikrokontroller geladen. Es wird Port B über ein Flachbandkabel mit dem LED Port verbunden. Dann wird das Board an ein Oszilloskop angeschlossen und die Ausgangsfrequenz an den Pins gemessen.
 
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -142,11 +158,23 @@ Es wird der Code ?? auf den Mikrokontroller geladen. Dann wird das Board an ein 
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Die LEDs leuchteten, es war keine flackern zu erkennen. Die Messung der Frquenz mit dem Oszilloskop ergab eine Frequenz von \unit[2,4]{GHz}. Der Verlauf des Signals ist in Abbildung \ref{fig:g_1} zu sehen.
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{TEK0000.pdf}
+  	\caption[Aufnahme des Signals]{Aufnahme des Signals} 
+  \label{fig:g_1}
+\end{figure}
+
+
+
 \subsection{Programm mit Verzögerungsbefehlen aus for-Schleifen}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil soll wieder eine LED ein- und ausgeschaltet werden, jedoch mit einer verzögerung. Die Verzögerung soll mit hilfe einer for-schleife realisiert werden.
+In diesem Versuchsteil soll wieder eine LED ein- und ausgeschaltet werden, jedoch mit einer verzögerung. Die Verzögerung soll mit Hilfe einer for-schleife realisiert werden. Zur erzeugen der Verzögerung wird der Befehl Nop() verwendet. Der Befehl sorgt dafür, das der Mikocontroller für einen Taktzyklus nichts macht.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -154,17 +182,40 @@ In diesem Versuchsteil soll wieder eine LED ein- und ausgeschaltet werden, jedoc
 
 Es wird ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das Versuchsboard verwendet.
 
+
+\subsubsection*{Quellcode}
+
+Quellcode zum testen der Geschwindigkeit des Boards mit einer for-Schleife und dem Nop()-Befehl.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {Geschwindigkeitstest mit einer for-Schleife} \label{lst:g_2},captionpos=b]
+void test_speed_for(){
+	int i;
+	TRISB = 0b00000000;
+	
+	while(1){
+		for(i=0; i<10; i++){
+			Nop();
+		}
+	
+		LATB = 0b1111111;
+		
+		for(i=0; i<10; i++){
+			Nop();
+		}
+		
+		LATB = 0b0000000;
+	}//end of while(1)
+}//end of function test_speed_for()
+\end{lstlisting}
+
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird der Code ?? auf den Mikrokontroller geladen. Dann wird das Board an ein Oszilloskop angeschlossen und die Ausgangsfrequenz an den Pins gemessen.
+Es wird der Code \ref{lst:g_2} auf den Mikrokontroller geladen. Es wird der B Port mit dem LED Port über ein Flachband verbunden. Dann wird das Board an ein Oszilloskop angeschlossen und die Ausgangsfrequenz an den Pins gemessen.
 
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -175,29 +226,111 @@ Es wird der Code ?? auf den Mikrokontroller geladen. Dann wird das Board an ein 
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
+Die LEDs leuchteten, es war keine flackern zu erkennen. Die Messung der Frquenz mit dem Oszilloskop ergab eine Frequenz von \unit[28,9]{kHz}. Der Verlauf des Signals ist in Abbildung \ref{fig:g_2} zu sehen.
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{TEK0001.pdf}
+  	\caption[Aufnahme des Signals]{Aufnahme des Signals} 
+  \label{fig:g_2}
+\end{figure}
+
 \subsection{Programm mit Compiler-Verzögerungsbefehlen}
 
-In diesem Versuchsteil soll eine Verzögerung des Ein- und Ausschaltvorgangs der LED mit Compiler-Verzögerungsbefehlen realisiert werden. Bei dieser Art der Verzögerung wird eine bestimmte Anzahl von Taktzyklen ausgesetzt.
+In diesem Versuchsteil soll eine Verzögerung des Ein- und Ausschaltvorgangs der LED mit Compiler-Verzögerungsbefehlen realisiert werden. Bei dieser Art der Verzögerung wird eine bestimmte Anzahl von Taktzyklen ausgesetzt. Zur erzeugung der Verzögerung werden die Befehle (unit kann Werte von 0 bis 255 annehmen):
+
+\begin{itemize}
+\item	Delay1TCY() oder Nop() delay von einem instruction cycle
+
+\item	Delay10TCYx(unit) delay von unit $\times$ 10 instruction cycle
+
+\item	Delay100TCYx(unit) delay von unit $\times$ 100 instruction cycle
+
+\item	Delay10KTCYx(unit) delay von unit $\times$ 1000 instruction cycle
+
+\item	Delay10KTCYx(unit) delay von unit $\times$ 10000 instruction cycle
+
+\end{itemize}
 
 \subsubsection*{Verwendete Geräte}
 
 Es wird ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das Versuchsboard verwendet.
 
+\subsubsection*{Quellcode}
+
+Quellcode zum testen der Compiler-Verzögerungsbefehle.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {Geschwindigkeitstest mit Compiler-Verzögerungsbefehlen} \label{lst:g_3},captionpos=b]
+void test_speed_delay_1(){
+	int i;
+	TRISB = 0b00000000;
+	
+	while(1){
+		Delay10TCYx(100);
+		LATBbits.LATB0 = 1;
+		Delay100TCYx(100);
+		LATBbits.LATB1 = 1;
+		Delay1KTCYx(100);
+		LATBbits.LATB2 = 1;
+		Delay10KTCYx(100);
+		LATBbits.LATB3 = 1;
+		Delay10TCYx(255);
+		LATBbits.LATB4 = 1;
+		Delay100TCYx(255);
+		LATBbits.LATB5 = 1;
+		Delay1KTCYx(255);
+		LATBbits.LATB6 = 1;
+		Delay10KTCYx(255);
+		LATBbits.LATB7 = 1;
+		Delay10KTCYx(100);			//Wurde im ersten Durchlauf auskommentiert
+		
+		LATB = 0b00000000;
+		
+	}//end of while(1)
+}//end of function test_speed_delay_1()
+\end{lstlisting}
+
+
 \subsubsection*{Versuchsdurchführung}
 
-Es wird der Code ?? auf den Mikrokontroller geladen. Dann wird das Board an ein Oszilloskop angeschlossen und die Ausgangsfrequenz an den Pins gemessen.
+Es wird der Code \ref{lst:g_3} auf den Mikrokontroller geladen. Es wird Port B mit Port LED, über ein Flachbandkabel verbunden. Dann wird das Board an ein Oszilloskop angeschlossen und die Ausgangsfrequenz an den Pins gemessen. Dann wurde die in Code \ref{lst:g_3} erwähnte Zeile auskommentiert und Frequenz mit dem  Oszilloskop gemessen.
 
-\subsubsection*{Messergebnisse}
 
 \subsubsection*{Auswertung}
 
-\subsubsection*{Diskussion}
+Die Spannung wurde bei B6 abgegriffen, im ersten Durchlauf wurde eine Frquenz von 3,04Hz gemessen. Der Verlauf des Signals ist in Abbildung \ref{fig:g_3} zu sehen. Im zweitem Durchlauf wurde eine Frequez von 2,42Hz gemessen. Der Verlauf des Signals ist in Abbildung \ref{fig:g_4} zu sehen.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.45\textwidth} 	
+  \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{TEK0002.pdf}
+  \caption[Aufnahme des Signals, mit Auskommentierung]{Aufnahme des Signals, mit Auskommentierung} 
+  \label{fig:g_3}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}	
+   \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{TEK0004.pdf}
+  \caption[Aufnahme des Signals, ohne Auskommentierung]{Aufnahme des Signals, ohne Auskommentierung} 
+  \label{fig:g_4}
+\end{subfigure}
+\end{figure}
+
+Bei beiden Versionen leuchteten die ersten drei LEDs durch und die restlichen blingten.
 
 \subsection{Programm mit fertigen Verzögerungsbefehlen}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil soll das An- und Ausschalten der LED mit den verschiedenen Verzögerungsbefehlen realisiert werden. Verzögerungsbefehle sorgen für eine Verzögerung von einer bestimmten Zeitspannne und nicht wie Vorher für ein Aussetzen einer Anzahl von Taktzyklen.
+In diesem Versuchsteil soll das An- und Ausschalten der LED mit den verschiedenen Verzögerungsbefehlen realisiert werden. Verzögerungsbefehle sorgen für eine Verzögerung von einer bestimmten Zeitspannne und nicht wie Vorher für ein Aussetzen einer Anzahl von Taktzyklen. Es werden die Befehle (unit kann Werte von 0 bis 255):
+
+\begin{itemize}
+\item	delay us(unit) verzögert um unit Mikrosekunden
+
+\item	delay 10us(unit) verzögert um unit $\times$ 10 Mikrosekunden
+
+\item	delay ms(unit) verzögert um unit Millisekunden
+\end{itemize}
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -205,17 +338,52 @@ In diesem Versuchsteil soll das An- und Ausschalten der LED mit den verschiedene
 
 Es wird ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das Versuchsboard verwendet.
 
+
+\subsection*{Messergebnisse}
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline Befehl & Pulsbreite/$\mu$s \\ \hline
+\hline delay\_us(1) & 1,66 \\ 
+\hline delay\_us(2) & 2,66 \\ 
+\hline delay\_10us(0) & 1,91 \\ 
+\hline delay\_10us(1) & 12,4 \\ 
+\hline delay\_ms(0) & 3,00 \\ 
+\hline delay\_ms(1) & 995,9 \\ 
+\hline 
+\end{tabular} 
+\caption{Pulsbreiten der Verschiedenen Befehle}
+\label{tab:puls_1}
+\end{table}
+
+
+\subsubsection*{Quellcode}
+
+Quellcode zum testen der fertigen Verzögerungsbefehlen.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {Geschwindigkeitstest mit den fertigen Verzögerungsbefehlen} \label{lst:g_4},captionpos=b]
+void test_speed_delay_3(){
+	TRISB = 0b00000000;
+	
+	while(1){
+		delay_us(25);
+		LATBbits.LATB0 = 1;
+		delay_us(25);
+		LATBbits.LATB1 = 0;
+	}//end of while(1)
+}//end of function test_speed_delay_3()
+\end{lstlisting}
+
+
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird der Code ?? auf den Mikrokontroller geladen. Dann wird das Board an ein Oszilloskop angeschlossen und die Ausgangsfrequenz an den Pins gemessen.
+Es wird der Code \ref{lst:g_4} auf den Mikrokontroller geladen. Es wird der B Port mit dem LED Port verbunden. Dann wird das Board an ein Oszilloskop angeschlossen und die Pulsbreite der Signale an den Pins gemessen. Dieser Prozess wir mit verschiednen Verzögerungsbefehlen wiederholt.
 
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -225,6 +393,74 @@ Es wird der Code ?? auf den Mikrokontroller geladen. Dann wird das Board an ein 
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Es wurde Quellcode \ref{lst:g_4} verwendet für den Befehl \textbf{delay\_us(25)} wurde der Reihe nach durch:
+
+\begin{itemize}
+\item	delay\_us(1)
+
+\item	delay\_us(2)
+
+\item	delay\_10us(0)
+
+\item	delay\_10us(1)
+
+\item	delay\_ms(0)
+
+\item	delay\_ms(1)
+\end{itemize}
+
+ersetzt und jeweils die Frequenz gemessen. Dabei ergaben sich die Werte in Tabelle \ref{tab:puls_1}. Die Aufnahmen der jeweiligen signale sind in Abbildung \ref{fig:g_main_1} und Abbildung \ref{fig:g_main_2} zu sehen. Bei allen Befehlen ist die benotigte zeit 0,6 bis 3 $\mu$s länger als gewünscht, dies kommt daher, dass intern berechnet werden muss wie viele Zyklen ausgesetzt werden müssen, um die gewünschte Verzögerung zu erreichen. Ein Zyklus dauert 83,33 ns. Der letzte Befehl hat eine gerigere Pulsbreite als 1ms.
+
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.28\textwidth} 	
+  \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, width=\textwidth, scale = 0.4]{TEK0008.pdf}
+  \caption[Aufnahme des Signals, für delay\_us(1)]{Aufnahme des Signals, für delay\_us(1)} 
+  \label{fig:g_3}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.28\textwidth}	
+   \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, width=\textwidth, scale = 0.4]{TEK0009.pdf}
+  \caption[Aufnahme des Signals, für delay\_us(2)]{Aufnahme des Signals, für delay\_us(2)} 
+  \label{fig:g_4}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.28\textwidth} 	
+  \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, width=\textwidth, scale = 0.4]{TEK0010.pdf}
+  \caption[Aufnahme des Signals, für delay\_10us(0)]{Aufnahme des Signals, für delay\_10us(0)} 
+  \label{fig:g_3}
+\end{subfigure}
+\caption{Oszilloskopaufnahmen für delay\_us(1), delay\_us(2) und delay\_10us(0)}
+\label{fig:g_main_1}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.28\textwidth} 	
+  \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, width=\textwidth, scale = 0.4]{TEK0011.pdf}
+  \caption[Aufnahme des Signals, für delay\_10us(1)]{Aufnahme des Signals, für delay\_10us(1)} 
+  \label{fig:g_6}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.28\textwidth}	
+   \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, width=\textwidth, scale = 0.4]{TEK0012.pdf}
+  \caption[Aufnahme des Signals, für delay\_ms(0)]{Aufnahme des Signals, für delay\_ms(0)} 
+  \label{fig:g_7}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.28\textwidth} 	
+  \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, width=\textwidth, scale = 0.4]{TEK0013.pdf}
+  \caption[Aufnahme des Signals, für delay\_ms(1)]{Aufnahme des Signals, für delay\_ms(1)} 
+  \label{fig:g_8}
+\end{subfigure}
+\caption{Oszilloskopaufnahmen für delay\_10us(1), delay\_ms(0) und delay\_ms(1)}
+\label{fig:g_main_2}
+\end{figure}
+
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -235,6 +471,10 @@ Es wird der Code ?? auf den Mikrokontroller geladen. Dann wird das Board an ein 
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
+
+In dem Versuchsteil liesen sich die verschieden Methoden zur Verzögerung einer Ausführung gut untersuchen. So wie die Vor- und Nachteile der eizelnen Möglichkeiten der Verzögerung. Mit den Delay*TCY*() befehlen lassen sich ziemliche genaue Verzögerungen realisieren, jedoch muss man immer die Anzahl der ausgelassenen Zyklen noch in eine Zeit umrechnen. Eine bestimmte Zeit lässt sich einfacher mit den delay\_*() Befehlen umsetzen, diese Befehle haben bei sehr kurzen Verzögerungen jedoch eine große Ungenausigkeit, da der Mikrokontroller noch etwas Zeit zur Berechnung braucht.
+
 \section{Benutzung der Taster}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -253,11 +493,30 @@ In diesem Versuchsteil soll die einfachste Varriante eines Tasters implementiert
 
 Es wird ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das Versuchsboard verwendet.
 
+\subsubsection*{Quellcode}
+
+Quellcode für einen einfachen Taster.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {Einfachster Version eines Schalters} \label{lst:g_5},captionpos=b]
+void taster_1(){
+	byte i;
+	TRISB = 0b00000000;
+	TRISA = 0b111111;
+	
+	while(1){
+		i = PORTA;
+		
+		LATB = i;
+	}//end of while(1)
+}//end of function taster_1()
+\end{lstlisting}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird Code ?? auf das Versuchsboard geladen und das Verhalten des Boards untersucht.
+Es wird Code \ref{lst:g_5} auf das Versuchsboard geladen, Port A wird mit den Tastern und Port B mit dem LED Port verbunden. Dann wird das Verhalten des Boards untersucht.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -268,6 +527,9 @@ Es wird Code ?? auf das Versuchsboard geladen und das Verhalten des Boards unter
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Beim Druck eines Tasters außer 4,7 und 8 leuchtete die erste LED auf.
+
 \subsection{Taster steuern Speicherfunktionen}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -280,11 +542,50 @@ In diesem Versuchsteil soll der Zustand der LED gewechselt werden, wenn der Tast
 
 Es wird ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das Versuchsboard verwendet.
 
+\subsubsection*{Quellcode}
+
+Quellcode zum verwenden eines Tasters als Schalter.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {Taster steuert Speicherfunktion} \label{lst:g_6},captionpos=b]
+void taster_2(){
+	byte i;
+	TRISB = 0b00000000;
+	TRISA = 0b111111;
+	
+	while(1){
+		if(PORTA == 0b000001){
+			if(LATB == 0b00000001)
+				LATB = 0b00000000;
+			else
+				LATB = 0b00000001;
+		}
+		delay_ms(25);
+	}//end of while(1)
+}//end of function taster_1()
+
+void taster_3(){
+	byte i;
+	TRISB = 0b00000000;
+	TRISA = 0b111111;
+	
+	while(1){
+		if(PORTAbits.RA1 == 0b1){
+			if(LATB == 0b00000001)
+				LATB = 0b00000000;
+			else
+				LATB = 0b00000001;
+		}
+		delay_ms(25);
+	}//end of while(1)
+}//end of function taster_3()
+\end{lstlisting}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird Code ?? auf das Versuchsboard geladen und das Verhalten des Boards untersucht.
+Es wird Code \ref{lst:g_6} auf das Versuchsboard geladen, Port A wird mit den Tastern und Port B mit dem LED Port verbunden. Dann wird das Verhalten des Boards untersucht.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -295,17 +596,43 @@ Es wird Code ?? auf das Versuchsboard geladen und das Verhalten des Boards unter
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Beim verwenden der Funktion taster\_2() war ein schnelles Blinken der ersten LED zu sehen, wenn noch ein anderer Taster neben dem ersten gedrückt wurde blinckte die LED nicht. Beim verwenden der Funktion taster\_3() war auch ein schnelles blinken der LED zu sehen. Es war auch ein Blinken zu sehen, wenn ein anderer Taster zusätzlich gedrückt wurde.
+
 \subsection{Tasterabfrage und Verzögerungen}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil soll eine Verzögerung implementiert werden, da sonst kein sauberes umschalten möglich ist und man nur ein flakkern sehen kann.
+In diesem Versuchsteil soll eine Verzögerung implementiert werden, da sonst kein sauberes umschalten möglich ist und man nur ein flackern sehen kann.
+
+\subsubsection*{Quellcode}
+
+Quellcode für einen Schalter mit Verzögerung.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {Tastabfrage und Verzögerung} \label{lst:g_7},captionpos=b]
+void taster_4(){
+	byte i;
+	TRISB = 0b00000000;
+	TRISA = 0b111111;
+	
+	while(1){
+		if(PORTAbits.RA0 == 0b1){
+			if(LATB == 0b00000001)
+				LATB = 0b00000000;
+			else
+				LATB = 0b00000001;
+		}
+		delay_ms(500);
+	}//end of while(1)
+}//end of function taster_4()
+\end{lstlisting}
 
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird Code ?? auf den Mikrocontroller geladen und das Verhalten getestet.
+Es wird Code \ref{lst:g_7} auf das Versuchsboard geladen, Port A wird mit den Tastern und Port B mit dem LED Port verbunden. Dann wird das Verhalten des Boards untersucht.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -316,17 +643,66 @@ Es wird Code ?? auf den Mikrocontroller geladen und das Verhalten getestet.
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Mit dem hinzufügen der Verzögerung konnte der Taster mit einer Frequenz von 1Hz als Schalter verwendet werden.
+
 \subsection{Taster steuern einen Zähler}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
 In diesem Versuchsteil soll der Taster einen Zähler steuern und bei jedem Tasterndruck einen hochzählen.
 
+\subsubsection*{Quellcode}
+
+Quellcode zum steuern eines Zählers mit einem Taster.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {Code zum stuern eines Zählers mit einem Schalter} \label{lst:g_9},captionpos=b]
+void taster_5(){
+	byte taster_alt = 0b00000000;
+	byte taster_neu = 0b00000000;
+	byte counter = 0;
+	TRISB = 0b00000000;
+	TRISA = 0b111111;
+	
+	while(1){
+		taster_neu = PORTA;
+		if(taster_neu != taster_alt){
+			taster_alt = taster_neu;
+			counter++;
+			LATB = counter;
+			}//end of if(flag%2 == 1)
+		}//end of if(taster_neu != taster_alt)
+	}//end of while(1)
+}//end of function taster_5()
+
+void taster_6(){
+	byte taster_alt = 0b00000000;
+	byte taster_neu = 0b00000000;
+	byte counter;
+	byte flag = 0;
+	TRISB = 0b00000000;
+	TRISA = 0b111111;
+	
+	while(1){
+		taster_neu = PORTA;
+		if(taster_neu != taster_alt){
+			flag++;
+			taster_alt = taster_neu;
+			if(flag%2 == 0){
+				counter++;
+				LATB = counter;
+			}//end of if(flag%2 == 1)
+		}//end of if(taster_neu != taster_alt)
+	}//end of while(1)
+}//end of function taster_6()
+\end{lstlisting}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird Code ?? auf den Mikrocontroller geldaden und das Verhalten untersucht.
+Es wird Code \ref{lst:g_9} auf das Versuchsboard geladen, Port A wird mit den Tastern und Port B mit dem LED Port verbunden. Dann wird das Verhalten des Boards untersucht.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -337,6 +713,10 @@ Es wird Code ?? auf den Mikrocontroller geldaden und das Verhalten untersucht.
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Bei der Implementierung von taster\_5() wurde beim runterdrücken und beim loslassen der counter um einen erhöht, dies konnte man auch an den LEDs sehen.
+Bei der Implementierung von taster\_6() wurde nur beim loslassen des Tasters der counter einen hochgezählt, dies was auch bei den LEDs zu sehen.
+
 \subsection{Kontaktprellen der Taster -- eine Lösung}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -349,13 +729,37 @@ In diesem Versuchsteil soll der Effekt des Kontaktprellen verhindert werden. Kon
 
 Es werden ein Netzgerät, das Versuchsboard, Verbindungskabel, ein PC und ein Oszillsokop verwendet.
 
+\subsubsection*{Quellcode}
+
+Quellcode für die Verwendung eines Tasters als Schalter mit unterdrückung von Kontaktprellen.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {Verhindern von Kontakprellen} \label{lst:g_10},captionpos=b]
+void taster_7(){
+	byte taster_alt = 0b00000000;
+	byte taster_neu = 0b00000000;
+	byte counter = 0;
+	TRISB = 0b00000000;
+	TRISA = 0b111111;
+	
+	while(1){
+		delay_ms(10);
+		if(PORTA){
+			delay_ms(10);
+			while(PORTA){
+			}//end of while(!PORTA)
+			counter++;
+			LATB = counter;
+		}//end of if(taster_neu != taster_alt)
+	}//end of while(1)
+}//end of function taster_7()
+\end{lstlisting}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird Code ?? auf das Versuchsboard geladen und das Verhalten untersucht.
-
-\subsection*{Messwerte}
+Es wird Code \ref{lst:g_10} auf das Versuchsboard geladen, Port A wird mit den Tastern und Port B mit dem LED Port verbunden. Dann wird das Verhalten des Boards untersucht.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -366,6 +770,9 @@ Es wird Code ?? auf das Versuchsboard geladen und das Verhalten untersucht.
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Bei der Implementierung von Code \ref{lst:g_10} wurde beim loslassen der counter um einen erhöht, was auch an den LEDs zu sehen war.
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -376,6 +783,9 @@ Es wird Code ?? auf das Versuchsboard geladen und das Verhalten untersucht.
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
+In diesem Versuchsteil konnten gut die Verwendungsmöglichkeiten, sowie verschiedene Implementierungen dieser untersucht werden. In allen Versuchsabschnitten liesen sich die gewünschten Ergebnisse erzielen.
+
 \section{Zähler für Oszillatortakte}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -394,17 +804,32 @@ In diesem Versuchsteil wird ein Zähler ohne Vorteiler implementiert.
 
 Es werden ein Netzgerät, das Versuchsboard, Verbindungskabel, ein PC und ein Oszillsokop verwendet.
 
+\subsubsection*{Quellcode}
+
+Quellcode für den Zähler ohne Vorteiler.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {Zähler ohne Vorteiler} \label{lst:g_11},captionpos=b]
+void oszi_1(){
+	byte counter = 0;
+	TRISB = 0b00000000;
+	TRISA = 0b111111;
+	
+	while(1){
+		while(PORTAbits.RA0){
+			counter++;
+			LATB = counter;
+		}//end of while(LATAbits.LATA0)
+	}//end of function oszi_1()
+}//end of while(1)
+\end{lstlisting}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Code ?? wird auf das Versuchboard geladen. Dann wird mit einem Oszilloskop die Frequenz der Ausgänge gemessen.
+Code \ref{lst:g_11} wird auf das Versuchboard geladen. Dann wird Pin 1 von Port A mit dem Oszillator und Port B mit dem LED Port verbunden.
 
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -414,6 +839,17 @@ Code ?? wird auf das Versuchboard geladen. Dann wird mit einem Oszilloskop die F
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Da der Oszillator mit 60kHz taktet ist, kann man nur ein leuchten aller LEDs beobachten. Auf dem Oszillsokop ist der Verlauf in Abbildung \ref{fig:o_1} zu sehen. Da der Mikrocontroller eine viel höhere Taktrate als der Oszilator hat kann man wären einem Taktsinal des Oszillators mehrere Zyklen des Mikrocontrollers sehen.
+
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{TEK0014.pdf}
+  	\caption[Aufnahme des Signals]{Aufnahme des Signals} 
+  \label{fig:o_1}
+\end{figure}
+
 \subsection{Zähler mit Vorteiler}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -426,17 +862,35 @@ In diesem Versuchsteil soll noch ein Vorteiler implementiert werden, damit nicht
 
 Es werden ein Netzgerät, das Versuchsboard, Verbindungskabel, ein PC und ein Oszillsokop verwendet.
 
+\subsubsection*{Quellcode}
+
+Quellcode für den Zähler mit Vorteiler.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {Zähler mit Vorteiler} \label{lst:g_12},captionpos=b]
+void oszi_2(){
+	int i;
+	byte counter = 0;
+	TRISB = 0b00000000;
+	TRISA = 0b111111;
+	
+	while(1){
+		while(PORTAbits.RA0){
+			for(i = 0; i < 52428; i++)
+				Nop();
+			counter++;
+			LATB = counter;
+	}//end of while(1)
+}//end of function oszi_2()
+\end{lstlisting}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Code ?? wird auf das Versuchboard geladen. Dann wird mit einem Oszilloskop die Frequenz der Ausgänge gemessen.
+Code \ref{lst:g_12} wird auf das Versuchboard geladen. Dann wird Pin 1 von Port A mit dem Oszillator und Port B mit Port LED verbunden.
 
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -446,6 +900,16 @@ Code ?? wird auf das Versuchboard geladen. Dann wird mit einem Oszilloskop die F
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Die LED-Anzeige zählte mit einer Frequenz von 5Hz hoch. Auf dem Oszilloskop war der Verlauf in Abbildung \ref{fig:o_2} zu sehen.
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{TEK0015.pdf}
+  	\caption[Aufnahme des Signals]{Aufnahme des Signals} 
+  \label{fig:o_2}
+\end{figure}
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -456,17 +920,20 @@ Code ?? wird auf das Versuchboard geladen. Dann wird mit einem Oszilloskop die F
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
+In diesem Versuchsabschnitt liesen sich gut die Verwendungsmöglichkeit eines Oszillators untersuchen.
+
 \section{Verwendung des Analog-Digital-Konverters (ADC)}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-Der Mikrocontroller besitzt eine ADC, mit dem Spannungen von 0 bis 4V gemessen werden können. In diesem Versuchsabschnitt soll damit ein Voltmeter gebaut werden.
+Der Mikrocontroller besitzt eine ADC, mit dem Spannungen von 0 bis 5V gemessen werden können. In diesem Versuchsabschnitt soll damit ein Voltmeter gebaut werden.
 
 \subsection{Anzeige des ADC-Wertes auf 8 LEDs}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil soll die einfachste Version eines Voltmeters implementiert werden. Zur ausgabe werde die 8 LEDs verwendet.
+In diesem Versuchsteil soll die einfachste Version eines Voltmeters implementiert werden. Zur Ausgabe werden die 8 LEDs verwendet.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -474,17 +941,39 @@ In diesem Versuchsteil soll die einfachste Version eines Voltmeters implementier
 
 Es werden das Versuchsboard, Verbindungskabel, ein PC und ein Netzgerät verwendet.
 
+
+\subsubsection*{Quellcode}
+
+Quellcode für den adc mit LEDs.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {adc mit LEDs} \label{lst:g_13},captionpos=b]
+void adc_1(){
+	TRISB = 0b00000000;
+	TRISAbits.TRISA0 = 0b1;
+	
+	setup_adc_ports(AN0_TO_AN1);
+	
+	setup_adc(ADC_CLOCK_DIV_32);
+	
+	set_adc_channel(0);
+	
+	read_adc(ADC_START_ONLY);
+	
+	while(1){
+		delay_ms(10);
+		LATB = (read_adc(ADC_READ)>>2);
+	}//end of while(1)
+}//end of function adc_1()
+\end{lstlisting}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird Code ?? auf den Mikrocontroller geladen und eine Spannung an AN0 angelegt. Die externe Spannung wird auf 0 und 5 V eingestellt und dann mit dem Board gemessen. Dann soll noch die Spannung ermittelt werden, bei dem das  Board den maximalen und den mittleren Wert anzeigt.
+Es wird Code \ref{lst:g_13} auf den Mikrocontroller geladen und eine Spannung an AN0 angelegt. Die externe Spannung wird auf 0 und 5 V eingestellt und dann mit dem Board gemessen. Dann soll noch die Spannung ermittelt werden, bei dem das  Board den maximalen und den mittleren Wert anzeigt.
 
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -494,11 +983,14 @@ Es wird Code ?? auf den Mikrocontroller geladen und eine Spannung an AN0 angeleg
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Bei 0V waren alle LEDs aus, entspricht also einer decimalen 0. Bei 5V waren alle LEDs an, was einem decimalen Wert von 255 entspricht. Der halbe Maximalwert wurde bei 2,4V angezeigt.
+
 \subsection{Anzeige des ADC-Wertes auf der Siebensegmentanzeige}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil soll die gemessene Spannung mit den beiden Siebensegmentanzeigen ausgegeben werden.
+In diesem Versuchsteil soll die gemessene Spannung mit einer Siebensegmentanzeigen ausgegeben werden.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -506,17 +998,51 @@ In diesem Versuchsteil soll die gemessene Spannung mit den beiden Siebensegmenta
 
 Es werden das Versuchsboard, Verbindungskabel, ein PC und ein Netzgerät verwendet.
 
+\subsubsection*{Quellcode}
+
+Quellcode für die Ausgabe des acd mit einer Siebensegmanetanzeige.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {adc mit Siebensegmentanzeige} \label{lst:g_14},captionpos=b]
+void adc_2(){
+	char value;
+	byte valH;
+	byte valL;
+
+	TRISD = 0b00000000;
+	TRISC = 0b00000000;
+	TRISB = 0b00000000;
+	TRISAbits.TRISA0 = 1;
+
+	setup_adc_ports(AN0_TO_AN1);
+	
+	setup_adc(ADC_CLOCK_DIV_32);
+	
+	set_adc_channel(0);
+	
+	read_adc(ADC_START_ONLY);
+	
+	while(1){
+		delay_ms(10);
+		
+		value = read_adc(ADC_READ)>>2;
+		
+		valH = value>>4;
+		valL = (value & 0b00001111)>>4;
+		
+		LATD = dec_7seg[valH];
+		LATC = dec_7seg[valL];
+		
+	}//end of while(1)
+}//end of function adc_2()
+\end{lstlisting}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird Code ?? auf den Mikrocontroller geladen und eine Spannung an AN0 angelegt. Die externe Spannung wird auf 0 und 5 V eingestellt und dann mit dem Board gemessen. Dann soll noch die Spannung ermittelt werden, bei dem das  Board den maximalen und den mittleren Wert anzeigt.
+Es wird Code \ref{lst:g_14} auf den Mikrocontroller geladen und eine Spannung an AN0 angelegt. Die externe Spannung wird auf 0 und 5 V eingestellt und dann mit dem Board gemessen. Dann soll noch die Spannung ermittelt werden, bei dem das  Board den maximalen und den mittleren Wert anzeigt.
 
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -526,6 +1052,9 @@ Es wird Code ?? auf den Mikrocontroller geladen und eine Spannung an AN0 angeleg
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Bei 0V wurde der Wert 0 auf der Siebensegmentanzeige angezeigt. Der Maximale Wert F wurde zum ersten mal bei 4,6V gemessen, bei 5V wurde auch F angezeigt. F entspricht der dezimalzahl 15. Der halbe maximale Wert wurde bei 2,3V angezeigt und entspricht einer Dezimalzahl von 7;
+
 \subsection{Anzeige von zwei ADC-Kanälen auf der Siebensegmentanzeige}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -538,11 +1067,58 @@ In diesem Versuchsteil soll noch die Funktion implementiert werden, mit der per 
 
 Es werden das Versuchsboard, Verbindungskabel, ein PC und ein Netzgerät verwendet.
 
+\subsubsection*{Quellcode}
+
+Quellcode für adc Messung mit Umschaltfunktion.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {acd mit Umschaltfunktion} \label{lst:g_15},captionpos=b]
+void adc_3(){
+	byte flag = 0;
+
+	TRISC = 0b11111111;
+	TRISB = 0b00000000;
+	TRISAbits.TRISA0 = 1;
+	TRISAbits.TRISA1 = 1;
+	
+	
+	//setting up the adc
+	setup_adc_ports(AN0_TO_AN1);
+	setup_adc(ADC_CLOCK_DIV_32);
+	set_adc_channel(0);
+	read_adc(ADC_START_ONLY);
+	
+	//starting the main routine
+	while(1){
+		if(PORTCbits.RC0 == 0b1){
+			if(flag == 0)
+				flag = 1;
+			else
+				flag = 0;
+			}//end of if(PORTCbits.RC0 == 0b1)
+		if(flag == 0){
+			set_adc_channel(0);
+			read_adc(ADC_START_ONLY);
+		} else {
+			set_adc_channel(1);
+			read_adc(ADC_START_ONLY);			
+		}
+		
+		delay_ms(100);
+		
+		LATB = read_adc(ADC_READ)<<2;
+		
+		delay_ms(1000);
+				
+	}//end of while(1)
+}//end of function adc_3()
+\end{lstlisting}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird Code ?? auf den Mikrocontroller geladen und überprüft, ob das Programm wie gewünscht funktioniert.
+Es wird Code \ref{lst:g_15} auf den Mikrocontroller geladen und überprüft, ob das Programm wie erwartet funktioniert.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -553,6 +1129,9 @@ Es wird Code ?? auf den Mikrocontroller geladen und überprüft, ob das Programm
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Beim drücken des Schalters wurde wie erwartet der Kanal an dem die Spannung gemessen wurde gewechselt. Aufgrund der langen Verzögerung musste immer ein Moment gewartet werden, bis der Kanal wieder gewechselt werden konnte.
+
 \subsection{Anzeige des ADC-Wertes auf einer Balkenanzeige}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -565,17 +1144,56 @@ In diesem Versuchsteil soll die gemessene Spannung mit einer Balkenanzeige angez
 
 Es werden das Versuchsboard, Verbindungskabel, ein PC und ein Netzgerät verwendet.
 
+\subsubsection*{Quellcode}
+
+Quellcode für adc mit Balkenanzeige.
+
+\lstset{language=C, basicstyle=\tiny}
+\begin{lstlisting}[caption = {adc mit Balkenanzeige} \label{lst:g_16},captionpos=b]
+void adc_4(){
+	byte val;
+	
+	TRISB = 0b00000000;
+	TRISAbits.TRISA0 = 0b1;
+	
+	setup_adc_ports(AN0_TO_AN1);
+	setup_adc(ADC_CLOCK_DIV_32);
+	set_adc_channel(0);
+	read_adc(ADC_START_ONLY);
+	
+	while(1){
+		delay_ms(10);
+		val = (read_adc(ADC_READ)>>7);	//Es werden nur die letzen drei bits verwendet,
+						//da sich darus acht moegliche Zustaende ergeben
+						//Die Zustaende muessen alle einzeln ausgewertet werden
+		if(val == 0b00000000)
+			LATB = 0b00000000;		
+		if(val == 0b00000001)
+			LATB = 0b00000001;
+		if(val == 0b00000010)
+			LATB = 0b00000011;
+		if(val == 0b00000011)
+			LATB = 0b00000111;		
+		if(val == 0b00000111)
+			LATB = 0b00001111;
+		if(val == 0b00000100)
+			LATB = 0b00011111;
+		if(val == 0b00000101)
+			LATB = 0b00111111;
+		if(val == 0b00000110)
+			LATB = 0b01111111;		
+		if(val == 0b00000111)
+			LATB = 0b11111111;					
+	}//end of while(1)
+}//end of function adc_4()
+\end{lstlisting}
+
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird Code auf den Mikrocontroller geladen und das Verhalten untersucht.
+Es wird Code \ref{lst:g_16} auf den Mikrocontroller geladen und das Verhalten untersucht.
 
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -586,13 +1204,11 @@ Es wird Code auf den Mikrocontroller geladen und das Verhalten untersucht.
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
+Da nicht genug Zeit zur verfügung stand, konnte der Code nicht am Board getestet werden. Der Code sollte lauffähig sein und aus der LED-Anzeige eine Balkenanzeige machen.
+
 \section{Fazit}
 %im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
 %gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
-
-
-\section{Anhang}
-
 
 
 \end{document}

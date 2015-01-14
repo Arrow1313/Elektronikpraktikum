@@ -1,4 +1,4 @@
-void taster_3(){
+void taster_4(){
 	byte i;
 	TRISB = 0b00000000;
 	TRISA = 0b111111;
@@ -12,7 +12,7 @@ void taster_3(){
 		}
 		delay_ms(500);
 	}//end of while(1)
-}//end of function taster_3()
+}//end of function taster_4()
 
 void ProcessIO(void){
 	BlinkUSBStatus();

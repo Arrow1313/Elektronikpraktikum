@@ -10,7 +10,7 @@ void taster_3(){
 			else
 				LATB == 0b00000001;
 		}
-		delay_ms(50);
+		delay_ms(500);
 	}//end of while(1)
 }//end of function taster_3()
 

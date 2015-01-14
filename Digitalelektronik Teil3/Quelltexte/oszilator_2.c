@@ -1,14 +1,19 @@
-void taster_4(){
+void oszi_2(){
+	int i;
 	byte counter = 0;
 	TRISB = 0b00000000;
 	TRISA = 0b111111;
 	
-	while(LATAbits.LATA0){
-		for(i, i < max; i++)
-			Nop();
-		count++;
-		LATB = count;
-	}//end of function taster_3()
+	while(1){
+		while(PORTAbits.RA0){
+			for(i = 0; i < 52428; i++)
+				Nop();
+			counter++;
+			LATB = counter;
+	}//end of while(1)
+}//end of function oszi_2()
+
+
 
 void ProcessIO(void){
 	BlinkUSBStatus();

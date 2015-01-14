@@ -1,8 +1,12 @@
-void adc_4(){
-	TRISC = b011111111;
-	TRISB = 0b00000000;
-	TRISAbits.TRISA0 = 1;
+void adc_3(){
 	byte flag = 0;
+
+	TRISC = 0b11111111;
+	TRISB = 0b00000000;
+	TRISAbits.TRISA0 = 0b1;
+	TRISAbits.TRISA1 = 0b1;
+
+	
 	
 	//setting up the adc
 	setup_adc_ports(AN0_TO_AN1);
@@ -25,11 +29,13 @@ void adc_4(){
 			set_adc_channel(1);
 			read_adc(ADC_START_ONLY);			
 		}
-		delay_ms(10);
 		
 		LATB = read_adc(ADC_READ)<<2;
+		
+		delay_ms(1000);
+				
 	}//end of while(1)
-}//end of function taster_3()
+}//end of function adc_3()
 
 void ProcessIO(void){
 	BlinkUSBStatus();

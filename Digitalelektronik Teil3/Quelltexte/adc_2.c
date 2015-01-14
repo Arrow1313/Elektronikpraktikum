@@ -2,9 +2,10 @@ void adc_2(){
 	TRISD = 0b00000000;
 	TRISC = 0b00000000;
 	TRISB = 0b00000000;
-	TRISAbits.TRISA0 = 1;
-	byte value;
-	
+	TRISAbits.TRISA0 = 0b1;
+	char value;
+	byte valH;
+	byte valL;
 	setup_adc_ports(AN0_TO_AN1);
 	
 	setup_adc(ADC_CLOCK_DIV_32);
@@ -25,7 +26,7 @@ void adc_2(){
 		LATC = dec_7seg[valL];
 		
 	}//end of while(1)
-}//end of function taster_3()
+}//end of function adc_2()
 
 void ProcessIO(void){
 	BlinkUSBStatus();

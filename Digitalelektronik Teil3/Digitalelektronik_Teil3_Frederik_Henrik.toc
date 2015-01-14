@@ -2,21 +2,21 @@
 \contentsline {section}{\numberline {1}Einleitung}{2}
 \contentsline {section}{\numberline {2}Messen der Arbeitsgeschwindigkeit des PIC18F4455}{2}
 \contentsline {subsection}{\numberline {2.1}Schnellstm\IeC {\"o}gliches Programm, ohne Verz\IeC {\"o}gerungsbefehle}{2}
-\contentsline {subsection}{\numberline {2.2}Programm mit Verz\IeC {\"o}gerungsbefehlen aus for-Schleifen}{3}
-\contentsline {subsection}{\numberline {2.3}Programm mit Compiler-Verz\IeC {\"o}gerungsbefehlen}{4}
-\contentsline {subsection}{\numberline {2.4}Programm mit fertigen Verz\IeC {\"o}gerungsbefehlen}{4}
-\contentsline {section}{\numberline {3}Benutzung der Taster}{4}
-\contentsline {subsection}{\numberline {3.1}Einfache Tasterabfrage}{5}
-\contentsline {subsection}{\numberline {3.2}Taster steuern Speicherfunktionen}{5}
-\contentsline {subsection}{\numberline {3.3}Tasterabfrage und Verz\IeC {\"o}gerungen}{5}
-\contentsline {subsection}{\numberline {3.4}Taster steuern einen Z\IeC {\"a}hler}{5}
-\contentsline {subsection}{\numberline {3.5}Kontaktprellen der Taster -- eine L\IeC {\"o}sung}{6}
-\contentsline {section}{\numberline {4}Z\IeC {\"a}hler f\IeC {\"u}r Oszillatortakte}{6}
-\contentsline {subsection}{\numberline {4.1}Z\IeC {\"a}hler ohne Vorteiler}{6}
-\contentsline {subsection}{\numberline {4.2}Z\IeC {\"a}hler mit Vorteiler}{6}
-\contentsline {section}{\numberline {5}Verwendung des Analog-Digital-Konverters (ADC)}{7}
-\contentsline {subsection}{\numberline {5.1}Anzeige des ADC-Wertes auf 8 LEDs}{7}
-\contentsline {subsection}{\numberline {5.2}Anzeige des ADC-Wertes auf der Siebensegmentanzeige}{7}
-\contentsline {subsection}{\numberline {5.3}Anzeige von zwei ADC-Kan\IeC {\"a}len auf der Siebensegmentanzeige}{8}
-\contentsline {subsection}{\numberline {5.4}Anzeige des ADC-Wertes auf einer Balkenanzeige}{8}
-\contentsline {section}{\numberline {6}Fazit}{8}
+\contentsline {subsection}{\numberline {2.2}Programm mit Verz\IeC {\"o}gerungsbefehlen aus for-Schleifen}{4}
+\contentsline {subsection}{\numberline {2.3}Programm mit Compiler-Verz\IeC {\"o}gerungsbefehlen}{5}
+\contentsline {subsection}{\numberline {2.4}Programm mit fertigen Verz\IeC {\"o}gerungsbefehlen}{6}
+\contentsline {section}{\numberline {3}Benutzung der Taster}{8}
+\contentsline {subsection}{\numberline {3.1}Einfache Tasterabfrage}{9}
+\contentsline {subsection}{\numberline {3.2}Taster steuern Speicherfunktionen}{9}
+\contentsline {subsection}{\numberline {3.3}Tasterabfrage und Verz\IeC {\"o}gerungen}{10}
+\contentsline {subsection}{\numberline {3.4}Taster steuern einen Z\IeC {\"a}hler}{11}
+\contentsline {subsection}{\numberline {3.5}Kontaktprellen der Taster -- eine L\IeC {\"o}sung}{11}
+\contentsline {section}{\numberline {4}Z\IeC {\"a}hler f\IeC {\"u}r Oszillatortakte}{12}
+\contentsline {subsection}{\numberline {4.1}Z\IeC {\"a}hler ohne Vorteiler}{12}
+\contentsline {subsection}{\numberline {4.2}Z\IeC {\"a}hler mit Vorteiler}{13}
+\contentsline {section}{\numberline {5}Verwendung des Analog-Digital-Konverters (ADC)}{14}
+\contentsline {subsection}{\numberline {5.1}Anzeige des ADC-Wertes auf 8 LEDs}{14}
+\contentsline {subsection}{\numberline {5.2}Anzeige des ADC-Wertes auf der Siebensegmentanzeige}{15}
+\contentsline {subsection}{\numberline {5.3}Anzeige von zwei ADC-Kan\IeC {\"a}len auf der Siebensegmentanzeige}{16}
+\contentsline {subsection}{\numberline {5.4}Anzeige des ADC-Wertes auf einer Balkenanzeige}{17}
+\contentsline {section}{\numberline {6}Fazit}{18}

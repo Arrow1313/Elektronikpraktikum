@@ -1,6 +1,6 @@
-void taster_4(){
+void adc_1(){
 	TRISB = 0b00000000;
-	TRISAbits.TRISA0 = 1;
+	TRISAbits.TRISA0 = 0b1;
 	
 	setup_adc_ports(AN0_TO_AN1);
 	
@@ -12,10 +12,9 @@ void taster_4(){
 	
 	while(1){
 		delay_ms(10);
-		
-		LATB = read_adc(ADC_READ)>>2;
+		LATB = (read_adc(ADC_READ)>>2);
 	}//end of while(1)
-}//end of function taster_3()
+}//end of function adc_1()
 
 void ProcessIO(void){
 	BlinkUSBStatus();
