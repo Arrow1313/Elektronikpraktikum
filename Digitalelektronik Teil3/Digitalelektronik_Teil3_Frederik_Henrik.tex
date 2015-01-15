@@ -1009,31 +1009,31 @@ Quellcode für die Ausgabe des ADC mit einer Siebensegmanetanzeige.
 \lstset{language=C, basicstyle=\tiny}
 \begin{lstlisting}[caption = {adc mit Siebensegmentanzeige}, label=lst:g_14,captionpos=b]
 void adc_2(){
-	//Variablen deklarieren
+	// Variablen deklarieren
 	char value;
 	byte valH;
 	byte valL;
 
-	//Porteigenschaften festlegen
+	// Porteigenschaften festlegen
 	TRISD = 0b00000000;
 	TRISC = 0b00000000;
 	TRISB = 0b00000000;
 	TRISAbits.TRISA0 = 1;
 
-	//adc initialisieren
+	// ADC initialisieren
 	setup_adc_ports(AN0_TO_AN1);
 	setup_adc(ADC_CLOCK_DIV_32);
 	set_adc_channel(0);
 	read_adc(ADC_START_ONLY);
 	
-	//Mess- und Ausgaberoutine
+	// Mess- und Ausgaberoutine
 	while(1){
 		delay_ms(10);
 		
 		value = read_adc(ADC_READ)>>2;
 		
-		valH = value>>4;			//Die ersten 4 Bits abspeichern
-		valL = (value & 0b00001111)>>4;		//Die letzten 4 Bits abspeichern
+		valH = value>>4;			// die ersten 4 Bits abspeichern
+		valL = (value & 0b00001111)>>4;		// die letzten 4 Bits abspeichern
 		
 		//Spannung mit der Siebensegmentanzeige ausgeben
 		LATD = dec_7seg[valH];
@@ -1047,7 +1047,7 @@ void adc_2(){
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Der Code \ref{lst:g_14} wird auf den Mikrocontroller geladen und eine Spannung an AN0 angelegt. Die externe Spannung wird auf 0 und 5 V eingestellt und dann mit dem Board gemessen. Dann soll noch die Spannung ermittelt werden, bei dem das  Board den maximalen und den mittleren Wert anzeigt.
+Der Code \ref{lst:g_14} wird auf den Mikrocontroller geladen und eine Spannung an AN0 angelegt. Die externe Spannung wird auf 0 und 5 V eingestellt und dann mit dem Board gemessen. Dann soll noch die Spannung ermittelt werden, bei dem das  Board den maximalen und den halben maximalen Wert anzeigt.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -1059,13 +1059,13 @@ Der Code \ref{lst:g_14} wird auf den Mikrocontroller geladen und eine Spannung a
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Bei 0V wurde der Wert 0 auf der Siebensegmentanzeige angezeigt. Der Maximale Wert F wurde zum ersten mal bei 4,6V gemessen, bei 5V wurde auch F angezeigt. F entspricht der dezimalzahl 15. Der halbe maximale Wert wurde bei 2,3V angezeigt und entspricht einer Dezimalzahl von 7;
+Bei 0V wurde der Wert 0 auf der Siebensegmentanzeige angezeigt. Der Maximale Wert F wurde zum ersten mal bei 4,6V und damit auch bei 5V angezeigt. F entspricht der dezimalzahl 15. Der halbe maximale Wert wurde bei 2,3V angezeigt und entspricht einer Dezimalzahl von 7.
 
 \subsection{Anzeige von zwei ADC-Kanälen auf der Siebensegmentanzeige}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil soll noch die Funktion implementiert werden, mit der per Tasterdruck zwischen den Kanälen AN0 und AN1 umschalten kann.
+In diesem Versuchsteil soll die Funktion implementiert werden, mit der per Tasterdruck zwischen den Kanälen AN0 und AN1 umgeschaltet werden kann.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -1075,48 +1075,48 @@ Es werden das Versuchsboard, Verbindungskabel, ein PC und ein Netzgerät verwend
 
 \subsubsection*{Quellcode}
 
-Quellcode für adc Messung mit Umschaltfunktion. Der wechsel zwischen den Channels wird wird über die flag-Variable gesteuert und und in Abhängigkeit dieser der 0-te oder 1-te Channel gelesen.
+Quellcode für ADC Messung mit Umschaltfunktion. Der Wechsel zwischen den Channels wird über die flag-Variable gesteuert. In Abhängigkeit davon wird der 0-te oder 1-te Channel ausgelesen.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {acd mit Umschaltfunktion}, label=lst:g_15,captionpos=b]
+\begin{lstlisting}[caption = {ADC mit Umschaltfunktion}, label=lst:g_15,captionpos=b]
 void adc_3(){
-	//Variablen deklarieren und definieren
+	// Variablen deklarieren und definieren
 	byte flag = 0;
 
-	//Porteigenschaften festlegen
+	// Porteigenschaften festlegen
 	TRISC = 0b11111111;
 	TRISB = 0b00000000;
 	TRISAbits.TRISA0 = 1;
 	TRISAbits.TRISA1 = 1;
 	
 	
-	//setting up the adc
+	// setting up the adc
 	setup_adc_ports(AN0_TO_AN1);
 	setup_adc(ADC_CLOCK_DIV_32);
 	set_adc_channel(0);
 	read_adc(ADC_START_ONLY);
 	
-	//starting the main routine
+	// starting the main routine
 	while(1){
 		if(PORTCbits.RC0 == 0b1){
 			if(flag == 0)
 				flag = 1;
 			else
-				flag = 0;
+				flag = 0;		// flag wechselt, falls der Taster gedrueckt wird
 			}//end of if(PORTCbits.RC0 == 0b1)
 		if(flag == 0){
 			set_adc_channel(0);
 			read_adc(ADC_START_ONLY);
 		} else {
 			set_adc_channel(1);
-			read_adc(ADC_START_ONLY);			
+			read_adc(ADC_START_ONLY);	// abhaengig von flag wird der ADC-Channel gewechselt	
 		}
 		
 		delay_ms(100);
 		
-		LATB = read_adc(ADC_READ)<<2;
+		LATB = read_adc(ADC_READ)<<2;		// Ausgabe des Spannungswertes
 		
-		delay_ms(1000);
+		delay_ms(1000);		// Delay von 1s
 				
 	}//end of while(1)
 }//end of function adc_3()
@@ -1138,7 +1138,7 @@ Der Code \ref{lst:g_15} wird auf den Mikrocontroller geladen und überprüft, ob
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Beim drücken des Schalters wurde wie erwartet der Kanal an dem die Spannung gemessen wurde gewechselt. Aufgrund der langen Verzögerung musste immer ein Moment gewartet werden, bis der Kanal wieder gewechselt werden konnte.
+Beim drücken des Schalters wurde wie erwartet der Kanal, an dem die Spannung gemessen wird, gewechselt. Aufgrund der langen Verzögerung musste immer einen Moment gewartet werden, bis der Kanal wieder gewechselt werden konnte.
 
 \subsection{Anzeige des ADC-Wertes auf einer Balkenanzeige}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
@@ -1154,30 +1154,30 @@ Es werden das Versuchsboard, Verbindungskabel, ein PC und ein Netzgerät verwend
 
 \subsubsection*{Quellcode}
 
-Quellcode für adc mit Balkenanzeige.
+Quellcode für ADC mit Balkenanzeige.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {adc mit Balkenanzeige}, label=lst:g_16,captionpos=b]
+\begin{lstlisting}[caption = {ADC mit Balkenanzeige}, label=lst:g_16,captionpos=b]
 void adc_4(){
-	//Variablen initialisieren
+	// Variablen initialisieren
 	byte val;
 	
-	//Porteigenschaften festlegen
+	// Porteigenschaften festlegen
 	TRISB = 0b00000000;
 	TRISAbits.TRISA0 = 0b1;
 	
-	//adc konfigurieren
+	// ADC konfigurieren
 	setup_adc_ports(AN0_TO_AN1);
 	setup_adc(ADC_CLOCK_DIV_32);
 	set_adc_channel(0);
 	read_adc(ADC_START_ONLY);
 	
-	//Mess- und Ausleseroutine starten
+	// Mess- und Ausleseroutine starten
 	while(1){
 		delay_ms(10);
-		val = (read_adc(ADC_READ)>>7);	//Es werden nur die letzen drei bits verwendet,
-						//da sich darus acht moegliche Zustaende ergeben
-						//Die Zustaende muessen alle einzeln ausgewertet werden
+		val = (read_adc(ADC_READ)>>7);	// es werden nur die letzen drei bits verwendet,
+						// da sich darus acht moegliche Zustaende ergeben
+						// die Zustaende muessen alle einzeln ausgewertet werden
 		if(val == 0b00000000)
 			LATB = 0b00000000;		
 		if(val == 0b00000001)
@@ -1216,13 +1216,13 @@ Der Code \ref{lst:g_16} wird auf den Mikrocontroller geladen und das Verhalten u
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Da nicht genug Zeit zur verfügung stand, konnte der Code nicht am Board getestet werden. Der Code sollte lauffähig sein und aus der LED-Anzeige eine Balkenanzeige machen.
+Da nicht genug Zeit zur Verfügung stand, konnte der Code nicht am Board getestet werden. Der Code sollte trotzdem lauffähig sein und aus der LED-Anzeige eine Balkenanzeige machen.
 
 \section{Fazit}
 %im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
 %gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
 
-Im Versuch liesen sich gut verschiedene Einsatzmöglichkeiten für Mikrocontroller untersuchen, so wie verschiedene Varrianten der Implementierung. Die implementierten und getesteten Funktionen haben alle wie erwartet funktioniert. Mikrocontroller sind aufgrund ihrer Programierbarkeit und der Möglichkeit verschiedene Bausteine anzuschliesen, vielseitig einsetzbar.
+Im Versuch wurden verschiedene Einsatzmöglichkeiten für Mikrocontroller untersucht, sowie einige Varianten der Implementierung. Die implementierten und getesteten Funktionen haben alle wie erwartet funktioniert. Mikrocontroller sind aufgrund ihrer Programmierbarkeit und der Möglichkeit verschiedene Bausteine anzuschließen, vielseitig einsetzbar.
 
 \end{document}
 
