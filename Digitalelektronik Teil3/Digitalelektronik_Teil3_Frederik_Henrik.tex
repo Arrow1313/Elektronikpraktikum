@@ -130,7 +130,7 @@ In allen Versuchsteilen wird das Board in Abbilung \ref{fig:board_2} verwendet. 
 Der Quellcode zum einfachen testen der Geschwindigkeit des Boards.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {Einfacher Geschwindigkeitstest} \label{lst:g_1},captionpos=b]
+\begin{lstlisting}[caption = {Einfacher Geschwindigkeitstest},label=lst:g_1,captionpos=b]
     // Implementierung der eigenen Funktion
     void test_speed_1(){
     	TRISB = 0b00000000;
@@ -188,7 +188,7 @@ Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das 
 Quellcode zum testen der Geschwindigkeit des Boards mit einer for-Schleife und dem Nop()-Befehl.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {Geschwindigkeitstest mit einer for-Schleife} \label{lst:g_2},captionpos=b]
+\begin{lstlisting}[caption = {Geschwindigkeitstest mit einer for-Schleife}, label=lst:g_2,captionpos=b]
 void test_speed_for(){
 	int i;
 	TRISB = 0b00000000;
@@ -261,7 +261,7 @@ Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das 
 Quellcode zum testen der Compiler-Verzögerungsbefehle.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {Geschwindigkeitstest mit Compiler-Verzögerungsbefehlen} \label{lst:g_3},captionpos=b]
+\begin{lstlisting}[caption = {Geschwindigkeitstest mit Compiler-Verzögerungsbefehlen}, label=lst:g_3,captionpos=b]
 void test_speed_delay_1(){
 	int i;
 	TRISB = 0b00000000;
@@ -362,7 +362,7 @@ Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das 
 Quellcode zum testen der fertigen Verzögerungsbefehlen.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {Geschwindigkeitstest mit den fertigen Verzögerungsbefehlen} \label{lst:g_4},captionpos=b]
+\begin{lstlisting}[caption = {Geschwindigkeitstest mit den fertigen Verzögerungsbefehlen}, label=lst:g_4,captionpos=b]
 void test_speed_delay_3(){
 	TRISB = 0b00000000;		// Quellcode war vorgegeben
 	
@@ -498,7 +498,7 @@ Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das 
 Quellcode für einen einfachen Taster.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {Einfachster Version eines Schalters} \label{lst:g_5},captionpos=b]
+\begin{lstlisting}[caption = {Einfachster Version eines Schalters}, label=lst:g_5,captionpos=b]
 void taster_1(){
 	byte i;
 	TRISB = 0b00000000;
@@ -547,7 +547,7 @@ Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das 
 Quellcode zum verwenden eines Tasters als Schalter.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {Taster steuert Speicherfunktion} \label{lst:g_6},captionpos=b]
+\begin{lstlisting}[caption = {Taster steuert Speicherfunktion}, label=lst:g_6,captionpos=b]
 void taster_2(){
 	byte i;
 	TRISB = 0b00000000;
@@ -612,7 +612,7 @@ In diesem Versuchsteil soll eine Verzögerung implementiert werden, da sonst kei
 Quellcode für einen Schalter mit Verzögerung.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {Tastabfrage und Verzögerung} \label{lst:g_7},captionpos=b]
+\begin{lstlisting}[caption = {Tastabfrage und Verzögerung}, label=lst:g_7,captionpos=b]
 void taster_4(){
 	byte i;
 	TRISB = 0b00000000;
@@ -659,7 +659,7 @@ In diesem Versuchsteil steuert der Taster einen Zähler, welcher bei jedem Taste
 Quellcode zum steuern eines Zählers mit einem Taster.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {Code zum stuern eines Zählers mit einem Schalter} \label{lst:g_9},captionpos=b]
+\begin{lstlisting}[caption = {Code zum stuern eines Zählers mit einem Schalter}, label=lst:g_9,captionpos=b]
 void taster_5(){
 	byte taster_alt = 0b00000000;		// taster_alt wird deklariert und definiert
 	byte taster_neu = 0b00000000;		// taster_neu wird deklariert und definiert
@@ -738,7 +738,7 @@ Es werden ein Netzgerät, das Versuchsboard, Verbindungskabel, ein PC und ein Os
 Quellcode für die Verwendung eines Tasters als Schalter mit Unterdrückung von Kontaktprellen.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {Verhindern von Kontakprellen} \label{lst:g_10},captionpos=b]
+\begin{lstlisting}[caption = {Verhindern von Kontakprellen}, label=lst:g_10,captionpos=b]
 void taster_7(){
 	byte taster_alt = 0b00000000;
 	byte taster_neu = 0b00000000;
@@ -813,7 +813,7 @@ Es werden ein Netzgerät, das Versuchsboard, Verbindungskabel, ein PC und ein Os
 Quellcode für den Zähler ohne Vorteiler.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {Zähler ohne Vorteiler} \label{lst:g_11},captionpos=b]
+\begin{lstlisting}[caption = {Zähler ohne Vorteiler}, label=lst:g_11,captionpos=b]
 void oszi_1(){
 	byte counter = 0;
 	TRISB = 0b00000000;
@@ -871,7 +871,7 @@ Es werden ein Netzgerät, das Versuchsboard, Verbindungskabel, ein PC und ein Os
 Quellcode für den Zähler mit Vorteiler.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {Zähler mit Vorteiler} \label{lst:g_12},captionpos=b]
+\begin{lstlisting}[caption = {Zähler mit Vorteiler}, label=lst:g_12,captionpos=b]
 void oszi_2(){
 	int i;
 	byte counter = 0;
@@ -883,7 +883,7 @@ void oszi_2(){
 			for(i = 0; i < 52428; i++)
 				Nop();				// warte ca. 200ms
 			counter++;				// und erhoehe dann ...
-			LATB = counter;
+			LATB = counter;				//gebe den neuen Zustand aus
 	}//end of while(1)
 }//end of function oszi_2()
 \end{lstlisting}
@@ -951,22 +951,22 @@ Es werden das Versuchsboard, Verbindungskabel, ein PC und ein Netzgerät verwend
 Quellcode für den ADC mit LEDs.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {adc mit LEDs} \label{lst:g_13},captionpos=b]
+\begin{lstlisting}[caption = {adc mit LEDs}, label=lst:g_13,captionpos=b]
 void adc_1(){
+	//Porteigenschaften festlegen
 	TRISB = 0b00000000;
 	TRISAbits.TRISA0 = 0b1;
 	
+	//adc initialisieren
 	setup_adc_ports(AN0_TO_AN1);
-	
 	setup_adc(ADC_CLOCK_DIV_32);
-	
 	set_adc_channel(0);
-	
 	read_adc(ADC_START_ONLY);
 	
+	//Mess- und Ausgaberoutine starten
 	while(1){
 		delay_ms(10);			// warte 10ms
-		LATB = (read_adc(ADC_READ)>>2);	// dann uebersetze den Spannungswert in ein 8 Bit Muster und zeige es an
+		LATB = (read_adc(ADC_READ)>>2);	//gemessene Spannung ausgeben
 	}//end of while(1)
 }//end of function adc_1()
 \end{lstlisting}
@@ -1007,33 +1007,35 @@ Es werden das Versuchsboard, Verbindungskabel, ein PC und ein Netzgerät verwend
 Quellcode für die Ausgabe des ADC mit einer Siebensegmanetanzeige.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {adc mit Siebensegmentanzeige} \label{lst:g_14},captionpos=b]
+\begin{lstlisting}[caption = {adc mit Siebensegmentanzeige}, label=lst:g_14,captionpos=b]
 void adc_2(){
+	//Variablen deklarieren
 	char value;
 	byte valH;
 	byte valL;
 
+	//Porteigenschaften festlegen
 	TRISD = 0b00000000;
 	TRISC = 0b00000000;
 	TRISB = 0b00000000;
 	TRISAbits.TRISA0 = 1;
 
+	//adc initialisieren
 	setup_adc_ports(AN0_TO_AN1);
-	
 	setup_adc(ADC_CLOCK_DIV_32);
-	
 	set_adc_channel(0);
-	
 	read_adc(ADC_START_ONLY);
 	
+	//Mess- und Ausgaberoutine
 	while(1){
 		delay_ms(10);
 		
 		value = read_adc(ADC_READ)>>2;
 		
-		valH = value>>4;
-		valL = (value & 0b00001111)>>4;
+		valH = value>>4;			//Die ersten 4 Bits abspeichern
+		valL = (value & 0b00001111)>>4;		//Die letzten 4 Bits abspeichern
 		
+		//Spannung mit der Siebensegmentanzeige ausgeben
 		LATD = dec_7seg[valH];
 		LATC = dec_7seg[valL];
 		
@@ -1073,13 +1075,15 @@ Es werden das Versuchsboard, Verbindungskabel, ein PC und ein Netzgerät verwend
 
 \subsubsection*{Quellcode}
 
-Quellcode für adc Messung mit Umschaltfunktion.
+Quellcode für adc Messung mit Umschaltfunktion. Der wechsel zwischen den Channels wird wird über die flag-Variable gesteuert und und in Abhängigkeit dieser der 0-te oder 1-te Channel gelesen.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {acd mit Umschaltfunktion} \label{lst:g_15},captionpos=b]
+\begin{lstlisting}[caption = {acd mit Umschaltfunktion}, label=lst:g_15,captionpos=b]
 void adc_3(){
+	//Variablen deklarieren und definieren
 	byte flag = 0;
 
+	//Porteigenschaften festlegen
 	TRISC = 0b11111111;
 	TRISB = 0b00000000;
 	TRISAbits.TRISA0 = 1;
@@ -1153,18 +1157,22 @@ Es werden das Versuchsboard, Verbindungskabel, ein PC und ein Netzgerät verwend
 Quellcode für adc mit Balkenanzeige.
 
 \lstset{language=C, basicstyle=\tiny}
-\begin{lstlisting}[caption = {adc mit Balkenanzeige} \label{lst:g_16},captionpos=b]
+\begin{lstlisting}[caption = {adc mit Balkenanzeige}, label=lst:g_16,captionpos=b]
 void adc_4(){
+	//Variablen initialisieren
 	byte val;
 	
+	//Porteigenschaften festlegen
 	TRISB = 0b00000000;
 	TRISAbits.TRISA0 = 0b1;
 	
+	//adc konfigurieren
 	setup_adc_ports(AN0_TO_AN1);
 	setup_adc(ADC_CLOCK_DIV_32);
 	set_adc_channel(0);
 	read_adc(ADC_START_ONLY);
 	
+	//Mess- und Ausleseroutine starten
 	while(1){
 		delay_ms(10);
 		val = (read_adc(ADC_READ)>>7);	//Es werden nur die letzen drei bits verwendet,
@@ -1214,6 +1222,7 @@ Da nicht genug Zeit zur verfügung stand, konnte der Code nicht am Board geteste
 %im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
 %gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
 
+Im Versuch liesen sich gut verschiedene Einsatzmöglichkeiten für Mikrocontroller untersuchen, so wie verschiedene Varrianten der Implementierung. Die implementierten und getesteten Funktionen haben alle wie erwartet funktioniert. Mikrocontroller sind aufgrund ihrer Programierbarkeit und der Möglichkeit verschiedene Bausteine anzuschliesen, vielseitig einsetzbar.
 
 \end{document}
 
