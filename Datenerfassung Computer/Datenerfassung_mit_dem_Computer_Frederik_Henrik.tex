@@ -92,7 +92,7 @@ In diesem Versuchsabschnitt werden verschiedene Digital-Analog-Converter gebaut 
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
 Zuerst wird die Grundschaltung auf einem Steckbrett aufgebaut.
-
+\label{sec:binaer_widerstand}
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
@@ -127,15 +127,14 @@ Es werden ein Taktzähler Typ 4040, ein Kondensator, Widerstände, ein NAND-Gatt
 
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
-\label{sec:binaer_widerstand}
 
-Es werden die vier Ausgänge des Taktzählers mit einem Binären Widerstandnetzwerk verbunden. Der Ausgang A wird mit einem Oszilloskop verbunden.
+Es werden die vier Ausgänge des Taktzählers mit einem Binären Widerstandnetzwerk sowie Ausgang A mit einem Oszilloskop verbunden.
 
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird wie in Abschnitt \ref{sec:binaer_widerstand}  die Schaltung aufgebaut und mit dem Oszillsokop das Signal beobachtet.
+Es wird die gleiche Schaltung wie in Abschnitt \ref{sec:binaer_widerstand} verwendet. Der größte Widerstand wird an die erste Binärstelle angschlossen und an jede weitere Binärstelle jeweils die Hälfte des Widerstandes an der Binärstelle davor. Danach wird das Signal mit dem Oszillsokop beobachtet.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -165,7 +164,7 @@ Es wird wie in Abschnitt \ref{sec:binaer_widerstand}  die Schaltung aufgebaut un
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil wird ein DAC mit einem R-2R-Netzwerkt untersucht.
+In diesem Versuchsteil wird ein DAC mit einem R-2R-Netzwerk untersucht.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -176,7 +175,7 @@ Es werden ein Taktzähler Typ 4040, ein Kondensator, Widerstände, ein NAND-Gatt
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
-Es wird anstelle des binär Netzwerks eine R-2R-Netzwerk eingesetzt.
+Es wird anstelle des Binärnetzwerks ein R-2R-Netzwerk eingesetzt.
 
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
@@ -218,7 +217,7 @@ In diesem Versuchsabschnitt werden verschiedene Analog-Digital-Converter mit Hil
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil wird ein ADC mit dem Zählverfahren gebaut, welches leicht zu realisieren ist, jedoch langsam ist.
+In diesem Versuchsteil wird ein ADC mit dem Zählverfahren gebaut, welches leicht zu realisieren, jedoch langsam ist.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -244,7 +243,7 @@ Der Versuchsaufbau besteht aus dem Board von Versuch 10 und einem neuem Zusatzbo
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird das Zusatzboard an das Board angeschlossen und beide mit Strom versorgt. Auf das Board wird das vorgeschriebene Programm geladen. Die zu messende Spannung wird an M1 angeschlossen. Die Funktionalität wird untersucht, indem verschiedene Steuerzeichen an den Mikrocontroller geschickt werden. Dann werden verschiedene Spannungen eingestellt und die Ausgangssignale mit dem Oszilloskop beobachtet. Das Bitmuster wird jeweils abgelesen und notiert. Der Vorgang wird für das Zählverfahren und das Approximationsverfahren durchgeführt.
+Das Zusatzboard wird an das Board angeschlossen, beide müssen mit Strom versorgt werden. Das vorgeschriebene Programm wird auf das Board geladen. Danach wird die zu messende Spannung an M1 angeschlossen. Die Funktionalität wird untersucht, indem verschiedene Steuerzeichen an den Mikrocontroller geschickt werden. Dann werden unterschiedliche Spannungen eingestellt und die Ausgangssignale mit dem Oszilloskop beobachtet. Das Bitmuster wird jeweils abgelesen und notiert. Der Vorgang wird für das Zählverfahren und das Approximationsverfahren durchgeführt.
 
 
 \subsubsection*{Auswertung}
