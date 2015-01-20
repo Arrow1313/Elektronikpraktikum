@@ -37,7 +37,7 @@
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \HRule \\[0.4cm]
-{ \huge \bfseries Versuch.....}\\[0.4cm]				%Titel
+{ \huge \bfseries Datenerfassung mit dem Computer}\\[0.4cm]				%Titel
 
 \HRule \\[1.5cm]
 
@@ -339,13 +339,20 @@ In diesem Versuchsteil wird die Stoppuhr in einen Frequenzzähler umgebaut, welc
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-Es werden drei Taktzähler Typ 4040, ein Kondensator, Widerstände, ein NAND-Gatter, LEDs und eine Spannungsquelle verwendet.
+Es werden drei Taktzähler Typ 4040, ein Kondensator, zwei Widerstände, ein NAND-Gatter, LEDs, ein Oszillator und eine Spannungsquelle verwendet.
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_3_2.png}
+  	\caption[Schaltplan des Frequenzzählers]{Schaltplan des Frequenzzählers\footnotemark}
+  \label{fig:auf_3_2}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep11\_14.pdf am 18.01.2015}
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-Die Stoppuhr wird zum Frequenzzähler umgebaut, indem man das Torsignal vom Oszillator gewonnen wird.
+Die Stoppuhr wird zum Frequenzzähler umgebaut, indem das Torsignal vom Oszillator gewonnen wird.  Zwischen Oszillator und NAND-Eingang werden zwei Zähler geschaltet, welche die Frequenz des Oszillators durch $2^{22}$ teilen. Die Torzeit beträgt jetzt eine Sekunde.
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
