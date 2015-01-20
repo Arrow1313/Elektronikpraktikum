@@ -1,0 +1,12 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{2}
+\contentsline {section}{\numberline {2}Umwandlung digitaler in analoge Signale, DAC}{2}
+\contentsline {subsection}{\numberline {2.1}Grundschaltung auf dem Steckbrett}{2}
+\contentsline {subsection}{\numberline {2.2}DAC mit bin\IeC {\"a}rem Netzwerk}{2}
+\contentsline {subsection}{\numberline {2.3}DAC mit R-2R-Netzwerk}{3}
+\contentsline {section}{\numberline {3}Umwandlung analoger in digitale Signale, ADC}{3}
+\contentsline {subsection}{\numberline {3.1}ADC mit Z\IeC {\"a}hlverfahren und mit Approximationsverfahren}{3}
+\contentsline {section}{\numberline {4}Zeit- und Frequenzmessung}{4}
+\contentsline {subsection}{\numberline {4.1}Bau einer Stoppuhr}{4}
+\contentsline {subsection}{\numberline {4.2}Bau eines Frequenzz\IeC {\"a}hlers}{5}
+\contentsline {section}{\numberline {5}Fazit}{5}
