@@ -284,44 +284,48 @@ Das Zusatzboard wird an das Board angeschlossen, dies geschieht über einen seri
 
 \end{itemize}
 
-\subsection{Messwerte}
+\subsubsection*{Messwerte}
+
+Messdaten für das Zählverfahren.
 
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{|r|l|r|r|l|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline
 \multicolumn{1}{|l|}{Spannung/V} & Hex & \multicolumn{1}{l|}{Decimal} & \multicolumn{1}{l|}{Erwartet Binärwerte} & LEDs \\ \hline
-0,5 & 1E & 30 & 11110 & 0b00011110 \\ \hline
-1 & 39 & 57 & 111001 & 0b00111001 \\ \hline
-1,5 & \multicolumn{1}{r|}{55} & 85 & 1010101 & 0b01010101 \\ \hline
-2 & 6F & 111 & 1101111 & 0b01101110 \\ \hline
-2,5 & \multicolumn{1}{r|}{89} & 137 & 10001001 & 0b10001001 \\ \hline
-3 & A3 & 163 & 10100011 & 0b10100011 \\ \hline
-3,5 & BD & 189 & 10111101 & 0b10111101 \\ \hline
-4 & D5 & 213 & 11010101 & 0b11010101 \\ \hline
-4,5 & EF & 239 & 11101111 & 0b11101111 \\ \hline
-5 & FF & 255 & 11111111 & 0b11111111 \\ \hline
+0,5 & 1E & 30 & 0b00011110 & 0b00011110 \\ \hline
+1 & 39 & 57 & 0b00111001 & 0b00111001 \\ \hline
+1,5 & 55 & 85 & 0b01010101 & 0b01010101 \\ \hline
+2 & 6F & 111 & 0b01101111 & 0b01101110 \\ \hline
+2,5 & 89 & 137 & 0b10001001 & 0b10001001 \\ \hline
+3 & A3 & 163 & 0b10100011 & 0b10100011 \\ \hline
+3,5 & BD & 189 & 0b10111101 & 0b10111101 \\ \hline
+4 & D5 & 213 & 0b11010101 & 0b11010101 \\ \hline
+4,5 & EF & 239 & 0b11101111 & 0b11101111 \\ \hline
+5 & FF & 255 & 0b11111111 & 0b11111111 \\ \hline
 \end{tabular}
 \end{center}
 \caption{Messung zum Zählverfahren}
 \label{tab:zaehl}
 \end{table}
 
+Messdaten für das Approximationsverfahren.
+
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{|r|l|r|r|l|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline
 \multicolumn{1}{|l|}{Spannung/V} & Hex & \multicolumn{1}{l|}{Decimal} & \multicolumn{1}{l|}{Erwartet Binärwerte} & LEDs \\ \hline
-0,5 & 1F & 31 & 11111 & 0b00011111 \\ \hline
-1 & \multicolumn{1}{r|}{38} & 56 & 111000 & 0b00111000 \\ \hline
-1,5 & 4F & 79 & 1001111 & 0b01001111 \\ \hline
-2 & 6F & 111 & 1101111 & 0b01101111 \\ \hline
-2,5 & \multicolumn{1}{r|}{87} & 135 & 10000111 & 0b10000111 \\ \hline
-3 & A0 & 160 & 10100000 & 0b10100000 \\ \hline
-3,5 & BE & 190 & 10111110 & 0b10111110 \\ \hline
-4 & D8 & 216 & 11011000 & 0b11011000 \\ \hline
-4,5 & EF & 239 & 11101111 & 0b11101111 \\ \hline
-5 & FF & 255 & 11111111 & 0b11111111 \\ \hline
+0,5 & 1F & 31 & 0b00011111 & 0b00011111 \\ \hline
+1 & 38 & 56 & 0b00111000 & 0b00111000 \\ \hline
+1,5 & 4F & 79 & 0b01001111 & 0b01001111 \\ \hline
+2 & 6F & 111 & 0b01101111 & 0b01101111 \\ \hline
+2,5 & 87 & 135 & 0b10000111 & 0b10000111 \\ \hline
+3 & A0 & 160 & 0b10100000 & 0b10100000 \\ \hline
+3,5 & BE & 190 & 0b10111110 & 0b10111110 \\ \hline
+4 & D8 & 216 & 0b11011000 & 0b11011000 \\ \hline
+4,5 & EF & 239 & 0b11101111 & 0b11101111 \\ \hline
+5 & FF & 255 & 0b11111111 & 0b11111111 \\ \hline
 \end{tabular}
 \end{center}
 \caption{Messung zum Approximationsverfahren}
@@ -369,7 +373,7 @@ Bei der Umwandlung eines 2V Signals mit dem Approximationsverfahren ergab sich d
   \label{fig:2_2_2V}
 \end{figure}
 
-Die Umwandelung eines 4V Signals ist in Abbildung \ref{fig:2_2_4V} zu sehen. Die ben
+Die Umwandelung eines 4V Signals ist in Abbildung \ref{fig:2_2_4V} zu sehen. Die benötigte Zeit dafür ist etwas länger, als beim Umwandeln des 2V Signals. Die Zeitdifferenz lässt sich mit leider nicht erklären, da nicht bekannt ist, wie intern die Routine der Steuereinheit geschrieben ist.
 
 \begin{figure}[H]
   \centering 	
@@ -377,6 +381,13 @@ Die Umwandelung eines 4V Signals ist in Abbildung \ref{fig:2_2_4V} zu sehen. Die
   	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V} 
   \label{fig:2_2_4V}
 \end{figure}
+
+
+Aus den Abbildung \ref{fig:2_1_2V} bis \ref{fig:2_2_4V} kann jeweils benötigte Zeit abgelesen werden. Daraus lassen sich die Unterschiede in der Dauer der Umwandlung berechnen. Für das Umwandeln des 2V Signals ergibt sich eine Zeitdifferenz von 0,99s und für das Umwandeln des 4V Signals eine Differenz von 2,069s.
+
+Die Hexadezimal und Dezimalzahlen so wie die daraus bestimmten Bitmuster und die abgelesenen Bitmuster sind in Tabelle \ref{tab:zaehl} für das Zählverfahren und in Tabelle \ref{tab:approx} für das Approximationsverfahren. Die aus den Hexadezimalwerten bestimmten Bitmuster stimmen mit den abgelesenen Bitmustern überein.
+
+Die maximale Spannung ist bei 5V, da die maximale Ausgangsspannung des DACs 5V beträgt.
 
 Beim Steuern des Approximationsverfahren mit einem Taster war zu erkennen, das nach jedem Drücken des Tasters die Stufe der Referenzspannung kleiner wurde.
 
