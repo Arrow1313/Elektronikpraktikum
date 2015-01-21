@@ -11,6 +11,8 @@
 \usepackage{caption}
 \usepackage{subcaption}
 
+\usepackage{hyperref}
+
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -85,56 +87,42 @@ Dieser Versuch beschäftigt sich mit den Fragestellungen, wie man digitale in an
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsabschnitt werden verschiedene Digital-Analog-Converter gebaut und untersucht.
-
-\subsection{Grundschaltung auf dem Steckbrett}
-%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
-%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
-
-Zuerst wird die Grundschaltung auf einem Steckbrett aufgebaut.
-\label{sec:binaer_widerstand}
-\subsubsection*{Verwendete Geräte}
-%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
-%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-
-Es werden ein Taktzähler Typ 4040, ein Kondensator, Widerstände, ein NAND-Gatter und eine Spannungsquelle verwendet.
-
-\subsubsection*{Versuchsaufbau}
-%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
-
-In Abbidlung \ref{fig:auf_1} ist die Grundschaltung für die verschiedenen DACs zu sehen.
-
-\begin{figure}[H] 
-  \centering 	
-    \includegraphics[ scale = 0.4]{auf_1.png}
-  	\caption[Grundschaltung]{Grundschaltung\footnotemark}
-  \label{fig:auf_1}
-\end{figure}
-\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep11\_14.pdf am 18.01.2015}
-
+In diesem Versuchsabschnitt werden verschiedene Digital-Analog-Converter gebaut und untersucht. Realisiert werden der Digital-Analog-Converter mit einem Binär- und einem R-2R-Netzwerk. 
 
 \subsection{DAC mit binärem Netzwerk}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil wird ein DAC mit einem Binären Netzwerk aufgebaut.
+In diesem Versuchsteil wird ein DAC mit einem Binärnetzwerk aufgebaut. Der Nachteil dieses Aufbaus ist, dass für hohe Auflösungen genaue Widerstände benötigt werden. Die Auflösung bestimmt sich mit:
+\begin{align}
+\text{U}_\text{A}=\text{U}_0 \cdot \frac{\text{Binärwert}}{2^\text{n}-1}
+\label{eqn:binaer}
+\end{align}
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden ein Taktzähler Typ 4040, ein Kondensator, Widerstände, ein NAND-Gatter und eine Spannungsquelle verwendet.
+Es werden das Versuchsboard, das Zusatzboard, ein PC, ein Steckaufsatz und eine $2^\text{n}$ Folge von Widerständen verwendet.
 
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
-Es werden die vier Ausgänge des Taktzählers mit einem Binären Widerstandnetzwerk sowie Ausgang A mit einem Oszilloskop verbunden.
+In Abbildung \ref{fig:auf_1_1} ist der Schaltplan eines ADCs mit binärem Widerstandsnetzwerk zu sehen. Die Schaltung wird mit dem Versuchsboard und einem Binärnetzwerk realisiert.
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[ scale = 0.4]{auf_1_1.png}
+  	\caption[Schaltplan für ein DAC mit binärem Widerstandsnetzwerk]{Schaltplan für ein DAC mit binärem Widerstandsnetzwerk\footnotemark}
+  \label{fig:auf_1_1}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep11\_14.pdf am 18.01.2015}
 
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Es wird die gleiche Schaltung wie in Abschnitt \ref{sec:binaer_widerstand} verwendet. Der größte Widerstand wird an die erste Binärstelle angschlossen und an jede weitere Binärstelle jeweils die Hälfte des Widerstandes an der Binärstelle davor. Danach wird das Signal mit dem Oszillsokop beobachtet.
+Der größte Widerstand wird an die erste Binärstelle angeschlossen und an jede weitere Binärstelle jeweils die Hälfte des vorherigen Widerstandes. Das Widerstandsnetzwerk wird auf das Versuchsboard gesetzt. Zuerst werden die ersten 4 Bits des Binärzählers verwendet und das Ausgangssignal mit dem Oszilloskop aufgenommen. Danach werden die ersten 8 Bits des Binärzählers verwendet und das Ausgangssignal mit dem Oszilloskop aufgenommen. Die Messung wird mit dem Befehl c gestartet. Der Mikrocontroller übernimmt in diesem Fall die Funktionen des Oszillators und des Binärzählers.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -145,18 +133,24 @@ Es wird die gleiche Schaltung wie in Abschnitt \ref{sec:binaer_widerstand} verwe
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
-\subsubsection*{Diskussion}
-%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
-%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
-%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
-%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
-%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
-%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
-%--------------------------------------------------------------------------------------------
-%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
-%1-----------------------------------------------1
 
+Erwartet wird eine Treppen-artiger Verlauf bei der Messung der Ausgangsspannung erwartet. Die Differenz zwischen zwei Stufen ergibt sich nach Gleichung \ref{eqn:binaer} mit $\frac{\text{U}_0}{2^\text{n}-1}$. Für die 4 Bits ergab sich der Verlauf in Abbildung \ref{fig:1_1_1}, die einzelnen Stufen sind deutlich zu sehen. Die Auflösung liegt bei einem fünfzentel.
 
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{1_1_1.pdf}
+  	\caption[Aufnahme der Ausgangsspannung]{Aufnahme der Ausgangsspannung} 
+  \label{fig:1_1_1}
+\end{figure}
+
+Die Aufnahme des Kurvenverlaufs für 8 Bit ist in Abbildung \ref{fig:1_1_2} zu sehen. Die Stufen sind nicht zu erkennen, dies liegt an der Auflösung, die bei einem 255-stel liegt.
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{1_1_2.pdf}
+  	\caption[Aufnahme der Ausgangsspannung]{Aufnahme der Ausgangsspannung} 
+  \label{fig:1_1_2}
+\end{figure}
 
 
 
@@ -164,24 +158,37 @@ Es wird die gleiche Schaltung wie in Abschnitt \ref{sec:binaer_widerstand} verwe
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil wird ein DAC mit einem R-2R-Netzwerk untersucht.
+In diesem Versuchsteil wird ein DAC mit einem R-2R-Netzwerk untersucht. Der Vorteil diese Aufbaus ist, dass nur zwei verschieden Widerstände benötigt werden, die ein Verhältnis von 1:2 haben. Die Auflösung bestimmt sich mit:
+
+\begin{align}
+\text{U}_\text{A}=\text{U}_0 \cdot \frac{\text{Binärwert}}{2^\text{n}}
+\label{eqn:binaer_2}
+\end{align}
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden ein Taktzähler Typ 4040, ein Kondensator, Widerstände, ein NAND-Gatter und eine Spannungsquelle verwendet.
+Es werden das Versuchsboard, das Zusatzboard, ein PC, ein Steckaufsatz mit einem R-2R Widerstandsnetzwerk verwendet.
 
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
-Es wird anstelle des Binärnetzwerks ein R-2R-Netzwerk eingesetzt.
+Der Schaltplan eines R-2R Netzwerkes ist in Abbildung \ref{fig:auf_1_2} zu sehen. So ein Netzwerk wird auf das Zusatzboard gesetzt.
+
+\begin{figure}[H] 
+  \centering
+    \includegraphics[ scale = 0.4]{auf_1_2.png}
+  	\caption[Schaltplan für einen R-2R Netzwerk]{Schaltplan für einen R-2R Netzwerk\footnotemark}
+  \label{fig:auf_1_2}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep11\_14.pdf am 18.01.2015}
 
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Zuerst wird ein R-2R-Netzwerk für vier Bits danach ein Netzwerk für acht Bits aufgebaut und das Ausgangssignal mit dem Oszilloskop untersucht.
+Das R-2R-Netzwerk wird mit acht Bits aufgebaut und das Ausgangssignal mit dem Oszilloskop untersucht.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -192,6 +199,17 @@ Zuerst wird ein R-2R-Netzwerk für vier Bits danach ein Netzwerk für acht Bits 
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Für den Zeitleichenverlauf wird wie im Teil zuvor eine Treppen-artiger Verlauf erwartet. Dabei ist die Auflösung höher da die Ausgangsspannung nach Gleichung \ref{eqn:binaer_2} bestimmt wird. Die Höhe einer Stufe ergibt sich mit $\frac{\text{U}_0}{2^\text{n}}$. In dem verwendetem Aufbau entspricht dies einer Stufenhöhe von einem 256-stel. Der Verlauf auf dem Oszilloskop ist in Abbildung \ref{fig:1_2_1} zu sehen. Aufgrund der hohen Auflösung sind die einzelnen Stufen nicht mehr zu erkennen.
+
+\begin{figure}[H] 
+  \centering 	
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{1_2_1.pdf}
+  	\caption[Aufnahme der Ausgangsspannung]{Aufnahme der Ausgangsspannung} 
+  \label{fig:1_2_1}
+\end{figure}
+ 
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -203,7 +221,7 @@ Zuerst wird ein R-2R-Netzwerk für vier Bits danach ein Netzwerk für acht Bits 
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-
+Beide Messungen sind wie erwartet verlaufen. Da für das R-2R Netzwerk nur ein 8 Bit großes Netzwerk zur Verfügung stand können auch nur die beiden 8 Bit großen ADC verglichen werden. Vergleicht man die beiden Aufnahmen, Abbildung \ref{fig:1_1_2} für das Binärnetzwerk und Abbildung \ref{fig:1_2_1} für das R-2R Netzwerk ist kein Unterschied zu erkennen. Theoretisch sollten sich mit dem R-2R Netzwerk bessere Ergebnisse erzielen lassen, da es kaum von der Fehlern der Widerstände abhängt.
 
 
 
@@ -217,7 +235,11 @@ In diesem Versuchsabschnitt werden verschiedene Analog-Digital-Converter mit Hil
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil wird ein ADC mit dem Zählverfahren gebaut, welches leicht zu realisieren, jedoch langsam ist.
+In diesem Versuchsteil wird ein ADC mit dem Zählverfahren und einer mit Apporximatoinsverfahren gebaut.
+
+Der ADC mit Zählverfahren verwendet einen Binärzähler und ein R-2R Netzwerk um die Referenzspannung zu erzeugen. Der Stand des Binärzählers wird gespeichert, wenn der Komparator eine 0 ausgibt. Das Bitmuster des Zählers ist die Digitalisierung des analogen Signals. Der Nachteil des Verfahrens ist, dass der Aufwand zur Digitalisierung des Signals $\mathcal O(2^n)$ beträgt.
+
+Der ADC mit Apporximatoinsverfahren bestehe aus einer Steuereinheit, einem R-2R Netzwerk und einem Komparator. Die Steuereinheit schaltet die Referenzspannung auf den halben Maximalwert. Wenn der Ausgang des Komparators auf 1 eins geht, wird die Referenzspannung auf $\frac{3}{4}$ der Maximalspannung gesetzt. Falls der Ausgang des Komparators auf 0 steht wird das aktuelle Bit auf 0 gesetzt und die Referenzspannung auf $\frac{1}{4}$ der Maximalspannung gesetzt. Der Vorteil dieses Verfahren ist, dass es wesentlich schneller als der ADC mit Zählverfahren ist. Der Aufwand beträgt $\mathcal O(n)$.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -229,7 +251,7 @@ Es werden das Board aus Versuch 10, ein Zusatzboard, ein Oszilloskop und ein Net
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
-Der Versuchsaufbau besteht aus dem Board von Versuch 10 und einem neuem Zusatzboard.
+Der Versuchsaufbau besteht aus dem Board von Versuch 10 und einem neuem Zusatzboard, in dem alle notwendigen Komponenten integriert sind.
 
 \begin{figure}[H] 
   \centering 	
@@ -243,7 +265,27 @@ Der Versuchsaufbau besteht aus dem Board von Versuch 10 und einem neuem Zusatzbo
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Das Zusatzboard wird an das Board angeschlossen, beide müssen mit Strom versorgt werden. Das vorgeschriebene Programm wird auf das Board geladen. Danach wird die zu messende Spannung an M1 angeschlossen. Die Funktionalität wird untersucht, indem verschiedene Steuerzeichen an den Mikrocontroller geschickt werden. Dann werden unterschiedliche Spannungen eingestellt und die Ausgangssignale mit dem Oszilloskop beobachtet. Das Bitmuster wird jeweils abgelesen und notiert. Der Vorgang wird für das Zählverfahren und das Approximationsverfahren durchgeführt.
+Das Zusatzboard wird an das Board angeschlossen, dies geschieht über einen seriellen Anschluss. Das vorgeschriebene Programm, zum messen der Daten wird auf das Board geladen. Danach wird die zu messende Spannung an M1 angeschlossen. Die Funktionalität wird untersucht, indem verschiedene Steuerzeichen (siehe nachfolgende Tabelle) an den Mikrocontroller geschickt werden. Dann werden unterschiedliche Spannungen eingestellt und die Ausgangssignale mit dem Oszilloskop beobachtet. Das Bitmuster wird jeweils abgelesen und notiert. Der Vorgang wird für das Zählverfahren und das Approximationsverfahren durchgeführt. Im nachfolgenden noch die Tabelle mit den Befehlen
+
+\begin{itemize}
+\item	?: Mikrocontroller meldet E-Prak Bergische Universität Wuppertal 2011“
+
+\item	v: Mikrocontroller meldet Versionsnummer des Programms (V. PIC-Eval-Board for EP 1.2011)
+
+\item	t: Mikrocontroller meldet OK“(Test der Verbindung)
+
+\item	i: Mikrocontroller führt eine Messung nach dem Zählverfahren aus (iterativ, 10 ms Verzögerung)
+
+\item	s: Mikrocontroller führt eine Messung nach dem Approximationsverfahren aus (sukzessiv, 10 ms Verzögerung)
+
+\item	a: Mikrocontroller führt eine Messung nach dem Approximationsverfahren aus (sukzessiv durch Tasterfunktion an Port A0 mit 300 ms Verzögerung zum Entprellen)
+
+\item	bxx: Gibt das Binärmuster xx (xx= hexadezimale Zahl von 00 bis ff) am Port B aus. Zum Beispiel b00 liefert 00000000, b01 liefert 00000001, b0f liefert 00001111 und bff liefert 11111111
+
+\end{itemize}
+
+\subsection{Messwerte}
+
 
 
 \subsubsection*{Auswertung}
@@ -255,6 +297,41 @@ Das Zusatzboard wird an das Board angeschlossen, beide müssen mit Strom versorg
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Erwartet wird ein Treppen-artiger verlauf, welchen als solche, aufgrund der hohen Auflösung nicht direkt zu erkennen sein sollt. 
+
+Bei dem Aufbau mit dem Zählverfahren war das hochgezählt der LEDs, bis die Spannung von 2 Volt erreicht wurde zu beobachten.
+
+\begin{figure}[H]
+  \centering 	
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{2_1_2V.pdf}
+  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 2V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 2V} 
+  \label{fig:2_1_2V}
+\end{figure}
+
+\begin{figure}[H]
+  \centering 	
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{2_1_4V.pdf}
+  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V} 
+  \label{fig:2_1_4V}
+\end{figure}
+
+
+
+\begin{figure}[H]
+  \centering 	
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{2_2_2V.pdf}
+  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 2V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 2V} 
+  \label{fig:2_2_2V}
+\end{figure}
+
+\begin{figure}[H]
+  \centering 	
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{2_2_4V.pdf}
+  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V} 
+  \label{fig:2_2_4V}
+\end{figure}
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -315,6 +392,22 @@ Nachdem Schaltung \ref{fig:auf_3} aufgebaut wurde, wird ein Eingangssignal mit e
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|r|l|}
+\hline
+\multicolumn{1}{|l|}{Spannung/V} & Binärmuster \\ \hline \hline
+19,05 & 0b00010011 \\ \hline
+66,89 & 0b11000011 \\ \hline
+207,1 & 0b11001111 \\ \hline
+\end{tabular}
+\end{center}
+\caption{Bitmuster in Abhängigkeit der Spannung}
+\label{tab:uhr}
+\end{table}
+
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -343,7 +436,7 @@ Es werden drei Taktzähler Typ 4040, ein Kondensator, zwei Widerstände, ein NAN
 Schaltplan zum Aufbau eines Frequenzzählers.
 \begin{figure}[H] 
   \centering 	
-    \includegraphics[ scale = 0.4]{auf_3_2.png}
+    \includegraphics[ scale = 0.4]{auf_5.png}
   	\caption[Schaltplan des Frequenzzählers]{Schaltplan des Frequenzzählers\footnotemark}
   \label{fig:auf_3_2}
 \end{figure}
@@ -361,6 +454,22 @@ Die Stoppuhr wird zum Frequenzzähler umgebaut, indem das Torsignal vom Oszillat
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|r|l|}
+\hline
+\multicolumn{1}{|l|}{Frequenz/Hz} & Binärmuster \\ \hline
+140 & 0b1000110 \\ \hline
+86 & 0b01010110 \\ \hline
+32 & 0b00100000 \\ \hline
+8 & 0b00001000 \\ \hline
+\end{tabular}
+\end{center}
+\caption{Bitmuster in Abhängigkeit der Frequenz}
+\label{tab:frequ}
+\end{table}
+
 
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen

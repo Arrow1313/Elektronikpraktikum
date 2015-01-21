@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  20 JAN 2015 18:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  21 JAN 2015 21:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -70,31 +70,134 @@ Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count89
 \c@subtable=\count90
 )
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count91
-\Gm@cntv=\count92
-\c@Gm@tempcnt=\count93
-\Gm@bindingoffset=\dimen110
-\Gm@wd@mp=\dimen111
-\Gm@odd@mp=\dimen112
-\Gm@even@mp=\dimen113
-\Gm@layoutwidth=\dimen114
-\Gm@layoutheight=\dimen115
-\Gm@layouthoffset=\dimen116
-\Gm@layoutvoffset=\dimen117
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen110
+\Hy@linkcounter=\count91
+\Hy@pagecounter=\count92
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count93
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count94
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen111
+\Fld@menulength=\count95
+\Field@Width=\dimen112
+\Fld@charsize=\dimen113
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count96
+\c@Item=\count97
+\c@Hfootnote=\count98
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count99
+\c@bookmark@seq@number=\count100
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip46
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count101
+\Gm@cntv=\count102
+\c@Gm@tempcnt=\count103
+\Gm@bindingoffset=\dimen114
+\Gm@wd@mp=\dimen115
+\Gm@odd@mp=\dimen116
+\Gm@even@mp=\dimen117
+\Gm@layoutwidth=\dimen118
+\Gm@layoutheight=\dimen119
+\Gm@layouthoffset=\dimen120
+\Gm@layoutvoffset=\dimen121
 \Gm@dimlist=\toks17
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
@@ -303,6 +406,8 @@ Now handling font encoding OMX ...
 ... no UTF-8 mapping file for font encoding OMX
 Now handling font encoding U ...
 ... no UTF-8 mapping file for font encoding U
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
    defining Unicode char U+00A9 (decimal 169)
    defining Unicode char U+00AA (decimal 170)
    defining Unicode char U+00AE (decimal 174)
@@ -364,8 +469,8 @@ Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2013/12/03 3.9h Babel common definitions
-\babel@savecnt=\count94
-\U@D=\dimen118
+\babel@savecnt=\count104
+\U@D=\dimen122
 )
 \l@naustrian = a dialect from \language\l@ngerman 
 \l@nswissgerman = a dialect from \language\l@ngerman 
@@ -373,7 +478,7 @@ Package babel Info: Making " an active character on input line 88.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip46
+\@mathmargin=\skip47
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -382,49 +487,49 @@ Package: amstext 2000/06/29 v2.01
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks20
-\ex@=\dimen119
+\ex@=\dimen123
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen120
+\pmbraise@=\dimen124
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count95
+\inf@bad=\count105
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count96
-\leftroot@=\count97
+\uproot@=\count106
+\leftroot@=\count107
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count98
-\DOTSCASE@=\count99
+\classnum@=\count108
+\DOTSCASE@=\count109
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box28
 \strutbox@=\box29
-\big@size=\dimen121
+\big@size=\dimen125
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count100
-\c@MaxMatrixCols=\count101
-\dotsspace@=\muskip10
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
+\macc@depth=\count110
+\c@MaxMatrixCols=\count111
+\dotsspace@=\muskip11
+\c@parentequation=\count112
+\dspbrk@lvl=\count113
 \tag@help=\toks21
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
+\row@=\count114
+\column@=\count115
+\maxfields@=\count116
 \andhelp@=\toks22
-\eqnshift@=\dimen122
-\alignsep@=\dimen123
-\tagshift@=\dimen124
-\tagwidth@=\dimen125
-\totwidth@=\dimen126
-\lineht@=\dimen127
+\eqnshift@=\dimen126
+\alignsep@=\dimen127
+\tagshift@=\dimen128
+\tagwidth@=\dimen129
+\totwidth@=\dimen130
+\lineht@=\dimen131
 \@envbody=\toks23
-\multlinegap=\skip47
-\multlinetaggap=\skip48
+\multlinegap=\skip48
+\multlinetaggap=\skip49
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
@@ -445,40 +550,56 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count107
+\Gread@gobject=\count117
 ))
-\Gin@req@height=\dimen128
-\Gin@req@width=\dimen129
+\Gin@req@height=\dimen132
+\Gin@req@width=\dimen133
 )
 (./Datenerfassung_mit_dem_Computer_Frederik_Henrik.aux)
 \openout1 = `Datenerfassung_mit_dem_Computer_Frederik_Henrik.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 25.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box30
+Package hyperref Info: Link coloring OFF on input line 25.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count118
+)
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
+
+(./Datenerfassung_mit_dem_Computer_Frederik_Henrik.out)
+(./Datenerfassung_mit_dem_Computer_Frederik_Henrik.out)
+\@outlinefile=\write3
+\openout3 = `Datenerfassung_mit_dem_Computer_Frederik_Henrik.out'.
+
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -516,52 +637,23 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen130
-\scratchbox=\box30
-\nofMPsegments=\count109
-\nofMParguments=\count110
+\scratchcounter=\count119
+\scratchdimen=\dimen134
+\scratchbox=\box31
+\nofMPsegments=\count120
+\nofMParguments=\count121
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen131
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen135
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
 \everyMPtoPDFconversion=\toks26
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
+)
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
@@ -571,98 +663,177 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<logo.pdf, id=1, 130.4875pt x 41.15375pt>
+<logo.pdf, id=48, 130.4875pt x 41.15375pt>
 File: logo.pdf Graphic file (type pdf)
  <use logo.pdf>
-Package pdftex.def Info: logo.pdf used on input line 31.
+Package pdftex.def Info: logo.pdf used on input line 33.
 (pdftex.def)             Requested size: 362.77264pt x 114.42905pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 51.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 53.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 51.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 53.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 51.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 53.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 51.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 53.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 51.
+(Font)              <12> on input line 53.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 51.
+(Font)              <8> on input line 53.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 51.
+(Font)              <6> on input line 53.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.pdf>]
 (./Datenerfassung_mit_dem_Computer_Frederik_Henrik.toc)
-\tf@toc=\write3
-\openout3 = `Datenerfassung_mit_dem_Computer_Frederik_Henrik.toc'.
+\tf@toc=\write4
+\openout4 = `Datenerfassung_mit_dem_Computer_Frederik_Henrik.toc'.
 
- [1]
-<auf_1.png, id=17, 890.32625pt x 429.605pt>
-File: auf_1.png Graphic file (type png)
- <use auf_1.png>
-Package pdftex.def Info: auf_1.png used on input line 109.
-(pdftex.def)             Requested size: 356.12419pt x 171.83894pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75 \newpage
+              [1] <auf_1_1.png, id=77, 722.7pt x 484.05844pt>
+File: auf_1_1.png Graphic file (type png)
+
+<use auf_1_1.png>
+Package pdftex.def Info: auf_1_1.png used on input line 115.
+(pdftex.def)             Requested size: 289.07487pt x 193.61993pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 113.
+(Font)              <10> on input line 119.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 113.
+(Font)              <7> on input line 119.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 113.
- [2 <./auf_1.png>]
-Overfull \hbox (1.09904pt too wide) in paragraph at lines 215--216
+(Font)              <5> on input line 119.
+ [2 <./auf_1_1.png>] <1_1_1.pdf, id=97, 578.16pt x 722.7pt>
+File: 1_1_1.pdf Graphic file (type pdf)
+
+<use 1_1_1.pdf>
+Package pdftex.def Info: 1_1_1.pdf used on input line 141.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+ <1_1_2.pdf, id=100, 578.16pt x 722.7pt>
+File: 1_1_2.pdf Graphic file (type pdf)
+ <use 1_1_2.pdf>
+Package pdftex.def Info: 1_1_2.pdf used on input line 150.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+[3 <./1_1_1.pdf> <./1_1_2.pdf>]
+<auf_1_2.png, id=122, 787.44188pt x 484.05844pt>
+File: auf_1_2.png Graphic file (type png)
+ <use auf_1_2.png>
+Package pdftex.def Info: auf_1_2.png used on input line 181.
+(pdftex.def)             Requested size: 314.97118pt x 193.61993pt.
+
+<1_2_1.pdf, id=127, 578.16pt x 722.7pt>
+File: 1_2_1.pdf Graphic file (type pdf)
+ <use 1_2_1.pdf>
+Package pdftex.def Info: 1_2_1.pdf used on input line 207.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+ [4 <./auf_1_2.png>]
+Overfull \hbox (1.09904pt too wide) in paragraph at lines 232--233
 \T1/lmr/m/n/12 In die-sem Ver-suchs-ab-schnitt wer-den ver-schie-de-ne Analog-D
 igital-Converter mit Hil-fe des Boards
  []
 
-<auf_4.png, id=25, 1091.07625pt x 571.13374pt>
+<auf_4.png, id=143, 1091.07625pt x 571.13374pt>
 File: auf_4.png Graphic file (type png)
  <use auf_4.png>
-Package pdftex.def Info: auf_4.png used on input line 237.
+Package pdftex.def Info: auf_4.png used on input line 258.
 (pdftex.def)             Requested size: 436.42278pt x 228.44945pt.
- [3]
-<auf_5.png, id=29, 931.48pt x 437.635pt>
+ [5 <./1_2_1.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 271.
+
+ (/usr/share/texmf/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 271.
+ [6 <./auf_4.png>]
+<2_1_2V.pdf, id=168, 578.16pt x 722.7pt>
+File: 2_1_2V.pdf Graphic file (type pdf)
+ <use 2_1_2V.pdf>
+Package pdftex.def Info: 2_1_2V.pdf used on input line 305.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+<2_1_4V.pdf, id=170, 578.16pt x 722.7pt>
+File: 2_1_4V.pdf Graphic file (type pdf)
+ <use 2_1_4V.pdf>
+Package pdftex.def Info: 2_1_4V.pdf used on input line 312.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+<2_2_2V.pdf, id=172, 578.16pt x 722.7pt>
+File: 2_2_2V.pdf Graphic file (type pdf)
+ <use 2_2_2V.pdf>
+Package pdftex.def Info: 2_2_2V.pdf used on input line 321.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+ [7 <./2_1_2V.pdf> <./2_1_4V.pdf>] <2_2_4V.pdf, id=189, 578.16pt x 722.7pt>
+File: 2_2_4V.pdf Graphic file (type pdf)
+ <use 2_2_4V.pdf>
+Package pdftex.def Info: 2_2_4V.pdf used on input line 328.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+<auf_5.png, id=191, 931.48pt x 437.635pt>
 File: auf_5.png Graphic file (type png)
  <use auf_5.png>
-Package pdftex.def Info: auf_5.png used on input line 298.
+Package pdftex.def Info: auf_5.png used on input line 372.
 (pdftex.def)             Requested size: 372.5854pt x 175.05089pt.
- [4 <./auf_4.png>]
-[5 <./auf_5.png>] (./Datenerfassung_mit_dem_Computer_Frederik_Henrik.aux) ) 
+ [8 <./2_2_2V.pdf> <./2_2_4V.pdf>]
+File: auf_5.png Graphic file (type png)
+ <use auf_5.png>
+Package pdftex.def Info: auf_5.png used on input line 437.
+(pdftex.def)             Requested size: 372.5854pt x 175.05089pt.
+ [9 <./auf_5.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 487.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 487.
+
+(./Datenerfassung_mit_dem_Computer_Frederik_Henrik.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 487.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 487.
+Package rerunfilecheck Info: File `Datenerfassung_mit_dem_Computer_Frederik_Hen
+rik.out' has not changed.
+(rerunfilecheck)             Checksum: F27F5E48C3E3BDA1E87A80351174D1F1;758.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 487.
+ ) 
 Here is how much of TeX's memory you used:
- 4800 strings out of 493304
- 69033 string characters out of 6139871
- 133653 words of memory out of 5000000
- 8144 multiletter control sequences out of 15000+600000
- 74949 words of font info for 51 fonts, out of 8000000 for 9000
+ 8368 strings out of 493304
+ 123102 string characters out of 6139871
+ 213425 words of memory out of 5000000
+ 11621 multiletter control sequences out of 15000+600000
+ 77937 words of font info for 52 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,8n,38p,603b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/us
-r/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvip
-s/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmsy10.pfb>
-Output written on Datenerfassung_mit_dem_Computer_Frederik_Henrik.pdf (6 pages,
- 1801555 bytes).
+ 36i,11n,38p,935b,398s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm
+/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmm
+i8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmsy8.pfb>
+Output written on Datenerfassung_mit_dem_Computer_Frederik_Henrik.pdf (11 pages
+, 1870317 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 301 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
 
