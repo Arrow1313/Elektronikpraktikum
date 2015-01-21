@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {3}Umwandlung analoger in digitale Signale, ADC}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}ADC mit Z\IeC {\"a}hlverfahren und mit Approximationsverfahren}{5}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Messwerte}{7}{subsection.3.2}
-\contentsline {section}{\numberline {4}Zeit- und Frequenzmessung}{8}{section.4}
-\contentsline {subsection}{\numberline {4.1}Bau einer Stoppuhr}{8}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Bau eines Frequenzz\IeC {\"a}hlers}{9}{subsection.4.2}
-\contentsline {section}{\numberline {5}Fazit}{10}{section.5}
+\contentsline {section}{\numberline {4}Zeit- und Frequenzmessung}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Bau einer Stoppuhr}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Bau eines Frequenzz\IeC {\"a}hlers}{10}{subsection.4.2}
+\contentsline {section}{\numberline {5}Fazit}{12}{section.5}

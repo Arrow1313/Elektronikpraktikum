@@ -286,6 +286,48 @@ Das Zusatzboard wird an das Board angeschlossen, dies geschieht über einen seri
 
 \subsection{Messwerte}
 
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|r|l|r|r|l|}
+\hline
+\multicolumn{1}{|l|}{Spannung/V} & Hex & \multicolumn{1}{l|}{Decimal} & \multicolumn{1}{l|}{Erwartet Binärwerte} & LEDs \\ \hline
+0,5 & 1E & 30 & 11110 & 0b00011110 \\ \hline
+1 & 39 & 57 & 111001 & 0b00111001 \\ \hline
+1,5 & \multicolumn{1}{r|}{55} & 85 & 1010101 & 0b01010101 \\ \hline
+2 & 6F & 111 & 1101111 & 0b01101110 \\ \hline
+2,5 & \multicolumn{1}{r|}{89} & 137 & 10001001 & 0b10001001 \\ \hline
+3 & A3 & 163 & 10100011 & 0b10100011 \\ \hline
+3,5 & BD & 189 & 10111101 & 0b10111101 \\ \hline
+4 & D5 & 213 & 11010101 & 0b11010101 \\ \hline
+4,5 & EF & 239 & 11101111 & 0b11101111 \\ \hline
+5 & FF & 255 & 11111111 & 0b11111111 \\ \hline
+\end{tabular}
+\end{center}
+\caption{Messung zum Zählverfahren}
+\label{tab:zaehl}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|r|l|r|r|l|}
+\hline
+\multicolumn{1}{|l|}{Spannung/V} & Hex & \multicolumn{1}{l|}{Decimal} & \multicolumn{1}{l|}{Erwartet Binärwerte} & LEDs \\ \hline
+0,5 & 1F & 31 & 11111 & 0b00011111 \\ \hline
+1 & \multicolumn{1}{r|}{38} & 56 & 111000 & 0b00111000 \\ \hline
+1,5 & 4F & 79 & 1001111 & 0b01001111 \\ \hline
+2 & 6F & 111 & 1101111 & 0b01101111 \\ \hline
+2,5 & \multicolumn{1}{r|}{87} & 135 & 10000111 & 0b10000111 \\ \hline
+3 & A0 & 160 & 10100000 & 0b10100000 \\ \hline
+3,5 & BE & 190 & 10111110 & 0b10111110 \\ \hline
+4 & D8 & 216 & 11011000 & 0b11011000 \\ \hline
+4,5 & EF & 239 & 11101111 & 0b11101111 \\ \hline
+5 & FF & 255 & 11111111 & 0b11111111 \\ \hline
+\end{tabular}
+\end{center}
+\caption{Messung zum Approximationsverfahren}
+\label{tab:approx}
+\end{table}
+
 
 
 \subsubsection*{Auswertung}
@@ -300,23 +342,25 @@ Das Zusatzboard wird an das Board angeschlossen, dies geschieht über einen seri
 
 Erwartet wird ein Treppen-artiger verlauf, welchen als solche, aufgrund der hohen Auflösung nicht direkt zu erkennen sein sollt. 
 
-Bei dem Aufbau mit dem Zählverfahren war das hochgezählt der LEDs, bis die Spannung von 2 Volt erreicht wurde zu beobachten.
-
-\begin{figure}[H]
-  \centering 	
-    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{2_1_2V.pdf}
-  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 2V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 2V} 
-  \label{fig:2_1_2V}
-\end{figure}
+Bei dem Aufbau mit dem Zählverfahren war das hochgezählt der LEDs, bis die Spannung von 2 Volt erreicht wurde zu beobachten. Der Verlauf auf dem Oszilloskop ist in Abbildung \ref{fig:2_1_2V} zu sehen die untere Kurve ist das Signal des Komparators und die obere Kurve ist das Signal der Vergleichsspannung.
 
 \begin{figure}[H]
   \centering 	
     \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{2_1_4V.pdf}
-  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V} 
+  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 2V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 2V} 
   \label{fig:2_1_4V}
 \end{figure}
 
+In Abbildung \ref{fig:2_1_2V} ist der Verlauf der Referenzspannung und der Komparatorspannung für die Umwandlung eines 4V Signals in ein Digitalesssignal dargestellt. An der Zeitauflösung ist zu sehen, das dass Umwandeln länger dauert als das Umwandeln des 2V Signals.
 
+\begin{figure}[H]
+  \centering 	
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{2_1_2V.pdf}
+  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V} 
+  \label{fig:2_1_2V}
+\end{figure}
+
+Bei der Umwandlung eines 2V Signals mit dem Approximationsverfahren ergab sich der Verlauf in Abbildung \ref{fig:2_2_2V} zu sehen. Die untere Kurve ist das Signal des Komparators und die obere Kurve ist das Signal der Steuereinheit.
 
 \begin{figure}[H]
   \centering 	
@@ -325,12 +369,16 @@ Bei dem Aufbau mit dem Zählverfahren war das hochgezählt der LEDs, bis die Spa
   \label{fig:2_2_2V}
 \end{figure}
 
+Die Umwandelung eines 4V Signals ist in Abbildung \ref{fig:2_2_4V} zu sehen. Die ben
+
 \begin{figure}[H]
   \centering 	
     \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{2_2_4V.pdf}
   	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V} 
   \label{fig:2_2_4V}
 \end{figure}
+
+Beim Steuern des Approximationsverfahren mit einem Taster war zu erkennen, das nach jedem Drücken des Tasters die Stufe der Referenzspannung kleiner wurde.
 
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
@@ -403,9 +451,10 @@ Nachdem Schaltung \ref{fig:auf_3} aufgebaut wurde, wird ein Eingangssignal mit e
 207,1 & 0b11001111 \\ \hline
 \end{tabular}
 \end{center}
-\caption{Bitmuster in Abhängigkeit der Spannung}
-\label{tab:uhr}
+\caption{Bitmuster in Abhängigkeit der Frequenz}
+\label{tab:span}
 \end{table}
+
 
 
 \subsubsection*{Diskussion}
@@ -459,8 +508,8 @@ Die Stoppuhr wird zum Frequenzzähler umgebaut, indem das Torsignal vom Oszillat
 \begin{center}
 \begin{tabular}{|r|l|}
 \hline
-\multicolumn{1}{|l|}{Frequenz/Hz} & Binärmuster \\ \hline
-140 & 0b1000110 \\ \hline
+\multicolumn{1}{|l|}{Frequenz/Hz} & Binärmuster \\ \hline \hline
+140 & 0b10001100 \\ \hline
 86 & 0b01010110 \\ \hline
 32 & 0b00100000 \\ \hline
 8 & 0b00001000 \\ \hline
@@ -469,6 +518,8 @@ Die Stoppuhr wird zum Frequenzzähler umgebaut, indem das Torsignal vom Oszillat
 \caption{Bitmuster in Abhängigkeit der Frequenz}
 \label{tab:frequ}
 \end{table}
+
+
 
 
 \subsubsection*{Diskussion}
