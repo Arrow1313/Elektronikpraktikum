@@ -404,7 +404,7 @@ Beim Steuern des Approximationsverfahren mit einem Taster war zu erkennen, das n
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-In diesem Versuchabschnitt wurden zwei Typen von ADCs untersucht, einer mit Zählverfahren und einer mit Approximationsverfahren. Dabei wurden insbesondere die Dauer der Umwandelung des Signals untersucht. Der ADC mit Approximationsverfahren ist dabei wesentlich schneller, als der ADC mit Zählverfahren. Für die Umwandlung eines 2V Signals benötigt der ADC mit Zählverfahren 2,069s länger und beim umwandeln eines 4V Signals betrug die Zeitdifferenz 1s. 
+In diesem Versuchabschnitt wurden zwei Typen von ADCs untersucht, einer mit Zählverfahren und einer mit Approximationsverfahren. Dabei wurden insbesondere die Dauer der Umwandelung des Signals untersucht. Der ADC mit Approximationsverfahren ist dabei wesentlich schneller, als der ADC mit Zählverfahren. Für die Umwandlung eines 2V Signals benötigt der ADC mit Zählverfahren 2,069s länger als der ADC mit Approximationsverfahren. Beim Umwandeln eines 4V Signals betrug die Zeitdifferenz zwischen Zähl- und Approximationsverfahren \unit[1]{s}. 
 
 
 
@@ -419,13 +419,13 @@ In diesem Versuchsabschnitt werden eine Stoppuhr und ein Frequenzzähler gebaut.
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil wird eine Stoppuhr gebaut.
+In diesem Versuchsteil wird eine Stoppuhr gebaut, welche mit \unit[1]{MHz} getaktet ist.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden ein Taktzähler Typ 4040, ein Kondensator, Widerstände, ein NAND-Gatter, LEDs, eine Spannungsquelle und das Bread Board verwendet.
+Es werden ein Taktzähler Typ 4040, ein Kondensator, Widerstände, ein NAND-Gatter, LEDs, eine Spannungsquelle und das Breadboard verwendet.
 
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
@@ -444,7 +444,7 @@ Schaltplan zum Aufbau der Stoppuhr.
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Nachdem Schaltung \ref{fig:auf_3}  am Bread Board aufgebaut wurde, wird ein Eingangssignal mit einer Amplitude von 5V (Rechteckpulse mit kurzer Signalbreite und langen Pausen) eingestellt. Die Frequenz des Funktionsgenerators wird so gewählt, das die Maximalzeit, welche mit der Stoppuhr gemessen werden kann, nicht überstiegen wird (8 LEDs und \unit[1]{MHz} Oszillator $\Rightarrow$ f $\gtrsim$ \unit[4]{kHz}). Danach wird das Bitmuster der LEDs gelesen und umgerechnet. Die Impulse des Funktionsgenerators werden dann mit dem Oszilloskop untersucht um nochmal die Pulsdauer zu bestimmen, welche mit den gemessenen Werten verglichen werden soll.
+Nachdem die Schaltung  in Abb. \ref{fig:auf_3}  am Breadboard aufgebaut wurde, wird ein Eingangssignal mit einer Amplitude von 5V (Rechteckpulse mit kurzer Signalbreite und langen Pausen) eingestellt. Die Frequenz des Funktionsgenerators wird so gewählt, das die Maximalzeit, welche mit der Stoppuhr gemessen werden kann, nicht überstiegen wird (8 LEDs und \unit[1]{MHz} Oszillator $\Rightarrow$ f $\gtrsim$ \unit[4]{kHz} bzw. T $\lesssim$ \unit[0,25]{ms}). Danach wird das Bitmuster der LEDs gelesen und umgerechnet. Die Impulse des Funktionsgenerators werden dann mit dem Oszilloskop untersucht um nochmal die Pulsdauer zu bestimmen, welche mit den gemessenen Werten verglichen werden soll. Für das Durchlaufen der zwölf Bits (8 LEDs) werden 4 Millisekunden benötigt.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -486,7 +486,7 @@ In Tabelle \ref{tab:span} sind die eingestellten Pulsbreiten und die dazu an den
 \caption{Bitmuster in Abhängigkeit der Frequenz}
 \label{tab:span}
 \end{table}
-Um die Impulsdauern mit dem Oszilloskop zu messen wurde die Funktion "`measure"' verwendet. Sobald die Impulsdauer größer ist als die Maximalzeit der Stoppuhr, zählt diese wieder binär von 0 aus hoch, sodass z.B. anstatt einer 260 bei \unit[260]{$\mu$s} Impulsdauer und 8 LEDs eine binäre 4 angezeigt wird. Durch das Hochzählen bis 260 entsteht dabei ein Hintergrundleuchten bei allen nicht dauerhaft aufleuchtenden LEDs. Zwischen NAND-Gatter und Zähler ist das invertierte Signal des Oszillators zu sehen, solange am Eingang Spannung anliegt. 
+Um die Impulsdauern mit dem Oszilloskop zu messen, wurde die Funktion "`measure"' verwendet. Sobald die Impulsdauer größer ist als die Maximalzeit der Stoppuhr, zählt diese wieder binär von 0 hoch, sodass z.B. anstatt einer 260 bei \unit[260]{$\mu$s} Impulsdauer und 8 LEDs eine binäre 4 angezeigt wird. Durch das binäre Hochzählen bis 260 entsteht dabei ein Hintergrundflackern bei allen nicht dauerhaft aufleuchtenden LEDs. Die Intensität des Hintergrundflackerns ist abhängig vom Impuls-Pausen-Verhältnis und nimmt ab, falls die Impulsbreiten klein gegen die Länge der Pausen sind. Die Impulsbreiten sollten daher möglichst klein gewählt werden. Zwischen NAND-Gatter und Zähler ist das invertierte Signal des Oszillators zu sehen, solange am Eingang Spannung anliegt. 
 
 \subsection{Bau eines Frequenzzählers}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
@@ -509,7 +509,7 @@ Schaltplan zum Aufbau eines Frequenzzählers.
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-Die Stoppuhr wird zum Frequenzzähler umgebaut, indem das Torsignal vom Oszillator gewonnen wird. Zwischen Oszillator und NAND-Baustein werden zwei Zähler geschaltet, welche die Frequenz des Oszillators durch $2^{22}$ teilen (siehe Schaltung \ref{fig:auf_3_2}). Die Torzeit beträgt jetzt eine Sekunde (\unit[0,5]{Hz}), da der Oszillator mit einer Frequenz von \unit[2,09715]{MHz} arbeitet. Nachdem die Schaltung aufgebaut wurde, wird, nachdem mit dem Oszilloskop überprüft wurde, dass das Eingangssignal zwischen 0 und \unit[5]{V} liegt, eine Spannung von \unit[5]{V} angelegt und die Frequenz der Ausgangsimpulse des Funktionsgenerators gemessen. Die maximal Messbare Frequenz liegt bei genau \unit[4,095]{kHz}, falls 12 LEDs verwendet werden (\unit[255]{Hz} für 8 LEDs), daher muss das Eingangssignal passend gewählt werden. Zum Schluss wird der Messwert mit der Anzeige am Funktionsgenerator verglichen.
+Die Stoppuhr wird zum Frequenzzähler umgebaut, indem das Torsignal vom Oszillator gewonnen wird. Zwischen Oszillator und NAND-Baustein werden zwei Zähler geschaltet, welche die Frequenz des Oszillators durch $2^{22}$ teilen (siehe Schaltung \ref{fig:auf_3_2}). Die Torzeit beträgt jetzt eine Sekunde (\unit[0,5]{Hz}), da der Oszillator mit einer Frequenz von \unit[2,09715]{MHz} arbeitet. Sobald die Schaltung aufgebaut wurde, wird mit dem Oszilloskop überprüft ob das Eingangssignal zwischen 0 und \unit[5]{V} liegt und eine Spannung von \unit[5]{V} eingestellt. Dann wird die Frequenz der Ausgangsimpulse des Funktionsgenerators gemessen. Die maximal Messbare Frequenz liegt bei genau \unit[4,095]{kHz}, falls 12 LEDs verwendet werden (\unit[255]{Hz} für 8 LEDs), daher muss das Eingangssignal passend gewählt werden. Zum Schluss wird der Messwert mit der Anzeige am Funktionsgenerator verglichen.
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -520,7 +520,7 @@ Die Stoppuhr wird zum Frequenzzähler umgebaut, indem das Torsignal vom Oszillat
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 In Tabelle \ref{tab:frequ} werden die am Oszilloskop abgelesenen Frequenzen des Funktionsgenerators und die an den LEDs angezeigten Frequenzen in Binärcode sowie im Dezimalsystem dargestellt.
-\begin{table}[htbp]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{|r|l|l|}
 	\hline
