@@ -81,31 +81,33 @@ Marius \textsc{Wensing}
 %hinter der einleitung kann der allgemeine theoretische hintergrund in einer zusätzlichen section erklärt werden
 %1-----------------------------------------------1
 
-Dieser Versuch beschäftigt sich mit den Fragestellungen, wie man digitale in analoge Signale umwandelt, wie ein Computer kontinuierliche Spannungswerte erzeugen kann, wie analoge Werte digitalisiert werden können, wie ein Digitalvoltmeter kontinuierliche Spannungswerte erfassen und digital anzeigen kann und wie sich Zeiten oder Frequenzen messen lassen.
+Dieser Versuch beschäftigt sich mit den Fragestellungen, wie man digitale in analoge Signale umwandelt, wie ein Computer kontinuierliche Spannungswerte erzeugen kann, wie analoge Werte digitalisiert werden können, wie ein Digitalvoltmeter kontinuierliche Spannungswerte erfassen, digital anzeigen kann und wie sich Zeiten oder Frequenzen messen lassen.
 
 \section{Umwandlung digitaler in analoge Signale, DAC}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsabschnitt werden verschiedene Digital-Analog-Converter gebaut und untersucht. Realisiert werden der Digital-Analog-Converter mit einem Binär- und einem R-2R-Netzwerk. 
+In diesem Versuchsabschnitt werden verschiedene Digital-Analog-Converter gebaut und untersucht. Realisiert werden ein Digital-Analog-Converter mit Binär- und R-2R-Netzwerk. 
 
 \subsection{DAC mit binärem Netzwerk}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil wird ein DAC mit einem Binärnetzwerk aufgebaut. Der Nachteil dieses Aufbaus ist, dass für hohe Auflösungen genaue Widerstände benötigt werden. Die Auflösung bestimmt sich mit:
+In diesem Versuchsteil wird ein DAC mit einem Binärnetzwerk aufgebaut. Der Nachteil dieses Aufbaus ist, dass für hohe Auflösungen genaue Widerstände benötigt werden. Die Ausgangsspannung bestimmt sich mit:
 \begin{align}
 \text{U}_\text{A}=\text{U}_0 \cdot \frac{\text{Binärwert}}{2^\text{n}-1}
 \label{eqn:binaer}
 \end{align}
 
+Dabei ist n die Bitgröße des Eingangssignals.
+
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden das Versuchsboard, das Zusatzboard, ein PC, ein Steckaufsatz und eine $2^\text{n}$ Folge von Widerständen verwendet.
+Es werden das Versuchsboard, das Zusatzboard, ein PC, ein Steckaufsatz und n Widerstände der Größe $2^\text{j}$ (j=1$,\ldots$,n) verwendet.
 
-\subsubsection*{Versuchsaufbau}
+\subsubsection*{Versuchsaufbau} 
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
 In Abbildung \ref{fig:auf_1_1} ist der Schaltplan eines ADCs mit binärem Widerstandsnetzwerk zu sehen. Die Schaltung wird mit dem Versuchsboard und einem Binärnetzwerk realisiert.
@@ -122,7 +124,7 @@ In Abbildung \ref{fig:auf_1_1} ist der Schaltplan eines ADCs mit binärem Widers
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Der größte Widerstand wird an die erste Binärstelle angeschlossen und an jede weitere Binärstelle jeweils die Hälfte des vorherigen Widerstandes. Das Widerstandsnetzwerk wird auf das Versuchsboard gesetzt. Zuerst werden die ersten 4 Bits des Binärzählers verwendet und das Ausgangssignal mit dem Oszilloskop aufgenommen. Danach werden die ersten 8 Bits des Binärzählers verwendet und das Ausgangssignal mit dem Oszilloskop aufgenommen. Die Messung wird mit dem Befehl c gestartet. Der Mikrocontroller übernimmt in diesem Fall die Funktionen des Oszillators und des Binärzählers.
+Der größte Widerstand (1,3M$\Omega$) wird an die erste Binärstelle angeschlossen und an jede weitere Binärstelle jeweils die Hälfte des vorherigen Widerstandes. Das Widerstandsnetzwerk wird auf das Versuchsboard gesteckt. Zuerst werden die ersten 4 Bits, danach die ersten 8 Bits verwendet und mit dem Oszilloskop das Ausgangssignal aufgenommen. Die Messung wird mit dem Befehl c gestartet. Der Mikrocontroller übernimmt in diesem Fall die Funktionen des Oszillators und des Binärzählers.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -134,12 +136,12 @@ Der größte Widerstand wird an die erste Binärstelle angeschlossen und an jede
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Erwartet wird eine Treppen-artiger Verlauf bei der Messung der Ausgangsspannung erwartet. Die Differenz zwischen zwei Stufen ergibt sich nach Gleichung \ref{eqn:binaer} mit $\frac{\text{U}_0}{2^\text{n}-1}$. Für die 4 Bits ergab sich der Verlauf in Abbildung \ref{fig:1_1_1}, die einzelnen Stufen sind deutlich zu sehen. Die Auflösung liegt bei einem fünfzentel.
+Bei der Messung wird ein treppen-artiger Verlauf der Ausgangsspannung erwartet. Die Differenz zwischen zwei Stufen ergibt sich nach Gleichung \ref{eqn:binaer} mit $\frac{\text{U}_0}{2^\text{n}-1}$. Für die 4 Bits ergab sich der Verlauf in Abbildung \ref{fig:1_1_1}, die einzelnen Stufen sind deutlich zu sehen. Die Auflösung liegt bei einem fünfzentel.
 
 \begin{figure}[H] 
   \centering 	
     \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{1_1_1.pdf}
-  	\caption[Aufnahme der Ausgangsspannung]{Aufnahme der Ausgangsspannung} 
+  	\caption[Aufnahme der Ausgangsspannung mit 4 Widerständen]{Aufnahme der Ausgangsspannung mit 4 Widerständen} 
   \label{fig:1_1_1}
 \end{figure}
 
@@ -148,7 +150,7 @@ Die Aufnahme des Kurvenverlaufs für 8 Bit ist in Abbildung \ref{fig:1_1_2} zu s
 \begin{figure}[H] 
   \centering 	
     \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{1_1_2.pdf}
-  	\caption[Aufnahme der Ausgangsspannung]{Aufnahme der Ausgangsspannung} 
+  	\caption[Aufnahme der Ausgangsspannung mit 8 Widerständen]{Aufnahme der Ausgangsspannung mit 8 Widerständen} 
   \label{fig:1_1_2}
 \end{figure}
 
@@ -158,7 +160,7 @@ Die Aufnahme des Kurvenverlaufs für 8 Bit ist in Abbildung \ref{fig:1_1_2} zu s
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil wird ein DAC mit einem R-2R-Netzwerk untersucht. Der Vorteil diese Aufbaus ist, dass nur zwei verschieden Widerstände benötigt werden, die ein Verhältnis von 1:2 haben. Die Auflösung bestimmt sich mit:
+In diesem Versuchsteil wird ein DAC mit einem R-2R-Netzwerk untersucht. Der Vorteil dieses Aufbaus ist, dass nur zwei verschiedene Widerstände benötigt werden, die ein Verhältnis von 1:2 haben. Die Auflösung bestimmt sich mit:
 
 \begin{align}
 \text{U}_\text{A}=\text{U}_0 \cdot \frac{\text{Binärwert}}{2^\text{n}}
@@ -169,12 +171,12 @@ In diesem Versuchsteil wird ein DAC mit einem R-2R-Netzwerk untersucht. Der Vort
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden das Versuchsboard, das Zusatzboard, ein PC, ein Steckaufsatz mit einem R-2R Widerstandsnetzwerk verwendet.
+Es werden das Versuchsboard, das Zusatzboard, ein PC und ein Steckaufsatz mit einem R-2R Widerstandsnetzwerk verwendet.
 
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
-Der Schaltplan eines R-2R Netzwerkes ist in Abbildung \ref{fig:auf_1_2} zu sehen. So ein Netzwerk wird auf das Zusatzboard gesetzt.
+Der Schaltplan eines R-2R Netzwerkes ist in Abbildung \ref{fig:auf_1_2} zu sehen. Dieses Netzwerk wird auf das Zusatzboard gesetzt.
 
 \begin{figure}[H] 
   \centering
@@ -188,7 +190,7 @@ Der Schaltplan eines R-2R Netzwerkes ist in Abbildung \ref{fig:auf_1_2} zu sehen
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Das R-2R-Netzwerk wird mit acht Bits aufgebaut und das Ausgangssignal mit dem Oszilloskop untersucht.
+Das für acht Bit ausgelegte R-2R-Netzwerk wird auf das Versuchsboard gesteckt. Die Messung wird mit dem Befehl c gestartet und das Ausgangssignal mit dem Oszilloskop  untersucht.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -200,7 +202,7 @@ Das R-2R-Netzwerk wird mit acht Bits aufgebaut und das Ausgangssignal mit dem Os
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Für den Zeitleichenverlauf wird wie im Teil zuvor eine Treppen-artiger Verlauf erwartet. Dabei ist die Auflösung höher da die Ausgangsspannung nach Gleichung \ref{eqn:binaer_2} bestimmt wird. Die Höhe einer Stufe ergibt sich mit $\frac{\text{U}_0}{2^\text{n}}$. In dem verwendetem Aufbau entspricht dies einer Stufenhöhe von einem 256-stel. Der Verlauf auf dem Oszilloskop ist in Abbildung \ref{fig:1_2_1} zu sehen. Aufgrund der hohen Auflösung sind die einzelnen Stufen nicht mehr zu erkennen.
+Für den zeitlichen Verlauf wird ein Treppen-artiger Verlauf erwartet. Dabei ist die Auflösung höher, da die Ausgangsspannung nach Gleichung \ref{eqn:binaer_2} bestimmt wird. Die Höhe einer Stufe ergibt sich mit $\frac{\text{U}_0}{2^\text{n}}$. In dem verwendeten Aufbau entspricht dies einer Stufenhöhe von einem 256-stel. Der Verlauf auf dem Oszilloskop ist in Abbildung \ref{fig:1_2_1} zu sehen. Aufgrund der hohen Auflösung sind die einzelnen Stufen nicht mehr zu erkennen.
 
 \begin{figure}[H] 
   \centering 	
@@ -221,7 +223,7 @@ Für den Zeitleichenverlauf wird wie im Teil zuvor eine Treppen-artiger Verlauf 
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-Beide Messungen sind wie erwartet verlaufen. Da für das R-2R Netzwerk nur ein 8 Bit großes Netzwerk zur Verfügung stand können auch nur die beiden 8 Bit großen ADC verglichen werden. Vergleicht man die beiden Aufnahmen, Abbildung \ref{fig:1_1_2} für das Binärnetzwerk und Abbildung \ref{fig:1_2_1} für das R-2R Netzwerk ist kein Unterschied zu erkennen. Theoretisch sollten sich mit dem R-2R Netzwerk bessere Ergebnisse erzielen lassen, da es kaum von der Fehlern der Widerstände abhängt.
+Beide Messungen sind wie erwartet verlaufen. Da für das R-2R Netzwerk nur ein 8 Bit großes Netzwerk zur Verfügung stand, können nur die beiden 8 Bit großen ADC verglichen werden. Betrachtet man die beiden Aufnahmen, Abbildung \ref{fig:1_1_2} für das Binärnetzwerk und Abbildung \ref{fig:1_2_1} für das R-2R Netzwerk, ist kein Unterschied zu erkennen. Theoretisch sollten sich mit dem R-2R Netzwerk bessere Ergebnisse erzielen lassen, da es kaum von den Fehlern der Widerstände abhängt.
 
 
 
@@ -235,11 +237,11 @@ In diesem Versuchsabschnitt werden verschiedene Analog-Digital-Converter mit Hil
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil wird ein ADC mit dem Zählverfahren und einer mit Apporximatoinsverfahren gebaut.
+In diesem Versuchsteil wird ein ADC mit Zählverfahren und ein ADC mit Apporximatoinsverfahren gebaut.
 
-Der ADC mit Zählverfahren verwendet einen Binärzähler und ein R-2R Netzwerk um die Referenzspannung zu erzeugen. Der Stand des Binärzählers wird gespeichert, wenn der Komparator eine 0 ausgibt. Das Bitmuster des Zählers ist die Digitalisierung des analogen Signals. Der Nachteil des Verfahrens ist, dass der Aufwand zur Digitalisierung des Signals $\mathcal O(2^n)$ beträgt.
+Der ADC mit Zählverfahren verwendet einen Binärzähler und ein R-2R Netzwerk um die Referenzspannung zu erzeugen. Der Stand des Binärzählers wird gespeichert, wenn der Komparator eine 0 ausgibt. Das Bitmuster des Zählers entspricht der digitalen Version des analogen Signals. Der Nachteil des Verfahrens ist, dass der Aufwand zur Digitalisierung des Signals $\mathcal O(2^n)$ beträgt.
 
-Der ADC mit Apporximatoinsverfahren bestehe aus einer Steuereinheit, einem R-2R Netzwerk und einem Komparator. Die Steuereinheit schaltet die Referenzspannung auf den halben Maximalwert. Wenn der Ausgang des Komparators auf 1 eins geht, wird die Referenzspannung auf $\frac{3}{4}$ der Maximalspannung gesetzt. Falls der Ausgang des Komparators auf 0 steht wird das aktuelle Bit auf 0 gesetzt und die Referenzspannung auf $\frac{1}{4}$ der Maximalspannung gesetzt. Der Vorteil dieses Verfahren ist, dass es wesentlich schneller als der ADC mit Zählverfahren ist. Der Aufwand beträgt $\mathcal O(n)$.
+Der ADC mit Apporximatoinsverfahren besteht aus einer Steuereinheit, einem R-2R Netzwerk und einem Komparator. Die Steuereinheit schaltet die Referenzspannung auf den halben Maximalwert. Wenn der Ausgang des Komparators auf 1 eins geht, wird die Referenzspannung auf $\frac{3}{4}$ der Maximalspannung gesetzt. Falls der Ausgang des Komparators auf 0 steht wird das aktuelle Bit auf 0 gesetzt und die Referenzspannung auf $\frac{1}{4}$ der Maximalspannung gesetzt. Der Vorteil dieses Verfahren ist, dass es wesentlich schneller als das Zählverfahren ist. Der Aufwand beträgt $\mathcal O(n)$.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -265,7 +267,7 @@ Der Versuchsaufbau besteht aus dem Board von Versuch 10 und einem neuem Zusatzbo
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Das Zusatzboard wird an das Board angeschlossen, dies geschieht über einen seriellen Anschluss. Das vorgeschriebene Programm, zum messen der Daten wird auf das Board geladen. Danach wird die zu messende Spannung an M1 angeschlossen. Die Funktionalität wird untersucht, indem verschiedene Steuerzeichen (siehe nachfolgende Tabelle) an den Mikrocontroller geschickt werden. Dann werden unterschiedliche Spannungen eingestellt und die Ausgangssignale mit dem Oszilloskop beobachtet. Das Bitmuster wird jeweils abgelesen und notiert. Der Vorgang wird für das Zählverfahren und das Approximationsverfahren durchgeführt. Im nachfolgenden noch die Tabelle mit den Befehlen
+Das Zusatzboard wird an das Board angeschlossen, dies geschieht über einen seriellen Anschluss. Das vorgeschriebene Programm, zum messen der Daten wird auf das Board geladen. Danach wird die zu messende Spannung an M1 angeschlossen. Die Funktionalität wird untersucht, indem verschiedene Steuerzeichen (siehe nachfolgende Tabelle) an den Mikrocontroller geschickt werden. Dann werden unterschiedliche Spannungen eingestellt und die Ausgangssignale mit dem Oszilloskop beobachtet. Das Bitmuster wird jeweils abgelesen und notiert. Der Vorgang wird für das Zählverfahren und das Approximationsverfahren durchgeführt. Im nachfolgenden ist die Tabelle mit den Befehlen zu sehen.
 
 \begin{itemize}
 \item	?: Mikrocontroller meldet E-Prak Bergische Universität Wuppertal 2011“
@@ -292,11 +294,11 @@ Messdaten für das Zählverfahren.
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-\multicolumn{1}{|l|}{Spannung/V} & Hex & \multicolumn{1}{l|}{Dezimal} & \multicolumn{1}{l|}{Erwartet Binärwerte} & LEDs \\ \hline
+\multicolumn{1}{|l|}{Spannung/V} & Hex & \multicolumn{1}{l|}{Decimal} & \multicolumn{1}{l|}{Erwartet Binärwerte} & LEDs \\ \hline
 0,5 & 1E & 30 & 0b00011110 & 0b00011110 \\ \hline
 1 & 39 & 57 & 0b00111001 & 0b00111001 \\ \hline
 1,5 & 55 & 85 & 0b01010101 & 0b01010101 \\ \hline
-2 & 6F & 111 & 0b01101111 & 0b01101110 \\ \hline
+2 & 6F & 111 & 0b01101111 & 0b01101111 \\ \hline
 2,5 & 89 & 137 & 0b10001001 & 0b10001001 \\ \hline
 3 & A3 & 163 & 0b10100011 & 0b10100011 \\ \hline
 3,5 & BD & 189 & 0b10111101 & 0b10111101 \\ \hline
@@ -315,7 +317,7 @@ Messdaten für das Approximationsverfahren.
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-\multicolumn{1}{|l|}{Spannung/V} & Hex & \multicolumn{1}{l|}{Dezimal} & \multicolumn{1}{l|}{Erwartet Binärwerte} & LEDs \\ \hline
+\multicolumn{1}{|l|}{Spannung/V} & Hex & \multicolumn{1}{l|}{Decimal} & \multicolumn{1}{l|}{Erwartet Binärwerte} & LEDs \\ \hline
 0,5 & 1F & 31 & 0b00011111 & 0b00011111 \\ \hline
 1 & 38 & 56 & 0b00111000 & 0b00111000 \\ \hline
 1,5 & 4F & 79 & 0b01001111 & 0b01001111 \\ \hline
@@ -344,32 +346,32 @@ Messdaten für das Approximationsverfahren.
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Erwartet wird ein Treppen-artiger verlauf, welchen als solche, aufgrund der hohen Auflösung nicht direkt zu erkennen sein sollt. 
+Erwartet wird ein treppen-artiger Verlauf, welcher aufgrund der hohen Auflösung nicht zu erkennen war. 
 
-Bei dem Aufbau mit dem Zählverfahren war das hochgezählt der LEDs, bis die Spannung von 2 Volt erreicht wurde zu beobachten. Der Verlauf auf dem Oszilloskop ist in Abbildung \ref{fig:2_1_2V} zu sehen die untere Kurve ist das Signal des Komparators und die obere Kurve ist das Signal der Vergleichsspannung.
-
-\begin{figure}[H]
-  \centering 	
-    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{2_1_4V.pdf}
-  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 2V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 2V} 
-  \label{fig:2_1_4V}
-\end{figure}
-
-In Abbildung \ref{fig:2_1_2V} ist der Verlauf der Referenzspannung und der Komparatorspannung für die Umwandlung eines 4V Signals in ein Digitalesssignal dargestellt. An der Zeitauflösung ist zu sehen, das dass Umwandeln länger dauert als das Umwandeln des 2V Signals.
+Bei dem Aufbau mit dem Zählverfahren, war das Hochzählen der LEDs, bis zu einer Spannung von 2 Volt zu beobachten. Der Verlauf auf dem Oszilloskop ist in Abbildung \ref{fig:2_1_2V} zu sehen. Die untere Kurve ist das Signal des Komparators und die obere Kurve das Signal der Vergleichsspannung.
 
 \begin{figure}[H]
   \centering 	
     \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{2_1_2V.pdf}
-  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V} 
+  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 2V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 2V} 
   \label{fig:2_1_2V}
 \end{figure}
 
-Bei der Umwandlung eines 2V Signals mit dem Approximationsverfahren ergab sich der Verlauf in Abbildung \ref{fig:2_2_2V} zu sehen. Die untere Kurve ist das Signal des Komparators und die obere Kurve ist das Signal der Steuereinheit.
+In Abbildung \ref{fig:2_1_4V} ist der Verlauf der Referenzspannung und der Komparatorspannung für die Umwandlung eines 4V Signals in ein digitales Signal dargestellt. An der Zeitauflösung ist zu sehen, das dass Umwandeln kürzer dauert als das Umwandeln des 2V Signals.
+
+\begin{figure}[H]
+  \centering 	
+    \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{2_1_4V.pdf}
+  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für ein Eingangssignal von 4V]{Aufnahme der Ausgangs- und Komparatorspannung für ein Eingangssignal von 4V} 
+  \label{fig:2_1_4V}
+\end{figure}
+
+Bei der Umwandlung eines 2V Signals mit dem Approximationsverfahren ergab sich der Verlauf in Abbildung \ref{fig:2_2_2V}. Die untere Kurve ist das Signal des Komparators und die obere Kurve ist das Signal der Steuereinheit.
 
 \begin{figure}[H]
   \centering 	
     \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{2_2_2V.pdf}
-  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 2V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 2V} 
+  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für ein Eingangssignal von 2V]{Aufnahme der Ausgangs- und Komparatorspannung für ein Eingangssignal von 2V} 
   \label{fig:2_2_2V}
 \end{figure}
 
@@ -378,18 +380,18 @@ Die Umwandelung eines 4V Signals ist in Abbildung \ref{fig:2_2_4V} zu sehen. Die
 \begin{figure}[H]
   \centering 	
     \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{2_2_4V.pdf}
-  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V]{Aufnahme der Ausgangs- und Komparatorspannung für eine Eingangssignal von 4V} 
+  	\caption[Aufnahme der Ausgangs- und Komparatorspannung für ein Eingangssignal von 4V]{Aufnahme der Ausgangs- und Komparatorspannung für ein Eingangssignal von 4V} 
   \label{fig:2_2_4V}
 \end{figure}
 
 
-Aus den Abbildung \ref{fig:2_1_2V} bis \ref{fig:2_2_4V} kann jeweils benötigte Zeit abgelesen werden. Daraus lassen sich die Unterschiede in der Dauer der Umwandlung berechnen. Für das Umwandeln des 2V Signals ergibt sich eine Zeitdifferenz von 0,99s und für das Umwandeln des 4V Signals eine Differenz von 2,069s.
+Aus den Abbildung \ref{fig:2_1_2V} bis \ref{fig:2_2_4V} kann die jeweils benötigte Zeit abgelesen werden. Daraus lassen sich die Unterschiede in der Dauer der Umwandlung berechnen. Für das Umwandeln des 2V Signals ergibt sich eine Zeitdifferenz von 2,069s und für das Umwandeln des 4V Signals eine Differenz von 1s.
 
-Die Hexadezimal und Dezimalzahlen so wie die daraus bestimmten Bitmuster und die abgelesenen Bitmuster sind in Tabelle \ref{tab:zaehl} für das Zählverfahren und in Tabelle \ref{tab:approx} für das Approximationsverfahren. Die aus den Hexadezimalwerten bestimmten Bitmuster stimmen mit den abgelesenen Bitmustern überein.
+Die Hexadezimal und Dezimalzahlen so wie die daraus bestimmten Bitmuster und die abgelesenen Bitmuster sind in Tabelle \ref{tab:zaehl} für das Zählverfahren und in Tabelle \ref{tab:approx} für das Approximationsverfahren dargestellt. Die aus den Hexadezimalwerten bestimmten Bitmuster stimmen mit den abgelesenen Bitmustern überein.
 
-Die maximale Spannung ist bei 5V, da die maximale Ausgangsspannung des DACs 5V beträgt.
+Die maximal messbare Spannung liegt bei 5V, da die maximale Ausgangsspannung des DACs 5V beträgt.
 
-Beim Steuern des Approximationsverfahren mit einem Taster war zu erkennen, das nach jedem Drücken des Tasters die Stufe der Referenzspannung kleiner wurde.
+Beim Steuern des Approximationsverfahren mit einem Taster war zu erkennen, das nach jedem Drücken des Tasters die Änderung der Referenzspannung kleiner wurde.
 
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
@@ -401,6 +403,8 @@ Beim Steuern des Approximationsverfahren mit einem Taster war zu erkennen, das n
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+
+In diesem Versuchabschnitt wurden zwei Typen von ADCs untersucht, einer mit Zählverfahren und einer mit Approximationsverfahren. Dabei wurden insbesondere die Dauer der Umwandelung des Signals untersucht. Der ADC mit Approximationsverfahren ist dabei wesentlich schneller, als der ADC mit Zählverfahren. Für die Umwandlung eines 2V Signals benötigt der ADC mit Zählverfahren 2,069s länger und beim umwandeln eines 4V Signals betrug die Zeitdifferenz 1s. 
 
 
 
