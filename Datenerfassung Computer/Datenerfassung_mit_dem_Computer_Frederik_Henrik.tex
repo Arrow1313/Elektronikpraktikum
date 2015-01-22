@@ -292,7 +292,7 @@ Messdaten für das Zählverfahren.
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-\multicolumn{1}{|l|}{Spannung/V} & Hex & \multicolumn{1}{l|}{Decimal} & \multicolumn{1}{l|}{Erwartet Binärwerte} & LEDs \\ \hline
+\multicolumn{1}{|l|}{Spannung/V} & Hex & \multicolumn{1}{l|}{Dezimal} & \multicolumn{1}{l|}{Erwartet Binärwerte} & LEDs \\ \hline
 0,5 & 1E & 30 & 0b00011110 & 0b00011110 \\ \hline
 1 & 39 & 57 & 0b00111001 & 0b00111001 \\ \hline
 1,5 & 55 & 85 & 0b01010101 & 0b01010101 \\ \hline
@@ -315,7 +315,7 @@ Messdaten für das Approximationsverfahren.
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-\multicolumn{1}{|l|}{Spannung/V} & Hex & \multicolumn{1}{l|}{Decimal} & \multicolumn{1}{l|}{Erwartet Binärwerte} & LEDs \\ \hline
+\multicolumn{1}{|l|}{Spannung/V} & Hex & \multicolumn{1}{l|}{Dezimal} & \multicolumn{1}{l|}{Erwartet Binärwerte} & LEDs \\ \hline
 0,5 & 1F & 31 & 0b00011111 & 0b00011111 \\ \hline
 1 & 38 & 56 & 0b00111000 & 0b00111000 \\ \hline
 1,5 & 4F & 79 & 0b01001111 & 0b01001111 \\ \hline
@@ -468,21 +468,21 @@ In Abbildung \ref{fig:impulse} sind die Aufnahmen der Impulse des Funktionsgener
 \caption[Aufnahme der Impulse]{Aufnahme der Impulse}
 \label{fig:impulse}
 \end{figure}
-In Tabelle \ref{tab:span} sind die eingestellten Pulsbreiten und die dazu an den LEDs abgelesenen Binärmuster dargestellt.
+In Tabelle \ref{tab:span} sind die eingestellten Pulsbreiten und die dazu an den LEDs abgelesenen Binärmuster dargestellt. Der Impuls für das erste Signal wurde ebenso mit dem Oszilloskop gemessen, aber nicht abgespeichert. Deshalb sind in Abb. \ref{fig:impulse} die Impulse für die zweite und dritte Messung zu sehen.
 \begin{table}[H]
 \begin{center}
-\begin{tabular}{|r|l|}
+\begin{tabular}{|r|l|l|}
 	\hline
-	\multicolumn{1}{|l|}{Pulsbreite/{\unit{$\mu$s}}} & Binärmuster \\ \hline\hline
-	                                           19,05 & 0b00010011  \\ \hline
-	                                           66,89 & 0b11000011  \\ \hline
-	                                           207,1 & 0b11001111  \\ \hline
+	\multicolumn{1}{|l|}{Pulsbreite/{\unit{$\mu$s}}} & Binärmuster & Binär $\rightarrow$ Dezimal\\ \hline\hline
+	                                           19,05 & 0b00010011  & 19\\ \hline
+	                                           66,89 & 0b01000011  & 67\\ \hline
+	                                           207,1 & 0b11001111  & 207\\ \hline
 \end{tabular}
 \end{center}
 \caption{Bitmuster in Abhängigkeit der Frequenz}
 \label{tab:span}
 \end{table}
-
+Um die Impulsdauern mit dem Oszilloskop zu messen wurde die Funktion "`measure"' verwendet.
 
 \subsection{Bau eines Frequenzzählers}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
@@ -520,7 +520,7 @@ In Tabelle \ref{tab:frequ} werden die am Oszilloskop abgelesenen Frequenzen des 
 \begin{center}
 \begin{tabular}{|r|l|l|}
 	\hline
-	\multicolumn{1}{|l|}{Frequenz/Hz} & Binärmuster & Binär $\rightarrow$ Decimal \\ \hline\hline
+	\multicolumn{1}{|l|}{Frequenz/Hz} & Binärmuster & Binär $\rightarrow$ Dezimal \\ \hline\hline
 	                              140 & 0b10001100  & 140                         \\ \hline
 	                               86 & 0b01010110  & 86                          \\ \hline
 	                               32 & 0b00100000  & 32                          \\ \hline
@@ -544,7 +544,7 @@ Für den Frequenzzähler wurden keine zusätzlichen Aufnahmen der Impulse getät
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden
 %1-----------------------------------------------1
-Die in diesem Versuchsabschnitt untersuchten Schaltungen zeigten das erwartete Verhalten. Der Frequenzzähler konnte die verwendeten Impulsfrequenzen mit den LEDs gut wiedergeben, da alle Frequenzen im Bereich der Genauigkeit des Frequenzzählers korrekt angezeigt wurden.
+Die in diesem Versuchsabschnitt untersuchten Schaltungen zeigten das erwartete Verhalten. Der Frequenzzähler sowie die Stoppuhr konnte die verwendeten Impulsfrequenzen/dauern mit den LEDs gut wiedergeben, da alle Frequenzen/Impulsdauern im Bereich der Genauigkeit des Frequenzzählers/der Stoppuhr korrekt angezeigt wurden.
 
 \section{Fazit}
 %im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
