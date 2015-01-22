@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  5 JAN 2015 10:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  13 DEC 2014 12:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Digitalelektronik_Teil1_Frederik_Henrik.tex
-(./Digitalelektronik_Teil1_Frederik_Henrik.tex
+**Regelschaltungen_Frederik_Henrik.tex
+(./Regelschaltungen_Frederik_Henrik.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -457,24 +457,35 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen128
 \Gin@req@width=\dimen129
 )
-(./Digitalelektronik_Teil1_Frederik_Henrik.aux)
-\openout1 = `Digitalelektronik_Teil1_Frederik_Henrik.aux'.
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip49
+\fb@frw=\dimen130
+\fb@frh=\dimen131
+\FrameRule=\dimen132
+\FrameSep=\dimen133
+)
+(./Regelschaltungen_Frederik_Henrik.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 23.
+LaTeX Warning: Label `fig:2_1' multiply defined.
 
-(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+)
+\openout1 = `Regelschaltungen_Frederik_Henrik.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 27.
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -517,13 +528,13 @@ Package caption Info: End \AtBeginDocument code.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count108
-\scratchdimen=\dimen130
+\scratchdimen=\dimen134
 \scratchbox=\box30
 \nofMPsegments=\count109
 \nofMParguments=\count110
 \everyMPshowfont=\toks25
 \MPscratchCnt=\count111
-\MPscratchDim=\dimen131
+\MPscratchDim=\dimen135
 \MPnumerator=\count112
 \makeMPintoPDFobject=\count113
 \everyMPtoPDFconversion=\toks26
@@ -574,159 +585,215 @@ e
 <logo.pdf, id=1, 130.4875pt x 41.15375pt>
 File: logo.pdf Graphic file (type pdf)
  <use logo.pdf>
-Package pdftex.def Info: logo.pdf used on input line 31.
+Package pdftex.def Info: logo.pdf used on input line 34.
 (pdftex.def)             Requested size: 362.77264pt x 114.42905pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 51.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 54.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 51.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 54.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 51.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 54.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 51.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 54.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 51.
+(Font)              <12> on input line 54.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 51.
+(Font)              <8> on input line 54.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 51.
+(Font)              <6> on input line 54.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.pdf>] (./Digitalele
-ktronik_Teil1_Frederik_Henrik.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.pdf>] (./Regelschal
+tungen_Frederik_Henrik.toc)
 \tf@toc=\write3
-\openout3 = `Digitalelektronik_Teil1_Frederik_Henrik.toc'.
+\openout3 = `Regelschaltungen_Frederik_Henrik.toc'.
 
-[1]
-Overfull \hbox (1.01166pt too wide) in paragraph at lines 99--99
-[]\T1/lmr/bx/n/17.28 Elementare Lo-gik-ver-knüp-fun-gen Leybold-Stecksystem 
+
+[1] <Auf_1.png, id=17, 735.74875pt x 727.71875pt>
+File: Auf_1.png Graphic file (type png)
+ <use Auf_1.png>
+Package pdftex.def Info: Auf_1.png used on input line 120.
+(pdftex.def)             Requested size: 220.72632pt x 218.3173pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 124.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 124.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 124.
+ [2 <./Auf_1.png>] <1.pdf, id=29, 361.35pt x 252.945pt>
+File: 1.pdf Graphic file (type pdf)
+ <use 1.pdf>
+Package pdftex.def Info: 1.pdf used on input line 187.
+(pdftex.def)             Requested size: 542.02368pt x 379.41656pt.
+
+Overfull \hbox (58.32681pt too wide) in paragraph at lines 187--188
+ [][] 
  []
 
-<auf_1_1.png, id=17, 596.2275pt x 436.63126pt>
-File: auf_1_1.png Graphic file (type png)
- <use auf_1_1.png>
-Package pdftex.def Info: auf_1_1.png used on input line 126.
-(pdftex.def)             Requested size: 238.48677pt x 174.6494pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 130.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 130.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 130.
- [2 <./auf_1_1.png>] <auf_1_2.png, id=22, 757.83125pt x 468.75125pt>
-File: auf_1_2.png Graphic file (type png)
- <use auf_1_2.png>
-Package pdftex.def Info: auf_1_2.png used on input line 192.
-(pdftex.def)             Requested size: 303.12714pt x 187.49716pt.
+[3] [4 <./1.pdf>] <Auf_2_1_1.png, id=41, 1115.16624pt x 431.6125pt>
+File: Auf_2_1_1.png Graphic file (type png)
 
-[3] [4 <./auf_1_2.png>] <auf_1_3.png, id=32, 825.0825pt x 536.0025pt>
-File: auf_1_3.png Graphic file (type png)
+<use Auf_2_1_1.png>
+Package pdftex.def Info: Auf_2_1_1.png used on input line 229.
+(pdftex.def)             Requested size: 501.82018pt x 194.22382pt.
 
-<use auf_1_3.png>
-Package pdftex.def Info: auf_1_3.png used on input line 259.
-(pdftex.def)             Requested size: 330.02715pt x 214.3972pt.
- [5 <./auf_1_3.png>]
-<auf_2_1.png, id=37, 1037.8775pt x 544.0325pt>
-File: auf_2_1.png Graphic file (type png)
- <use auf_2_1.png>
-Package pdftex.def Info: auf_2_1.png used on input line 337.
-(pdftex.def)             Requested size: 415.14365pt x 217.60915pt.
- [6 <./auf_2_1.png>] <auf_2_2.png, id=42, 789.95125pt x 377.41pt>
-File: auf_2_2.png Graphic file (type png)
- <use auf_2_2.png>
-Package pdftex.def Info: auf_2_2.png used on input line 408.
-(pdftex.def)             Requested size: 315.9749pt x 150.96132pt.
- [7 <./auf_2_2.png>] <auf_2_3.png, id=46, 887.315pt x 422.57875pt>
-File: auf_2_3.png Graphic file (type png)
- <use auf_2_3.png>
-Package pdftex.def Info: auf_2_3.png used on input line 481.
-(pdftex.def)             Requested size: 354.91971pt x 169.0285pt.
+Overfull \hbox (18.1233pt too wide) in paragraph at lines 229--230
+ [][] 
+ []
 
-[8 <./auf_2_3.png>] <auf_2_4_1.png, id=50, 990.70125pt x 417.56pt>
-File: auf_2_4_1.png Graphic file (type png)
+<Auf_2_1_2.png, id=42, 834.11626pt x 498.86375pt>
+File: Auf_2_1_2.png Graphic file (type png)
+ <use Auf_2_1_2.png>
+Package pdftex.def Info: Auf_2_1_2.png used on input line 239.
+(pdftex.def)             Requested size: 375.34885pt x 224.4866pt.
+ [5 <./Auf_2_1_1.png> <./Auf_2_1_2.png>] <2_1_1.pdf, id=46, 361.35pt x 252.945p
+t>
+File: 2_1_1.pdf Graphic file (type pdf)
 
-<use auf_2_4_1.png>
-Package pdftex.def Info: auf_2_4_1.png used on input line 555.
-(pdftex.def)             Requested size: 396.27348pt x 167.02103pt.
- [9] <auf_2_4_2.png, id=54, 855.195pt x 473.77pt>
-File: auf_2_4_2.png Graphic file (type png)
+<use 2_1_1.pdf>
+Package pdftex.def Info: 2_1_1.pdf used on input line 297.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+ [6]
 
-<use auf_2_4_2.png>
-Package pdftex.def Info: auf_2_4_2.png used on input line 565.
-(pdftex.def)             Requested size: 342.07195pt x 189.50464pt.
- [10 <./auf_2_4_1.png> <./auf_2_4_2.png>]
-<auf_2_5.png, id=59, 1022.82124pt x 627.34375pt>
-File: auf_2_5.png Graphic file (type png)
- <use auf_2_5.png>
-Package pdftex.def Info: auf_2_5.png used on input line 620.
-(pdftex.def)             Requested size: 409.12125pt x 250.93304pt.
- [11]
-[12 <./auf_2_5.png>] <2_5_2.pdf, id=73, 301.8738pt x 142.05772pt>
-File: 2_5_2.pdf Graphic file (type pdf)
+LaTeX Warning: Reference `fig:2_1_2' on page 7 undefined on input line 302.
 
-<use 2_5_2.pdf>
-Package pdftex.def Info: 2_5_2.pdf used on input line 665.
-(pdftex.def)             Requested size: 301.87305pt x 142.05736pt.
- <auf_2_6.png, id=74, 1016.79875pt x 435.6275pt>
-File: auf_2_6.png Graphic file (type png)
+<2_1_2.pdf, id=51, 578.16pt x 722.7pt>
+File: 2_1_2.pdf Graphic file (type pdf)
+ <use 2_1_2.pdf>
+Package pdftex.def Info: 2_1_2.pdf used on input line 306.
+(pdftex.def)             Requested size: 346.89867pt x 262.90549pt.
+ [7 <./2_1_2.pdf> <./2_1_1.pdf>] <Auf_2_2.png, id=65, 1176.395pt x 663.47874pt>
+File: Auf_2_2.png Graphic file (type png)
+ <use Auf_2_2.png>
+Package pdftex.def Info: Auf_2_2.png used on input line 344.
+(pdftex.def)             Requested size: 529.37286pt x 298.56267pt.
 
-<use auf_2_6.png>
-Package pdftex.def Info: auf_2_6.png used on input line 699.
-(pdftex.def)             Requested size: 406.7123pt x 174.24791pt.
- [13 <./2_5_2.pdf> <./auf_2_6.png>]
-<auf_2_7.png, id=87, 1111.15125pt x 359.3425pt>
-File: auf_2_7.png Graphic file (type png)
- <use auf_2_7.png>
-Package pdftex.def Info: auf_2_7.png used on input line 743.
-(pdftex.def)             Requested size: 444.45262pt x 143.73445pt.
+Overfull \hbox (45.676pt too wide) in paragraph at lines 344--345
+ [][] 
+ []
 
-<auf_2_7_2.png, id=88, 1127.21124pt x 446.66875pt>
-File: auf_2_7_2.png Graphic file (type png)
- <use auf_2_7_2.png>
-Package pdftex.def Info: auf_2_7_2.png used on input line 753.
-(pdftex.def)             Requested size: 450.87651pt x 178.66432pt.
- [14 <./auf_2_7.png>] [15 <./auf_2_7_2.png>]
-(./Digitalelektronik_Teil1_Frederik_Henrik.aux) ) 
+[8 <./Auf_2_2.png>] <2_2.pdf, id=69, 578.16pt x 722.7pt>
+File: 2_2.pdf Graphic file (type pdf)
+ <use 2_2.pdf>
+Package pdftex.def Info: 2_2.pdf used on input line 371.
+(pdftex.def)             Requested size: 346.89867pt x 262.90549pt.
+
+<Auf_2_3.png, id=71, 1290.8225pt x 753.81625pt>
+File: Auf_2_3.png Graphic file (type png)
+ <use Auf_2_3.png>
+Package pdftex.def Info: Auf_2_3.png used on input line 409.
+(pdftex.def)             Requested size: 516.31985pt x 301.52116pt.
+
+Overfull \hbox (32.62299pt too wide) in paragraph at lines 409--410
+ [][] 
+ []
+
+[9 <./2_2.pdf>] <3_3.pdf, id=79, 361.35pt x 252.945pt>
+File: 3_3.pdf Graphic file (type pdf)
+ <use 3_3.pdf>
+Package pdftex.def Info: 3_3.pdf used on input line 461.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+ [10 <./Auf_2_3.png>] <TEK0004.pdf, id=83, 578.16pt x 722.7pt>
+File: TEK0004.pdf Graphic file (type pdf)
+ <use TEK0004.pdf>
+Package pdftex.def Info: TEK0004.pdf used on input line 470.
+(pdftex.def)             Requested size: 346.89867pt x 262.90549pt.
+ [11 <./3_3.pdf>] <TEK0006.pdf, id=94, 578.16pt x 722.7pt>
+File: TEK0006.pdf Graphic file (type pdf)
+ <use TEK0006.pdf>
+Package pdftex.def Info: TEK0006.pdf used on input line 479.
+(pdftex.def)             Requested size: 346.89867pt x 262.90549pt.
+ [12 <./TEK0004.pdf> <./TEK0006.pdf>] <Auf_2_4.png, id=108, 1233.60875pt x 700.
+6175pt>
+File: Auf_2_4.png Graphic file (type png)
+
+<use Auf_2_4.png>
+Package pdftex.def Info: Auf_2_4.png used on input line 527.
+(pdftex.def)             Requested size: 493.43475pt x 280.24203pt.
+
+Overfull \hbox (9.73788pt too wide) in paragraph at lines 527--528
+ [][] 
+ []
+
+[13 <./Auf_2_4.png>] <3_4.pdf, id=112, 361.35pt x 252.945pt>
+File: 3_4.pdf Graphic file (type pdf)
+ <use 3_4.pdf>
+Package pdftex.def Info: 3_4.pdf used on input line 596.
+(pdftex.def)             Requested size: 542.02368pt x 379.41656pt.
+
+Overfull \hbox (58.32681pt too wide) in paragraph at lines 596--597
+ [][] 
+ []
+
+[14] <TEK0007.pdf, id=116, 578.16pt x 722.7pt>
+File: TEK0007.pdf Graphic file (type pdf)
+ <use TEK0007.pdf>
+Package pdftex.def Info: TEK0007.pdf used on input line 606.
+(pdftex.def)             Requested size: 346.89867pt x 262.90549pt.
+ [15 <./3_4.pdf>] <TEK0008.pdf, id=126, 578.16pt x 722.7pt>
+File: TEK0008.pdf Graphic file (type pdf)
+ <use TEK0008.pdf>
+Package pdftex.def Info: TEK0008.pdf used on input line 615.
+(pdftex.def)             Requested size: 346.89867pt x 262.90549pt.
+
+<TEK0009.pdf, id=128, 578.16pt x 722.7pt>
+File: TEK0009.pdf Graphic file (type pdf)
+ <use TEK0009.pdf>
+Package pdftex.def Info: TEK0009.pdf used on input line 624.
+(pdftex.def)             Requested size: 346.89867pt x 262.90549pt.
+ [16 <./TEK0007.pdf> <./TEK0008.pdf>] <TEK0010.pdf, id=141, 578.16pt x 722.7pt>
+File: TEK0010.pdf Graphic file (type pdf)
+ <use TEK0010.pdf>
+Package pdftex.def Info: TEK0010.pdf used on input line 633.
+(pdftex.def)             Requested size: 346.89867pt x 262.90549pt.
+
+[17 <./TEK0009.pdf> <./TEK0010.pdf>] [18]
+(./Regelschaltungen_Frederik_Henrik.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4867 strings out of 493304
- 69916 string characters out of 6139871
- 137819 words of memory out of 5000000
- 8201 multiletter control sequences out of 15000+600000
- 74949 words of font info for 51 fonts, out of 8000000 for 9000
+ 4956 strings out of 493304
+ 70975 string characters out of 6139871
+ 144305 words of memory out of 5000000
+ 8280 multiletter control sequences out of 15000+600000
+ 77937 words of font info for 52 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,10n,38p,2167b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri
-12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-
-Output written on Digitalelektronik_Teil1_Frederik_Henrik.pdf (16 pages, 593371
- bytes).
+ 37i,13n,38p,915b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/l
+m/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lme
+x10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmsy8.pfb>
+Output written on Regelschaltungen_Frederik_Henrik.pdf (19 pages, 1092739 bytes
+).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
+ 202 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 144 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -98,7 +98,7 @@ In diesem Versuch geht es um Mikrocontroller und deren Programmierung. Es werden
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsabschnitt wird die Arbeitsgeschwindigkeit des Mikrcontrollers untersucht, dafür wird eine LED mit verschiedenen Schleifen und einem delay-Befehlen an und aus geschaltet.
+In diesem Versuchsabschnitt wird die Arbeitsgeschwindigkeit des Mikrocontrollers untersucht, dafür wird eine LED mit verschiedenen Schleifen und einem delay-Befehlen an und aus geschaltet.
 
 \subsection{Schnellstmögliches Programm, ohne Verzögerungsbefehle}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
@@ -110,12 +110,12 @@ In diesem Versuchsteil wird einer LED abwechselnd der Zustand 'AN' und 'AUS' zug
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das Versuchsboard verwendet.
+Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszilloskop und das Versuchsboard verwendet.
 
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
-In allen Versuchsteilen wird das Board in Abbilung \ref{fig:board_2} verwendet. Der Versuchsaufbau ändert sich bis auf die Verkabelung nicht.
+In allen Versuchsteilen wird das Board in Abbildung \ref{fig:board_2} verwendet. Der Versuchsaufbau ändert sich bis auf die Verkabelung nicht.
 
 \begin{figure}[H] 
   \centering 	
@@ -146,7 +146,7 @@ Der Quellcode zum einfachen testen der Geschwindigkeit des Boards.
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Der Code \ref{lst:g_1} wird auf den Mikrokontroller geladen. Danach wird Port B über ein Flachbandkabel mit dem LED Port verbunden. Das Board wird an ein Oszilloskop angeschlossen und die Ausgangsfrequenz an den Pins gemessen.
+Der Code \ref{lst:g_1} wird auf den Mikrocontroller geladen. Danach wird Port B über ein Flachbandkabel mit dem LED Port verbunden. Das Board wird an ein Oszilloskop angeschlossen und die Ausgangsfrequenz an den Pins gemessen.
 
 
 \subsubsection*{Auswertung}
@@ -159,7 +159,7 @@ Der Code \ref{lst:g_1} wird auf den Mikrokontroller geladen. Danach wird Port B 
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Die LEDs leuchteten, es war kein Flackern zu erkennen. Die Messung der Frquenz mit dem Oszilloskop ergab \unit[2,4]{GHz}. Der Verlauf des Signals ist in Abbildung \ref{fig:g_1} zu sehen.
+Die LEDs leuchteten, es war kein Flackern zu erkennen. Die Messung der Frequenz mit dem Oszilloskop ergab \unit[2,4]{GHz}. Der Verlauf des Signals ist in Abbildung \ref{fig:g_1} zu sehen.
 
 \begin{figure}[H] 
   \centering 	
@@ -174,13 +174,13 @@ Die LEDs leuchteten, es war kein Flackern zu erkennen. Die Messung der Frquenz m
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil soll eine LED  mit Verzögerung ein- und ausgeschaltet werden. Die Pausen werden mit Hilfe einer for-Schleife realisiert. Um die Länge der Verzögerung einzustellen wird der Befehl Nop() verwendet. Dieser sorgt dafür, dass der Mikocontroller für einen Taktzyklus aussetzt.
+In diesem Versuchsteil soll eine LED  mit Verzögerung ein- und ausgeschaltet werden. Die Pausen werden mit Hilfe einer for-Schleife realisiert. Um die Länge der Verzögerung einzustellen wird der Befehl Nop() verwendet. Dieser sorgt dafür, dass der Mikrocontroller für einen Taktzyklus aussetzt.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das Versuchsboard verwendet.
+Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszilloskop und das Versuchsboard verwendet.
 
 
 \subsubsection*{Quellcode}
@@ -214,7 +214,7 @@ void test_speed_for(){
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Der Code \ref{lst:g_2} wird auf den Mikrokontroller geladen. Port B wird mit dem LED Port über ein Flachbandkabel verbunden. Dann wird das Board an ein Oszilloskop angeschlossen und die Ausgangsfrequenz an den Pins gemessen.
+Der Code \ref{lst:g_2} wird auf den Mikrocontroller geladen. Port B wird mit dem LED Port über ein Flachbandkabel verbunden. Dann wird das Board an ein Oszilloskop angeschlossen und die Ausgangsfrequenz an den Pins gemessen.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -254,7 +254,7 @@ In diesem Versuchsteil soll eine Verzögerung des Ein- und Ausschaltvorgangs der
 
 \subsubsection*{Verwendete Geräte}
 
-Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das Versuchsboard verwendet.
+Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszilloskop und das Versuchsboard verwendet.
 
 \subsubsection*{Quellcode}
 
@@ -294,12 +294,12 @@ void test_speed_delay_1(){
 
 \subsubsection*{Versuchsdurchführung}
 
-Der Code \ref{lst:g_3} wird auf den Mikrokontroller geladen. Port B wird mit Port LED, über ein Flachbandkabel verbunden. Das Board wird an ein Oszilloskop angeschlossen und die Ausgangsfrequenz an den Pins gemessen. Dann wird die in Code \ref{lst:g_3} erwähnte Zeile einkommentiert und die Frequenz mit dem  Oszilloskop gemessen.
+Der Code \ref{lst:g_3} wird auf den Mikrocontroller geladen. Port B wird mit Port LED, über ein Flachbandkabel verbunden. Das Board wird an ein Oszilloskop angeschlossen und die Ausgangsfrequenz an den Pins gemessen. Dann wird die in Code \ref{lst:g_3} erwähnte Zeile einkommentiert und die Frequenz mit dem  Oszilloskop gemessen.
 
 
 \subsubsection*{Auswertung}
 
-Die Spannung wurde bei B6 abgegriffen, im ersten Durchlauf wurde eine Frquenz von 3,04Hz gemessen. Der Verlauf des Signals ist in Abbildung \ref{fig:g_3} zu sehen. Im zweitem Durchlauf wurde eine Frequez von 2,42Hz gemessen. Der Verlauf des Signals ist in Abbildung \ref{fig:g_4} zu sehen.
+Die Spannung wurde bei B6 abgegriffen, im ersten Durchlauf wurde eine Frequenz von 3,04Hz gemessen. Der Verlauf des Signals ist in Abbildung \ref{fig:g_3} zu sehen. Im zweitem Durchlauf wurde eine Frequenz von 2,42Hz gemessen. Der Verlauf des Signals ist in Abbildung \ref{fig:g_4} zu sehen.
 
 \begin{figure}[H]
 \centering
@@ -322,7 +322,7 @@ Bei beiden Versionen leuchteten die ersten drei LEDs und die Restlichen blinkten
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil soll das An- und Ausschalten der LED mit verschiedenen Verzögerungsbefehlen realisiert werden. Verzögerungsbefehle sorgen für eine Verzögerung von einer bestimmten Zeitspannne und nicht wie Vorher für ein Aussetzen einer Anzahl von Taktzyklen. Es werden die folgenden Befehle (unit kann Werte von 0 bis 255) verwendet.
+In diesem Versuchsteil soll das An- und Ausschalten der LED mit verschiedenen Verzögerungsbefehlen realisiert werden. Verzögerungsbefehle sorgen für eine Verzögerung von einer bestimmten Zeitspanne und nicht wie Vorher für ein Aussetzen einer Anzahl von Taktzyklen. Es werden die folgenden Befehle (unit kann Werte von 0 bis 255) verwendet.
 
 \begin{itemize}
 \item	delay us(unit) verzögert um unit Mikrosekunden
@@ -336,7 +336,7 @@ In diesem Versuchsteil soll das An- und Ausschalten der LED mit verschiedenen Ve
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das Versuchsboard verwendet.
+Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszilloskop und das Versuchsboard verwendet.
 
 
 \subsection*{Messergebnisse}
@@ -381,7 +381,7 @@ void test_speed_delay_3(){
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Der Code \ref{lst:g_4} wird auf den Mikrokontroller geladen und Port B wird mit dem LED Port verbunden. Dann wird das Board an ein Oszilloskop angeschlossen und die Pulsbreite der Signale an den Pins gemessen. Dieser Prozess wir mit verschiednen Verzögerungsbefehlen wiederholt.
+Der Code \ref{lst:g_4} wird auf den Mikrocontroller geladen und Port B wird mit dem LED Port verbunden. Dann wird das Board an ein Oszilloskop angeschlossen und die Pulsbreite der Signale an den Pins gemessen. Dieser Prozess wir mit verschiedenen Verzögerungsbefehlen wiederholt.
 
 
 \subsubsection*{Auswertung}
@@ -410,7 +410,7 @@ Es wurde Quellcode \ref{lst:g_4} verwendet. Der Befehl \textbf{delay\_us(25)} wu
 \item	delay\_ms(1)
 \end{itemize}
  Die Frequenz wurde bei jedem dieser Befehle gemessen.
- Dabei ergaben sich die Werte in Tabelle \ref{tab:puls_1}. Die Aufnahmen der jeweiligen Signale sind in Abbildung \ref{fig:g_main_1} und Abbildung \ref{fig:g_main_2} zu sehen. Bei allen Befehlen ist die benötigte Zeit 0,6 bis 3 $\mu$s länger als gewünscht.(Bei sehr kleinen Zeiten ergeben sich große relative Abweichungen von der gewünschten Verzögerung.) Dies Begründet sich dadurch, dass die Anzahl der Zyklen, die ausgesetzt werden müssen um die gewünschte Verzögerung zu erreichen, intern berechnet wird. Ein Zyklus dauert 83,33 ns. Der letzte Befehl hat eine gerigere Pulsbreite als 1ms. Bei längeren Verzögerungszeiten sind die Abweichungen zu vernachlässigen.
+ Dabei ergaben sich die Werte in Tabelle \ref{tab:puls_1}. Die Aufnahmen der jeweiligen Signale sind in Abbildung \ref{fig:g_main_1} und Abbildung \ref{fig:g_main_2} zu sehen. Bei allen Befehlen ist die benötigte Zeit 0,6 bis 3 $\mu$s länger als gewünscht.(Bei sehr kleinen Zeiten ergeben sich große relative Abweichungen von der gewünschten Verzögerung.) Dies Begründet sich dadurch, dass die Anzahl der Zyklen, die ausgesetzt werden müssen um die gewünschte Verzögerung zu erreichen, intern berechnet wird. Ein Zyklus dauert 83,33 ns. Der letzte Befehl hat eine geringere Pulsbreite als 1ms. Bei längeren Verzögerungszeiten sind die Abweichungen zu vernachlässigen.
 
 
 \begin{figure}[H]
@@ -473,13 +473,13 @@ Es wurde Quellcode \ref{lst:g_4} verwendet. Der Befehl \textbf{delay\_us(25)} wu
 %1-----------------------------------------------1
 
 
-In dem Versuchsteil wurden die Methoden zur Verzögerung erfolgreich untersucht. Die Vor- und Nachteile der eizelnen Möglichkeiten zur Verzögerung konnten festgestellt werden. Mit den Delay*TCY*() Befehlen lassen sich genaue Verzögerungen realisieren, jedoch muss die Anzahl der ausgelassenen Zyklen(83,33ns) aufsummiert werden, um die Gesamtverzögerung zu erhalten. Eine bestimmte Zeit lässt sich einfacher mit den delay\_*() Befehlen umsetzen, welche bei sehr kurzen Verzögerungen eine große Ungenauigkeit haben, da der Mikrokontroller zusätzliche Zeit zur Berechnung braucht.
+In dem Versuchsteil wurden die Methoden zur Verzögerung erfolgreich untersucht. Die Vor- und Nachteile der einzelnen Möglichkeiten zur Verzögerung konnten festgestellt werden. Mit den Delay*TCY*() Befehlen lassen sich genaue Verzögerungen realisieren, jedoch muss die Anzahl der ausgelassenen Zyklen(83,33ns) aufsummiert werden, um die Gesamtverzögerung zu erhalten. Eine bestimmte Zeit lässt sich einfacher mit den delay\_*() Befehlen umsetzen, welche bei sehr kurzen Verzögerungen eine große Ungenauigkeit haben, da der Mikrocontroller zusätzliche Zeit zur Berechnung braucht.
 
 \section{Benutzung der Taster}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil sollen Taster und deren Funktionsweise untersucht werden. Die LEDs mit den 8 Tastern sollen an- und ausgeschaltet werden, dafür wird die PollingMethode verwendet.
+In diesem Versuchsteil sollen Taster und deren Funktionsweise untersucht werden. Die LEDs mit den 8 Tastern sollen an- und ausgeschaltet werden, dafür wird die Polling-Methode verwendet.
 
 \subsection{Einfache Tasterabfrage}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
@@ -491,7 +491,7 @@ In diesem Versuchsteil soll die einfachste Variante eines Tasters implementiert 
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das Versuchsboard verwendet.
+Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszilloskop und das Versuchsboard verwendet.
 
 \subsubsection*{Quellcode}
 
@@ -540,7 +540,7 @@ In diesem Versuchsteil soll der Zustand der LED gewechselt werden, wenn der Tast
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszillsokop und das Versuchsboard verwendet.
+Es werden ein Netzgerät, ein PC, ein Verbindungskabel, ein Oszilloskop und das Versuchsboard verwendet.
 
 \subsubsection*{Quellcode}
 
@@ -599,7 +599,7 @@ Der Code \ref{lst:g_6} wird auf das Versuchsboard geladen, Port A wird mit den T
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Beim Verwenden der Funktion taster\_2() war ein schnelles Blinken der ersten LED zu sehen, falls Taster 1 gedrückt war. Wenn noch ein anderer Taster gedrückt war, während der erste Taster gedrückt wurde, blinkte die LED nicht. Beim Verwenden der Funktion taster\_3() war auch ein schnelles Blinken der LED zu sehen falls Taster 1 gedückt war. Es war auch ein Blinken zu sehen, falls ein anderer Taster gleichzeitig gedrückt wurde.
+Beim Verwenden der Funktion taster\_2() war ein schnelles Blinken der ersten LED zu sehen, falls Taster 1 gedrückt war. Wenn noch ein anderer Taster gedrückt war, während der erste Taster gedrückt wurde, blinkte die LED nicht. Beim Verwenden der Funktion taster\_3() war auch ein schnelles Blinken der LED zu sehen falls Taster 1 gedrückt war. Es war auch ein Blinken zu sehen, falls ein anderer Taster gleichzeitig gedrückt wurde.
 
 \subsection{Tasterabfrage und Verzögerungen}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
@@ -652,7 +652,7 @@ Mit dem Hinzufügen der Verzögerung konnte der Taster mit einer Frequenz von 1H
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil steuert der Taster einen Zähler, welcher bei jedem Tasterndruck eine Stelle hochzählen soll.
+In diesem Versuchsteil steuert der Taster einen Zähler, welcher bei jedem Tastendruck eine Stelle hoch zählen soll.
 
 \subsubsection*{Quellcode}
 
@@ -725,13 +725,13 @@ Bei der Implementierung von taster\_6() wurde nur beim Loslassen des Tasters der
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil soll der Effekt des Kontaktprellen verhindert werden. Kontaktprellen bedeutet, dass falls der Taster-Kontakt nich sauber schließt mehrfaches drücken registriert wird.
+In diesem Versuchsteil soll der Effekt des Kontaktprellen verhindert werden. Kontaktprellen bedeutet, dass falls der Taster-Kontakt nicht sauber schließt mehrfaches drücken registriert wird.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden ein Netzgerät, das Versuchsboard, Verbindungskabel, ein PC und ein Oszillsokop verwendet.
+Es werden ein Netzgerät, das Versuchsboard, Verbindungskabel, ein PC und ein Oszilloskop verwendet.
 
 \subsubsection*{Quellcode}
 
@@ -806,7 +806,7 @@ In diesem Versuchsteil wird ein Zähler ohne Vorteiler implementiert.
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden ein Netzgerät, das Versuchsboard, Verbindungskabel, ein PC und ein Oszillsokop verwendet.
+Es werden ein Netzgerät, das Versuchsboard, Verbindungskabel, ein PC und ein Oszilloskop verwendet.
 
 \subsubsection*{Quellcode}
 
@@ -844,7 +844,7 @@ Code \ref{lst:g_11} wird auf das Versuchboard geladen. Dann wird Pin 1 von Port 
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Da der Oszillator mit 60kHz getaktet ist, kann man nur ein Leuchten aller LEDs beobachten. Auf dem Oszillsokop ist der Verlauf in Abbildung \ref{fig:o_1} zu sehen. Da der Mikrocontroller eine viel höhere Taktrate als der Oszillator hat kann man während eines Taktsinals des Oszillators mehrere Zyklen des Mikrocontrollers sehen.
+Da der Oszillator mit 60kHz getaktet ist, kann man nur ein Leuchten aller LEDs beobachten. Auf dem Oszilloskop ist der Verlauf in Abbildung \ref{fig:o_1} zu sehen. Da der Mikrocontroller eine viel höhere Taktrate als der Oszillator hat kann man während eines Taktsignals des Oszillators mehrere Zyklen des Mikrocontrollers sehen.
 
 
 \begin{figure}[H] 
@@ -864,7 +864,7 @@ In diesem Versuchsteil soll ein Vorteiler implementiert werden, damit nicht nur 
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
 
-Es werden ein Netzgerät, das Versuchsboard, Verbindungskabel, ein PC und ein Oszillsokop verwendet.
+Es werden ein Netzgerät, das Versuchsboard, Verbindungskabel, ein PC und ein Oszilloskop verwendet.
 
 \subsubsection*{Quellcode}
 
@@ -988,7 +988,7 @@ Der Code \ref{lst:g_13} wird auf den Mikrocontroller geladen und eine Spannung a
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Bei 0V waren alle LEDs aus, entspricht also einer dezimalen 0. Bei 5V waren alle LEDs an, was einem dezimalen Wert von 255 entspricht. Dies war gleichzeitig der Maximalwert. Der halbe Maximalwert wurde bei 2,4V angezeigt.
+Bei 0V waren alle LEDs aus, entspricht einer dezimalen 0. Bei 5V waren alle LEDs an, was einem dezimalen Wert von 255 entspricht. Dies war gleichzeitig der Maximalwert. Der halbe Maximalwert wurde bei 2,4V angezeigt.
 
 \subsection{Anzeige des ADC-Wertes auf der Siebensegmentanzeige}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
@@ -1059,7 +1059,7 @@ Der Code \ref{lst:g_14} wird auf den Mikrocontroller geladen und eine Spannung a
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Bei 0V wurde der Wert 0 auf der Siebensegmentanzeige angezeigt. Der Maximale Wert F wurde zum ersten mal bei 4,6V und damit auch bei 5V angezeigt. F entspricht der dezimalzahl 15. Der halbe maximale Wert wurde bei 2,3V angezeigt und entspricht einer Dezimalzahl von 7.
+Bei 0V wurde der Wert 0 auf der Siebensegmentanzeige angezeigt. Der Maximale Wert F wurde zum ersten mal bei 4,6V und damit auch bei 5V angezeigt. F entspricht der Dezimalzahl 15. Der halbe maximale Wert wurde bei 2,3V angezeigt und entspricht einer Dezimalzahl von 7.
 
 \subsection{Anzeige von zwei ADC-Kanälen auf der Siebensegmentanzeige}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!

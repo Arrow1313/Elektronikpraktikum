@@ -1,0 +1,56 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{4}
+\contentsline {section}{\numberline {2}Impedanzwandler f\IeC {\"u}r Gleichspannung}{4}
+\contentsline {subsection}{\numberline {2.1}Verwendete Materialien}{4}
+\contentsline {subsection}{\numberline {2.2}Versuchsaufbau}{4}
+\contentsline {subsection}{\numberline {2.3}Versuchsdurchf\IeC {\"u}hrung}{4}
+\contentsline {subsection}{\numberline {2.4}Auswertung}{4}
+\contentsline {subsection}{\numberline {2.5}Diskussion}{5}
+\contentsline {section}{\numberline {3}Impedanzwandler f\IeC {\"u}r Wechselspannung}{5}
+\contentsline {subsection}{\numberline {3.1}Verwendete Materialien}{5}
+\contentsline {subsection}{\numberline {3.2}Versuchsaufbau}{5}
+\contentsline {subsection}{\numberline {3.3}Versuchsdurchf\IeC {\"u}hrung}{5}
+\contentsline {subsection}{\numberline {3.4}Auswertung}{5}
+\contentsline {subsection}{\numberline {3.5}Diskussion}{7}
+\contentsline {section}{\numberline {4}Spannungsverst\IeC {\"a}rker f\IeC {\"u}r Wechselspannung}{7}
+\contentsline {subsection}{\numberline {4.1}Verwendete Materialien}{8}
+\contentsline {subsection}{\numberline {4.2}Verwendete Formeln}{8}
+\contentsline {subsection}{\numberline {4.3}Versuchsaufbau}{8}
+\contentsline {subsection}{\numberline {4.4}Versuchsdurchf\IeC {\"u}hrung}{8}
+\contentsline {subsection}{\numberline {4.5}Messergebnisse}{8}
+\contentsline {subsection}{\numberline {4.6}Auswertung}{9}
+\contentsline {subsection}{\numberline {4.7}Diskussion}{9}
+\contentsline {section}{\numberline {5}Invertierender Spannungsverst\IeC {\"a}rker f\IeC {\"u}r Wechselspannung}{9}
+\contentsline {subsection}{\numberline {5.1}Verwendete Ger\IeC {\"a}te}{9}
+\contentsline {subsection}{\numberline {5.2}Versuchsaufbau}{9}
+\contentsline {subsection}{\numberline {5.3}Versuchsdurchf\IeC {\"u}hrung}{9}
+\contentsline {subsection}{\numberline {5.4}Auswertung}{10}
+\contentsline {subsection}{\numberline {5.5}Diskussion}{11}
+\contentsline {section}{\numberline {6}Differenzierer}{11}
+\contentsline {subsection}{\numberline {6.1}Verwendete Ger\IeC {\"a}te}{11}
+\contentsline {subsection}{\numberline {6.2}Verwendete Formeln}{11}
+\contentsline {subsection}{\numberline {6.3}Versuchsaufbau}{11}
+\contentsline {subsection}{\numberline {6.4}Versuchsdurchf\IeC {\"u}hrung}{12}
+\contentsline {subsection}{\numberline {6.5}Auswertung}{12}
+\contentsline {subsection}{\numberline {6.6}Diskussion}{13}
+\contentsline {section}{\numberline {7}Integrierer}{13}
+\contentsline {subsection}{\numberline {7.1}Verwendete Ger\IeC {\"a}te}{13}
+\contentsline {subsection}{\numberline {7.2}Verwendete Formeln}{14}
+\contentsline {subsection}{\numberline {7.3}Versuchsaufbau}{14}
+\contentsline {subsection}{\numberline {7.4}Versuchsdurchf\IeC {\"u}hrung}{14}
+\contentsline {subsection}{\numberline {7.5}Auswertung}{14}
+\contentsline {subsection}{\numberline {7.6}Diskussion}{16}
+\contentsline {section}{\numberline {8}Op-Amp mit Hysterese}{16}
+\contentsline {subsection}{\numberline {8.1}Verwendete Ger\IeC {\"a}te}{16}
+\contentsline {subsection}{\numberline {8.2}Versuchsaufbau}{16}
+\contentsline {subsection}{\numberline {8.3}Versuchsdurchf\IeC {\"u}hrung}{16}
+\contentsline {subsection}{\numberline {8.4}Auswertung}{16}
+\contentsline {subsection}{\numberline {8.5}Diskussion}{17}
+\contentsline {section}{\numberline {9}Strommessung mit dem Op-Amp}{17}
+\contentsline {subsection}{\numberline {9.1}Verwendete Ger\IeC {\"a}te}{17}
+\contentsline {subsection}{\numberline {9.2}Versuchsaufbau}{17}
+\contentsline {subsection}{\numberline {9.3}Versuchsdurchf\IeC {\"u}hrung}{18}
+\contentsline {subsection}{\numberline {9.4}Messergebnisse}{18}
+\contentsline {subsection}{\numberline {9.5}Auswertung}{19}
+\contentsline {subsection}{\numberline {9.6}Diskussion}{19}
+\contentsline {section}{\numberline {10}Fazit}{19}

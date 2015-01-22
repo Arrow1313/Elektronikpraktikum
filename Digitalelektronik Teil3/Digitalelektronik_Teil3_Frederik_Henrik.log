@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  14 JAN 2015 22:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  15 JAN 2015 21:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -693,11 +693,13 @@ File: TEK0000.pdf Graphic file (type pdf)
  <use TEK0000.pdf>
 Package pdftex.def Info: TEK0000.pdf used on input line 166.
 (pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
- [3] [4 <./TEK0000.pdf>] <TEK0001.pdf, id=40, 578.16pt x 722.7pt>
+ [3]
+<TEK0001.pdf, id=33, 578.16pt x 722.7pt>
 File: TEK0001.pdf Graphic file (type pdf)
  <use TEK0001.pdf>
 Package pdftex.def Info: TEK0001.pdf used on input line 233.
 (pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+ [4 <./TEK0000.pdf>]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 243.
 
 
@@ -764,21 +766,34 @@ File: TEK0013.pdf Graphic file (type pdf)
 Package pdftex.def Info: TEK0013.pdf used on input line 455.
 (pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
  [8 <./TEK0008.pdf> <./TEK0009.pdf> <./TEK0010.pdf> <./TEK0011.pdf> <./TEK0012.
-pdf> <./TEK0013.pdf>] [9] [10] [11] [12] <TEK0014.pdf, id=121, 578.16pt x 722.7
-pt>
-File: TEK0014.pdf Graphic file (type pdf)
+pdf> <./TEK0013.pdf>] [9] [10]
+Overfull \hbox (26.69888pt too wide) in paragraph at lines 673--674
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
 
-<use TEK0014.pdf>
-Package pdftex.def Info: TEK0014.pdf used on input line 848.
+
+Overfull \hbox (9.09903pt too wide) in paragraph at lines 677--678
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (22.29892pt too wide) in paragraph at lines 694--695
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[11] [12] <TEK0014.pdf, id=122, 578.16pt x 722.7pt>
+File: TEK0014.pdf Graphic file (type pdf)
+ <use TEK0014.pdf>
+Package pdftex.def Info: TEK0014.pdf used on input line 852.
 (pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
- [13 <./TEK0014.pdf>]
-<TEK0015.pdf, id=130, 578.16pt x 722.7pt>
+ [13 <./TEK0014.pdf>] <TEK0015.pdf, id=131, 578.16pt x 722.7pt>
 File: TEK0015.pdf Graphic file (type pdf)
  <use TEK0015.pdf>
-Package pdftex.def Info: TEK0015.pdf used on input line 908.
+Package pdftex.def Info: TEK0015.pdf used on input line 912.
 (pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
- [14 <./TEK0015.pdf>] [15] [16] [17] [18] (./Digitalelektronik_Teil3_Frederik_H
-enrik.aux)
+
+[14 <./TEK0015.pdf>] [15] [16] [17] [18]
+(./Digitalelektronik_Teil3_Frederik_Henrik.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -786,13 +801,13 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  6836 strings out of 493304
  95837 string characters out of 6139871
- 190580 words of memory out of 5000000
+ 202567 words of memory out of 5000000
  10142 multiletter control sequences out of 15000+600000
  88186 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,10n,49p,641b,1615s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/s
+ 37i,10n,49p,741b,1619s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/s
 hare/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmbx6.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/
@@ -800,12 +815,13 @@ lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri7.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Digitalelektronik_Teil3_Frederik_Henrik.pdf (19 pages, 141538
-7 bytes).
+are/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmsy6.pfb>
+Output written on Digitalelektronik_Teil3_Frederik_Henrik.pdf (19 pages, 142498
+5 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
+ 199 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

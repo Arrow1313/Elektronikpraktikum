@@ -1,0 +1,16 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{2}
+\contentsline {section}{\numberline {2}Eichung des NTC-Sensors}{2}
+\contentsline {subsection}{\numberline {2.1}Verwendete Ger\IeC {\"a}te}{2}
+\contentsline {subsection}{\numberline {2.2}Verwendete Formeln}{2}
+\contentsline {subsection}{\numberline {2.3}Versuchsaufbau}{2}
+\contentsline {subsection}{\numberline {2.4}Versuchsdurchf\IeC {\"u}hrung}{3}
+\contentsline {subsection}{\numberline {2.5}Messergebnisse}{3}
+\contentsline {subsection}{\numberline {2.6}Auswertung}{3}
+\contentsline {subsection}{\numberline {2.7}Diskussion}{4}
+\contentsline {section}{\numberline {3}Regelschaltungen}{4}
+\contentsline {subsection}{\numberline {3.1}Zweiwegregler}{4}
+\contentsline {subsection}{\numberline {3.2}Zweiwegregler mit Hysterese}{8}
+\contentsline {subsection}{\numberline {3.3}Proportionalregler}{9}
+\contentsline {subsection}{\numberline {3.4}Proportionalregler mit Integrator}{13}
+\contentsline {section}{\numberline {4}Fazit}{18}

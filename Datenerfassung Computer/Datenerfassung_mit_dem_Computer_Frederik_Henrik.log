@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  21 JAN 2015 23:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  22 JAN 2015 18:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -43,6 +43,17 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseTextstyle=\skip44
 \L@UnitsRaiseScriptstyle=\skip45
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
@@ -52,7 +63,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks17
 )
 \captionmargin=\dimen103
 \captionmargin@=\dimen104
@@ -198,12 +209,12 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutheight=\dimen119
 \Gm@layouthoffset=\dimen120
 \Gm@layoutvoffset=\dimen121
-\Gm@dimlist=\toks17
+\Gm@dimlist=\toks18
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks18
-\inpenc@posthook=\toks19
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -486,7 +497,7 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks20
+\@emptytoks=\toks21
 \ex@=\dimen123
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -516,21 +527,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \dotsspace@=\muskip11
 \c@parentequation=\count112
 \dspbrk@lvl=\count113
-\tag@help=\toks21
+\tag@help=\toks22
 \row@=\count114
 \column@=\count115
 \maxfields@=\count116
-\andhelp@=\toks22
+\andhelp@=\toks23
 \eqnshift@=\dimen126
 \alignsep@=\dimen127
 \tagshift@=\dimen128
 \tagwidth@=\dimen129
 \totwidth@=\dimen130
 \lineht@=\dimen131
-\@envbody=\toks23
+\@envbody=\toks24
 \multlinegap=\skip48
 \multlinetaggap=\skip49
-\mathdisplay@stack=\toks24
+\mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
@@ -642,12 +653,12 @@ LaTeX Info: Redefining \nameref on input line 25.
 \scratchbox=\box31
 \nofMPsegments=\count120
 \nofMParguments=\count121
-\everyMPshowfont=\toks25
+\everyMPshowfont=\toks26
 \MPscratchCnt=\count122
 \MPscratchDim=\dimen135
 \MPnumerator=\count123
 \makeMPintoPDFobject=\count124
-\everyMPtoPDFconversion=\toks26
+\everyMPtoPDFconversion=\toks27
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -696,7 +707,16 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 53.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 53.
- [1
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.pdf>]
 (./Datenerfassung_mit_dem_Computer_Frederik_Henrik.toc)
@@ -712,112 +732,133 @@ l.75 \newpage
 File: auf_1_1.png Graphic file (type png)
 
 <use auf_1_1.png>
-Package pdftex.def Info: auf_1_1.png used on input line 115.
+Package pdftex.def Info: auf_1_1.png used on input line 117.
 (pdftex.def)             Requested size: 289.07487pt x 193.61993pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 119.
+(Font)              <10> on input line 121.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 119.
+(Font)              <7> on input line 121.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 119.
- [2 <./auf_1_1.png>] <1_1_1.pdf, id=92, 578.16pt x 722.7pt>
+(Font)              <5> on input line 121.
+ [2 <./auf_1_1.png>] <1_1_1.pdf, id=93, 578.16pt x 722.7pt>
 File: 1_1_1.pdf Graphic file (type pdf)
 
 <use 1_1_1.pdf>
-Package pdftex.def Info: 1_1_1.pdf used on input line 141.
+Package pdftex.def Info: 1_1_1.pdf used on input line 143.
 (pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
- <1_1_2.pdf, id=95, 578.16pt x 722.7pt>
+ <1_1_2.pdf, id=96, 578.16pt x 722.7pt>
 File: 1_1_2.pdf Graphic file (type pdf)
  <use 1_1_2.pdf>
-Package pdftex.def Info: 1_1_2.pdf used on input line 150.
+Package pdftex.def Info: 1_1_2.pdf used on input line 152.
 (pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
- [3 <./1_1_1.pdf> <./1_1_2.pdf>] <auf_1_2.png, id=117, 787.44188pt x 484.05844p
+ [3 <./1_1_1.pdf> <./1_1_2.pdf>] <auf_1_2.png, id=118, 787.44188pt x 484.05844p
 t>
 File: auf_1_2.png Graphic file (type png)
 
 <use auf_1_2.png>
-Package pdftex.def Info: auf_1_2.png used on input line 181.
+Package pdftex.def Info: auf_1_2.png used on input line 183.
 (pdftex.def)             Requested size: 314.97118pt x 193.61993pt.
- <1_2_1.pdf, id=122, 578.16pt x 722.7pt>
+ <1_2_1.pdf, id=123, 578.16pt x 722.7pt>
 File: 1_2_1.pdf Graphic file (type pdf)
  <use 1_2_1.pdf>
-Package pdftex.def Info: 1_2_1.pdf used on input line 207.
+Package pdftex.def Info: 1_2_1.pdf used on input line 209.
 (pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
 
 [4 <./auf_1_2.png>]
-Overfull \hbox (1.09904pt too wide) in paragraph at lines 232--233
+Overfull \hbox (1.09904pt too wide) in paragraph at lines 234--235
 \T1/lmr/m/n/12 In die-sem Ver-suchs-ab-schnitt wer-den ver-schie-de-ne Analog-D
 igital-Converter mit Hil-fe des Boards
  []
 
-<auf_4.png, id=138, 1091.07625pt x 571.13374pt>
+<auf_4.png, id=139, 1091.07625pt x 571.13374pt>
 File: auf_4.png Graphic file (type png)
  <use auf_4.png>
-Package pdftex.def Info: auf_4.png used on input line 258.
+Package pdftex.def Info: auf_4.png used on input line 260.
 (pdftex.def)             Requested size: 436.42278pt x 228.44945pt.
  [5 <./1_2_1.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 271.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 273.
 
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 271.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 273.
  [6 <./auf_4.png>]
-<2_1_4V.pdf, id=164, 578.16pt x 722.7pt>
-File: 2_1_4V.pdf Graphic file (type pdf)
- <use 2_1_4V.pdf>
-Package pdftex.def Info: 2_1_4V.pdf used on input line 353.
-(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
- [7]
-<2_1_2V.pdf, id=176, 578.16pt x 722.7pt>
+<2_1_2V.pdf, id=164, 578.16pt x 722.7pt>
 File: 2_1_2V.pdf Graphic file (type pdf)
  <use 2_1_2V.pdf>
-Package pdftex.def Info: 2_1_2V.pdf used on input line 362.
+Package pdftex.def Info: 2_1_2V.pdf used on input line 355.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+ [7]
+<2_1_4V.pdf, id=176, 578.16pt x 722.7pt>
+File: 2_1_4V.pdf Graphic file (type pdf)
+ <use 2_1_4V.pdf>
+Package pdftex.def Info: 2_1_4V.pdf used on input line 364.
 (pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
 
 <2_2_2V.pdf, id=179, 578.16pt x 722.7pt>
 File: 2_2_2V.pdf Graphic file (type pdf)
  <use 2_2_2V.pdf>
-Package pdftex.def Info: 2_2_2V.pdf used on input line 371.
+Package pdftex.def Info: 2_2_2V.pdf used on input line 373.
 (pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
- [8 <./2_1_4V.pdf> <./2_1_2V.pdf>] <2_2_4V.pdf, id=196, 578.16pt x 722.7pt>
+ [8 <./2_1_2V.pdf> <./2_1_4V.pdf>] <2_2_4V.pdf, id=196, 578.16pt x 722.7pt>
 File: 2_2_4V.pdf Graphic file (type pdf)
  <use 2_2_4V.pdf>
-Package pdftex.def Info: 2_2_4V.pdf used on input line 380.
+Package pdftex.def Info: 2_2_4V.pdf used on input line 382.
 (pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
  [9 <./2_2_2V.pdf> <./2_2_4V.pdf>] <auf_5.png, id=215, 931.48pt x 437.635pt>
 File: auf_5.png Graphic file (type png)
 
 <use auf_5.png>
-Package pdftex.def Info: auf_5.png used on input line 433.
+Package pdftex.def Info: auf_5.png used on input line 437.
 (pdftex.def)             Requested size: 372.5854pt x 175.05089pt.
- [10 <./auf_5.png>]
+ [10 <./auf_5.png>] <3_1_67.pdf, id=231, 578.16pt x 722.7pt>
+File: 3_1_67.pdf Graphic file (type pdf)
+
+<use 3_1_67.pdf>
+Package pdftex.def Info: 3_1_67.pdf used on input line 463.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Overfull \hbox (13.5978pt too wide) in paragraph at lines 463--464
+ [][] 
+ []
+
+<3_1_207.pdf, id=232, 578.16pt x 722.7pt>
+File: 3_1_207.pdf Graphic file (type pdf)
+ <use 3_1_207.pdf>
+Package pdftex.def Info: 3_1_207.pdf used on input line 469.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Overfull \hbox (13.5978pt too wide) in paragraph at lines 469--470
+ [][] 
+ []
+
+[11 <./3_1_67.pdf> <./3_1_207.pdf>]
 File: auf_5.png Graphic file (type png)
  <use auf_5.png>
-Package pdftex.def Info: auf_5.png used on input line 499.
+Package pdftex.def Info: auf_5.png used on input line 504.
 (pdftex.def)             Requested size: 372.5854pt x 175.05089pt.
- [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 551.
  [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 551.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 559.
+ [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 559.
 
 (./Datenerfassung_mit_dem_Computer_Frederik_Henrik.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 551.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 551.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 559.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 559.
 Package rerunfilecheck Info: File `Datenerfassung_mit_dem_Computer_Frederik_Hen
 rik.out' has not changed.
 (rerunfilecheck)             Checksum: 64D243BE81FBEA2AF73A8DAE65F73382;699.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 551.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 559.
  ) 
 Here is how much of TeX's memory you used:
- 8373 strings out of 493304
- 123153 string characters out of 6139871
- 218504 words of memory out of 5000000
- 11622 multiletter control sequences out of 15000+600000
- 77937 words of font info for 52 fonts, out of 8000000 for 9000
+ 8686 strings out of 493304
+ 126645 string characters out of 6139871
+ 219106 words of memory out of 5000000
+ 11913 multiletter control sequences out of 15000+600000
+ 83407 words of font info for 65 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 36i,11n,38p,935b,398s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,11n,38p,979b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm
@@ -828,12 +869,13 @@ s/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmsy8.pfb>
-Output written on Datenerfassung_mit_dem_Computer_Frederik_Henrik.pdf (13 pages
-, 1874070 bytes).
+/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
+sam10.pfb>
+Output written on Datenerfassung_mit_dem_Computer_Frederik_Henrik.pdf (14 pages
+, 1894808 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
- 254 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 338 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 

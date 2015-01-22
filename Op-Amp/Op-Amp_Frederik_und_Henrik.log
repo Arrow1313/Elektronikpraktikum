@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  5 JAN 2015 10:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  14 JAN 2015 19:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Digitalelektronik_Teil1_Frederik_Henrik.tex
-(./Digitalelektronik_Teil1_Frederik_Henrik.tex
+**Op-Amp_Frederik_und_Henrik.tex
+(./Op-Amp_Frederik_und_Henrik.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -457,24 +457,48 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen128
 \Gin@req@width=\dimen129
 )
-(./Digitalelektronik_Teil1_Frederik_Henrik.aux)
-\openout1 = `Digitalelektronik_Teil1_Frederik_Henrik.aux'.
+(./Op-Amp_Frederik_und_Henrik.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 23.
+LaTeX Warning: Label `fig:1' multiply defined.
 
-(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+)
+\openout1 = `Op-Amp_Frederik_und_Henrik.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 26.
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -571,162 +595,508 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<logo.pdf, id=1, 130.4875pt x 41.15375pt>
-File: logo.pdf Graphic file (type pdf)
- <use logo.pdf>
-Package pdftex.def Info: logo.pdf used on input line 31.
-(pdftex.def)             Requested size: 362.77264pt x 114.42905pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 51.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 28.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 51.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 28.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 51.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 28.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 51.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 28.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 51.
+(Font)              <14.4> on input line 28.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 51.
+(Font)              <10> on input line 28.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 51.
+(Font)              <7> on input line 28.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.pdf>] (./Digitalele
-ktronik_Teil1_Frederik_Henrik.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Op-Amp_Frederik_und_Hen
+rik.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 4.
+ [2])
 \tf@toc=\write3
-\openout3 = `Digitalelektronik_Teil1_Frederik_Henrik.toc'.
+\openout3 = `Op-Amp_Frederik_und_Henrik.toc'.
 
-[1]
-Overfull \hbox (1.01166pt too wide) in paragraph at lines 99--99
-[]\T1/lmr/bx/n/17.28 Elementare Lo-gik-ver-knüp-fun-gen Leybold-Stecksystem 
+ [3]
+<ep4_14[Page8].pdf, id=15, 597.51233pt x 845.0471pt>
+File: ep4_14[Page8].pdf Graphic file (type pdf)
+ <use ep4_14[Page8].pdf>
+Package pdftex.def Info: ep4_14[Page8].pdf used on input line 57.
+(pdftex.def)             Requested size: 540.60553pt x 76.82254pt.
+
+Overfull \hbox (56.90866pt too wide) in paragraph at lines 57--58
+ [][] 
  []
 
-<auf_1_1.png, id=17, 596.2275pt x 436.63126pt>
-File: auf_1_1.png Graphic file (type png)
- <use auf_1_1.png>
-Package pdftex.def Info: auf_1_1.png used on input line 126.
-(pdftex.def)             Requested size: 238.48677pt x 174.6494pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 130.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 130.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 130.
- [2 <./auf_1_1.png>] <auf_1_2.png, id=22, 757.83125pt x 468.75125pt>
-File: auf_1_2.png Graphic file (type png)
- <use auf_1_2.png>
-Package pdftex.def Info: auf_1_2.png used on input line 192.
-(pdftex.def)             Requested size: 303.12714pt x 187.49716pt.
+(Font)              <5> on input line 61.
+[4 <./ep4_14[Page8].pdf>]
+File: ep4_14[Page8].pdf Graphic file (type pdf)
+ <use ep4_14[Page8].pdf>
+Package pdftex.def Info: ep4_14[Page8].pdf used on input line 110.
+(pdftex.def)             Requested size: 540.60553pt x 76.82254pt.
 
-[3] [4 <./auf_1_2.png>] <auf_1_3.png, id=32, 825.0825pt x 536.0025pt>
-File: auf_1_3.png Graphic file (type png)
+Overfull \hbox (56.90866pt too wide) in paragraph at lines 110--111
+ [][] 
+ []
 
-<use auf_1_3.png>
-Package pdftex.def Info: auf_1_3.png used on input line 259.
-(pdftex.def)             Requested size: 330.02715pt x 214.3972pt.
- [5 <./auf_1_3.png>]
-<auf_2_1.png, id=37, 1037.8775pt x 544.0325pt>
-File: auf_2_1.png Graphic file (type png)
- <use auf_2_1.png>
-Package pdftex.def Info: auf_2_1.png used on input line 337.
-(pdftex.def)             Requested size: 415.14365pt x 217.60915pt.
- [6 <./auf_2_1.png>] <auf_2_2.png, id=42, 789.95125pt x 377.41pt>
-File: auf_2_2.png Graphic file (type png)
- <use auf_2_2.png>
-Package pdftex.def Info: auf_2_2.png used on input line 408.
-(pdftex.def)             Requested size: 315.9749pt x 150.96132pt.
- [7 <./auf_2_2.png>] <auf_2_3.png, id=46, 887.315pt x 422.57875pt>
-File: auf_2_3.png Graphic file (type png)
- <use auf_2_3.png>
-Package pdftex.def Info: auf_2_3.png used on input line 481.
-(pdftex.def)             Requested size: 354.91971pt x 169.0285pt.
+<2_2_100.pdf, id=73, 578.16pt x 722.7pt>
+File: 2_2_100.pdf Graphic file (type pdf)
+ <use 2_2_100.pdf>
+Package pdftex.def Info: 2_2_100.pdf used on input line 137.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 
-[8 <./auf_2_3.png>] <auf_2_4_1.png, id=50, 990.70125pt x 417.56pt>
-File: auf_2_4_1.png Graphic file (type png)
+Underfull \hbox (badness 1253) in paragraph at lines 138--138
+[]\T1/lmr/m/n/10.95 (a) |Auf-nah-me des Si-gnals
+ []
 
-<use auf_2_4_1.png>
-Package pdftex.def Info: auf_2_4_1.png used on input line 555.
-(pdftex.def)             Requested size: 396.27348pt x 167.02103pt.
- [9] <auf_2_4_2.png, id=54, 855.195pt x 473.77pt>
-File: auf_2_4_2.png Graphic file (type png)
+<2_2_1k.pdf, id=74, 578.16pt x 722.7pt>
+File: 2_2_1k.pdf Graphic file (type pdf)
+ <use 2_2_1k.pdf>
+Package pdftex.def Info: 2_2_1k.pdf used on input line 145.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 
-<use auf_2_4_2.png>
-Package pdftex.def Info: auf_2_4_2.png used on input line 565.
-(pdftex.def)             Requested size: 342.07195pt x 189.50464pt.
- [10 <./auf_2_4_1.png> <./auf_2_4_2.png>]
-<auf_2_5.png, id=59, 1022.82124pt x 627.34375pt>
-File: auf_2_5.png Graphic file (type png)
- <use auf_2_5.png>
-Package pdftex.def Info: auf_2_5.png used on input line 620.
-(pdftex.def)             Requested size: 409.12125pt x 250.93304pt.
- [11]
-[12 <./auf_2_5.png>] <2_5_2.pdf, id=73, 301.8738pt x 142.05772pt>
-File: 2_5_2.pdf Graphic file (type pdf)
+Underfull \hbox (badness 1082) in paragraph at lines 146--146
+[]\T1/lmr/m/n/10.95 (b) |Auf-nah-me des Si-gnals
+ []
 
-<use 2_5_2.pdf>
-Package pdftex.def Info: 2_5_2.pdf used on input line 665.
-(pdftex.def)             Requested size: 301.87305pt x 142.05736pt.
- <auf_2_6.png, id=74, 1016.79875pt x 435.6275pt>
-File: auf_2_6.png Graphic file (type png)
+<2_2_10k.pdf, id=75, 578.16pt x 722.7pt>
+File: 2_2_10k.pdf Graphic file (type pdf)
+ <use 2_2_10k.pdf>
+Package pdftex.def Info: 2_2_10k.pdf used on input line 153.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+ [5]
+<2_2_100k.pdf, id=80, 578.16pt x 722.7pt>
+File: 2_2_100k.pdf Graphic file (type pdf)
+ <use 2_2_100k.pdf>
+Package pdftex.def Info: 2_2_100k.pdf used on input line 164.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
 
-<use auf_2_6.png>
-Package pdftex.def Info: auf_2_6.png used on input line 699.
-(pdftex.def)             Requested size: 406.7123pt x 174.24791pt.
- [13 <./2_5_2.pdf> <./auf_2_6.png>]
-<auf_2_7.png, id=87, 1111.15125pt x 359.3425pt>
-File: auf_2_7.png Graphic file (type png)
- <use auf_2_7.png>
-Package pdftex.def Info: auf_2_7.png used on input line 743.
-(pdftex.def)             Requested size: 444.45262pt x 143.73445pt.
+Underfull \hbox (badness 1253) in paragraph at lines 165--165
+[]\T1/lmr/m/n/10.95 (a) |Auf-nah-me des Si-gnals
+ []
 
-<auf_2_7_2.png, id=88, 1127.21124pt x 446.66875pt>
-File: auf_2_7_2.png Graphic file (type png)
- <use auf_2_7_2.png>
-Package pdftex.def Info: auf_2_7_2.png used on input line 753.
-(pdftex.def)             Requested size: 450.87651pt x 178.66432pt.
- [14 <./auf_2_7.png>] [15 <./auf_2_7_2.png>]
-(./Digitalelektronik_Teil1_Frederik_Henrik.aux) ) 
+<2_2_1m.pdf, id=81, 578.16pt x 722.7pt>
+File: 2_2_1m.pdf Graphic file (type pdf)
+ <use 2_2_1m.pdf>
+Package pdftex.def Info: 2_2_1m.pdf used on input line 172.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1082) in paragraph at lines 173--173
+[]\T1/lmr/m/n/10.95 (b) |Auf-nah-me des Si-gnals
+ []
+
+<2_2_10m.pdf, id=82, 578.16pt x 722.7pt>
+File: 2_2_10m.pdf Graphic file (type pdf)
+ <use 2_2_10m.pdf>
+Package pdftex.def Info: 2_2_10m.pdf used on input line 180.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+<2_2_4m.pdf, id=83, 578.16pt x 722.7pt>
+File: 2_2_4m.pdf Graphic file (type pdf)
+ <use 2_2_4m.pdf>
+Package pdftex.def Info: 2_2_4m.pdf used on input line 190.
+(pdftex.def)             Requested size: 404.70924pt x 505.88655pt.
+ [6 <./2_2_100.pdf> <./2_2_1k.pdf> <./2_2_10k.pdf> <./2_2_100k.pdf> <./2_2_1m.p
+df> <./2_2_10m.pdf>]
+[7 <./2_2_4m.pdf>] <ep4_14[Page9].pdf, id=112, 597.51233pt x 845.0471pt>
+File: ep4_14[Page9].pdf Graphic file (type pdf)
+
+<use ep4_14[Page9].pdf>
+Package pdftex.def Info: ep4_14[Page9].pdf used on input line 235.
+(pdftex.def)             Requested size: 540.60553pt x 91.04889pt.
+
+Overfull \hbox (56.90866pt too wide) in paragraph at lines 235--236
+ [][] 
+ []
+
+
+Overfull \hbox (56.71873pt too wide) in paragraph at lines 244--244
+[][]\T1/lmr/m/n/10 Datenblatt Te-xas In-stru-ments https://cdn-reichelt.de/docu
+ments/datenblatt/A200/TL081_TL082_TL084%23TEX.pdf| 
+ []
+
+[8 <./ep4_14[Page9].pdf>]
+File: ep4_14[Page9].pdf Graphic file (type pdf)
+ <use ep4_14[Page9].pdf>
+Package pdftex.def Info: ep4_14[Page9].pdf used on input line 312.
+(pdftex.def)             Requested size: 540.60553pt x 105.27524pt.
+
+Overfull \hbox (56.90866pt too wide) in paragraph at lines 312--313
+ [][] 
+ []
+
+[9] <2_4_1_1k.pdf, id=155, 578.16pt x 722.7pt>
+File: 2_4_1_1k.pdf Graphic file (type pdf)
+ <use 2_4_1_1k.pdf>
+Package pdftex.def Info: 2_4_1_1k.pdf used on input line 340.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1253) in paragraph at lines 341--341
+[]\T1/lmr/m/n/10.95 (a) |Auf-nah-me des Si-gnals
+ []
+
+<2_4_1_100k.pdf, id=156, 578.16pt x 722.7pt>
+File: 2_4_1_100k.pdf Graphic file (type pdf)
+ <use 2_4_1_100k.pdf>
+Package pdftex.def Info: 2_4_1_100k.pdf used on input line 348.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1082) in paragraph at lines 349--349
+[]\T1/lmr/m/n/10.95 (b) |Auf-nah-me des Si-gnals
+ []
+
+<2_4_1_1m.pdf, id=157, 578.16pt x 722.7pt>
+File: 2_4_1_1m.pdf Graphic file (type pdf)
+ <use 2_4_1_1m.pdf>
+Package pdftex.def Info: 2_4_1_1m.pdf used on input line 356.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+<2_4_10_1k.pdf, id=158, 578.16pt x 722.7pt>
+File: 2_4_10_1k.pdf Graphic file (type pdf)
+ <use 2_4_10_1k.pdf>
+Package pdftex.def Info: 2_4_10_1k.pdf used on input line 368.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1253) in paragraph at lines 369--369
+[]\T1/lmr/m/n/10.95 (a) |Auf-nah-me des Si-gnals
+ []
+
+<2_4_10_100k.pdf, id=159, 578.16pt x 722.7pt>
+File: 2_4_10_100k.pdf Graphic file (type pdf)
+ <use 2_4_10_100k.pdf>
+Package pdftex.def Info: 2_4_10_100k.pdf used on input line 376.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1082) in paragraph at lines 377--377
+[]\T1/lmr/m/n/10.95 (b) |Auf-nah-me des Si-gnals
+ []
+
+<2_4_10_1m.pdf, id=160, 578.16pt x 722.7pt>
+File: 2_4_10_1m.pdf Graphic file (type pdf)
+ <use 2_4_10_1m.pdf>
+Package pdftex.def Info: 2_4_10_1m.pdf used on input line 384.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+<2_4_100_1k.pdf, id=161, 578.16pt x 722.7pt>
+File: 2_4_100_1k.pdf Graphic file (type pdf)
+ <use 2_4_100_1k.pdf>
+Package pdftex.def Info: 2_4_100_1k.pdf used on input line 396.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1253) in paragraph at lines 397--397
+[]\T1/lmr/m/n/10.95 (a) |Auf-nah-me des Si-gnals
+ []
+
+<2_4_100_100k.pdf, id=162, 578.16pt x 722.7pt>
+File: 2_4_100_100k.pdf Graphic file (type pdf)
+ <use 2_4_100_100k.pdf>
+Package pdftex.def Info: 2_4_100_100k.pdf used on input line 404.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1082) in paragraph at lines 405--405
+[]\T1/lmr/m/n/10.95 (b) |Auf-nah-me des Si-gnals
+ []
+
+<2_4_100_1m.pdf, id=163, 578.16pt x 722.7pt>
+File: 2_4_100_1m.pdf Graphic file (type pdf)
+ <use 2_4_100_1m.pdf>
+Package pdftex.def Info: 2_4_100_1m.pdf used on input line 412.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+ [10 <./2_4_1_1k.pdf> <./2_4_1_100k.pdf> <./2_4_1_1m.pdf> <./2_4_10_1k.pdf> <./
+2_4_10_100k.pdf> <./2_4_10_1m.pdf>] <ep4_14[Page10].pdf, id=186, 597.51233pt x 
+845.0471pt>
+File: ep4_14[Page10].pdf Graphic file (type pdf)
+
+<use ep4_14[Page10].pdf>
+Package pdftex.def Info: ep4_14[Page10].pdf used on input line 462.
+(pdftex.def)             Requested size: 540.60553pt x 105.2752pt.
+
+Overfull \hbox (56.90866pt too wide) in paragraph at lines 462--463
+ [][] 
+ []
+
+[11 <./2_4_100_1k.pdf> <./2_4_100_100k.pdf> <./2_4_100_1m.pdf>]
+<2_5_drei_100.pdf, id=201, 578.16pt x 722.7pt>
+File: 2_5_drei_100.pdf Graphic file (type pdf)
+ <use 2_5_drei_100.pdf>
+Package pdftex.def Info: 2_5_drei_100.pdf used on input line 489.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1253) in paragraph at lines 490--490
+[]\T1/lmr/m/n/10.95 (a) |Auf-nah-me des Si-gnals
+ []
+
+<2_5_drei_1k.pdf, id=202, 578.16pt x 722.7pt>
+File: 2_5_drei_1k.pdf Graphic file (type pdf)
+ <use 2_5_drei_1k.pdf>
+Package pdftex.def Info: 2_5_drei_1k.pdf used on input line 497.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1082) in paragraph at lines 498--498
+[]\T1/lmr/m/n/10.95 (b) |Auf-nah-me des Si-gnals
+ []
+
+<2_5_drei_10k.pdf, id=203, 578.16pt x 722.7pt>
+File: 2_5_drei_10k.pdf Graphic file (type pdf)
+ <use 2_5_drei_10k.pdf>
+Package pdftex.def Info: 2_5_drei_10k.pdf used on input line 505.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+<2_5_recht_100.pdf, id=204, 578.16pt x 722.7pt>
+File: 2_5_recht_100.pdf Graphic file (type pdf)
+ <use 2_5_recht_100.pdf>
+Package pdftex.def Info: 2_5_recht_100.pdf used on input line 519.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1253) in paragraph at lines 520--520
+[]\T1/lmr/m/n/10.95 (a) |Auf-nah-me des Si-gnals
+ []
+
+<2_5_recht_1k.pdf, id=205, 578.16pt x 722.7pt>
+File: 2_5_recht_1k.pdf Graphic file (type pdf)
+ <use 2_5_recht_1k.pdf>
+Package pdftex.def Info: 2_5_recht_1k.pdf used on input line 527.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1082) in paragraph at lines 528--528
+[]\T1/lmr/m/n/10.95 (b) |Auf-nah-me des Si-gnals
+ []
+
+<2_5_recht_10k.pdf, id=206, 578.16pt x 722.7pt>
+File: 2_5_recht_10k.pdf Graphic file (type pdf)
+ <use 2_5_recht_10k.pdf>
+Package pdftex.def Info: 2_5_recht_10k.pdf used on input line 535.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+[12 <./ep4_14[Page10].pdf> <./2_5_drei_100.pdf> <./2_5_drei_1k.pdf> <./2_5_drei
+_10k.pdf>] <2_5_sin_100.pdf, id=267, 578.16pt x 722.7pt>
+File: 2_5_sin_100.pdf Graphic file (type pdf)
+ <use 2_5_sin_100.pdf>
+Package pdftex.def Info: 2_5_sin_100.pdf used on input line 548.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1253) in paragraph at lines 549--549
+[]\T1/lmr/m/n/10.95 (a) |Auf-nah-me des Si-gnals
+ []
+
+<2_5_sin_1k.pdf, id=268, 578.16pt x 722.7pt>
+File: 2_5_sin_1k.pdf Graphic file (type pdf)
+ <use 2_5_sin_1k.pdf>
+Package pdftex.def Info: 2_5_sin_1k.pdf used on input line 556.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1082) in paragraph at lines 557--557
+[]\T1/lmr/m/n/10.95 (b) |Auf-nah-me des Si-gnals
+ []
+
+<2_5_sin_10k.pdf, id=269, 578.16pt x 722.7pt>
+File: 2_5_sin_10k.pdf Graphic file (type pdf)
+ <use 2_5_sin_10k.pdf>
+Package pdftex.def Info: 2_5_sin_10k.pdf used on input line 564.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+ [13 <./2_5_recht_100.pdf> <./2_5_recht_1k.pdf> <./2_5_recht_10k.pdf> <./2_5_si
+n_100.pdf> <./2_5_sin_1k.pdf> <./2_5_sin_10k.pdf>]
+File: ep4_14[Page10].pdf Graphic file (type pdf)
+ <use ep4_14[Page10].pdf>
+Package pdftex.def Info: ep4_14[Page10].pdf used on input line 613.
+(pdftex.def)             Requested size: 540.60553pt x 91.04886pt.
+
+Overfull \hbox (56.90866pt too wide) in paragraph at lines 613--614
+ [][] 
+ []
+
+<2_6_drei_100.pdf, id=293, 578.16pt x 722.7pt>
+File: 2_6_drei_100.pdf Graphic file (type pdf)
+ <use 2_6_drei_100.pdf>
+Package pdftex.def Info: 2_6_drei_100.pdf used on input line 639.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1253) in paragraph at lines 640--640
+[]\T1/lmr/m/n/10.95 (a) |Auf-nah-me des Si-gnals
+ []
+
+<2_6_drei_1k.pdf, id=294, 578.16pt x 722.7pt>
+File: 2_6_drei_1k.pdf Graphic file (type pdf)
+ <use 2_6_drei_1k.pdf>
+Package pdftex.def Info: 2_6_drei_1k.pdf used on input line 647.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1082) in paragraph at lines 648--648
+[]\T1/lmr/m/n/10.95 (b) |Auf-nah-me des Si-gnals
+ []
+
+<2_6_drei_10k.pdf, id=295, 578.16pt x 722.7pt>
+File: 2_6_drei_10k.pdf Graphic file (type pdf)
+ <use 2_6_drei_10k.pdf>
+Package pdftex.def Info: 2_6_drei_10k.pdf used on input line 655.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+ [14]
+<2_6_recht_100.pdf, id=301, 578.16pt x 722.7pt>
+File: 2_6_recht_100.pdf Graphic file (type pdf)
+ <use 2_6_recht_100.pdf>
+Package pdftex.def Info: 2_6_recht_100.pdf used on input line 669.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1253) in paragraph at lines 670--670
+[]\T1/lmr/m/n/10.95 (a) |Auf-nah-me des Si-gnals
+ []
+
+<2_6_recht_1k.pdf, id=302, 578.16pt x 722.7pt>
+File: 2_6_recht_1k.pdf Graphic file (type pdf)
+ <use 2_6_recht_1k.pdf>
+Package pdftex.def Info: 2_6_recht_1k.pdf used on input line 677.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1082) in paragraph at lines 678--678
+[]\T1/lmr/m/n/10.95 (b) |Auf-nah-me des Si-gnals
+ []
+
+<2_6_recht_10k.pdf, id=303, 578.16pt x 722.7pt>
+File: 2_6_recht_10k.pdf Graphic file (type pdf)
+ <use 2_6_recht_10k.pdf>
+Package pdftex.def Info: 2_6_recht_10k.pdf used on input line 685.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+<2_6_sin_100.pdf, id=304, 578.16pt x 722.7pt>
+File: 2_6_sin_100.pdf Graphic file (type pdf)
+ <use 2_6_sin_100.pdf>
+Package pdftex.def Info: 2_6_sin_100.pdf used on input line 698.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1253) in paragraph at lines 699--699
+[]\T1/lmr/m/n/10.95 (a) |Auf-nah-me des Si-gnals
+ []
+
+<2_6_sin_1k.pdf, id=305, 578.16pt x 722.7pt>
+File: 2_6_sin_1k.pdf Graphic file (type pdf)
+ <use 2_6_sin_1k.pdf>
+Package pdftex.def Info: 2_6_sin_1k.pdf used on input line 706.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1082) in paragraph at lines 707--707
+[]\T1/lmr/m/n/10.95 (b) |Auf-nah-me des Si-gnals
+ []
+
+<2_6_sin_10k.pdf, id=306, 578.16pt x 722.7pt>
+File: 2_6_sin_10k.pdf Graphic file (type pdf)
+ <use 2_6_sin_10k.pdf>
+Package pdftex.def Info: 2_6_sin_10k.pdf used on input line 714.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+ [15 <./2_6_drei_100.pdf> <./2_6_drei_1k.pdf> <./2_6_drei_10k.pdf> <./2_6_recht
+_100.pdf> <./2_6_recht_1k.pdf> <./2_6_recht_10k.pdf> <./2_6_sin_100.pdf> <./2_6
+_sin_1k.pdf> <./2_6_sin_10k.pdf>]
+File: ep4_14[Page10].pdf Graphic file (type pdf)
+ <use ep4_14[Page10].pdf>
+Package pdftex.def Info: ep4_14[Page10].pdf used on input line 752.
+(pdftex.def)             Requested size: 540.60553pt x 76.82254pt.
+
+Overfull \hbox (56.90866pt too wide) in paragraph at lines 752--753
+ [][] 
+ []
+
+<2_7_mit_rf.pdf, id=338, 578.16pt x 722.7pt>
+File: 2_7_mit_rf.pdf Graphic file (type pdf)
+ <use 2_7_mit_rf.pdf>
+Package pdftex.def Info: 2_7_mit_rf.pdf used on input line 778.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+<2_7_ohne_rf.pdf, id=339, 578.16pt x 722.7pt>
+File: 2_7_ohne_rf.pdf Graphic file (type pdf)
+ <use 2_7_ohne_rf.pdf>
+Package pdftex.def Info: 2_7_ohne_rf.pdf used on input line 786.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+ [16]
+<ep4_14[Page11].pdf, id=344, 597.51233pt x 845.0471pt>
+File: ep4_14[Page11].pdf Graphic file (type pdf)
+
+<use ep4_14[Page11].pdf>
+Package pdftex.def Info: ep4_14[Page11].pdf used on input line 824.
+(pdftex.def)             Requested size: 540.60553pt x 91.04887pt.
+
+Overfull \hbox (56.90866pt too wide) in paragraph at lines 824--825
+ [][] 
+ []
+
+[17 <./2_7_mit_rf.pdf> <./2_7_ohne_rf.pdf>]
+File: ep4_14[Page11].pdf Graphic file (type pdf)
+ <use ep4_14[Page11].pdf>
+Package pdftex.def Info: ep4_14[Page11].pdf used on input line 834.
+(pdftex.def)             Requested size: 540.60553pt x 91.04887pt.
+
+Overfull \hbox (56.90866pt too wide) in paragraph at lines 834--835
+ [][] 
+ []
+
+[18 <./ep4_14[Page11].pdf>] <a_2_8_a.pdf, id=396, 361.35pt x 252.945pt>
+File: a_2_8_a.pdf Graphic file (type pdf)
+
+<use a_2_8_a.pdf>
+Package pdftex.def Info: a_2_8_a.pdf used on input line 904.
+(pdftex.def)             Requested size: 144.53743pt x 101.17621pt.
+ <a_2_8_b.pdf, id=397, 361.35pt x 252.945pt>
+File: a_2_8_b.pdf Graphic file (type pdf)
+
+<use a_2_8_b.pdf>
+Package pdftex.def Info: a_2_8_b.pdf used on input line 912.
+(pdftex.def)             Requested size: 144.53743pt x 101.17621pt.
+ [19 <./a_2_8_a.pdf> <./a_2_8_b.pdf>]
+(./Op-Amp_Frederik_und_Henrik.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4867 strings out of 493304
- 69916 string characters out of 6139871
- 137819 words of memory out of 5000000
- 8201 multiletter control sequences out of 15000+600000
- 74949 words of font info for 51 fonts, out of 8000000 for 9000
+ 5087 strings out of 493304
+ 74021 string characters out of 6139871
+ 139558 words of memory out of 5000000
+ 8396 multiletter control sequences out of 15000+600000
+ 63108 words of font info for 49 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,10n,38p,2167b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri
-12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-
-Output written on Digitalelektronik_Teil1_Frederik_Henrik.pdf (16 pages, 593371
- bytes).
+ 37i,8n,38p,973b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/u
+sr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/l
+m/lm-rm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Op-Amp_Frederik_und_Henrik.pdf (19 pages, 763923 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
+ 466 PDF objects out of 1000 (max. 8388607)
+ 310 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 265 words of extra memory for PDF output out of 10000 (max. 10000000)
 

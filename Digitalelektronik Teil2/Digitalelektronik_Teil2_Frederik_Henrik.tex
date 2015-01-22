@@ -11,6 +11,8 @@
 \usepackage{caption}
 \usepackage{subcaption}
 
+\usepackage{framed}
+
 \usepackage{listings}		% Wird für Quelltext verwendet
 
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
@@ -97,6 +99,13 @@ Mit dem Programm 'Xilinx ISE 10.1'(kurz ISE) soll Schritt für Schritt eine klei
 
 In diesem Versuchsabschnitt werden verschiedenen Messungen vorgenommen.
 
+\begin{framed}
+\noindent
+Da es kompikationen bei der installation von ISE gab konnten wir keine eigenen Bilder für die Versuchaufbauten verwenden.
+Abbildung \ref{fig:auf_1_1} ist aus der Praktikumsanleitung entnommen und wurde mit Inkscape bearbeitet, um unserem Aufbau zu entsprechen.
+Abbildung \ref{fig:auf_1_2} und \ref{fig:auf_1_3} sind von der Gruppe Pagel, Roggel und Reisch, deren Aufbau identisch zu unserem ist.
+\end{framed}
+
 \subsection{Messungen an der jetzigen Schaltung}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -116,7 +125,7 @@ Es wird die Schaltung in Abbildung \ref{fig:auf_1_1} mit ISE aufgebaut und imple
 
 \begin{figure}[H] 
   \centering 	
-    \includegraphics[ scale = 0.4]{auf_1_1.png}
+    \includegraphics[ scale = 0.2]{Schaltung1.png}
   	\caption[Schaltskizze des 8fach-Zählers]{Schaltskizze des 8fach-Zählers}
   \label{fig:auf_1_1}
 \end{figure}
@@ -203,13 +212,13 @@ Es werden das CPLD-Board, Verbindungskabel und ein Oszilloskop verwendet.
 \subsubsection*{Versuchsaufbau}
 %skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
 
-Es wird die Schaltung in Abbildung \ref{fig:auf_1_1} mit ISE aufgebaut und implementiert.
+Es wird die Schaltung in Abbildung \ref{fig:auf_1_2} mit ISE aufgebaut und implementiert.
 
 \begin{figure}[H] 
   \centering 	
-    \includegraphics[ scale = 0.4]{auf_1_1.png}
+    \includegraphics[ scale = 0.4]{Schaltung2.jpg}
   	\caption[Schaltskizze des 16fach-Zählers]{Schaltskizze des 16fach-Zählers}
-  \label{fig:auf_1_1}
+  \label{fig:auf_1_2}
 \end{figure}
 
 Dabei werden die Aus- und Eingänge nach dem folgenden Schema belegt.
@@ -308,13 +317,13 @@ Es werden das CPLD-Board, Verbindungskabel und ein PC verwendet.
 
 \label{subsec:aufbau}
 
-Es wird die Schaltung in Abbildung \ref{fig:auf_1_1} mit ISE aufgebaut und implementiert.
+Es wird die Schaltung in Abbildung \ref{fig:auf_1_3} mit ISE aufgebaut und implementiert.
 
 \begin{figure}[H] 
   \centering 	
-    \includegraphics[ scale = 0.4]{auf_1_1.png}
+    \includegraphics[ scale = 0.4]{Schaltung3.JPG}
   	\caption[Schaltskizze des 16fach-Zählers]{Schaltskizze des 16fach-Zählers}
-  \label{fig:auf_1_1}
+  \label{fig:auf_1_3}
 \end{figure}
 
 Dabei werden die Aus- und Eingänge nach dem folgenden Schema belegt.
@@ -537,13 +546,13 @@ Im Anhang befinden sich die jeweils verwendeten Verilogdateien und die ufc Datei
 
 \begin{figure}[H]
 \lstinputlisting[, basicstyle=\tiny]{ufc.ufc}
-\caption*{Datei zur Festlegung der Pinbelegung}
-\label{scr:1}
+\label{scr:wut}
+\caption[Datei zur Festlegung der Pinbelegung]{Datei zur Festlegung der Pinbelegung}
 \end{figure}
 
 \begin{figure}[H]
 \lstinputlisting[language=Verilog, basicstyle=\tiny]{Verilog_1_iso.v}
-\caption*{Quellcode für die 1. Aufgabe}
+\caption[Quellcode für die 1. Aufgabe]{Quellcode für die 1. Aufgabe}
 \label{scr:1}
 \end{figure}
 
@@ -552,7 +561,7 @@ Im Anhang befinden sich die jeweils verwendeten Verilogdateien und die ufc Datei
 
 \begin{figure}[H]
 \lstinputlisting[language=Verilog, basicstyle=\tiny]{Verilog_2.v}
-\caption*{Quellcode für die 2. Aufgabe}
+\caption{Quellcode für die 2. Aufgabe}
 \label{scr:2}
 \end{figure}
 
@@ -561,7 +570,7 @@ Im Anhang befinden sich die jeweils verwendeten Verilogdateien und die ufc Datei
 
 \begin{figure}[H]
 \lstinputlisting[language=Verilog, basicstyle=\tiny]{Verilog_3.v}
-\caption*{Quellcode für die 3. Aufgabe}
+\caption{Quellcode für die 3. Aufgabe}
 \label{scr:3}
 \end{figure}
 
@@ -570,7 +579,7 @@ Im Anhang befinden sich die jeweils verwendeten Verilogdateien und die ufc Datei
 
 \begin{figure}[H]
 \lstinputlisting[language=Verilog, basicstyle=\tiny]{Verilog_4.v}
-\caption*{Quellcode für die 4. Aufgabe}
+\caption{Quellcode für die 4. Aufgabe}
 \label{scr:4}
 \end{figure}
 
@@ -579,7 +588,7 @@ Im Anhang befinden sich die jeweils verwendeten Verilogdateien und die ufc Datei
 
 \begin{figure}[H]
 \lstinputlisting[language=Verilog, basicstyle=\tiny]{Verilog_6.v}
-\caption*{Quellcode für die 5. Aufgabe}
+\caption{Quellcode für die 5. Aufgabe}
 \label{scr:5}
 \end{figure}
 
@@ -587,7 +596,7 @@ Im Anhang befinden sich die jeweils verwendeten Verilogdateien und die ufc Datei
 
 \begin{figure}[H]
 \lstinputlisting[language=Verilog, basicstyle=\tiny]{Verilog_7.v}
-\caption*{Quellcode für die 5. Aufgabe}
+\caption{Quellcode für die 5. Aufgabe}
 \label{scr:6}
 \end{figure}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  7 JAN 2015 10:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  8 JAN 2015 23:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -70,6 +70,39 @@ Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count89
 \c@subtable=\count90
 )
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip46
+\fb@frw=\dimen110
+\fb@frh=\dimen111
+\FrameRule=\dimen112
+\FrameSep=\dimen113
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count91
+\lst@gtempboxa=\box28
+\lst@token=\toks17
+\lst@length=\count92
+\lst@currlwidth=\dimen114
+\lst@column=\count93
+\lst@pos=\count94
+\lst@lostspace=\dimen115
+\lst@width=\dimen116
+\lst@newlines=\count95
+\lst@lineno=\count96
+\lst@maxwidth=\dimen117
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count97
+\lst@skipnumbers=\count98
+\lst@framebox=\box29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -84,23 +117,23 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count91
-\Gm@cntv=\count92
-\c@Gm@tempcnt=\count93
-\Gm@bindingoffset=\dimen110
-\Gm@wd@mp=\dimen111
-\Gm@odd@mp=\dimen112
-\Gm@even@mp=\dimen113
-\Gm@layoutwidth=\dimen114
-\Gm@layoutheight=\dimen115
-\Gm@layouthoffset=\dimen116
-\Gm@layoutvoffset=\dimen117
-\Gm@dimlist=\toks17
+\Gm@cnth=\count99
+\Gm@cntv=\count100
+\c@Gm@tempcnt=\count101
+\Gm@bindingoffset=\dimen118
+\Gm@wd@mp=\dimen119
+\Gm@odd@mp=\dimen120
+\Gm@even@mp=\dimen121
+\Gm@layoutwidth=\dimen122
+\Gm@layoutheight=\dimen123
+\Gm@layouthoffset=\dimen124
+\Gm@layoutvoffset=\dimen125
+\Gm@dimlist=\toks18
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks18
-\inpenc@posthook=\toks19
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -364,8 +397,8 @@ Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2013/12/03 3.9h Babel common definitions
-\babel@savecnt=\count94
-\U@D=\dimen118
+\babel@savecnt=\count102
+\U@D=\dimen126
 )
 \l@naustrian = a dialect from \language\l@ngerman 
 \l@nswissgerman = a dialect from \language\l@ngerman 
@@ -373,7 +406,7 @@ Package babel Info: Making " an active character on input line 88.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip46
+\@mathmargin=\skip47
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -381,51 +414,51 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks20
-\ex@=\dimen119
+\@emptytoks=\toks21
+\ex@=\dimen127
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen120
+\pmbraise@=\dimen128
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count95
+\inf@bad=\count103
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count96
-\leftroot@=\count97
+\uproot@=\count104
+\leftroot@=\count105
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count98
-\DOTSCASE@=\count99
+\classnum@=\count106
+\DOTSCASE@=\count107
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
-\big@size=\dimen121
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen129
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count100
-\c@MaxMatrixCols=\count101
+\macc@depth=\count108
+\c@MaxMatrixCols=\count109
 \dotsspace@=\muskip10
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
-\tag@help=\toks21
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
-\andhelp@=\toks22
-\eqnshift@=\dimen122
-\alignsep@=\dimen123
-\tagshift@=\dimen124
-\tagwidth@=\dimen125
-\totwidth@=\dimen126
-\lineht@=\dimen127
-\@envbody=\toks23
-\multlinegap=\skip47
-\multlinetaggap=\skip48
-\mathdisplay@stack=\toks24
+\c@parentequation=\count110
+\dspbrk@lvl=\count111
+\tag@help=\toks22
+\row@=\count112
+\column@=\count113
+\maxfields@=\count114
+\andhelp@=\toks23
+\eqnshift@=\dimen130
+\alignsep@=\dimen131
+\tagshift@=\dimen132
+\tagwidth@=\dimen133
+\totwidth@=\dimen134
+\lineht@=\dimen135
+\@envbody=\toks24
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
@@ -452,33 +485,35 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count107
+\Gread@gobject=\count115
 ))
-\Gin@req@height=\dimen128
-\Gin@req@width=\dimen129
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
 )
 (./Digitalelektronik_Teil2_Frederik_Henrik.aux)
 \openout1 = `Digitalelektronik_Teil2_Frederik_Henrik.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 27.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count116
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -516,17 +551,17 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen130
-\scratchbox=\box30
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen131
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count117
+\scratchdimen=\dimen138
+\scratchbox=\box32
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen139
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks27
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -574,36 +609,36 @@ e
 <logo.pdf, id=1, 130.4875pt x 41.15375pt>
 File: logo.pdf Graphic file (type pdf)
  <use logo.pdf>
-Package pdftex.def Info: logo.pdf used on input line 31.
+Package pdftex.def Info: logo.pdf used on input line 35.
 (pdftex.def)             Requested size: 362.77264pt x 114.42905pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 51.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 55.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 51.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 55.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 51.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 55.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 51.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 55.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 51.
+(Font)              <12> on input line 55.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 51.
+(Font)              <8> on input line 55.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 51.
+(Font)              <6> on input line 55.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.pdf>] (./Digitalele
@@ -613,43 +648,121 @@ ktronik_Teil2_Frederik_Henrik.toc)
 
 [1]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 81.
+(Font)              <10> on input line 85.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 81.
+(Font)              <7> on input line 85.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 81.
- <auf_1.png, id=17, 906.38625pt x 397.485pt>
-File: auf_1.png Graphic file (type png)
- <use auf_1.png>
-Package pdftex.def Info: auf_1.png used on input line 109.
-(pdftex.def)             Requested size: 362.54808pt x 158.99118pt.
- [2] [3 <./auf_1.png>] <auf_2.png, id=28, 626.34pt x 423.5825pt>
-File: auf_2.png Graphic file (type png)
- <use auf_2.png>
-Package pdftex.def Info: auf_2.png used on input line 194.
-(pdftex.def)             Requested size: 250.53156pt x 169.43pt.
- [4 <./auf_2.png>] [5] [6] [7] (./Digitalelektronik_Teil2_Frederik_Henrik.aux) 
-) 
+(Font)              <5> on input line 85.
+ <Schaltung1.png, id=17, 1365.1pt x 601.24625pt>
+File: Schaltung1.png Graphic file (type png)
+ <use Schaltung1.png>
+Package pdftex.def Info: Schaltung1.png used on input line 128.
+(pdftex.def)             Requested size: 273.01517pt x 120.24712pt.
+
+[2] <TEK0011.pdf, id=25, 578.16pt x 722.7pt>
+File: TEK0011.pdf Graphic file (type pdf)
+ <use TEK0011.pdf>
+Package pdftex.def Info: TEK0011.pdf used on input line 193.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+ [3 <./Schaltung1.png>] <Schaltung2.jpg, id=30, 566.115pt x 527.72156pt>
+File: Schaltung2.jpg Graphic file (type jpg)
+ <use Schaltung2.jpg>
+Package pdftex.def Info: Schaltung2.jpg used on input line 219.
+(pdftex.def)             Requested size: 226.44199pt x 211.08488pt.
+
+[4 <./TEK0011.pdf> <./Schaltung2.jpg>]
+<TEK0012.pdf, id=38, 578.16pt x 722.7pt>
+File: TEK0012.pdf Graphic file (type pdf)
+ <use TEK0012.pdf>
+Package pdftex.def Info: TEK0012.pdf used on input line 287.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+<TEK0013.pdf, id=40, 578.16pt x 722.7pt>
+File: TEK0013.pdf Graphic file (type pdf)
+ <use TEK0013.pdf>
+Package pdftex.def Info: TEK0013.pdf used on input line 296.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+ [5 <./TEK0012.pdf>]
+<Schaltung3.JPG, id=49, 565.36218pt x 503.63156pt>
+File: Schaltung3.JPG Graphic file (type jpg)
+ <use Schaltung3.JPG>
+Package pdftex.def Info: Schaltung3.JPG used on input line 324.
+(pdftex.def)             Requested size: 226.14085pt x 201.44905pt.
+
+[6 <./TEK0013.pdf> <./Schaltung3.JPG>] [7]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 429.
+
+
+(/usr/share/texmf/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 429.
+ [8] [9] [10] (./ufc.ufc)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2013/08/26 1.5b listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2013/08/26 1.5b listings language file
+)
+(./Verilog_1_iso.v) [11] [12] (./Verilog_2.v) [13] (./Verilog_3.v) [14]
+(./Verilog_4.v) [15] (./Verilog_6.v
+Overfull \hbox (22.29892pt too wide) in paragraph at lines 43--44
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+[][][][][][]
+ []
+
+
+Overfull \hbox (35.49881pt too wide) in paragraph at lines 45--46
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [16] (./Verilog_7.v
+Overfull \hbox (22.29892pt too wide) in paragraph at lines 45--46
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+[][][][][][]
+ []
+
+
+Overfull \hbox (35.49881pt too wide) in paragraph at lines 47--48
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [17] (./Digitalelektronik_Teil2_Frederik_Henrik.aux) ) 
 Here is how much of TeX's memory you used:
- 4795 strings out of 493304
- 68874 string characters out of 6139871
- 135643 words of memory out of 5000000
- 8140 multiletter control sequences out of 15000+600000
- 74949 words of font info for 51 fonts, out of 8000000 for 9000
+ 6879 strings out of 493304
+ 96499 string characters out of 6139871
+ 280043 words of memory out of 5000000
+ 10163 multiletter control sequences out of 15000+600000
+ 85196 words of font info for 54 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,8n,38p,852b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc
-/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmsy10.pfb>
-Output written on Digitalelektronik_Teil2_Frederik_Henrik.pdf (8 pages, 991283 
-bytes).
+ 37i,8n,44p,852b,1428s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts
+/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</us
+r/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmbx6.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmri7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmsy6.pfb>
+Output written on Digitalelektronik_Teil2_Frederik_Henrik.pdf (18 pages, 841436
+ bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 137 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 54 words of extra memory for PDF output out of 10000 (max. 10000000)
 

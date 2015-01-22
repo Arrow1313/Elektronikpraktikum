@@ -10,6 +10,6 @@
 \contentsline {subsection}{\numberline {3.3}ODER-Verkn\IeC {\"u}pfung (OR)}{8}
 \contentsline {subsection}{\numberline {3.4}Inverter und Schmitt-Trigger}{9}
 \contentsline {subsection}{\numberline {3.5}Speicherbausteine: Das RS-Flipflop}{11}
-\contentsline {subsection}{\numberline {3.6}Das Z\IeC {\"a}hl-Flipflop}{12}
-\contentsline {subsection}{\numberline {3.7}Ziffernanzeige Siebensegmentdecoder 4511}{13}
+\contentsline {subsection}{\numberline {3.6}Das Z\IeC {\"a}hl-Flipflop}{13}
+\contentsline {subsection}{\numberline {3.7}Ziffernanzeige Siebensegmentdecoder 4511}{14}
 \contentsline {section}{\numberline {4}Fazit}{15}
