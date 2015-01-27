@@ -1,0 +1,448 @@
+\documentclass[12pt,a4paper]{article}
+ 
+\usepackage{float}
+%für feststellen der figures und tables [H] dranschreiben
+\usepackage{units}
+%wird so benutzt: 
+%\unit[value/Zahl]{dimension/Einheit} oder 
+%\unitfrac[value/Zahl]{dimension/Einheit num/Zähler}{dimension/Einheit denum/Nenner} oder
+%\nicefrac[fontcommand/Schriftart]{dimension/Einheit num/Zähler}{dimension/Einheit denum/Nenner}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+ 
+%niemals zwei überschriften direkt übereinander schreiben, also immer mindestens in einem satz was sinnvolles unter jede überschrift schreiben (bei den versuchen z.B. das versuchsziel) 
+\begin{document}
+%deckblatt erstellen.
+
+
+\begin{titlepage}
+
+\begin{center}
+% Oberer Teil der Titelseite:
+\includegraphics[width=0.75\textwidth]{logo.pdf}\\[1cm]    	%Logo 
+
+\textsc{\LARGE Bergische Universität Wuppertal}\\[1.5cm]	%Institution
+
+\textsc{\Large Elektronik Praktikum}\\[0.5cm]				%Projekt
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\HRule \\[0.4cm]
+{ \huge \bfseries Versuch.....}\\[0.4cm]				%Titel
+
+\HRule \\[1.5cm]
+
+% Author und Tutor
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Autoren:}\\
+Henrik \textsc{Jürgens} \\
+Frederik \textsc{Strothmann}
+\end{flushleft}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Tutoren:} \\
+Hans-Peter \textsc{Kind} \\
+Peter \textsc{Knieling} \\
+Marius \textsc{Wensing}
+\end{flushright}
+\end{minipage}
+
+\vfill
+
+% Unterer Teil der Seite/Datum
+{\large \today}
+
+\end{center}
+
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+\section{Einleitung}
+%einleitung zu dem experiment.
+%auf die einstellungen, die vor dem versuch gemacht werden, eingehen oder auf eine anleitung dazu verweisen
+%es soll immer erwähnt werden um was es in dem Versuch geht und wie das relisiert werden soll
+%---------------------------------------------------------------------------------------------
+%hinter der einleitung kann der allgemeine theoretische hintergrund in einer zusätzlichen section erklärt werden
+%1-----------------------------------------------1
+
+
+
+
+\section{Fingerpulssensor}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuch wir das Signal eines Fingerpulsmessers untersucht.
+
+\subsection{Aufbau}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+Im ersten Versuchsteil wird die Schaltung zur Inbetriebnahme des Fingerpulssensors aufgebaut.
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+Es werden ein Netzgerät, Widerstände, Kondensatoren, ein Potentiometer, der Fingerpulssensor und ein Oszilloskop verwendet.
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+Die Werte der Bauteile sind in der Abbildung angegeben. Der nicht eingezeichnete Kondensator wird als Tiefpassfilter direkt über die eingangs Kabel am Oszilloskop gesteckt.
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[scale = 0.3]{auf_1.png}
+	\caption[Schaltskizze zur Inbetriebnahme des Fingerpulssensors]{Schaltskizze zur Inbetriebnahme des Fingerpulssensors\footnotemark}
+	\label{fig:auf_1}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep12\_14.pdf am 20.12.2014}
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+Die Schaltung in Abbildung \ref{fig:auf_1} wird aufgebaut. Es wird ein \unit[100]{nF} Kondensator am Oszilloskop eingebaut, um die Signalqualität zu verbessern.
+
+
+\subsection{Bestimmung des SVR}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil soll das Signal-Rausch-Verhältnis untersucht werden.
+
+\subsubsection*{Verwendete Formeln}
+%eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
+%mit knappen erklärungen die !verwendeten! formeln, sowie die zugehörige fehlerrechnung einfügen
+%2-----------------------------------------------2
+%ab hier kann nochmal in einzelne versuchsteile unterteilt werden
+
+Das Signal-Störungs-Verhältnis ergibt sich nach Gleichung \ref{eqn:1}.
+
+\begin{align}
+\text{SRV}=\frac{\text{U}_\text{nutz}^2}{\text{U}_\text{rausch}^2}
+\label{eqn:1}
+\end{align}
+
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+Mittels der Funktion Measure wird für das Eingangssignal und das Störsignal die  Spitze zu Spitze Spannung gemessen. Dann wird mit Gleichung \ref{eqn:1} das SVR bestimmt. Dann wird aus den Quadraten der gemessenen Spannungen das Leistungsverhältnis bestimmt.
+
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+\subsubsection*{Diskussion}
+%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
+%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
+%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
+%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
+%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
+%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+%--------------------------------------------------------------------------------------------
+%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+%1-----------------------------------------------1
+
+
+\subsection{Differenzieren/Filtern des Sensorsignals}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil wird ein Differenzierer/Filter in die Schaltung eingebaut, dadurch wird das Offset raus geschnitten.
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+Es werden ein Netzgerät, Widerstände, Kondensatoren, ein Potentiometer, der Fingerpulssensor und ein Oszilloskop verwendet.
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+In Abbildung \ref{fig:auf_2} ist die Schaltskizze des Fingerpulssensors mit Differenzierer/Filter. R$_\text{H}$ ist ein 10k$\Omega$ Widerstand, für C$_\text{H}$ wird ein 10$\mu$F Kondensator verwendet.  R$_\text{T}$ ist ein 100k$\Omega$ Widerstand, für C$_\text{T}$ wird ein 100nF Kondensator verwendet.
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[scale = 0.3]{auf_2.png}
+	\caption[Schaltskizze für das Differenzieren/Filtern des Sensorsignals]{Schaltskizze für das Differenzieren/Filtern des Sensorsignals\footnotemark}
+	\label{fig:auf_2}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep12\_14.pdf am 20.12.2014}
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+Es wird die Schaltung in Abbildung \ref{fig:auf_2} aufgebaut und mit dem Oszilloskop der Verlauf des Ausgangssignals aufgenommen. Dann wird der Kondensator C$\text{T}$ durch einen 1$\mu$F Kondensator ersetzt und das Ausgangssignal mit dem Oszillator aufgenommen. 
+
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+\subsubsection*{Diskussion}
+%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
+%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
+%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
+%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
+%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
+%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+%--------------------------------------------------------------------------------------------
+%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+%1-----------------------------------------------1
+
+
+
+\subsection{Verstärkung des gefilterten Signals und ADC-Erfassung}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+Es werden ein Netzgerät, Widerstände, Kondensatoren, ein Potentiometer, ein Op-Amp, der Fingerpulssensor und ein Oszilloskop verwendet.
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[scale = 0.3]{auf_3.png}
+	\caption[Schaltskizze für das Differenzieren/Filtern des Sensorsignals]{Schaltskizze für das Differenzieren/Filtern des Sensorsignals\footnotemark}
+	\label{fig:auf_3}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep12\_14.pdf am 20.12.2014}
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+\subsubsection*{Messergebnisse}
+%die messwerte in !übersichtlichen! tabellen angegeben
+%zu viele kleine tabellen in große tabellen überführen!
+%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
+%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+\subsubsection*{Diskussion}
+%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
+%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
+%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
+%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
+%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
+%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+%--------------------------------------------------------------------------------------------
+%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+%1-----------------------------------------------1
+
+
+
+\subsection{Digitalisierung mit Diskriminator}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+Mit einen Komperator wird das Ausgangssignal in ein Rechtecksignal umgewandelt.
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+Es werden ein Netzgerät, Widerstände, Kondensatoren, eine LED, ein 10-Gang Potentiometer, ein Op-Amp, der Fingerpulssensor und ein Oszilloskop verwendet.
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+Mit der Schaltung in Abbildung \ref{fig:auf_4} wir das Ausgangssignal in ein Rechtecksignal umgewandelt.
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[scale = 0.3]{auf_4.png}
+	\caption[Schaltskizze für die Umwandelung des Ausgangssignals in ein Rechtecksignal]{Schaltskizze für die Umwandelung des Ausgangssignals in ein Rechtecksignal\footnotemark}
+	\label{fig:auf_4}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep12\_14.pdf am 20.12.2014}
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+Die Schaltung in Abb. \ref{fig:auf_4} wir aufgebaut. Dann Referenzspannung wird so eingestellt, dass ein sauberes Signal zu sehen ist. Mit dem Oszilloskop wird das Ein- und das Ausgangssignal aufgenommen.
+
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+\subsubsection*{Diskussion}
+%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
+%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
+%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
+%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
+%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
+%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+%--------------------------------------------------------------------------------------------
+%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+%1-----------------------------------------------1
+
+
+
+
+
+\subsection{Automatische Einstellung der Referenzspannung}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil wird die Referenzspannung automatisch eingestellt.
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+Es werden ein Netzgerät, Widerstände, Kondensatoren, eine LED, ein 10-Gang Potentiometer, ein Op-Amp, der Fingerpulssensor und ein Oszilloskop verwendet.
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+Mit der Schaltung in Abbildung \ref{fig:auf_5} wird die Referenzspannung automatisch eingestellt.
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[scale = 0.3]{auf_5.png}
+	\caption[Schaltskizze für das automatische einstellen der Referenzspannung]{Schaltskizze für das automatische einstellen der Referenzspannung\footnotemark}
+	\label{fig:auf_5}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep12\_14.pdf am 20.12.2014}
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+Es wird die Schaltung in Abbildung \ref{fig:auf_5} aufgebaut.
+
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+\subsubsection*{Diskussion}
+%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
+%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
+%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
+%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
+%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
+%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+%--------------------------------------------------------------------------------------------
+%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+%1-----------------------------------------------1
+
+
+
+
+\subsection{Pulsschlag hörbar machen}
+%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
+%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+In diesem Versuchsteil wird der Pulsschlag mit einem Lautsprecher hörbar gemacht.
+
+\subsubsection*{Verwendete Geräte}
+%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
+%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
+
+Es werden ein Netzgerät, Widerstände, Kondensatoren, eine LED, ein 10-Gang Potentiometer, ein Op-Amp, der Fingerpulssensor, ein Lautsprecher und ein Oszilloskop verwendet.
+
+\subsubsection*{Versuchsaufbau}
+%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
+
+Mit der Schaltung in Abbildung \ref{fig:auf_6} wird das Pulssignal hörbar gemacht.
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[scale = 0.3]{auf_6.png}
+	\caption[Schaltskizze für das automatische einstellen der Referenzspannung]{Schaltskizze für das automatische einstellen der Referenzspannung\footnotemark}
+	\label{fig:auf_6}
+\end{figure}
+\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep12\_14.pdf am 20.12.2014}
+
+\subsubsection*{Versuchsdurchführung}
+%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
+%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
+
+Es wird die Schaltung in Abbildung \ref{fig:auf_6} aufgebaut und das Pulssignal gehört.
+
+
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+\subsubsection*{Diskussion}
+%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
+%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
+%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
+%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
+%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
+%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+%--------------------------------------------------------------------------------------------
+%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+%1-----------------------------------------------1
+
+
+
+\section{Fazit}
+%im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
+%gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
+\end{document}
+
