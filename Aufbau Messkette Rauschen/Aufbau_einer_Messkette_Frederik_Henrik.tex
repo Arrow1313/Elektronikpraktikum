@@ -79,7 +79,7 @@ Marius \textsc{Wensing}
 %hinter der einleitung kann der allgemeine theoretische hintergrund in einer zusätzlichen section erklärt werden
 %1-----------------------------------------------1
 
-In diesem Versuch soll eine komplette Messreihe aufgenommen werden.
+In diesem Versuch soll eine Messreihe aufgenommen und vom Rauschen befreit werden.
 Ziel ist es ein System zur Aufnahme des Pulsschlages aufzubauen.
 
 
@@ -87,13 +87,13 @@ Ziel ist es ein System zur Aufnahme des Pulsschlages aufzubauen.
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuch wird das Signal eines Fingerpulsmessers untersucht.
+In diesem Versuch wird das Signal eines Fingerpulsmessers untersucht und digitalisiert.
 
 \subsection{Aufbau}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-Im ersten Versuchsteil wird die Schaltung zur Inbetriebnahme des Fingerpulssensors aufgebaut.
+Im ersten Versuchsteil wird die Schaltung zur Inbetriebnahme des Fingerpulssensors aufgebaut. Und der Puls gemessen.
 
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -176,7 +176,7 @@ Das Signal-Rausch-Verhältnis ergibt sich nach Gleichung \ref{eqn:1}.
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Mittels der Funktion "`Measure"' wird für das Eingangssignal und das Störsignal die  Spitzenspannung U$_{ss}$ gemessen. Dann wird mit Gleichung \ref{eqn:1} aus den Quadraten der gemessenen Spannungen das SRV, also das Verhältnis der Leistungen, bestimmt.
+Mittels der Funktion "`Measure/Cursor"' wird für das Eingangssignal und das Störsignal die  Spitzenspannung U$_{ss}$ gemessen. Dann wird mit Gleichung \ref{eqn:1} aus den Quadraten der gemessenen Spannungen das SRV, also das Verhältnis der Leistungen, bestimmt.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -203,6 +203,7 @@ Das Signal-Rausch-Verhältnis sollte bestimmt werden, dafür wurde die Spannung 
   \caption[Aufnahme des Pulses, mit Bestimmung von U$_\text{rauschen}$]{Aufnahme des Pulses, mit Bestimmung von U$_\text{rauschen}$} 
   \label{fig:u_rauschen}
 \end{subfigure}
+\caption{Aufnahmen zur Bestimmung der SRV}
 \label{fig:srv}
 \end{figure}
 
@@ -225,7 +226,7 @@ Die Spitzenspannung U$_{ss}$ wurde mit der Funktion "`Measure"' und das Rauschen
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 %++++
-In diesem Versuchsteil wird das Signal mit Filtern und Verstärkern weiterverarbeitet. Dabei ein Hoch- und ein Tiefpassfilter verwendet, die Grenzfrequenz ergibt sich nach Gleichung \ref{eqn:grenze}, damit können die Werte der Bauteile bestimmt werden.
+In diesem Versuchsteil wird das Signal mit Filtern und Verstärkern weiterverarbeitet. Dabei werden ein Hoch- und ein Tiefpassfilter verwendet. Die Grenzfrequenz ergibt sich nach Gleichung \ref{eqn:grenze}, damit können die Werte der Bauteile bestimmt werden.
 
 \begin{align}
 \text{F}_\text{grenze}=\frac{1}{2 \pi \text{RC}}
@@ -255,8 +256,8 @@ In Abbildung \ref{fig:auf_2} ist die Schaltskizze des Fingerpulssensors mit Diff
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 %++++
-In die Schaltung  in Abb. \ref{fig:auf_1} wird ein Differenzierer/Hochpass  eingebaut, welcher die Offsetspannung ignoriert, sodass am Oszilloskop auch die Einstellung DC verwendet werden kann. Da auch kurze Bananenkabel starke zusätzliche Störungen einfangen können wird die Bandbreite des Oszilloskops auf 20MHz reduziert. Ebenso wird ein Tiefpass/Integrierer nachgeschaltet, welcher hohe Frequenzen filtern soll.
-Nachdem die Schaltung in Abbildung \ref{fig:auf_2} aufgebaut und mit dem Oszilloskop der Verlauf des Ausgangssignals aufgenommen wurde, wird der Kondensator C$\text{T}$ durch einen 1$\mu$F  und einen \unit[10]{nF}/\unit[0,1]{$\mu$F} Kondensator ersetzt. Das Ausgangssignal wird dann jeweils mit dem Oszilloskop aufgenommen. 
+In die Schaltung  in Abb. \ref{fig:auf_1} wird ein Differenzierer/Hochpass  eingebaut, welcher die Offsetspannung ignoriert, sodass am Oszilloskop auch die Einstellung DC verwendet werden kann. Da auch kurze Bananenkabel starke zusätzliche Störungen einfangen, wird die Bandbreite des Oszilloskops auf 20MHz reduziert. Ebenso wird ein Tiefpass/Integrierer nachgeschaltet, welcher hohe Frequenzen filtern soll.
+Nachdem die Schaltung in Abbildung \ref{fig:auf_2} aufgebaut und mit dem Oszilloskop der Verlauf des Ausgangssignals aufgenommen wurde, wird der Kondensator C$\text{T}$ durch einen \unit[10]{nF} und einen \unit[0,1]{$\mu$F} Kondensator ersetzt. Das Ausgangssignal wird jeweils mit dem Oszilloskop aufgenommen. 
 %++++
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -268,7 +269,7 @@ Nachdem die Schaltung in Abbildung \ref{fig:auf_2} aufgebaut und mit dem Oszillo
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
 
-Durch den Filter soll die Signalqualität verbessert und das rauschen minimiert werden. Der Kondensator des Tiefpassfilters wurde durch einen 10 mal größeren und einen 10 mal kleineren ersetzt und das Pulssignal aufgenommen. In Abbildung \ref{fig:a3} sind die Verläufe für die drei Kondensatoren zu sehen.
+Durch den Filter soll die Signalqualität verbessert und das Rauschen minimiert werden. Der Kondensator des Tiefpassfilters wurde durch einen 10 mal größeren und einen 10 mal kleineren ersetzt und dann das Pulssignal aufgenommen. In Abbildung \ref{fig:a3} sind die Verläufe für die drei Kondensatoren zu sehen.
 
 
 \begin{figure}[H]
