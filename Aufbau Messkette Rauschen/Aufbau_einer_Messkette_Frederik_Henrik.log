@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  27 JAN 2015 22:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.20)  28 JAN 2015 18:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**VorlageProtokoll.tex
-(./VorlageProtokoll.tex
+**Aufbau_einer_Messkette_Frederik_Henrik.tex
+(./Aufbau_einer_Messkette_Frederik_Henrik.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -457,8 +457,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen128
 \Gin@req@width=\dimen129
 )
-(./VorlageProtokoll.aux)
-\openout1 = `VorlageProtokoll.aux'.
+(./Aufbau_einer_Messkette_Frederik_Henrik.aux)
+\openout1 = `Aufbau_einer_Messkette_Frederik_Henrik.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
@@ -473,7 +473,8 @@ LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 23.
- (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -605,73 +606,159 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 51.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.pdf>] (./VorlagePro
-tokoll.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.pdf>] (./Aufbau_ein
+er_Messkette_Frederik_Henrik.toc)
 \tf@toc=\write3
-\openout3 = `VorlageProtokoll.toc'.
+\openout3 = `Aufbau_einer_Messkette_Frederik_Henrik.toc'.
 
- [1]
-<auf_1.png, id=17, 1348.03625pt x 753.81625pt>
+
+[1] <auf_1.png, id=17, 1348.03625pt x 753.81625pt>
 File: auf_1.png Graphic file (type png)
  <use auf_1.png>
-Package pdftex.def Info: auf_1.png used on input line 110.
+Package pdftex.def Info: auf_1.png used on input line 111.
 (pdftex.def)             Requested size: 404.414pt x 226.14662pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 114.
+(Font)              <10> on input line 115.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 114.
+(Font)              <7> on input line 115.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 114.
- [2 <./auf_1.png>] <auf_2.png, id=25, 1199.48125pt x 530.98375pt>
+(Font)              <5> on input line 115.
+
+<a1.pdf, id=18, 578.16pt x 722.7pt>
+File: a1.pdf Graphic file (type pdf)
+ <use a1.pdf>
+Package pdftex.def Info: a1.pdf used on input line 137.
+(pdftex.def)             Requested size: 289.07928pt x 219.08568pt.
+ [2 <./auf_1.png>]
+
+Package caption Warning: \label without proper \caption on input line 206.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:srv' on page 3 undefined on input line 191.
+
+<a2_uss.pdf, id=27, 578.16pt x 722.7pt>
+File: a2_uss.pdf Graphic file (type pdf)
+ <use a2_uss.pdf>
+Package pdftex.def Info: a2_uss.pdf used on input line 196.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+Overfull \hbox (13.5978pt too wide) in paragraph at lines 196--197
+[][] 
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 197.
+<a2_rauschen.pdf, id=29, 578.16pt x 722.7pt>
+File: a2_rauschen.pdf Graphic file (type pdf)
+ <use a2_rauschen.pdf>
+Package pdftex.def Info: a2_rauschen.pdf used on input line 202.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+Overfull \hbox (13.5978pt too wide) in paragraph at lines 202--203
+[][] 
+ []
+
+[3 <./a1.pdf>] <auf_2.png, id=41, 1199.48125pt x 530.98375pt>
 File: auf_2.png Graphic file (type png)
  <use auf_2.png>
-Package pdftex.def Info: auf_2.png used on input line 194.
+Package pdftex.def Info: auf_2.png used on input line 248.
 (pdftex.def)             Requested size: 359.84715pt x 159.29634pt.
- [3 <./auf_2.png>] <auf_3.png, id=32, 1214.5375pt x 541.02126pt>
-File: auf_3.png Graphic file (type png)
- <use auf_3.png>
-Package pdftex.def Info: auf_3.png used on input line 245.
-(pdftex.def)             Requested size: 364.36406pt x 162.30762pt.
 
-<auf_4.png, id=33, 1217.54875pt x 437.635pt>
+[4 <./a2_uss.pdf> <./a2_rauschen.pdf>] <a3.pdf, id=54, 578.16pt x 722.7pt>
+File: a3.pdf Graphic file (type pdf)
+
+<use a3.pdf>
+Package pdftex.def Info: a3.pdf used on input line 277.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1253) in paragraph at lines 278--278
+[]\T1/lmr/m/n/10.95 (a) |Auf-nah-me des Si-gnals
+ []
+
+<a3_mal10.pdf, id=55, 578.16pt x 722.7pt>
+File: a3_mal10.pdf Graphic file (type pdf)
+ <use a3_mal10.pdf>
+Package pdftex.def Info: a3_mal10.pdf used on input line 285.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1082) in paragraph at lines 286--286
+[]\T1/lmr/m/n/10.95 (b) |Auf-nah-me des Si-gnals
+ []
+
+<a3_durch10.pdf, id=56, 578.16pt x 722.7pt>
+File: a3_durch10.pdf Graphic file (type pdf)
+ <use a3_durch10.pdf>
+Package pdftex.def Info: a3_durch10.pdf used on input line 293.
+(pdftex.def)             Requested size: 231.2599pt x 289.07487pt.
+
+Underfull \hbox (badness 1442) in paragraph at lines 294--294
+[]\T1/lmr/m/n/10.95 (c) |Auf-nah-me des Si-gnals
+ []
+
+[5 <./auf_2.png> <./a3.pdf> <./a3_mal10.pdf> <./a3_durch10.pdf>]
+<auf_4.png, id=70, 1217.54875pt x 437.635pt>
 File: auf_4.png Graphic file (type png)
  <use auf_4.png>
-Package pdftex.def Info: auf_4.png used on input line 300.
+Package pdftex.def Info: auf_4.png used on input line 338.
 (pdftex.def)             Requested size: 365.26744pt x 131.2915pt.
- [4 <./auf_3.png>]
-<auf_5.png, id=37, 1097.09875pt x 561.09625pt>
+
+<5_1.pdf, id=71, 578.16pt x 722.7pt>
+File: 5_1.pdf Graphic file (type pdf)
+ <use 5_1.pdf>
+Package pdftex.def Info: 5_1.pdf used on input line 364.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+ [6 <./auf_4.png>]
+<auf_5.png, id=77, 1097.09875pt x 561.09625pt>
 File: auf_5.png Graphic file (type png)
  <use auf_5.png>
-Package pdftex.def Info: auf_5.png used on input line 355.
+Package pdftex.def Info: auf_5.png used on input line 403.
 (pdftex.def)             Requested size: 329.13217pt x 168.33017pt.
- [5 <./auf_4.png>] <auf_6.png, id=41, 1272.755pt x 513.92pt>
+ [7 <./5_1.pdf> <./auf_5.png>] <5_2.pdf, id=85, 578.16pt x 722.7pt>
+File: 5_2.pdf Graphic file (type pdf)
+ <use 5_2.pdf>
+Package pdftex.def Info: 5_2.pdf used on input line 429.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+
+<auf_6.png, id=87, 1272.755pt x 513.92pt>
 File: auf_6.png Graphic file (type png)
  <use auf_6.png>
-Package pdftex.def Info: auf_6.png used on input line 409.
+Package pdftex.def Info: auf_6.png used on input line 468.
 (pdftex.def)             Requested size: 381.82945pt x 154.17719pt.
- [6 <./auf_5.png> <./auf_6.png>] [7] (./VorlageProtokoll.aux) ) 
+ [8 <./5_2.pdf>]
+<5_3.pdf, id=95, 578.16pt x 722.7pt>
+File: 5_3.pdf Graphic file (type pdf)
+ <use 5_3.pdf>
+Package pdftex.def Info: 5_3.pdf used on input line 495.
+(pdftex.def)             Requested size: 231.2599pt x 175.26587pt.
+ [9 <./5_3.pdf> <./auf_6.png>] (./Aufbau_einer_Messkette_Frederik_Henrik.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4820 strings out of 493304
- 68920 string characters out of 6139871
- 133675 words of memory out of 5000000
- 8160 multiletter control sequences out of 15000+600000
- 77937 words of font info for 52 fonts, out of 8000000 for 9000
+ 4890 strings out of 493304
+ 70133 string characters out of 6139871
+ 135839 words of memory out of 5000000
+ 8222 multiletter control sequences out of 15000+600000
+ 84532 words of font info for 56 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,11n,38p,342b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texm
-f/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.e
-nc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/e
-nc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
-b>
-Output written on VorlageProtokoll.pdf (8 pages, 361706 bytes).
+ 37i,11n,38p,856b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm
+/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmm
+i12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmsy10.pfb>
+Output written on Aufbau_einer_Messkette_Frederik_Henrik.pdf (10 pages, 385277 
+bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 146 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 112 words of extra memory for PDF output out of 10000 (max. 10000000)
 

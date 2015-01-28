@@ -1,0 +1,10 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{2}
+\contentsline {section}{\numberline {2}Fingerpulssensor}{2}
+\contentsline {subsection}{\numberline {2.1}Aufbau}{2}
+\contentsline {subsection}{\numberline {2.2}Bestimmung des SRV}{3}
+\contentsline {subsection}{\numberline {2.3}Differenzieren/Filtern des Sensorsignals}{4}
+\contentsline {subsection}{\numberline {2.4}Digitalisierung mit Diskriminator}{6}
+\contentsline {subsection}{\numberline {2.5}Automatische Einstellung der Referenzspannung}{7}
+\contentsline {subsection}{\numberline {2.6}Pulsschlag h\IeC {\"o}rbar machen}{8}
+\contentsline {section}{\numberline {3}Fazit}{9}

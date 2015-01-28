@@ -37,14 +37,14 @@
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \HRule \\[0.4cm]
-{ \huge \bfseries Versuch.....}\\[0.4cm]				%Titel
+{ \huge \bfseries Aufbau einer Messkette, Rauschen}\\[0.4cm]				%Titel
 
 \HRule \\[1.5cm]
 
 % Author und Tutor
 \begin{minipage}{0.4\textwidth}
 \begin{flushleft} \large
-\emph{Autoren:}\\
+\emph{Verfasser:}\\
 Henrik \textsc{Jürgens} \\
 Frederik \textsc{Strothmann}
 \end{flushleft}
@@ -129,6 +129,17 @@ Die Schaltung in Abbildung \ref{fig:auf_1} wird aufgebaut. Am Oszilloskop wird e
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Der Fingerpulssensor wurde angeschlossen und der Puls gemessen. Der Verlauf der Kurve ist in Abbildung \ref{fig:erster_puls} zu sehen.
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.5]{a1.pdf}
+	\caption[Aufnahme des Pulssignals]{Aufnahme des Pulssignals}
+	\label{fig:erster_puls}
+\end{figure}
+
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -139,7 +150,7 @@ Die Schaltung in Abbildung \ref{fig:auf_1} wird aufgebaut. Am Oszilloskop wird e
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
-Die Schaltung konnte problemlos aufgebaut werden und das Signal wurde bei einer Zeitauflösung von ***** mit dem Oszilloskop beobachtet. Mit der Einstellung AC wurde der Gleichspannungsanteil vernachlässigt, sodass der Puls und das Rauschen deutlich zu erkennen waren.
+Die Schaltung konnte problemlos aufgebaut werden und das Signal wurde bei einer Zeitauflösung von \unit[500]{ms} mit dem Oszilloskop beobachtet. Mit der Einstellung AC wurde der Gleichspannungsanteil vernachlässigt, sodass der Puls und das Rauschen deutlich zu erkennen waren.
 \subsection{Bestimmung des SRV}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
@@ -167,11 +178,6 @@ Das Signal-Rausch-Verhältnis ergibt sich nach Gleichung \ref{eqn:1}.
 
 Mittels der Funktion "`Measure"' wird für das Eingangssignal und das Störsignal die  Spitzenspannung U$_{ss}$ gemessen. Dann wird mit Gleichung \ref{eqn:1} aus den Quadraten der gemessenen Spannungen das SRV, also das Verhältnis der Leistungen, bestimmt.
 
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -181,6 +187,27 @@ Mittels der Funktion "`Measure"' wird für das Eingangssignal und das Störsigna
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Das Signal-Rausch-Verhältnis sollte bestimmt werden, dafür wurde die Spannung von Spitze zu Spitze gemessen, sowie die breite des Rauschens. Die Aufnahme des Signals ist in Abbildung \ref{fig:srv} zu sehen. In Abbildung \ref{fig:u_rauschen} wird die breite des Rauschens bestimmt und in Abbildung \ref{fig:u_ss} wird die Spitze-Spitzte-Spannung gemessen.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.45\textwidth} 	
+  \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{a2_uss.pdf}
+  \caption[Aufnahme des Pulses, mit Bestimmung von U$_\text{ss}$]{Aufnahme des Pulses, mit Bestimmung von U$_\text{ss}$} 
+  \label{fig:u_ss}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}	
+   \includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{a2_rauschen.pdf}
+  \caption[Aufnahme des Pulses, mit Bestimmung von U$_\text{rauschen}$]{Aufnahme des Pulses, mit Bestimmung von U$_\text{rauschen}$} 
+  \label{fig:u_rauschen}
+\end{subfigure}
+\label{fig:srv}
+\end{figure}
+
+Für U$_\text{ss}$ ergibt sich ein Wert von \unit[32,4]{mV} und für U$_\text{rauschen}$ ein Wert von \unit[8,4]{mV}. Mit Gleichung \ref{eqn:1} ergibt sich ein SRV von 14,88.
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -192,13 +219,18 @@ Mittels der Funktion "`Measure"' wird für das Eingangssignal und das Störsigna
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 %++++
-Die Spitzenspannung U$_{ss}$ wurde mit der Funktion "`Measure"' und das Rauschen mit den Cursern am Oszilloskop bestimmt, woraus sich das Signal-Rausch-Verhältnis ergab. Dies ist in den Aufnahmen Abb. **** und **** zu sehen. 
+Die Spitzenspannung U$_{ss}$ wurde mit der Funktion "`Measure"' und das Rauschen mit den Cursern am Oszilloskop bestimmt, woraus sich das Signal-Rausch-Verhältnis ergab. Dies ist in den Aufnahmen Abb. \ref{fig:u_ss} und \ref{fig:u_rauschen} zu sehen. 
 %++++
 \subsection{Differenzieren/Filtern des Sensorsignals}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 %++++
-In diesem Versuchsteil wird das Signal mit Filtern und Verstärkern weiterverarbeitet.
+In diesem Versuchsteil wird das Signal mit Filtern und Verstärkern weiterverarbeitet. Dabei ein Hoch- und ein Tiefpassfilter verwendet, die Grenzfrequenz ergibt sich nach Gleichung \ref{eqn:grenze}, damit können die Werte der Bauteile bestimmt werden.
+
+\begin{align}
+\text{F}_\text{grenze}=\frac{1}{2 \pi \text{RC}}
+\label{eqn:grenze}
+\end{align}
 %++++
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
@@ -223,8 +255,8 @@ In Abbildung \ref{fig:auf_2} ist die Schaltskizze des Fingerpulssensors mit Diff
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 %++++
-In die Schaltung  in Abb. \ref{fig:auf_1} wird ein Differenzierer/Hochpass  eingebaut, welcher die Offsetspannung ignoriert, sodass am Oszilloskop auch die Einstellung DC verwendet werden kann. Ebenso wird ein Tiefpass/Integrierer nachgeschaltet, welcher hohe Frequenzen filtern soll.
-Nachdem die Schaltung in Abbildung \ref{fig:auf_2} aufgebaut und mit dem Oszilloskop der Verlauf des Ausgangssignals aufgenommen wurde, wird der Kondensator C$\text{T}$ durch einen 1$\mu$F  und einen \unit[10]{nF} Kondensator ersetzt. Das Ausgangssignal wird dann jeweils mit dem Oszilloskop aufgenommen. 
+In die Schaltung  in Abb. \ref{fig:auf_1} wird ein Differenzierer/Hochpass  eingebaut, welcher die Offsetspannung ignoriert, sodass am Oszilloskop auch die Einstellung DC verwendet werden kann. Da auch kurze Bananenkabel starke zusätzliche Störungen einfangen können wird die Bandbreite des Oszilloskops auf 20MHz reduziert. Ebenso wird ein Tiefpass/Integrierer nachgeschaltet, welcher hohe Frequenzen filtern soll.
+Nachdem die Schaltung in Abbildung \ref{fig:auf_2} aufgebaut und mit dem Oszilloskop der Verlauf des Ausgangssignals aufgenommen wurde, wird der Kondensator C$\text{T}$ durch einen 1$\mu$F  und einen \unit[10]{nF}/\unit[0,1]{$\mu$F} Kondensator ersetzt. Das Ausgangssignal wird dann jeweils mit dem Oszilloskop aufgenommen. 
 %++++
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -235,59 +267,38 @@ Nachdem die Schaltung in Abbildung \ref{fig:auf_2} aufgebaut und mit dem Oszillo
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
-\subsubsection*{Diskussion}
-%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
-%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
-%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
-%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
-%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
-%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
-%--------------------------------------------------------------------------------------------
-%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
-%1-----------------------------------------------1
-%++++
-Für Differenzierer und Integrierer wurden Grenzfrequenzen von \unit[0,1]{Hz} und \unit[10]{Hz} gewählt, sodass Frequenzen im Bereich von \unit[1]{Hz} durchgelassen wurden. R$_H$ wurde im Vergleich zu C$_H$ groß gewählt (\unit[10]{k$\Omega$}), um die Spannungsquelle nicht zu belasten. Um die Grenzfrequenz des Hochpasses nicht zu stark durch den nachgeschalteten Tiefpass zu belasten, wurde für R$_T$ ein Widerstand von \unit[100]{k$\Omega$} verwendet. Wie erwartet konnte mit den Filtern das Signal verbessert werden.
-%++++
-\subsection{Verstärkung des gefilterten Signals und ADC-Erfassung}
-%kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
-%bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
+
+Durch den Filter soll die Signalqualität verbessert und das rauschen minimiert werden. Der Kondensator des Tiefpassfilters wurde durch einen 10 mal größeren und einen 10 mal kleineren ersetzt und das Pulssignal aufgenommen. In Abbildung \ref{fig:a3} sind die Verläufe für die drei Kondensatoren zu sehen.
 
 
-
-\subsubsection*{Verwendete Geräte}
-%(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
-%falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
-
-Es werden ein Netzgerät, Widerstände, Kondensatoren, ein Potentiometer, ein Op-Amp, der Fingerpulssensor und ein Oszilloskop verwendet.
-
-\subsubsection*{Versuchsaufbau}
-%skizze zum versuchsaufbau (oder foto) einfügen,   es muss erklärt werden wie das ganze funktioniert und welche speziellen einstellungen verwendet wurden (z.b. welche knöpfe an den geräten für die messung verdreht wurden)
-
-\begin{figure}[H] 
-	\centering
-	\includegraphics[scale = 0.3]{auf_3.png}
-	\caption[Schaltskizze für das Differenzieren/Filtern des Sensorsignals]{Schaltskizze für das Differenzieren/Filtern des Sensorsignals\footnotemark}
-	\label{fig:auf_3}
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[t]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{a3.pdf}
+                \caption[Aufnahme des Signals mit dem 1$mu$F Kondensator ]{Aufnahme des Signals mit dem 1$mu$F Kondensator}
+                \label{fig:3_1}
+        \end{subfigure}%
+       % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[t]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{a3_mal10.pdf}
+                \caption[Aufnahme des Signals mit dem 10$mu$F Kondensator ]{Aufnahme des Signals mit dem 10$mu$F Kondensator}
+                \label{fig:3_mal}
+        \end{subfigure}
+       % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \hfill
+        \begin{subfigure}[t]{0.28\textwidth}
+                \includegraphics[width=\textwidth , scale = 0.4]{a3_durch10.pdf}
+                \caption[Aufnahme des Signals mit dem 0,1$mu$F Kondensator ]{Aufnahme des Signals mit dem 0,	1$mu$F Kondensator}
+  				\label{fig:3_durch}
+        \end{subfigure}
+        \caption{Kurven für C$_\text{T}$ = 1, 10, 0,1 $\mu$F}
+        \label{fig:a3}
 \end{figure}
-\footnotetext{Abbildung entnommen von http://www.atlas.uni-wuppertal.de/$\sim$kind/ep12\_14.pdf am 20.12.2014}
 
-\subsubsection*{Versuchsdurchführung}
-%erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
-%(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-\subsubsection*{Messergebnisse}
-%die messwerte in !übersichtlichen! tabellen angegeben
-%zu viele kleine tabellen in große tabellen überführen!
-%zu große tabellen mit dem [scale]-befehl scalieren oder (falls zu lang) in zwei kleinere tabellen aufteilen
-%(wichtig) vor !jeder! tabelle sagen, was gemessen wurde und wie die fehler gewählt wurden und ausreichend !erklären!, !warum! wir unsere fehler grade so gewählt haben
-\subsubsection*{Auswertung}
-%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
-%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
-%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
-%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
-%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
-%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
-%kurz die aufgabenstellung abhandeln
-%2-----------------------------------------------2
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -298,7 +309,11 @@ Es werden ein Netzgerät, Widerstände, Kondensatoren, ein Potentiometer, ein Op
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
+%++++
 
+
+Der Vorteil des BC550 ist, dass die Spannung gleich bleibt und der Strom erhöht wird. Für Differenzierer und Integrierer wurden Grenzfrequenzen von \unit[0,1]{Hz} und \unit[10]{Hz} gewählt, sodass die Frequenzen, des Fingerpulssensors im Bereich von \unit[1]{Hz} durchgelassen wurden. R$_H$ wurde im Vergleich zu C$_H$ groß gewählt (\unit[10]{k$\Omega$}), um die Spannungsquelle nicht zu belasten. Um die Grenzfrequenz des Hochpasses nicht zu stark durch den nachgeschalteten Tiefpass zu belasten, wurde für R$_T$ ein Widerstand von \unit[100]{k$\Omega$} verwendet. Wie erwartet konnte mit den Filtern das Signal verbessert werden. In den Fällen, wo ein 10 mal größerer bzw. 10 mal kleinerer Kondensator verwendet wurden, ist das Rauschen deutlich stärker, siehe Abbildung \ref{fig:a3}.
+%++++
 
 
 \subsection{Digitalisierung mit Diskriminator}
@@ -341,6 +356,16 @@ Die Schaltung in Abb. \ref{fig:auf_4} wird aufgebaut. Die Referenzspannung wird 
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Die \unit[20]{k$\Omega$} Widerstände wurden eingebaut, damit der Regelungsbereich des Potentiometers feiner eingestellt werden kann. Ohne die Widerstände entspricht eine Umdrehung 2V, mit den Widerständen entspricht eine Umdrehung 0,488V, was in der Größenordnung der Pulsamplitude liegt. Die Signalamplitude betragt ca. \unit[40]{mV}. Die LED blinkte in einem regelmäßigem Takt und es war kein doppelblinken zu sehen. Die Aufnahme des Eingangs- und Ausgangssignals ist in Abbildung \ref{fig:5_1} zu sehen.
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{5_1.pdf}
+	\caption[Aufnahme des Pulssignals]{Aufnahme des Pulssignals}
+	\label{fig:5_1}
+\end{figure}
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -352,7 +377,7 @@ Die Schaltung in Abb. \ref{fig:auf_4} wird aufgebaut. Die Referenzspannung wird 
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-
+Wie erwartet war wurde der Pulsschlag in ein Digitalsignal umgewandelt. Dies ist deutlich in Abbildung \ref{fig:5_1} zu sehen. Beim einstellen der Referenzspannung musste beachtet werden, das nur der Hauppeak und nicht der Nebenpeak aufgenommen wurde.
 
 
 
@@ -385,7 +410,7 @@ Mit der Schaltung in Abbildung \ref{fig:auf_5} wird die Referenzspannung automat
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
-Die Schaltung in Abbildung \ref{fig:auf_5} wird aufgebaut.
+Die Schaltung in Abbildung \ref{fig:auf_5} wird aufgebaut. Dann wird das Pulssignal mit dem Oszilloskop aufgenommen.
 
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
@@ -396,6 +421,16 @@ Die Schaltung in Abbildung \ref{fig:auf_5} wird aufgebaut.
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+In Abbildung \ref{fig:5_2} ist die Aufnahme des Pulssignals mit automatisch regulierter Referenzspannung zu sehen.
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{5_2.pdf}
+	\caption[Aufnahme des Pulssignals]{Aufnahme des Pulssignals}
+	\label{fig:5_2}
+\end{figure}
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -407,6 +442,7 @@ Die Schaltung in Abbildung \ref{fig:auf_5} wird aufgebaut.
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
+Die Zeitkonstante des von \unit[10]{M$\Omega$} und \unit[0,1]{$\mu$F} wird mit $\tau = \text{RC}$ bestimmt und hat einen Wert von \unit[1]{s}. Die Referenzspannung wird automatisch eingestellt, da UREF aus einen Tiefpassfilter über UIN entsteht und somit dem Mittelwert von UIN entspricht. An Abbildung \ref{fig:5_2} kann man sehen, dass das automatische einstellen der Referenzspannung gut funktioniert.
 
 
 
@@ -451,6 +487,16 @@ Die Schaltung in Abbildung \ref{fig:auf_6} wird aufgebaut und die Hörbarkeit de
 %bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
 %kurz die aufgabenstellung abhandeln
 %2-----------------------------------------------2
+
+Das Tonsignal war gut zu hören. Der Verlauf des Ausgangssignals ist in Abbildung \ref{fig:5_3} zu sehen.
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[trim = 0mm 50mm 0mm 50mm, clip, scale = 0.4]{5_3.pdf}
+	\caption[Aufnahme des Pulssignals]{Aufnahme des Pulssignals}
+	\label{fig:5_3}
+\end{figure}
+
 \subsubsection*{Diskussion}
 %(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
 %in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
@@ -462,10 +508,13 @@ Die Schaltung in Abbildung \ref{fig:auf_6} wird aufgebaut und die Hörbarkeit de
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
 
-
+Wie erwartet, war ein regelmäßiges Piepen zu hören.
 
 \section{Fazit}
 %im fazit nochmal alles zusammenfassen und den verlauf der messung abschätzen
 %gravierende sytematische probleme bei den messungen nochmal betonen und die wertigkeit unserer ergebnisse einordnen
+
+In dem Versuch wurde das Unterdrücken von Rauschen auf  Messdaten und das Digitalisieren eines Pulssignals untersucht. Bei allen Versuchsteilen waren die erwarteten Ergebnisse zu beobachten.
+
 \end{document}
 
