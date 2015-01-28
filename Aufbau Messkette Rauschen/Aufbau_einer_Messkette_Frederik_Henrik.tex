@@ -119,13 +119,33 @@ Die Werte der Bauteile sind in der Abbildung angegeben. Der nicht eingezeichnete
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
 
 Die Schaltung in Abbildung \ref{fig:auf_1} wird aufgebaut. Am Oszilloskop wird ein \unit[100]{nF} Kondensator eingebaut, um die Signalqualität zu verbessern.
-
-
-\subsection{Bestimmung des SVR}
+%++++
+\subsubsection*{Auswertung}
+%zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
+%kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
+%danach histogramme und plots erstellen, wobei wenn möglich funktionen durch die plots gelegt werden (zur not können auch splines benutzt werden, was aber angegeben werden muss)
+%bei fits immer die funktion und das reduzierte chiquadrat mit angegeben, wobei auf verständlichkeit beim entziffern der zehnerpotenzen geachtet werden muss z.b. f(x)=(wert+-fehler)\cdot10^{irgendeine zahl}\cdot x + (wert+-fehler)\cdot10^{irgendeine zahl}
+%bei jedem fit erklären, nach welchem zusammenhang gefittet wurde und warum!
+%bei plots darauf achten, dass die achsenbeschriftung (auch die tics) die richtige größe haben und die legende im plot nicht die messwerte verdeckt
+%kurz die aufgabenstellung abhandeln
+%2-----------------------------------------------2
+\subsubsection*{Diskussion}
+%(immer) die gemessenen werte und die bestimmten werte über die messfehler mit literaturwerten oder untereinander vergleichen
+%in welchem fehlerintervall des messwertes liegt der literaturwert oder der vergleichswert?
+%wie ist der relative anteil des fehlers am messwert und damit die qualität unserer messung?
+%in einem satz erklären, wie gut unser fehler und damit unsere messung ist
+%kurz erläutern, wie systematische fehler unsere messung beeinflusst haben könnten
+%(wichtig) zum schluss ansprechen, in wie weit die ergebnisse mit der theoretischen vorhersage übereinstimmen
+%--------------------------------------------------------------------------------------------
+%falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
+%1-----------------------------------------------1
+Die Schaltung konnte problemlos aufgebaut werden und das Signal wurde bei einer Zeitauflösung von ***** mit dem Oszilloskop beobachtet. Mit der Einstellung AC wurde der Gleichspannungsanteil vernachlässigt, sodass der Puls und das Rauschen deutlich zu erkennen waren.
+\subsection{Bestimmung des SRV}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
 
-In diesem Versuchsteil soll das Signal-Rausch-Verhältnis untersucht werden.
+In diesem Versuchsteil soll das Signal-Rausch-Verhältnis bestimmt werden.
+%++++
 
 \subsubsection*{Verwendete Formeln}
 %eine legende kann angefertigt werden, die selbstverständlichen buchstaben müssen nicht extra erklärt werden
@@ -171,14 +191,15 @@ Mittels der Funktion "`Measure"' wird für das Eingangssignal und das Störsigna
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
-
-
+%++++
+Die Spitzenspannung U$_{ss}$ wurde mit der Funktion "`Measure"' und das Rauschen mit den Cursern am Oszilloskop bestimmt, woraus sich das Signal-Rausch-Verhältnis ergab. Dies ist in den Aufnahmen Abb. **** und **** zu sehen. 
+%++++
 \subsection{Differenzieren/Filtern des Sensorsignals}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
-
-In diesem Versuchsteil wird ein Differenzierer/Filter in die Schaltung eingebaut, welcher das Offset ignoriert.
-
+%++++
+In diesem Versuchsteil wird das Signal mit Filtern und Verstärkern weiterverarbeitet.
+%++++
 \subsubsection*{Verwendete Geräte}
 %(immer) eine skizze oder ein foto einfügen, die geräte/materialien !nummerieren! und z.b. eine legende dazu schreiben, besser wäre es das ganze in einem Fließtext gut zu beschreiben.
 %falls am anfang des versuches nicht klar ist, was alles verwendet wird, wenn möglich erst am ende ein großes foto von den verwendeten materialien machen!\\
@@ -201,9 +222,10 @@ In Abbildung \ref{fig:auf_2} ist die Schaltskizze des Fingerpulssensors mit Diff
 \subsubsection*{Versuchsdurchführung}
 %erklären, !was! wir machen, !warum! wir das machen und mit welchem ziel
 %(wichtig) präzize erklären, wie bei dem versuch vorgegangen und was gemacht wurde
-
-Die Schaltung in Abbildung \ref{fig:auf_2} wird aufgebaut und mit dem Oszilloskop der Verlauf des Ausgangssignals aufgenommen. Danach wird der Kondensator C$\text{T}$ durch einen 1$\mu$F Kondensator ersetzt und das Ausgangssignal mit dem Oszilloskop aufgenommen. 
-
+%++++
+In die Schaltung  in Abb. \ref{fig:auf_1} wird ein Differenzierer/Hochpass  eingebaut, welcher die Offsetspannung ignoriert, sodass am Oszilloskop auch die Einstellung DC verwendet werden kann. Ebenso wird ein Tiefpass/Integrierer nachgeschaltet, welcher hohe Frequenzen filtern soll.
+Nachdem die Schaltung in Abbildung \ref{fig:auf_2} aufgebaut und mit dem Oszilloskop der Verlauf des Ausgangssignals aufgenommen wurde, wird der Kondensator C$\text{T}$ durch einen 1$\mu$F  und einen \unit[10]{nF} Kondensator ersetzt. Das Ausgangssignal wird dann jeweils mit dem Oszilloskop aufgenommen. 
+%++++
 \subsubsection*{Auswertung}
 %zuerst !alle! errechneten werte entweder in ganzen sätzen aufzählen, oder in tabellen (übersichtlicher) dargestellen, sowie auf die verwendeten formeln verweisen (die referenzierung der formel kann in der überschrift stehen)
 %kurz erwähnen (vor der tabelle), warum wir das ganze ausrechnen bzw. was wir dort ausrechnen
@@ -223,9 +245,9 @@ Die Schaltung in Abbildung \ref{fig:auf_2} wird aufgebaut und mit dem Oszillosko
 %--------------------------------------------------------------------------------------------
 %falls tabellen mit den messwerten zu lang werden, kann die section mit den messwerten auch hinter der diskussion angefügt bzw. eine section mit dem anhang eingefügt werden.
 %1-----------------------------------------------1
-
-
-
+%++++
+Für Differenzierer und Integrierer wurden Grenzfrequenzen von \unit[0,1]{Hz} und \unit[10]{Hz} gewählt, sodass Frequenzen im Bereich von \unit[1]{Hz} durchgelassen wurden. R$_H$ wurde im Vergleich zu C$_H$ groß gewählt (\unit[10]{k$\Omega$}), um die Spannungsquelle nicht zu belasten. Um die Grenzfrequenz des Hochpasses nicht zu stark durch den nachgeschalteten Tiefpass zu belasten, wurde für R$_T$ ein Widerstand von \unit[100]{k$\Omega$} verwendet. Wie erwartet konnte mit den Filtern das Signal verbessert werden.
+%++++
 \subsection{Verstärkung des gefilterten Signals und ADC-Erfassung}
 %kurz das ziel dieses versuchsteiles ansprechen, damit keine zwei überschriften direkt übereinander stehen!
 %bei schwierigeren versuchen kann auch der theoretische hintergrund erläutert werden. (mit formeln, herleitungen und erklärungen)
